@@ -56,6 +56,14 @@
   z-index: 1;
 }
 
+.sa-hero-icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 28px;
+  box-shadow: 0 0 40px rgba(139, 92, 246, 0.3), 0 8px 32px rgba(0, 0, 0, 0.4);
+  margin-bottom: 24px;
+}
+
 .sa-hero-badge {
   display: inline-block;
   font-family: var(--font-mono);
