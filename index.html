@@ -1,424 +1,272 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="The future is not some place we are going, but one we are creating." />
+  <meta name="description" content="Bugra - Indie developer building mobile apps, AI tools & experiments. Creator of ShadowART, Nazar, CalendART and more." />
+  <meta name="keywords" content="indie developer, mobile apps, Flutter, iOS, Android, ShadowART, shadow work, AI apps, umay.dev" />
   <meta name="google-site-verification" content="Lb2lzH8SdKJCS7OvynwCe3P3IYIJu48AdjkPJla-pV0" />
-  <meta name="keyword" content="Freelance, Develepor, Mobile, Application, App, Flutter, Python, Kidity, Filmzy, Mood Connect, Arithmio, Game" />
-  <meta name="author" content="Umay.dev" />
-  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.png" />
-
-  <!-- Thnx 2 Photo by Marvin Meyer on Unsplash-->
-
-  <title>Umay - Freelance Mobile Application Developer</title>
-
-  <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- Custom CSS -->
-  <link href="css/landing-page.css" rel="stylesheet" />
-
-  <!-- Custom Fonts -->
-  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <meta name="author" content="Bugra" />
+  <link rel="canonical" href="https://umay.dev/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="umay.dev" />
+  <meta property="og:title" content="umay.dev - Indie Developer Portfolio" />
+  <meta property="og:description" content="Bugra - Indie developer building mobile apps, AI tools & experiments." />
+  <meta property="og:image" content="https://umay.dev/assets/og-image.png" />
+  <meta property="og:url" content="https://umay.dev/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@Monotits" />
+  <meta name="twitter:creator" content="@Monotits" />
+  <meta name="twitter:title" content="umay.dev - Indie Developer Portfolio" />
+  <meta name="twitter:description" content="Bugra - Indie developer building mobile apps, AI tools & experiments." />
+  <meta name="twitter:image" content="https://umay.dev/assets/og-image.png" />
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+  <title>umay.dev - Bugra | Indie Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/umay.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Bugra",
+      "url": "https://umay.dev",
+      "sameAs": [
+        "https://github.com/Monotits",
+        "https://x.com/Monotits"
+      ],
+      "jobTitle": "Indie Developer",
+      "description": "Indie developer building mobile apps, AI tools & experiments.",
+      "image": "https://avatars.githubusercontent.com/u/42612579?v=4"
+    }
+  }
+  </script>
 </head>
-
 <body>
-  <!-- Navigation -->
-  <!--<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="#">Start Bootstrap</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>-->
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">umay<span class="accent">.dev</span></a>
+      <div class="nav-links">
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#blog">blog</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
 
-  <!-- Header -->
-  <a name="about"></a>
-  <div class="intro-header">
+  <!-- Hero -->
+  <section class="hero">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="intro-message">
-            <h1>Umay</h1>
-            <h3>Freelance Mobile Application Developer</h3>
-            <hr class="intro-divider" />
-            <ul class="list-inline intro-social-buttons">
-              <li>
-                <a target="_blank" href="https://twitter.com/yumaydev" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i>
-                  <span class="network-name">Twitter</span></a>
-              </li>
-              <li>
-                <a target="_blank" href="https://www.instagram.com/yumaydev/" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i>
-                  <span class="network-name">Instagram</span></a>
-              </li>
-              <li>
-                <a target="_blank" href="https://apps.apple.com/us/developer/bugra-gunay/id1540057343" class="btn btn-default btn-lg"><i class="fa fa-apple fa-fw"></i>
-                  <span class="network-name">App Store</span></a>
-              </li>
-              <li>
-                <a target="_blank" href="https://play.google.com/store/apps/dev?id=7265569845441044589" class="btn btn-default btn-lg"><i class="fa fa-android fa-fw"></i>
-                  <span class="network-name">Google Play</span></a>
-              </li>
-              <h3></h3>
-            </ul>
+      <div class="hero-row">
+        <img class="hero-avatar" src="https://avatars.githubusercontent.com/u/42612579?v=4" alt="Bugra" width="96" height="96" />
+        <div>
+          <p class="hero-greeting">hey, i'm</p>
+          <h1 class="hero-name">Bugra</h1>
+          <p class="hero-tagline">indie developer building apps, tools & things that spark curiosity.</p>
+          <div class="hero-links">
+            <a href="https://github.com/Monotits" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://x.com/Monotits" target="_blank" rel="noopener" aria-label="Twitter/X">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <!-- /.container -->
-  </div>
-  <!-- /.intro-header -->
+  </section>
 
-  <!-- Page Content -->
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">about</h2>
+      <div class="about-content">
+        <p>I'm an indie developer who loves turning ideas into real products. I build mobile apps with <strong>Flutter</strong>, write backend services in <strong>Python</strong>, and tinker with whatever tech catches my attention.</p>
+        <p>I've shipped multiple apps to both the App Store and Google Play, ranging from AI-powered diaries to educational games for kids. I care about clean design, solid UX, and shipping things that people actually use.</p>
+        <div class="tech-stack">
+          <span class="tag">Flutter</span>
+          <span class="tag">Dart</span>
+          <span class="tag">Python</span>
+          <span class="tag">Firebase</span>
+          <span class="tag">Swift</span>
+          <span class="tag">Kotlin</span>
+          <span class="tag">AI/ML</span>
+          <span class="tag">REST APIs</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <a name="services"></a>
-  <div class="content-section-a">
+  <!-- Projects -->
+  <section class="section" id="projects">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-5 col-sm-6">
-          <div class="clearfix"></div>
-          <a href="https://umay.dev/nazar.html">
-            <h2 class="section-heading">
-              Nazar: Astrology & Horoscope
-            </h2>
-          </a>
-          <p class="lead">
-            With Nazar App, you can find interesting answers to your cosmic questions unusually. Nazar app does not just offer you daily horoscope reviews and horoscope compatibility like other astrology apps. Unlike others, he can only give you reliable astrological interpretations and inferences based on your choices. With Point of you, you can make your day more meaningful with an interesting word, an interesting question sentence, and interesting comment.
-          </p>
-          <ul class="list-inline intro-social-buttons">
-            <li>
-              <a target="_blank" href="https://umay.dev/nazar.html" class="btn btn-default btn"><i class="fa fa-apple fa-fw"></i>
-                <span class="network-name">App Store</span></a>
-            </li>
-            <li>
-              <a target="_blank" href="https://play.google.com/store/apps/details?id=dev.umay.nazar" class="btn btn-default btn"><i class="fa fa-android fa-fw"></i>
-                <span class="network-name">Google Play</span></a>
-            </li>
-          </ul>
-        </div>
-        <hr class="lead" />
-        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-          <a href="https://umay.dev/nazar.html">
-            <img class="img-responsive" src="img/nazar.png" alt="Nazar App" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="content-section-b">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 col-sm-6">
-          <div class="clearfix"></div>
-          <a href="https://umay.dev/jeoatlas.html">
-            <h2 class="section-heading">
-              JeoAtlas: Geological Location Inventory
-            </h2>
-          </a>
-          <p class="lead">
-            Geology is a science that tries to understand the processes operating on the surface and deep of the Earth we live on, the materials that make up the Earth, and how the Earth has changed over billions of years. JeoAtlas is a platform that will enable the sharing of the records of these
-            processes and changes in the earth between Geological Engineers and people who are trying to get to know and understand nature, curious and interested.
-          </p>
-          <ul class="list-inline intro-social-buttons">
-            <li>
-              <a target="_blank" href="https://apps.apple.com/tt/app/jeoatlas/id1608061535" class="btn btn-default btn"><i class="fa fa-apple fa-fw"></i>
-                <span class="network-name">App Store</span></a>
-            </li>
-            <li>
-              <a target="_blank" href="https://play.google.com/store/apps/details?id=com.jeoatlas.jeoatlas" class="btn btn-default btn"><i class="fa fa-android fa-fw"></i>
-                <span class="network-name">Google Play</span></a>
-            </li>
-          </ul>
-        </div>
-        <hr class="lead" />
-        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-          <a href="https://umay.dev/jeoatlas.html">
-            <img class="img-responsive" src="content/image/jeoatlas.png" alt="Arithmio App" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="content-section-a">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 col-sm-6">
-          <div class="clearfix"></div>
-          <a href="https://umay.dev/calendart.html">
-            <h2 class="section-heading">
-              CalendART: Subliminal AI Diary (Mood Tracker & Bullet Journal)
-            </h2>
-          </a>
-          <p class="lead">
-            CalendART App is a new generation artificial
-            intelligence-supported bullet journal & mood tracker. First of
-            all, you should examine the photos in different compositions,
-            different colors, different concepts, and different objects that
-            we have specially selected for you. Match it with just one of
-            these photos, thinking about the day you want to set your mood.
-            That's all. Then we analyze this photo for you with the support of
-            artificial intelligence and present you the results.
-          </p>
-          <ul class="list-inline intro-social-buttons">
-            <li>
-              <a target="_blank" href="https://apps.apple.com/us/app/calendart-subliminal-ai-diary/id1573920118" class="btn btn-default btn"><i class="fa fa-apple fa-fw"></i>
-                <span class="network-name">App Store</span></a>
-            </li>
-            <li>
-              <a target="_blank" href="https://play.google.com/store/apps/details?id=dev.umay.CalendART" class="btn btn-default btn"><i class="fa fa-android fa-fw"></i>
-                <span class="network-name">Google Play</span></a>
-            </li>
-          </ul>
-        </div>
-        <hr class="lead" />
-        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-          <a href="https://umay.dev/calendart.html">
-            <img class="img-responsive" src="img/calendart.png" alt="CalendART App" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="content-section-b">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 col-sm-6">
-          <div class="clearfix"></div>
-          <a href="https://umay.dev/arithmio.html">
-            <h2 class="section-heading">
-              Arithmio: Mathematical Hide & Seek Game
-            </h2>
-          </a>
-          <p class="lead">
-            Search and find game prepared for preschool children; There are 5
-            items hidden in eight different themes: space, sea, vehicles,
-            fruits, shapes, forest, farm, expressions. The Arithmio App game
-            is beyond a simple search hiden items game. It aims to make use of
-            the objects included in the concepts created for children in terms
-            of noticing the relationship with the concept, attention
-            development and arithmetic development.
-          </p>
-          <ul class="list-inline intro-social-buttons">
-            <li>
-              <a target="_blank" href="https://apps.apple.com/us/app/search-and-find-hidden-items/id1547846554" class="btn btn-default btn"><i class="fa fa-apple fa-fw"></i>
-                <span class="network-name">App Store</span></a>
-            </li>
-            <li>
-              <a target="_blank" href="https://play.google.com/store/apps/details?id=dev.umay.Arithmio" class="btn btn-default btn"><i class="fa fa-android fa-fw"></i>
-                <span class="network-name">Google Play</span></a>
-            </li>
-          </ul>
-        </div>
-        <hr class="lead" />
-        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-          <a href="https://umay.dev/arithmio.html">
-            <img class="img-responsive" src="content/image/Arithmio1.png" alt="Arithmio App" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- /.content-section-b -->
-  <div class="content-section-a">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 col-sm-6">
-          <div class="clearfix"></div>
-          <a href="https://umay.dev/kidity">
-            <h2 class="section-heading">
-              Kidity: Road Trip & Home Play for Middle Childhood (4-9)
-            </h2>
-          </a>
-          <p class="lead">
-            Kidity App, contains more than 2000 events, questions, activities,
-            challenges and more that fit in six main categories. It is
-            designed to go along with you on your travel, dinner conversations
-            or elsewhere on your free time with your children.
-          </p>
-          <ul class="list-inline intro-social-buttons">
-            <li>
-              <a target="_blank" href="https://apps.apple.com/us/app/travel-and-home-play-for-kids/id1540057341" class="btn btn-default btn"><i class="fa fa-apple fa-fw"></i>
-                <span class="network-name">App Store</span></a>
-            </li>
-            <li>
-              <a target="_blank" href="https://play.google.com/store/apps/details?id=dev.umay.kidity" class="btn btn-default btn"><i class="fa fa-android fa-fw"></i>
-                <span class="network-name">Google Play</span></a>
-            </li>
-          </ul>
-        </div>
-        <hr class="lead" />
-        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-          <a href="https://umay.dev/kidity">
-            <img class="img-responsive" src="img/ipad.png" alt="Kidity App" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- /.content-section-a -->
+      <h2 class="section-title">projects</h2>
+      <div class="projects-grid">
 
-  <div class="content-section-b">
+        <a href="shadowart/" class="project-card">
+          <div class="project-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--sa-indigo, #8B5CF6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20" fill="var(--sa-indigo, #8B5CF6)" opacity="0.3"/><circle cx="12" cy="10" r="3"/><path d="M12 13c-3 0-5 2-5 4h10c0-2-2-4-5-4z"/></svg>
+          </div>
+          <div class="project-info">
+            <h3>ShadowART</h3>
+            <p>Jungian Shadow Work Journal - AI-guided self-reflection through archetypes, mood tracking & dreams.</p>
+            <div class="project-tags">
+              <span>iOS</span><span>AI</span><span>Psychology</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="nazar.html" class="project-card project-inactive">
+          <span class="badge-inactive">inactive</span>
+          <div class="project-icon">
+            <img src="img/nazar.png" alt="Nazar" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3>Nazar</h3>
+            <p>Astrology & Horoscope - AI-powered cosmic insights and daily zodiac readings.</p>
+            <div class="project-tags">
+              <span>iOS</span><span>Android</span><span>AI</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="jeoatlas.html" class="project-card project-inactive">
+          <span class="badge-inactive">inactive</span>
+          <div class="project-icon">
+            <img src="content/image/jeoatlaslogo.png" alt="JeoAtlas" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3>JeoAtlas</h3>
+            <p>Geological Location Inventory - A platform for sharing geological records and discoveries.</p>
+            <div class="project-tags">
+              <span>iOS</span><span>Android</span><span>Maps</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="calendart.html" class="project-card project-inactive">
+          <span class="badge-inactive">inactive</span>
+          <div class="project-icon">
+            <img src="content/image/cart.png" alt="CalendART" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3>CalendART</h3>
+            <p>Subliminal AI Diary - AI-supported mood tracker & bullet journal.</p>
+            <div class="project-tags">
+              <span>iOS</span><span>Android</span><span>AI</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="arithmio.html" class="project-card project-inactive">
+          <span class="badge-inactive">inactive</span>
+          <div class="project-icon">
+            <img src="content/image/arithmio.png" alt="Arithmio" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3>Arithmio</h3>
+            <p>Mathematical Hide & Seek - Educational search-and-find game for preschoolers.</p>
+            <div class="project-tags">
+              <span>iOS</span><span>Android</span><span>Game</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="kidity.html" class="project-card project-inactive">
+          <span class="badge-inactive">inactive</span>
+          <div class="project-icon">
+            <img src="img/ipad.png" alt="Kidity" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3>Kidity</h3>
+            <p>Road Trip & Home Play - 2000+ activities for kids aged 4-9.</p>
+            <div class="project-tags">
+              <span>iOS</span><span>Android</span><span>Kids</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="moodconnect.html" class="project-card project-inactive">
+          <span class="badge-inactive">inactive</span>
+          <div class="project-icon">
+            <img src="img/moodc.png" alt="Mood Connect" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3>Mood Connect</h3>
+            <p>Micro diary in 5 seconds - Track mood, sleep, habits without writing a word.</p>
+            <div class="project-tags">
+              <span>iOS</span><span>Android</span><span>Health</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="filmzy.html" class="project-card project-inactive">
+          <span class="badge-inactive">inactive</span>
+          <div class="project-icon">
+            <img src="img/filmzy.png" alt="Filmzy" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3>Filmzy</h3>
+            <p>Family Movie Recommendations - Curated must-see movies for family night.</p>
+            <div class="project-tags">
+              <span>iOS</span><span>Android</span><span>Entertainment</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section class="section" id="blog">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-5 col-sm-6">
-          <div class="clearfix"></div>
-          <a href="https://umay.dev/moodconnect">
-            <h2 class="section-heading">
-              Mood Connect: Diary, Journal, Emotion, Self-Care
-            </h2>
-          </a>
-          <p class="lead">
-            Wouldn't you like to keep a micro diary in just 5 seconds without
-            writing a single word? Choose the date. Choose your daily mood.
-            Then select and save the quality sleep, eating healty, hygiene,
-            hobbies, and socializing. Keeping a micro diary is that easy!
-          </p>
-          <ul class="list-inline intro-social-buttons">
-            <li>
-              <a target="_blank" href="https://apps.apple.com/us/app/mood-connect-self-care-diary/id1540292755" class="btn btn-default btn"><i class="fa fa-apple fa-fw"></i>
-                <span class="network-name">App Store</span></a>
-            </li>
-            <li>
-              <a target="_blank" href="https://play.google.com/store/apps/details?id=dev.umay.Moodconnect" class="btn btn-default btn"><i class="fa fa-android fa-fw"></i>
-                <span class="network-name">Google Play</span></a>
-            </li>
-          </ul>
-        </div>
-        <hr class="lead" />
-        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-          <a href="https://umay.dev/moodconnect">
-            <img class="img-responsive" src="img/moodc.png" alt="Mood Connect App" />
-          </a>
+      <h2 class="section-title">blog</h2>
+      <div id="blogPosts" class="blog-grid">
+        <!-- Blog posts loaded via JS from /blog/posts.json -->
+      </div>
+      <p class="blog-empty" id="blogEmpty" style="display:none;">No posts yet. Stay tuned.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-copy">&copy; 2025 umay.dev</span>
+        <div class="footer-links">
+          <a href="https://github.com/Monotits" target="_blank" rel="noopener">github</a>
+          <a href="https://x.com/Monotits" target="_blank" rel="noopener">twitter</a>
         </div>
       </div>
     </div>
-  </div>
-  <!-- /.content-section-b -->
+  </footer>
 
-  <div class="content-section-a">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 col-sm-6">
-          <div class="clearfix"></div>
-          <a href="https://umay.dev/filmzy">
-            <h2 class="section-heading">
-              Filmzy: Best Family Movie Recommendations for Kids
-            </h2>
-          </a>
-          <p class="lead">
-            Looking for the best movies for kids? With the endless list of TV
-            and movie options out there, it’s hard to pick a flick that the
-            whole family will love (you included!). Well, bicker no more. From
-            The Ice Age to E.T., we’ve made the decision-making easy with a
-            definitive list of must-see kids movies for children under 10. So
-            let’s get that family movie night started!
-          </p>
-          <ul class="list-inline intro-social-buttons">
-            <li>
-              <a target="_blank" href="#" class="btn btn-default btn"><i class="fa fa-apple fa-fw"></i>
-                <span class="network-name">App Store</span></a>
-            </li>
-            <li>
-              <a target="_blank" href="https://play.google.com/store/apps/details?id=dev.umay.Filmzy" class="btn btn-default btn"><i class="fa fa-android fa-fw"></i>
-                <span class="network-name">Google Play</span></a>
-            </li>
-          </ul>
-        </div>
-        <hr class="lead" />
-        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-          <a href="https://umay.dev/filmzy">
-            <img class="img-responsive" src="img/filmzy.png" alt="Filmzy App" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- /.content-section-a -->
+  <script src="js/umay.js"></script>
 
-  <a name="contact"></a>
-  <div class="banner">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <h4>Reach us through social media accounts</h4>
-        </div>
-        <div class="col-lg-6">
-          <ul class="list-inline banner-social-buttons">
-            <li>
-              <a target="_blank" href="https://twitter.com/yumaydev" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i>
-                <span class="network-name">Twitter</span></a>
-            </li>
-            <li>
-              <a target="_blank" href="https://www.instagram.com/yumaydev/" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i>
-                <span class="network-name">Instagram</span></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- /.container -->
-  </div>
-  <!-- /.banner -->
-
-  <!-- jQuery -->
-  <script src="js/jquery.js"></script>
-
-  <!-- Bootstrap Core JavaScript -->
-  <script src="js/bootstrap.min.js"></script>
+  <!-- Firebase Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyC-aG53JXrO_3rphAfuJVMOAUHLh8sGukE",
+      authDomain: "umaydev-69a3b.firebaseapp.com",
+      projectId: "umaydev-69a3b",
+      storageBucket: "umaydev-69a3b.appspot.com",
+      messagingSenderId: "461577843762",
+      appId: "1:461577843762:web:f262bbbb11efc5badbb82b",
+      measurementId: "G-KRHJ59MK36",
+    };
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 </body>
-
 </html>
-
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyC-aG53JXrO_3rphAfuJVMOAUHLh8sGukE",
-    authDomain: "umaydev-69a3b.firebaseapp.com",
-    projectId: "umaydev-69a3b",
-    storageBucket: "umaydev-69a3b.appspot.com",
-    messagingSenderId: "461577843762",
-    appId: "1:461577843762:web:f262bbbb11efc5badbb82b",
-    measurementId: "G-KRHJ59MK36",
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>

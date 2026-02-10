@@ -1,32 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://umay.dev/</loc>
-  <lastmod>2020-12-16T09:36:08+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://umay.dev/kidity</loc>
-  <lastmod>2020-12-16T09:36:08+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://umay.dev/moodconnect</loc>
-  <lastmod>2020-12-16T09:36:08+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://umay.dev/filmzy</loc>
-  <lastmod>2020-12-16T09:36:08+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://umay.dev/</loc>
+    <lastmod>2025-02-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://umay.dev/shadowart/</loc>
+    <lastmod>2025-02-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://umay.dev/blog/hello-world.html</loc>
+    <lastmod>2025-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://umay.dev/nazar.html</loc>
+    <lastmod>2025-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://umay.dev/jeoatlas.html</loc>
+    <lastmod>2025-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://umay.dev/calendart.html</loc>
+    <lastmod>2025-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://umay.dev/arithmio.html</loc>
+    <lastmod>2025-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://umay.dev/kidity.html</loc>
+    <lastmod>2025-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://umay.dev/moodconnect.html</loc>
+    <lastmod>2025-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://umay.dev/filmzy.html</loc>
+    <lastmod>2025-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
 </urlset>

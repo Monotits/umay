@@ -1,119 +1,85 @@
 <!DOCTYPE html>
-<html dir="auto" lang="en">
+<html lang="en" data-theme="dark">
 <head>
-	<meta charset="UTF-8" />
-	<title>CalendART App - Umay.dev</title>
-
-	<meta name="description" content="CalendART: Subliminal AI Diary" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="icon" href="assets/favicon.png" />
-
-	<meta property="og:title" content="CalendART App - Umay.dev" />
-	<meta property="og:description" content="CalendART App is a new generation artificial
-    intelligence-supported bullet journal & mood tracker." />
-	<meta property="og:image" content="assets/favicon.png" />
-
-	<link rel="stylesheet" href="assets/tobi.css" />
-	<link rel="stylesheet" href="assets/style.css" />
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="CalendART: Subliminal AI Diary" />
+  <link rel="icon" href="assets/favicon.png" />
+  <meta property="og:title" content="CalendART App - umay.dev" />
+  <meta property="og:description" content="AI-supported mood tracker & bullet journal." />
+  <meta property="og:image" content="https://umay.dev/assets/favicon.png" />
+  <title>CalendART App - umay.dev</title>
+  <link rel="canonical" href="https://umay.dev/calendart.html" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@Monotits" />
+  <meta name="twitter:title" content="CalendART App - umay.dev" />
+  <meta name="twitter:description" content="AI-supported mood tracker and bullet journal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/umay.css" />
 </head>
-	<body>
-		<main>
-<header class="app__header container">
-	<div class="app__logo-wrapper"> <img class="app__logo" src="content/image/cart.png" alt="CalendART App"></div>
-	<div class="app__infos">
-		<h1 class="app__name">CalendART</h1>
-		<p class="app__description">CalendART: Subliminal AI Diary</p>
-		<div class="app__buttons app__buttons--desktop">
-			<a href="https://play.google.com/store/apps/details?id=dev.umay.CalendART" class="app__button-play" target="_blank" title="Get on Google Play">
-				<img src="assets/google-play-badge.png" alt="Get on Google Play">
-			</a>
-			<a href="https://apps.apple.com/us/app/calendart-subliminal-ai-diary/id1573920118" class="app__button-ios" target="_blank" title="Get on Appstore">
-				<img src="assets/ios-badge.svg" alt="Get on Appstore">
-			</a>
-		</div>
-	</div>
-</header>
-<div class="app__buttons app__buttons--mobile container">
-	<a href="https://play.google.com/store/apps/details?id=dev.umay.CalendART" class="app__button-play" target="_blank" title="Get on Google Play">
-		<img src="assets/google-play-badge.png" alt="Get on Google Play">
-	</a>
-	<a href="https://apps.apple.com/us/app/calendart-subliminal-ai-diary/id1573920118" class="app__button-ios" target="_blank" title="Get on Appstore">
-		<img src="assets/ios-badge.svg" alt="Get on Appstore">
-	</a>
-</div>
-<section class="app__screenshots app__section">
-	<div class="container">
-	</div>
-	<div class="app__screenshots-wrapper container-desktop">
-		<div class="app__screenshots-list">
-			<a href="content/image/cart1.png" class="lightbox">
-				<img src="content/image/cart1.png" class="app__screenshot" alt="" />
-			</a>
-			<a href="content/image/cart2.png" class="lightbox">
-				<img src="content/image/cart2.png" class="app__screenshot" alt="" />
-			</a>
-			<a href="content/image/cart3.png" class="lightbox">
-				<img src="content/image/cart3.png" class="app__screenshot" alt="" />
-			</a>
-			<a href="content/image/cart4.png" class="lightbox">
-				<img src="content/image/cart4.png" class="app__screenshot" alt="" />
-			</a>
-		</div>
-	</div>
-</section>
-<section class="app__fulldescription app__section container">
-	<h2 class="app__section-title">CalendART: Subliminal AI Diary (Mood Tracker & Bullet Journal)</h2>
-	<div class="app__fulldescription-content">
-		<p> CalendART App is a new generation artificial intelligence-supported bullet journal & mood tracker. What you have to do is very simple. First of all, you should examine the photos in different compositions, different colors, different concepts, and different objects that we have specially selected for you. Match it with just one of these photos, thinking about the day you want to set your mood. There may be a color, a composition or a detail to be associated with that day in the photographs. That's all. Then I analyze this photo for you with the support of artificial intelligence and present you the results. You create your own art with your subconscious choices. Because all our choices, decisions, and thoughts are related to our subconscious.</p>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">umay<span class="accent">.dev</span></a>
+      <div class="nav-links">
+        <a href="/#about">about</a>
+        <a href="/#projects">projects</a>
+        <a href="/#blog">blog</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
 
-			<p>In a normal mood tracker app, you enter the data. They will ask you how you are feeling today. CalendART asks which of these is your day. That’s why CalendART App is not a regular mood tracker or bullet journal. Because you don't choose outcomes. The results are shaped according to your preferences. Because we know very well that people cannot always be honest enough with themselves. But people's subconscious choices include much more honesty. Data created with an objective approach can be analyzed in a healthier way.</p>
-			What will CalendART tell you after your selected photos are analyzed?
-			<br />• Mood: The photo you choose with artificial intelligence is analyzed and your mood for that day is determined.
-			<br />• The photos you choose are analyzed according to the preferences of other users and it is determined how popular you are.
-			<br />• The colors, objects, locations, and similar details that you unwittingly seek in a photograph are analyzed and presented to you in the form of graphics through the photographs you have chosen.
-			<br />• You can create an annual bullet journal with the colors taken from the photos you choose. So you can see your favorite colors of those years.
-			<br />• You can share the results of your daily choices with all the details on social media with a single click.
-			<br />• In the Stats section, you can analyze the graphical outputs in 4 different time periods: weekly, monthly, yearly and all-time average.
-			<br />• In the Settings section, you can make detailed settings such as changing the theme, setting the notification time, feedback section, and data management.
-			<p>The people we meet in our lives, the events and conditions we experience are the result of our thoughts. Negative or positive, every thought recorded in the subconscious will happen one day. We must be aware of the power of the subconscious in order to be free in the journey of life and draw our own route.</p>
-			<p>Calendart App</p>
+  <main class="app-page">
+    <div class="container">
+      <a href="/" class="app-back">&larr; back to projects</a>
+      <div class="app-header">
+        <div class="app-logo"><img src="content/image/cart.png" alt="CalendART" /></div>
+        <div class="app-meta">
+          <h1>CalendART</h1>
+          <p>Subliminal AI Diary</p>
+          <div class="app-buttons">
+            <a href="https://play.google.com/store/apps/details?id=dev.umay.CalendART" target="_blank" rel="noopener"><img src="assets/google-play-badge.png" alt="Google Play" /></a>
+            <a href="https://apps.apple.com/us/app/calendart-subliminal-ai-diary/id1573920118" target="_blank" rel="noopener"><img src="assets/ios-badge.svg" alt="App Store" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="app-screenshots">
+        <div class="app-screenshots-list">
+          <img class="app-screenshot" src="content/image/cart1.png" alt="CalendART screenshot 1" loading="lazy" />
+          <img class="app-screenshot" src="content/image/cart2.png" alt="CalendART screenshot 2" loading="lazy" />
+          <img class="app-screenshot" src="content/image/cart3.png" alt="CalendART screenshot 3" loading="lazy" />
+          <img class="app-screenshot" src="content/image/cart4.png" alt="CalendART screenshot 4" loading="lazy" />
+        </div>
+      </div>
+      <div class="app-description">
+        <h2>About CalendART</h2>
+        <p>CalendART is a new generation AI-supported mood tracker and bullet journal. Examine photos in different compositions, colors, concepts, and objects, then match one with your day. Your subconscious choices are analyzed with artificial intelligence to reveal insights about your mood and patterns.</p>
+        <ul>
+          <li><strong>Mood Analysis:</strong> AI analyzes your chosen photo to determine your mood for the day.</li>
+          <li><strong>Popularity:</strong> Photos are analyzed against other users' preferences to determine how popular your choices are.</li>
+          <li><strong>Color Analysis:</strong> Colors, objects, and details you seek in photographs are analyzed and presented as graphics.</li>
+          <li><strong>Bullet Journal:</strong> Create an annual bullet journal with colors from your chosen photos to see your favorite colors over time.</li>
+          <li><strong>Sharing:</strong> Share the results of your daily choices on social media with a single click.</li>
+          <li><strong>Stats:</strong> Analyze graphical outputs in 4 different time periods: weekly, monthly, yearly, and all-time average.</li>
+        </ul>
+      </div>
+    </div>
+  </main>
 
-	</div>
-</section>
-		</main>
+  <footer class="footer"><div class="container"><div class="footer-inner"><span class="footer-copy">&copy; 2025 umay.dev</span><div class="footer-links"><a href="https://github.com/Monotits" target="_blank" rel="noopener">github</a><a href="https://x.com/Monotits" target="_blank" rel="noopener">twitter</a></div></div></div></footer>
 
-		<script type="text/javascript" src="assets/tobi.min.js" /></script>
-		<script>
-			window.onload = function () {
-				var tobi = new Tobi();
-			};
-		</script>
-
-  </body>
+  <script src="js/umay.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+  <script>
+    var firebaseConfig={apiKey:"AIzaSyC-aG53JXrO_3rphAfuJVMOAUHLh8sGukE",authDomain:"umaydev-69a3b.firebaseapp.com",projectId:"umaydev-69a3b",storageBucket:"umaydev-69a3b.appspot.com",messagingSenderId:"461577843762",appId:"1:461577843762:web:048999505dc11efbdbb82b",measurementId:"G-6HZBBKY7DC"};
+    firebase.initializeApp(firebaseConfig);firebase.analytics();
+  </script>
+</body>
 </html>
-
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyC-aG53JXrO_3rphAfuJVMOAUHLh8sGukE",
-    authDomain: "umaydev-69a3b.firebaseapp.com",
-    projectId: "umaydev-69a3b",
-    storageBucket: "umaydev-69a3b.appspot.com",
-    messagingSenderId: "461577843762",
-    appId: "1:461577843762:web:048999505dc11efbdbb82b",
-    measurementId: "G-6HZBBKY7DC"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
-

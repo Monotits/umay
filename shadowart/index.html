@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShadowART - Mood Journal | Track Feelings. Find Patterns.</title>
+  <meta name="description" content="ShadowART is a privacy-first mood journal that transforms quick visual check-ins into deep emotional insights. 10-second mood check. Shadow archetypes. On-device processing." />
+  <meta name="keywords" content="mood journal, mood tracker, shadow work, emotional awareness, feelings diary, self awareness journal, affirmations, psychology, mental health, privacy journal" />
+  <meta name="author" content="umay.dev" />
+  <link rel="icon" href="../assets/favicon.png" />
+  <link rel="canonical" href="https://umay.dev/shadowart/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ShadowART - Mood Journal" />
+  <meta property="og:description" content="Track your mood in 10 seconds. Understand your emotions over time. Go deeper only when you're ready." />
+  <meta property="og:url" content="https://umay.dev/shadowart/" />
+  <meta property="og:image" content="https://umay.dev/assets/og-image.png" />
+  <meta property="og:site_name" content="umay.dev" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ShadowART - Mood Journal" />
+  <meta name="twitter:description" content="Track your mood in 10 seconds. Understand your emotions over time. Go deeper only when you're ready." />
+  <meta name="twitter:image" content="https://umay.dev/assets/og-image.png" />
+  <meta name="twitter:site" content="@Monotits" />
+  <meta name="twitter:creator" content="@Monotits" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "ShadowART - Mood Journal",
+    "operatingSystem": "iOS",
+    "applicationCategory": "HealthApplication",
+    "description": "A privacy-first mood journal that transforms quick visual check-ins into deep emotional insights — at your own pace.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Bugra",
+      "url": "https://umay.dev"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "ratingCount": "1"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/umay.css" />
+  <link rel="stylesheet" href="../css/shadowart.css" />
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="nav sa-nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">umay<span class="accent">.dev</span></a>
+      <div class="nav-links">
+        <a href="/#projects">projects</a>
+        <a href="#features">features</a>
+        <a href="#privacy">privacy</a>
+        <a href="#pricing">pricing</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="sa-hero">
+    <div class="sa-hero-bg"></div>
+    <div class="container sa-hero-content">
+      <div class="sa-hero-badge">Mood Journal for iOS</div>
+      <h1 class="sa-hero-title">Shadow<span class="sa-accent">ART</span></h1>
+      <p class="sa-hero-subtitle">Track your mood in <strong>10 seconds</strong>.<br>Understand your emotions over time.<br>Go deeper only when you're ready.</p>
+      <div class="sa-hero-cta">
+        <a href="#" class="sa-btn sa-btn-primary" aria-label="Download on App Store">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          Coming Soon on App Store
+        </a>
+      </div>
+      <p class="sa-hero-tagline">Start light. Go deep when ready.</p>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section class="sa-section" id="features">
+    <div class="container">
+      <h2 class="sa-section-title">How it works</h2>
+      <p class="sa-section-desc">Three layers of depth. Start with the surface. Go deeper only when you're ready.</p>
+
+      <div class="sa-layers">
+        <article class="sa-layer">
+          <div class="sa-layer-number">01</div>
+          <div class="sa-layer-badge sa-layer-free">Free</div>
+          <h3>Visual Entry</h3>
+          <p>Choose from 6 color-coded emotion cards. No writing required. Takes 10 seconds. Build a daily habit without pressure.</p>
+        </article>
+
+        <article class="sa-layer">
+          <div class="sa-layer-number">02</div>
+          <div class="sa-layer-badge sa-layer-free">Free</div>
+          <h3>Reflection</h3>
+          <p>Add optional journal entries when you feel like it. Watch real-time sentiment feedback as you write. Discover what's beneath the surface.</p>
+        </article>
+
+        <article class="sa-layer">
+          <div class="sa-layer-number">03</div>
+          <div class="sa-layer-badge sa-layer-pro">Pro</div>
+          <h3>Shadow Work</h3>
+          <p>Unlock shadow archetype detection, personalized affirmations, and guided audio sessions. See patterns you didn't know existed.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section class="sa-section sa-section-alt">
+    <div class="container">
+      <h2 class="sa-section-title">What makes ShadowART different</h2>
+      <p class="sa-section-desc">Unlike other mood trackers, ShadowART doesn't just log emotions — it helps you understand the patterns beneath them.</p>
+
+      <div class="sa-features-grid">
+        <div class="sa-feature">
+          <div class="sa-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+          <h4>10-Second Mood Check</h4>
+          <p>Visual check-in with emotion cards. No text needed to start.</p>
+        </div>
+        <div class="sa-feature">
+          <div class="sa-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h4>Emotional Patterns</h4>
+          <p>See weekly and monthly emotional patterns with radar charts and trends.</p>
+        </div>
+        <div class="sa-feature">
+          <div class="sa-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h4>Shadow Archetypes</h4>
+          <p>Discover 5 unique shadow archetypes through your journaling patterns.</p>
+        </div>
+        <div class="sa-feature">
+          <div class="sa-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          </div>
+          <h4>Guided Audio Sessions</h4>
+          <p>Integration sessions with sacred geometry visuals for deeper reflection.</p>
+        </div>
+        <div class="sa-feature">
+          <div class="sa-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h4>Personalized Affirmations</h4>
+          <p>Get affirmations generated from your own emotional patterns.</p>
+        </div>
+        <div class="sa-feature">
+          <div class="sa-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h4>Mood Calendar</h4>
+          <p>Track your emotional evolution over time with color-coded mood archive.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy -->
+  <section class="sa-section" id="privacy">
+    <div class="container">
+      <h2 class="sa-section-title">Privacy first — always</h2>
+      <p class="sa-section-desc">Your thoughts are yours alone. We built ShadowART with privacy as a foundation, not an afterthought.</p>
+
+      <div class="sa-privacy-grid">
+        <div class="sa-privacy-item">
+          <span class="sa-privacy-check">&#10003;</span>
+          <div>
+            <strong>100% on-device processing</strong>
+            <p>All analysis happens locally using Apple's built-in frameworks.</p>
+          </div>
+        </div>
+        <div class="sa-privacy-item">
+          <span class="sa-privacy-check">&#10003;</span>
+          <div>
+            <strong>No external servers</strong>
+            <p>Your data never leaves your device unless you choose iCloud sync.</p>
+          </div>
+        </div>
+        <div class="sa-privacy-item">
+          <span class="sa-privacy-check">&#10003;</span>
+          <div>
+            <strong>No ads, no third-party trackers</strong>
+            <p>Zero tracking. Zero data selling. Period.</p>
+          </div>
+        </div>
+        <div class="sa-privacy-item">
+          <span class="sa-privacy-check">&#10003;</span>
+          <div>
+            <strong>Face ID / Touch ID protection</strong>
+            <p>Biometric lock keeps your journal private even on shared devices.</p>
+          </div>
+        </div>
+        <div class="sa-privacy-item">
+          <span class="sa-privacy-check">&#10003;</span>
+          <div>
+            <strong>iCloud sync through your Apple account</strong>
+            <p>End-to-end encrypted sync across all your devices.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="sa-section sa-section-alt" id="pricing">
+    <div class="container">
+      <h2 class="sa-section-title">Simple pricing</h2>
+      <p class="sa-section-desc">Start free. Unlock deeper insights when you're ready.</p>
+
+      <div class="sa-pricing-grid">
+        <div class="sa-price-card">
+          <div class="sa-price-name">Free</div>
+          <div class="sa-price-amount">$0</div>
+          <ul class="sa-price-features">
+            <li>Visual mood check-in (6 emotion cards)</li>
+            <li>Optional journaling with sentiment feedback</li>
+            <li>Weekly emotional patterns</li>
+            <li>Mood calendar archive</li>
+            <li>On-device privacy</li>
+          </ul>
+        </div>
+        <div class="sa-price-card sa-price-featured">
+          <div class="sa-price-badge">Most Popular</div>
+          <div class="sa-price-name">Pro Yearly</div>
+          <div class="sa-price-amount">$49.99<span>/year</span></div>
+          <div class="sa-price-save">~$4.17/mo — Save 40%</div>
+          <ul class="sa-price-features">
+            <li>Everything in Free, plus:</li>
+            <li>Shadow archetype detection (5 archetypes)</li>
+            <li>Personalized affirmations</li>
+            <li>Guided audio sessions</li>
+            <li>Unlimited mood history</li>
+            <li>Pattern illumination & keyword tracking</li>
+            <li>Critical trigger detection</li>
+            <li>Biometric app lock</li>
+            <li>iCloud sync across devices</li>
+          </ul>
+          <div class="sa-price-trial">7-day free trial</div>
+        </div>
+        <div class="sa-price-card">
+          <div class="sa-price-name">Pro Monthly</div>
+          <div class="sa-price-amount">$6.99<span>/month</span></div>
+          <ul class="sa-price-features">
+            <li>Everything in Pro Yearly</li>
+            <li>Cancel anytime</li>
+          </ul>
+          <div class="sa-price-trial">7-day free trial</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="sa-section sa-cta">
+    <div class="container">
+      <h2 class="sa-cta-title">Start light. Go deep when ready.</h2>
+      <p class="sa-cta-desc">Your first mood check takes 10 seconds. No account required.</p>
+      <a href="#" class="sa-btn sa-btn-primary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Coming Soon on App Store
+      </a>
+    </div>
+  </section>
+
+  <!-- Disclaimer -->
+  <section class="sa-disclaimer">
+    <div class="container">
+      <p>ShadowART does not diagnose, prescribe, or replace professional therapy. It supports emotional self-awareness through pattern recognition and reflection.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-copy">&copy; 2025 umay.dev</span>
+        <div class="footer-links">
+          <a href="https://github.com/Monotits" target="_blank" rel="noopener">github</a>
+          <a href="https://x.com/Monotits" target="_blank" rel="noopener">twitter</a>
+          <a href="/">home</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/umay.js"></script>
+</body>
+</html>
