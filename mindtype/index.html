@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MindType - Decision Mirror | Discover Your Decision Archetype</title>
+  <meta name="description" content="MindType is a game theory-based decision app that reveals your thinking patterns through classic micro-games. 11 legendary games. 6 archetypes. 10 dimensions of your mind." />
+  <meta name="keywords" content="decision making, game theory, cognitive bias, archetype, decision mirror, micro games, psychology, self-discovery, AI insights, mind map" />
+  <meta name="author" content="umay.dev" />
+  <link rel="icon" href="../assets/favicon.png" />
+  <link rel="canonical" href="https://umay.dev/mindtype/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MindType - Decision Mirror" />
+  <meta property="og:description" content="Classic decision games finally reveal who you really are. 11 games. 6 archetypes. 10 dimensions." />
+  <meta property="og:url" content="https://umay.dev/mindtype/" />
+  <meta property="og:image" content="https://umay.dev/assets/og-image.png" />
+  <meta property="og:site_name" content="umay.dev" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MindType - Decision Mirror" />
+  <meta name="twitter:description" content="Classic decision games finally reveal who you really are. 11 games. 6 archetypes. 10 dimensions." />
+  <meta name="twitter:image" content="https://umay.dev/assets/og-image.png" />
+  <meta name="twitter:site" content="@Monotits" />
+  <meta name="twitter:creator" content="@Monotits" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "MindType - Decision Mirror",
+    "operatingSystem": "iOS",
+    "applicationCategory": "GameApplication",
+    "description": "A game theory-based decision-making app that reveals your thinking patterns through classic micro-games and AI-powered insights.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Bugra",
+      "url": "https://umay.dev"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/umay.css" />
+  <link rel="stylesheet" href="../css/mindtype.css" />
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="nav mt-nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">umay<span class="accent">.dev</span></a>
+      <div class="nav-links">
+        <a href="/#projects">projects</a>
+        <a href="#features">features</a>
+        <a href="#privacy">privacy</a>
+        <a href="#pricing">pricing</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="mt-hero">
+    <div class="mt-hero-bg"></div>
+    <div class="container mt-hero-content">
+      <img class="mt-hero-icon" src="../img/mindtype.png" alt="MindType App Icon" width="120" height="120" />
+      <div class="mt-hero-badge">Decision Mirror for iOS</div>
+      <h1 class="mt-hero-title">Mind<span class="mt-accent">Type</span></h1>
+      <p class="mt-hero-subtitle">Classic decision games finally reveal <strong>who you really are</strong>.<br>11 games. 6 archetypes. 10 dimensions.</p>
+      <div class="mt-hero-cta">
+        <a href="#" class="mt-btn mt-btn-primary" aria-label="Download on App Store">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          Coming Soon on App Store
+        </a>
+      </div>
+      <p class="mt-hero-tagline">3 minutes. One game. Know yourself better.</p>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="mt-section mt-screenshots-section">
+    <div class="container">
+      <div class="mt-screenshots">
+        <div class="mt-screenshot">
+          <img src="../assets/TypeMind/MindType_AppStore_01.png" alt="MindType - Game theory meets self-discovery" loading="lazy" width="300" />
+        </div>
+        <div class="mt-screenshot">
+          <img src="../assets/TypeMind/MindType_AppStore_02.png" alt="MindType - 11 legendary decision games" loading="lazy" width="300" />
+        </div>
+        <div class="mt-screenshot">
+          <img src="../assets/TypeMind/MindType_AppStore_03.png" alt="MindType - Instant analysis and scores" loading="lazy" width="300" />
+        </div>
+        <div class="mt-screenshot">
+          <img src="../assets/TypeMind/MindType_AppStore_04.png" alt="MindType - Meet your decision archetype" loading="lazy" width="300" />
+        </div>
+        <div class="mt-screenshot">
+          <img src="../assets/TypeMind/MindType_AppStore_05.png" alt="MindType - 10 dimensions of your mind" loading="lazy" width="300" />
+        </div>
+        <div class="mt-screenshot">
+          <img src="../assets/TypeMind/MindType_AppStore_06.png" alt="MindType - Watch yourself evolve" loading="lazy" width="300" />
+        </div>
+        <div class="mt-screenshot">
+          <img src="../assets/TypeMind/MindType_AppStore_07.png" alt="MindType - AI-powered decision insights" loading="lazy" width="300" />
+        </div>
+        <div class="mt-screenshot">
+          <img src="../assets/TypeMind/MindType_AppStore_08.png" alt="MindType - Turn blind spots into strengths" loading="lazy" width="300" />
+        </div>
+        <div class="mt-screenshot">
+          <img src="../assets/TypeMind/MindType_AppStore_09.png" alt="MindType - Your decision fingerprint" loading="lazy" width="300" />
+        </div>
+        <div class="mt-screenshot">
+          <img src="../assets/TypeMind/MindType_AppStore_10.png" alt="MindType - Share your decision identity" loading="lazy" width="300" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section class="mt-section" id="features">
+    <div class="container">
+      <h2 class="mt-section-title">How it works</h2>
+      <p class="mt-section-desc">Three steps to understand your decision-making mind. Start playing. Discover patterns you never knew existed.</p>
+
+      <div class="mt-layers">
+        <article class="mt-layer">
+          <div class="mt-layer-number">01</div>
+          <div class="mt-layer-badge mt-layer-free">Free</div>
+          <h3>Play</h3>
+          <p>Choose from 11 legendary game theory scenarios. Each takes only 3 minutes. No right or wrong answers &mdash; just real decisions that mirror your thinking.</p>
+        </article>
+
+        <article class="mt-layer">
+          <div class="mt-layer-number">02</div>
+          <div class="mt-layer-badge mt-layer-free">Free</div>
+          <h3>Discover</h3>
+          <p>See instant analysis after every game. Your scores, biases, and decision style &mdash; compared against the population. Find your archetype among 6 unique types.</p>
+        </article>
+
+        <article class="mt-layer">
+          <div class="mt-layer-number">03</div>
+          <div class="mt-layer-badge mt-layer-pro">Premium</div>
+          <h3>Evolve</h3>
+          <p>Unlock AI-powered insights, weekly reports, and personalized weakness training. Watch your decision score grow as you develop your cognitive blind spots.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section class="mt-section mt-section-alt">
+    <div class="container">
+      <h2 class="mt-section-title">What makes MindType different</h2>
+      <p class="mt-section-desc">Not another personality quiz. MindType uses real game theory &mdash; the same science behind Nobel Prize-winning research &mdash; to decode how you actually think.</p>
+
+      <div class="mt-features-grid">
+        <div class="mt-feature">
+          <div class="mt-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/><line x1="12" y1="22" x2="12" y2="15.5"/><polyline points="22 8.5 12 15.5 2 8.5"/></svg>
+          </div>
+          <h4>11 Game Types</h4>
+          <p>Classic decision theory games &mdash; from Trust and Ultimatum to Prisoner's Dilemma. Each mirrors real thinking.</p>
+        </div>
+        <div class="mt-feature">
+          <div class="mt-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h4>6 Archetypes</h4>
+          <p>Discover your decision type &mdash; Strategic Maximizer, Social Harmonizer, Cautious Analyzer, and more.</p>
+        </div>
+        <div class="mt-feature">
+          <div class="mt-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+          </div>
+          <h4>10 Dimensions</h4>
+          <p>Cooperation, trust, risk, fairness, patience, adaptability &mdash; all mapped with precision on your radar chart.</p>
+        </div>
+        <div class="mt-feature">
+          <div class="mt-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h4>AI Insights</h4>
+          <p>Gemini AI reads between your decisions &mdash; personalized patterns, reports, and recommendations that get smarter over time.</p>
+        </div>
+        <div class="mt-feature">
+          <div class="mt-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h4>11 Cognitive Biases</h4>
+          <p>Detect hidden biases like anchoring effect, loss aversion, and status quo bias. Turn blind spots into strengths.</p>
+        </div>
+        <div class="mt-feature">
+          <div class="mt-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h4>Decision Journal</h4>
+          <p>Track your evolution over days, weeks, and months. See your decision score trend and dimension profile shifts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy -->
+  <section class="mt-section" id="privacy">
+    <div class="container">
+      <h2 class="mt-section-title">Privacy by design</h2>
+      <p class="mt-section-desc">No email. No password. No personal data required. MindType works with anonymous authentication from day one.</p>
+
+      <div class="mt-privacy-grid">
+        <div class="mt-privacy-item">
+          <span class="mt-privacy-check">&#10003;</span>
+          <div>
+            <strong>Anonymous by default</strong>
+            <p>Firebase Anonymous Auth &mdash; no email, name, or password required to play.</p>
+          </div>
+        </div>
+        <div class="mt-privacy-item">
+          <span class="mt-privacy-check">&#10003;</span>
+          <div>
+            <strong>No ads, no third-party trackers</strong>
+            <p>Zero advertising identifiers. Zero data selling. Period.</p>
+          </div>
+        </div>
+        <div class="mt-privacy-item">
+          <span class="mt-privacy-check">&#10003;</span>
+          <div>
+            <strong>AI without your identity</strong>
+            <p>Only aggregated, anonymized stats are sent to Gemini AI. No personal identifiers ever leave the system.</p>
+          </div>
+        </div>
+        <div class="mt-privacy-item">
+          <span class="mt-privacy-check">&#10003;</span>
+          <div>
+            <strong>Data export &amp; deletion</strong>
+            <p>Export your full data as JSON or permanently delete everything &mdash; one tap in Settings.</p>
+          </div>
+        </div>
+        <div class="mt-privacy-item">
+          <span class="mt-privacy-check">&#10003;</span>
+          <div>
+            <strong>Encrypted end-to-end</strong>
+            <p>All data encrypted with TLS 1.3 in transit and AES-256 at rest. Google Cloud security standards.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="mt-section mt-section-alt" id="pricing">
+    <div class="container">
+      <h2 class="mt-section-title">Simple pricing</h2>
+      <p class="mt-section-desc">Start free. Unlock your full decision profile when you're ready.</p>
+
+      <div class="mt-pricing-grid">
+        <div class="mt-price-card">
+          <div class="mt-price-name">Free</div>
+          <div class="mt-price-amount">$0</div>
+          <ul class="mt-price-features">
+            <li>3 games per day</li>
+            <li>28 bundled game scenarios</li>
+            <li>Basic decision profile</li>
+            <li>Template explanations</li>
+            <li>Archetype discovery</li>
+          </ul>
+        </div>
+        <div class="mt-price-card mt-price-featured">
+          <div class="mt-price-badge">Best Value</div>
+          <div class="mt-price-name">Premium Yearly</div>
+          <div class="mt-price-amount">$59.99<span>/year</span></div>
+          <div class="mt-price-save">~$5.00/mo &mdash; Save vs monthly</div>
+          <ul class="mt-price-features">
+            <li>Everything in Free, plus:</li>
+            <li>Unlimited games</li>
+            <li>AI-generated scenarios (Gemini)</li>
+            <li>Weekly &amp; monthly AI reports</li>
+            <li>Weakness development training</li>
+            <li>11 cognitive bias detection</li>
+            <li>Decision timeline &amp; journal</li>
+            <li>Push insights &amp; pattern alerts</li>
+            <li>Share archetype cards</li>
+          </ul>
+        </div>
+        <div class="mt-price-card">
+          <div class="mt-price-name">Premium Monthly</div>
+          <div class="mt-price-amount">$7.99<span>/month</span></div>
+          <ul class="mt-price-features">
+            <li>Everything in Premium Yearly</li>
+            <li>Cancel anytime</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="mt-section mt-cta">
+    <div class="container">
+      <h2 class="mt-cta-title">3 minutes. One game. Know yourself better.</h2>
+      <p class="mt-cta-desc">No account required. No personal data needed. Just play.</p>
+      <a href="#" class="mt-btn mt-btn-primary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Coming Soon on App Store
+      </a>
+    </div>
+  </section>
+
+  <!-- Disclaimer -->
+  <section class="mt-disclaimer">
+    <div class="container">
+      <p>MindType is an entertainment and educational application. It does not provide professional psychological assessment, clinical diagnosis, or substitute for professional mental health advice.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-copy">&copy; 2025 umay.dev</span>
+        <div class="footer-links">
+          <a href="/mindtype_privacy_policy.html">privacy policy</a>
+          <a href="/mindtype_terms_of_use.html">terms of use</a>
+          <a href="https://github.com/Monotits" target="_blank" rel="noopener">github</a>
+          <a href="https://x.com/Monotits" target="_blank" rel="noopener">twitter</a>
+          <a href="/">home</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/umay.js"></script>
+</body>
+</html>
