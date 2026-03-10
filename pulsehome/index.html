@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pulse Home - WiFi Smart Home Automation for Mac | No Hubs Needed</title>
+  <meta name="description" content="Pulse Home turns your MacBook into a smart home hub. WiFi-based automation, HomeKit integration, custom rules, webhooks — no extra devices needed." />
+  <meta name="keywords" content="smart home, home automation, wifi automation, macOS, mac app, homekit, webhooks, geofence, pulse home, umay.dev" />
+  <meta name="author" content="umay.dev" />
+  <link rel="icon" href="../assets/favicon.png" />
+  <link rel="canonical" href="https://umay.dev/pulsehome/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pulse Home - WiFi Smart Home Automation for Mac" />
+  <meta property="og:description" content="Your Mac is already a smart home hub. WiFi-based automation, HomeKit, rules, webhooks — no extra hardware." />
+  <meta property="og:url" content="https://umay.dev/pulsehome/" />
+  <meta property="og:image" content="https://umay.dev/assets/og-image.png" />
+  <meta property="og:site_name" content="umay.dev" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pulse Home - WiFi Smart Home Automation for Mac" />
+  <meta name="twitter:description" content="Your Mac is already a smart home hub. WiFi-based automation, HomeKit, rules, webhooks — no extra hardware." />
+  <meta name="twitter:image" content="https://umay.dev/assets/og-image.png" />
+  <meta name="twitter:site" content="@Monotits" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Pulse Home",
+    "operatingSystem": "macOS",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "WiFi-based smart home automation for Mac. Custom rules, HomeKit integration, webhooks, geofence triggers — no extra hardware needed.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "author": { "@type": "Person", "name": "Bugra", "url": "https://umay.dev" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/umay.css" />
+  <link rel="stylesheet" href="../css/pulse.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">umay<span class="accent">.dev</span></a>
+      <div class="nav-links">
+        <a href="/#projects">projects</a>
+        <a href="#features">features</a>
+        <a href="../pulseguard/">Pulse Guard</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pulse-hero">
+    <div class="pulse-hero-bg"></div>
+    <div class="container pulse-hero-content">
+      <img class="pulse-hero-icon" src="../img/pulsehome.png" alt="Pulse Home App Icon" width="100" height="100" />
+      <div class="pulse-hero-badge">Smart Home Automation for macOS</div>
+      <h1 class="pulse-hero-title">Pulse <span class="pulse-accent">Home</span></h1>
+      <p class="pulse-hero-subtitle">Your Mac is already a smart home hub. Create automation rules triggered by WiFi presence, geofence, and HomeKit &mdash; <strong>no hubs or extra devices needed.</strong></p>
+      <div class="pulse-hero-cta">
+        <a href="#" class="pulse-btn pulse-btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          Download on Mac App Store
+        </a>
+      </div>
+      <p class="pulse-hero-tagline">Free to start. Pro unlocks unlimited rules, webhooks &amp; geofence.</p>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="pulse-section">
+    <div class="container">
+      <div class="pulse-screenshots">
+        <div class="pulse-screenshot pulse-screenshot-mac"><img src="../assets/Pulse/Home/home_05_welcome.png" alt="Pulse Home Welcome" loading="lazy" /></div>
+        <div class="pulse-screenshot pulse-screenshot-mac"><img src="../assets/Pulse/Home/home_01_menubar.png" alt="Pulse Home Menu Bar" loading="lazy" /></div>
+        <div class="pulse-screenshot pulse-screenshot-mac"><img src="../assets/Pulse/Home/home_02_settings.png" alt="Pulse Home Settings" loading="lazy" /></div>
+        <div class="pulse-screenshot pulse-screenshot-mac"><img src="../assets/Pulse/Home/home_03_rules.png" alt="Pulse Home Rules" loading="lazy" /></div>
+        <div class="pulse-screenshot pulse-screenshot-mac"><img src="../assets/Pulse/Home/home_04_rulebuilder.png" alt="Pulse Home Rule Builder" loading="lazy" /></div>
+        <div class="pulse-screenshot pulse-screenshot-mac"><img src="../assets/Pulse/Home/home_06_scanning.png" alt="Pulse Home Scanning" loading="lazy" /></div>
+        <div class="pulse-screenshot pulse-screenshot-mac"><img src="../assets/Pulse/Home/home_07_calibration.png" alt="Pulse Home Calibration" loading="lazy" /></div>
+        <div class="pulse-screenshot pulse-screenshot-mac"><img src="../assets/Pulse/Home/home_08_firstautomation.png" alt="Pulse Home First Automation" loading="lazy" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="pulse-section pulse-section-alt" id="features">
+    <div class="container">
+      <h2 class="pulse-section-title">What it does</h2>
+      <p class="pulse-section-desc">Pulse Home detects when you arrive or leave using WiFi signals, then triggers automations you define. Lights, locks, notifications, webhooks &mdash; your rules, your way.</p>
+
+      <div class="pulse-features">
+        <div class="pulse-feature">
+          <div class="pulse-feature-icon" style="background:rgba(64,133,255,0.1);color:#4085FF;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+          </div>
+          <h4>Custom Automation Rules</h4>
+          <p>Visual rule builder with triggers, conditions, delays, and actions. If-this-then-that logic tailored to your home.</p>
+        </div>
+        <div class="pulse-feature">
+          <div class="pulse-feature-icon" style="background:rgba(0,199,235,0.1);color:#00C7EB;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h4>HomeKit Integration</h4>
+          <p>Control HomeKit devices based on WiFi presence. Lights on when you arrive, everything off when you leave.</p>
+        </div>
+        <div class="pulse-feature">
+          <div class="pulse-feature-icon" style="background:rgba(33,199,140,0.1);color:#21C78C;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+          </div>
+          <h4>Geofence Triggers</h4>
+          <p>Set location-based zones. Automations fire when you enter or leave an area &mdash; perfect for "leaving home" routines.</p>
+        </div>
+        <div class="pulse-feature">
+          <div class="pulse-feature-icon" style="background:rgba(255,165,50,0.1);color:#FFA532;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h4>Webhooks</h4>
+          <p>Send HTTP requests to Home Assistant, IFTTT, Node-RED, or any endpoint. Connect Pulse Home to your existing smart home stack.</p>
+        </div>
+        <div class="pulse-feature">
+          <div class="pulse-feature-icon" style="background:rgba(64,133,255,0.1);color:#4085FF;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/></svg>
+          </div>
+          <h4>WiFi Presence Detection</h4>
+          <p>Syncs with Pulse Guard calibration. Knows when someone is home based on WiFi signal patterns &mdash; no motion sensors needed.</p>
+        </div>
+        <div class="pulse-feature">
+          <div class="pulse-feature-icon" style="background:rgba(0,199,235,0.1);color:#00C7EB;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h4>Menu Bar Control</h4>
+          <p>Compact menu bar interface. See status at a glance, switch modes, and manage your home without opening a window.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Companion -->
+  <section class="pulse-section pulse-companion-section">
+    <div class="container">
+      <div class="pulse-ecosystem-badge"><span class="pulse-ecosystem-dot"></span> Part of the Pulse Ecosystem</div>
+      <h2 class="pulse-section-title" style="text-align:center;">Control from your iPhone</h2>
+      <p class="pulse-section-desc" style="margin:0 auto 36px;text-align:center;">Pulse Companion lets you monitor and control your smart home from anywhere. Switch modes, get alerts, and check status on the go.</p>
+      <div class="pulse-companion-grid">
+        <div class="pulse-screenshot pulse-screenshot-ios"><img src="../assets/Pulse/Companion/companion_01_dashboard.png" alt="Pulse Companion Dashboard" loading="lazy" /></div>
+        <div class="pulse-screenshot pulse-screenshot-ios"><img src="../assets/Pulse/Companion/companion_02_welcome.png" alt="Pulse Companion Welcome" loading="lazy" /></div>
+        <div class="pulse-screenshot pulse-screenshot-ios"><img src="../assets/Pulse/Companion/companion_03_privacy.png" alt="Pulse Companion Privacy" loading="lazy" /></div>
+        <div class="pulse-screenshot pulse-screenshot-ios"><img src="../assets/Pulse/Companion/companion_04_allset.png" alt="Pulse Companion Setup" loading="lazy" /></div>
+        <div class="pulse-screenshot pulse-screenshot-ios"><img src="../assets/Pulse/Companion/companion_05_settings.png" alt="Pulse Companion Settings" loading="lazy" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Legal & Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="pulse-legal">
+        <a href="../pulse_privacy.html">Privacy Policy</a>
+        <a href="../pulse_terms.html">Terms of Use</a>
+        <a href="mailto:yumaydev@gmail.com">Contact</a>
+      </div>
+      <div class="footer-inner">
+        <span class="footer-copy">&copy; 2025 umay.dev</span>
+        <div class="footer-links">
+          <a href="https://github.com/Monotits" target="_blank" rel="noopener">github</a>
+          <a href="https://x.com/Monotits" target="_blank" rel="noopener">twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/umay.js"></script>
+</body>
+</html>
