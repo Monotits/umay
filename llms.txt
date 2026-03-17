@@ -1,0 +1,50 @@
+# umay.dev
+
+> umay.dev is the portfolio and product hub of Bugra, an indie developer specializing in mobile apps, AI-powered tools, and creative software experiments. Based in Turkey, Bugra builds and ships apps to the Apple App Store and Google Play Store using Flutter, Swift, Python, and Firebase.
+
+## Active Products
+
+### Pulse Guard
+WiFi-based home security app for macOS. Uses your MacBook's WiFi signals to detect human presence without cameras or extra hardware. Features include real-time monitoring, customizable alerts, and zone-based detection using WiFi Channel State Information (CSI) analysis.
+- Platform: macOS
+- Category: Security & Privacy
+- URL: https://umay.dev/pulseguard/
+
+### Pulse Home
+WiFi smart home automation app for macOS. Create custom rules, Apple HomeKit integration, webhooks, and geofence triggers using your Mac as the hub.
+- Platform: macOS
+- Category: Home Automation
+- URL: https://umay.dev/pulsehome/
+
+### ShadowART
+Jungian shadow work journal and mood tracker for iOS. AI-guided self-reflection through Carl Jung's archetypes, real-time sentiment analysis, mood tracking, dream journaling, and guided audio sessions. Privacy-first with 100% on-device processing using Apple Core ML.
+- Platform: iOS
+- Category: Health & Wellness, Mental Health
+- URL: https://umay.dev/shadowart/
+
+### MindType
+Decision mirror app for iOS. Game theory micro-games based on Nash Equilibrium and Prisoner's Dilemma that reveal thinking patterns, cognitive archetypes, and decision-making biases.
+- Platform: iOS
+- Category: Psychology, Games
+- URL: https://umay.dev/mindtype/
+
+### Brolled
+Meme maker app for iOS. Six viral tools in one app including texting stories, fake chats, meme sounds, comment overlays, and time cards. Built for content creators on TikTok, Instagram, and YouTube Shorts.
+- Platform: iOS
+- Category: Entertainment, Video
+- URL: https://umay.dev/brolled/
+
+## Developer Profile
+
+- Name: Bugra
+- Role: Indie Developer & App Creator
+- Location: Turkey
+- Technologies: Flutter, Dart, Swift, SwiftUI, Kotlin, Python, Firebase, AI/ML, Core ML, NLP, HomeKit, REST APIs
+- GitHub: https://github.com/Monotits
+- Twitter/X: https://x.com/Monotits
+- Website: https://umay.dev
+- Blog: https://umay.dev/blog/
+
+## Contact
+
+For business inquiries, collaborations, or press: visit https://umay.dev or reach out via Twitter/X @Monotits.
