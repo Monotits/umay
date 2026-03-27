@@ -34,9 +34,64 @@
     "operatingSystem": "macOS",
     "applicationCategory": "UtilitiesApplication",
     "description": "WiFi-based smart home automation for Mac. Custom rules, HomeKit integration, webhooks, geofence triggers — no extra hardware needed.",
+    "datePublished": "2024-01-15",
     "dateModified": "2026-03-17",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
     "author": { "@type": "Organization", "name": "umay.dev", "url": "https://umay.dev" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://umay.dev/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Pulse Home",
+        "item": "https://umay.dev/pulsehome/"
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does Pulse Home connect to HomeKit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pulse Home integrates directly with your HomeKit ecosystem, allowing you to control HomeKit-enabled devices based on WiFi presence detection. Once connected, you can create automation rules that trigger HomeKit actions when you arrive or leave your home. The integration uses native HomeKit APIs for seamless device control and supports all standard HomeKit-compatible devices."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Pulse Home automate devices without my phone?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Pulse Home automates entirely from your Mac. The app runs as a menu bar utility that continuously monitors WiFi signals and geofence locations, triggering automations without requiring your phone to be present. Once your rules are set up, all automation happens on your Mac independently of mobile devices."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What triggers can I use with Pulse Home?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pulse Home offers multiple trigger types: WiFi presence detection, geofence zones, and custom conditions. You can create automations that fire when you arrive or leave home, enter specific zones, or based on time and other conditions. Each trigger supports actions like HomeKit device control, webhooks to external services, notifications, and sequences with customizable delays."
+        }
+      }
+    ]
   }
   </script>
 
@@ -147,6 +202,20 @@
           <p>Compact menu bar interface. See status at a glance, switch modes, and manage your home without opening a window.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Deep Dive -->
+  <section class="pulse-section">
+    <div class="container">
+      <h2 class="pulse-section-title">Why Your Mac Is the Perfect Smart Home Hub</h2>
+      <p class="pulse-section-desc">Most smart home setups require dedicated hubs, cloud subscriptions, or always-on servers. Pulse Home takes a different approach: your Mac is already on, already connected to your network, and already powerful enough to run complex automation logic locally — making it the ideal smart home controller.</p>
+      <h3 style="margin:24px 0 12px;font-size:1.1rem;">Rule Engine Architecture</h3>
+      <p style="color:var(--text-muted);line-height:1.7;margin-bottom:16px;">Pulse Home's rule builder uses an if-this-then-that logic engine that supports multiple triggers, conditions, and chained actions with configurable delays. You can combine WiFi presence triggers with time-based conditions, chain multiple HomeKit device commands, and insert webhook calls to external services — all from a visual interface without writing any code. Rules run entirely on your Mac with zero cloud dependency.</p>
+      <h3 style="margin:24px 0 12px;font-size:1.1rem;">HomeKit, Webhooks &amp; Beyond</h3>
+      <p style="color:var(--text-muted);line-height:1.7;margin-bottom:16px;">Pulse Home natively integrates with Apple HomeKit through the HomeKit framework, giving you direct access to all compatible lights, locks, thermostats, and sensors. For devices outside the Apple ecosystem, the webhook action lets you send HTTP requests to Home Assistant, Node-RED, IFTTT, or any custom REST API endpoint. This hybrid approach means Pulse Home works with virtually any smart home device regardless of manufacturer.</p>
+      <h3 style="margin:24px 0 12px;font-size:1.1rem;">WiFi Presence + Geofence</h3>
+      <p style="color:var(--text-muted);line-height:1.7;">Pulse Home uses two complementary presence detection methods. WiFi presence analysis detects whether someone is physically in the room by monitoring signal patterns (syncing with Pulse Guard calibration data). Geofence triggers use your Mac's location to fire automations when you enter or leave a defined geographic zone. Together, these provide reliable arrival and departure detection without requiring Bluetooth beacons or GPS trackers.</p>
     </div>
   </section>
 

@@ -34,9 +34,64 @@
     "operatingSystem": "macOS",
     "applicationCategory": "UtilitiesApplication",
     "description": "WiFi signal-based home security for Mac. Detects presence using WiFi and Bluetooth — no cameras or extra hardware needed.",
+    "datePublished": "2024-01-15",
     "dateModified": "2026-03-17",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
     "author": { "@type": "Organization", "name": "umay.dev", "url": "https://umay.dev" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://umay.dev/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Pulse Guard",
+        "item": "https://umay.dev/pulseguard/"
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does Pulse Guard detect motion without cameras?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pulse Guard monitors WiFi signal fluctuations (RSSI values) from your Mac's adapter and uses Bluetooth scanning to detect presence. When someone enters a room, WiFi signals naturally shift, allowing the app to detect environmental changes without any cameras or extra hardware. This physics-based detection method analyzes signal patterns in real-time to identify human presence accurately."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Pulse Guard work with any MacBook?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pulse Guard is designed for macOS and works on any MacBook with WiFi and Bluetooth capabilities. The app runs as a menu bar utility that stays active in the background, monitoring your home security without requiring additional devices or setup. It's compatible with modern macOS versions and requires minimal system resources."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my data private with Pulse Guard?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Pulse Guard provides 100% privacy protection. All data stays entirely on your device with no servers, cloud storage, or external tracking. Your security data, WiFi analysis results, and Bluetooth device logs never leave your Mac, ensuring complete privacy and giving you full control over your home security information."
+        }
+      }
+    ]
   }
   </script>
 
@@ -147,6 +202,20 @@
           <p>All data stays on your device. No servers, no cloud, no tracking. Your security data never leaves your Mac.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Deep Dive -->
+  <section class="pulse-section">
+    <div class="container">
+      <h2 class="pulse-section-title">The Science Behind WiFi Security</h2>
+      <p class="pulse-section-desc">Pulse Guard leverages a principle from wireless communications research: WiFi signals are affected by everything in their environment, including people. When a person enters a room, their body absorbs and reflects radio waves, creating measurable disturbances in the WiFi signal pattern that your MacBook's adapter can detect.</p>
+      <h3 style="margin:24px 0 12px;font-size:1.1rem;">Channel State Information (CSI) Analysis</h3>
+      <p style="color:var(--text-muted);line-height:1.7;margin-bottom:16px;">Traditional motion detection relies on cameras or infrared sensors. Pulse Guard takes a fundamentally different approach by analyzing WiFi Channel State Information — the fine-grained signal data that describes how radio waves travel between your router and your Mac. CSI captures amplitude and phase information across multiple subcarriers, providing a detailed fingerprint of the wireless environment. When this fingerprint changes, Pulse Guard knows something has moved.</p>
+      <h3 style="margin:24px 0 12px;font-size:1.1rem;">Calibration &amp; Baseline Learning</h3>
+      <p style="color:var(--text-muted);line-height:1.7;margin-bottom:16px;">During initial setup, Pulse Guard learns the baseline signal pattern of your room when it is empty. This calibration phase typically takes 2-3 minutes. Once calibrated, the app continuously compares live signal data against this baseline, detecting even subtle environmental changes. The sensitivity threshold is fully adjustable — you can fine-tune it to ignore pets while still detecting human-sized movement.</p>
+      <h3 style="margin:24px 0 12px;font-size:1.1rem;">Real-World Use Cases</h3>
+      <p style="color:var(--text-muted);line-height:1.7;">Pulse Guard is ideal for home offices, apartments, and small spaces where camera surveillance feels invasive. Remote workers use it to know when someone enters their workspace. Parents use it as a lightweight baby room monitor. Privacy-conscious users appreciate that no visual data is ever captured or stored — just radio wave patterns that cannot identify individuals.</p>
     </div>
   </section>
 

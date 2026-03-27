@@ -12,6 +12,8 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Turning Your Mac Into a Smart Home Hub - umay.dev" />
   <meta property="og:description" content="How Pulse Home turns your Mac into a smart home hub with HomeKit, webhooks, and geofence." />
+  <meta property="og:image" content="https://umay.dev/img/pulsehome.png" />
+  <meta name="twitter:image" content="https://umay.dev/img/pulsehome.png" />
   <meta property="og:url" content="https://umay.dev/blog/turning-your-mac-into-a-smart-home-hub.html" />
   <meta property="og:site_name" content="umay.dev" />
   <meta name="twitter:card" content="summary" />
@@ -20,6 +22,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/umay.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://umay.dev/"},
+      {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://umay.dev/blog/"},
+      {"@type": "ListItem", "position": 3, "name": "Turning Your Mac Into a Smart Home Hub"}
+    ]
+  }
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -35,9 +48,58 @@
 </head>
 <body>
   <nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo">umay<span class="accent">.dev</span></a><div class="nav-links"><a href="/#products">products</a><a href="/#about">about</a><a href="/#blog">blog</a><button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></div></nav>
-  <article class="blog-post"><div class="container"><a href="/#blog" class="blog-back">&larr; back to blog</a><header class="blog-post-header"><div class="blog-post-date">2026-03-12</div><h1 class="blog-post-title">Turning Your Mac Into a Smart Home Hub</h1></header><div class="blog-post-content" id="postContent"></div></div></article>
+  <article class="blog-post"><div class="container"><a href="/#blog" class="blog-back">&larr; back to blog</a><header class="blog-post-header"><div class="blog-post-date">2026-03-12</div><h1 class="blog-post-title">Turning Your Mac Into a Smart Home Hub</h1></header><div id="prerendered-content">
+<p>Smart home hubs are <strong>expensive</strong>. They sit on your shelf collecting dust, offering limited integrations and locked-in ecosystems. You've invested in HomeKit devices, but you're tethered to Apple TV or HomePod to make it all work. Meanwhile, your Mac sits on your desk—always on, always connected, incredibly powerful. We built <strong>Pulse Home</strong> because we realized the obvious solution: why not use your Mac as your smart home hub?</p>
+<h2>The Problem With Traditional Hubs</h2>
+<p>Smart home automation has a middleman problem. You buy a hub device. It costs $100-300. It requires its own power, its own network setup, and its own maintenance. Then it becomes a single point of failure for your entire home automation system. If your hub goes down, your automations stop working. If the manufacturer stops supporting it, you're stuck.</p>
+<p>Meanwhile, your Mac is already doing this job. It's on all day. It's connected to your network. It runs a powerful operating system with threading, networking, and system integration built in. Using separate hardware for automation is like buying a separate calculator when your Mac has one built in.</p>
+<h2>Introducing Pulse Home</h2>
+<p>We built Pulse Home to turn your Mac into an intelligent, capable smart home hub—without the complexity or extra hardware cost. Here's what Pulse Home does:</p>
+<h3>WiFi Device Scanning</h3>
+<p>Pulse Home scans your local network and <strong>automatically discovers your HomeKit devices</strong>. No manual setup. No IP addresses to track. Your devices show up instantly. Whether you've got smart lights, door locks, cameras, or thermostats, Pulse Home sees them and brings them into your automation ecosystem.</p>
+<h3>Rule Builder</h3>
+<p>The heart of Pulse Home is our <strong>visual rule builder</strong>. You don't write code. You drag conditions together:</p>
+<ul>
+<li>When device X reaches state Y</li>
+<li>AND time is between morning and night</li>
+<li>AND I'm home (using geofencing)</li>
+<li>THEN turn on device Z, pause for 30 seconds, then adjust brightness</li>
+</ul>
+<p>Rules are <strong>simple to read</strong>, easy to modify, and powerful enough for complex automations. You can build conditional logic without touching a single line of code.</p>
+<h3>HomeKit Integration</h3>
+<p>Pulse Home is built <strong>for HomeKit</strong>. It integrates with your HomeKit setup seamlessly. Any device HomeKit can see, Pulse Home can automate. Any automation you create stays synced with HomeKit. You're not moving to a proprietary ecosystem—you're extending HomeKit with intelligence.</p>
+<h2>Advanced Automation: Webhooks and Geofences</h2>
+<p>For power users, we added <strong>webhooks</strong> and <strong>geofence triggers</strong>.</p>
+<p>Webhooks let you integrate third-party services. When a rule triggers, Pulse Home can send data to your own server, IFTTT, or any webhook-enabled service. Imagine receiving a notification on your phone when your automation fires, logging the event to a database, or triggering actions outside your home.</p>
+<p>Geofencing takes location into account. Pulse Home monitors your iPhone's location and can trigger rules based on your proximity to home. Leave the house? Your security camera activates. Approaching home? Lights turn on. All privacy-respecting, all local.</p>
+<h2>A Complete Ecosystem: Pulse Home + Pulse Guard</h2>
+<p>We're building an ecosystem. <strong>Pulse Guard</strong> is our companion app for security monitoring. Together, Pulse Home and Pulse Guard create a complete solution: Pulse Home handles automation and rules, while Pulse Guard handles detection and alerts. They work together seamlessly, sharing context about your home's state.</p>
+<h2>Why macOS With Swift and SwiftUI</h2>
+<p>We chose macOS and Swift because they're the right tools for the job. Swift gives us <strong>performance and reliability</strong>. SwiftUI gives us a beautiful, responsive interface. macOS as the platform means Pulse Home runs on hardware you already own, integrates with your Mac's capabilities (wake timers, scheduling, notifications), and leverages HomeKit integration that Apple has baked into the OS.</p>
+<p>Building on macOS also meant we could access <strong>local network APIs</strong> that other platforms restrict. We can discover devices, communicate with HomeKit, and handle webhooks—all running securely on your home network.</p>
+<h2>Getting Started</h2>
+<p>Installing Pulse Home is simple. Download it to your Mac. Run it. It discovers your HomeKit setup automatically. Create your first rule in seconds. That's it.</p>
+<p>Your Mac is powerful hardware sitting idle most of the time. Pulse Home puts it to work, making your home smarter without the cost or complexity of buying another device.</p>
+<p>If you've ever wished your smart home automation was smarter, more capable, or less dependent on proprietary ecosystems—Pulse Home is for you. We're excited to help you build the home you've imagined.</p>
+</div>
+      <div class="blog-post-content" id="postContent"></div></div></article>
   <footer class="footer"><div class="container"><div class="footer-inner"><span class="footer-copy">&copy; 2026 umay.dev</span><div class="footer-links"><a href="https://www.instagram.com/umay.dev" target="_blank" rel="noopener">instagram</a><a href="https://x.com/yumaydev" target="_blank" rel="noopener">twitter</a></div></div></div></footer>
   <script src="../js/umay.js"></script>
   <script>fetch('turning-your-mac-into-a-smart-home-hub.md').then(function(r){return r.text()}).then(function(md){md=md.replace(/^# .+\n+/,'');document.getElementById('postContent').innerHTML=window.renderMarkdown(md)});</script>
+<script>
+  // Hide prerendered content once JS renders markdown dynamically
+  function checkAndHidePrerendered() {
+    var postContent = document.getElementById('postContent');
+    if (postContent && postContent.innerHTML.trim()) {
+      var pre = document.getElementById('prerendered-content');
+      if (pre) pre.style.display = 'none';
+    }
+  }
+  // Check immediately in case content is already loaded
+  checkAndHidePrerendered();
+  // Also check after a short delay
+  setTimeout(checkAndHidePrerendered, 100);
+  setTimeout(checkAndHidePrerendered, 500);
+</script>
 </body>
 </html>

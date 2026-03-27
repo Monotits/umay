@@ -12,6 +12,8 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Why We Built Pulse Guard - umay.dev" />
   <meta property="og:description" content="Why we built Pulse Guard — a WiFi-based home security system for macOS that detects human presence without cameras or extra hardware." />
+  <meta property="og:image" content="https://umay.dev/img/pulseguard.png" />
+  <meta name="twitter:image" content="https://umay.dev/img/pulseguard.png" />
   <meta property="og:url" content="https://umay.dev/blog/why-we-built-pulse-guard.html" />
   <meta property="og:site_name" content="umay.dev" />
   <meta name="twitter:card" content="summary" />
@@ -20,6 +22,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/umay.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://umay.dev/"},
+      {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://umay.dev/blog/"},
+      {"@type": "ListItem", "position": 3, "name": "Why We Built Pulse Guard"}
+    ]
+  }
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -56,6 +69,68 @@
         <div class="blog-post-date">2026-03-15</div>
         <h1 class="blog-post-title">Why We Built Pulse Guard</h1>
       </header>
+      <div id="prerendered-content">
+<p>Traditional home security has always felt broken to us. You install cameras everywhere, pay monthly subscriptions to cloud providers, worry about privacy while watching your own home, and still need to buy dedicated hardware. The whole setup screams 90s security theater. We knew there had to be a better way.</p>
+<h2>The Problem We Couldn't Ignore</h2>
+<p>The home security market feels stuck in time. Here's what frustrated us:</p>
+<p><strong>Privacy paradox</strong>: To protect your privacy, you install cameras that destroy it. You're collecting footage of yourself, your family, your guests. Then it goes to some company's servers, getting processed by AI models you don't control, stored indefinitely, and vulnerable to breaches.</p>
+<p><strong>Hardware bloat</strong>: A security system meant for detecting presence requires purchasing separate motion sensors, WiFi hubs, cloud subscriptions, and cameras. Your desk becomes a graveyard of blinking boxes. For something as simple as "is someone home?", this feels wasteful.</p>
+<p><strong>Cost creep</strong>: Between the hardware, the monthly fees, and the increasingly aggressive upselling of "smart" features, the total cost of ownership is brutal. Most people just give up and leave things unsecured.</p>
+<p><strong>Unreliability</strong>: Motion sensors miss people moving slowly. Cameras fail in poor lighting. Cloud connections drop. You end up not trusting the system enough to actually rely on it.</p>
+<p>We started asking: what if you could detect human presence without any of this baggage?</p>
+<h2>The Insight That Changed Everything</h2>
+<p>The breakthrough came when we stumbled onto research in WiFi sensing. For years, security researchers and academics have known something fascinating: <strong>WiFi signals are incredibly sensitive to human movement</strong>. Every time a person walks, breathes, or even shifts their weight, they distort the electromagnetic waves bouncing through a room.</p>
+<p>This isn't theoretical—it's physics. WiFi operates on the 2.4 GHz and 5 GHz bands. These frequencies interact with the human body in predictable ways. When you move through a WiFi signal's path, you create minute disturbances. Those disturbances are measurable. They're quantifiable. They're usable.</p>
+<p>More importantly: <strong>this data never leaves your device</strong>. There's no image, no face, no identifying information. Just signal patterns. It's the most privacy-respecting way to detect presence possible.</p>
+<h2>How Pulse Guard Actually Works</h2>
+<p>Here's the technical magic that makes this work:</p>
+<p>Your MacBook's WiFi chip continuously measures something called <strong>Channel State Information (CSI)</strong>. This is the detailed state of the wireless channel—essentially a fingerprint of how the signal is being affected by everything in the room. WiFi drivers collect this data constantly; it's just usually discarded.</p>
+<p>Pulse Guard intercepts that CSI data and applies signal processing algorithms to extract movement patterns. When someone is present and moving, the CSI fluctuates in specific ways. Our algorithms learned to recognize these patterns during development. Static objects, dead air, network noise—all have signatures we can distinguish from actual human movement.</p>
+<p>The processing pipeline looks like this:</p>
+<ol>
+<li><strong>CSI collection</strong>: Raw channel state data from your WiFi card, updated hundreds of times per second</li>
+<li><strong>Signal preprocessing</strong>: Filtering out noise and stabilizing the baseline measurement</li>
+<li><strong>Feature extraction</strong>: Converting raw CSI into meaningful movement indicators</li>
+<li><strong>Classification</strong>: Machine learning models determine if the patterns match human presence</li>
+<li><strong>Temporal filtering</strong>: Smoothing out false positives using time-series analysis</li>
+</ol>
+<p>All of this happens locally, on your machine. No data leaves. No cloud calls. No third parties involved.</p>
+<h2>Why macOS Was the Right Choice</h2>
+<p>Building this required deep access to WiFi hardware and system frameworks. We considered Windows, Linux, even building our own hardware.</p>
+<p>macOS won because of <strong>CoreWLAN</strong>—Apple's native WiFi API. Unlike Windows (where WiFi access is intentionally restricted for security), or Linux (where driver compatibility is a nightmare), macOS lets us interact with the WiFi stack in a controlled, stable way. We get the CSI data we need without jailbreaking or exploiting system vulnerabilities.</p>
+<p>Beyond that, the macOS ecosystem just feels right for this kind of system software. The kernel is stable. The frameworks are well-designed. We could build something that integrates cleanly into the system without requiring users to disable security features.</p>
+<p>Plus, Mac users tend to care about privacy. They're our audience.</p>
+<h2>The Privacy-First Architecture</h2>
+<p>This is where we genuinely differ from everything else on the market:</p>
+<p><strong>No cameras</strong>: Zero visual data collection. Ever.</p>
+<p><strong>No cloud</strong>: There is no cloud component. Your data doesn't sync anywhere. Your presence patterns stay on your device.</p>
+<p><strong>No training</strong>: We don't need to train models on your specific home. The detection models are universal—they work in any environment because they're looking for the fundamental physics of human movement, not environmental specifics.</p>
+<p><strong>No server backend</strong>: There's nothing running on a server about you. No account, no login, no personal data stored anywhere except your Mac's local storage.</p>
+<p><strong>Open processing</strong>: You can inspect exactly what's happening. The algorithms aren't a black box. The architecture is transparent.</p>
+<p>This is genuinely different. Most "privacy-focused" products are just marketing fluff. We built something where privacy is architectural, not aspirational.</p>
+<h2>What Pulse Guard Enables</h2>
+<p>Right now, Pulse Guard detects presence in a room. That's it. But that simple capability opens surprising possibilities:</p>
+<ul>
+<li><strong>Smarter home automation</strong>: Lights turn on only when the room is actually occupied, not just when motion is detected</li>
+<li><strong>Energy savings</strong>: HVAC systems know which rooms are in use</li>
+<li><strong>Security basics</strong>: When you leave, you know nobody unexpected is inside</li>
+<li><strong>Better notifications</strong>: Smart home events that actually understand context</li>
+</ul>
+<p>We're already seeing users build interesting workflows around this.</p>
+<h2>What's Next</h2>
+<p>We have plans for Pulse Guard that go beyond basic presence detection:</p>
+<p><strong>Zone-based detection</strong>: Instead of "is anyone home?", detect which specific rooms are occupied. This requires mapping CSI responses to spatial location, a harder problem but fundamentally solvable.</p>
+<p><strong>Multi-room support</strong>: Coordinate detection across multiple Macs to get a whole-home picture of presence patterns.</p>
+<p><strong>Occupancy patterns</strong>: Learn when you're typically home, create intelligent automations based on your actual schedule.</p>
+<p><strong>Integration ecosystem</strong>: APIs for developers to build on top of local presence data.</p>
+<p>All of this stays local. All of it respects privacy. None of it requires new hardware.</p>
+<h2>Why This Matters</h2>
+<p>Building Pulse Guard forced us to confront a question: <strong>what does security mean when it destroys the very privacy it's supposed to protect?</strong></p>
+<p>Traditional approaches answer this with cameras and cloud. We answered it differently. We asked what technology could actually work without requiring you to sacrifice privacy for safety. It turned out the answer was right there in the WiFi signals we all ignore.</p>
+<p>There's something deeply satisfying about this. A WiFi router that came with your Mac, doing something useful it was never designed to do. No new hardware. No subscriptions. No compromise.</p>
+<p>That's what Pulse Guard is. Not a camera system. Not a motion sensor array. Just your Mac getting a little smarter about what's happening in its space, while respecting the fact that this space is <em>yours</em>.</p>
+<p>We think the future of home security looks like this: less intrusive, more intelligent, genuinely private. We're building it at umay.dev.</p>
+</div>
       <div class="blog-post-content" id="postContent"></div>
     </div>
   </article>
@@ -79,5 +154,20 @@
         document.getElementById('postContent').innerHTML = window.renderMarkdown(md);
       });
   </script>
+<script>
+  // Hide prerendered content once JS renders markdown dynamically
+  function checkAndHidePrerendered() {
+    var postContent = document.getElementById('postContent');
+    if (postContent && postContent.innerHTML.trim()) {
+      var pre = document.getElementById('prerendered-content');
+      if (pre) pre.style.display = 'none';
+    }
+  }
+  // Check immediately in case content is already loaded
+  checkAndHidePrerendered();
+  // Also check after a short delay
+  setTimeout(checkAndHidePrerendered, 100);
+  setTimeout(checkAndHidePrerendered, 500);
+</script>
 </body>
 </html>
