@@ -1,5 +1,35 @@
 [
   {
+    "slug": "why-we-built-pulse-guard",
+    "title": "Why We Built Pulse Guard: WiFi-Based Home Security Without Cameras",
+    "date": "2026-03-15",
+    "excerpt": "How we turned your MacBook's WiFi signals into a privacy-first home security system — no cameras, no extra hardware, just radio waves."
+  },
+  {
+    "slug": "turning-your-mac-into-a-smart-home-hub",
+    "title": "Turning Your Mac Into a Smart Home Hub with Pulse Home",
+    "date": "2026-03-12",
+    "excerpt": "Why we built Pulse Home to transform your Mac into a powerful smart home controller with HomeKit, webhooks, and geofence automation."
+  },
+  {
+    "slug": "how-shadowart-uses-ai-for-self-reflection",
+    "title": "How ShadowART Uses AI for Jungian Self-Reflection",
+    "date": "2026-03-10",
+    "excerpt": "The story behind building an AI-powered shadow work journal that combines Carl Jung's archetypes with on-device machine learning."
+  },
+  {
+    "slug": "game-theory-as-a-mirror-for-your-mind",
+    "title": "Game Theory as a Mirror for Your Mind: The Story of MindType",
+    "date": "2026-03-05",
+    "excerpt": "How we used Nash Equilibrium and the Prisoner's Dilemma to build a decision mirror that reveals your cognitive patterns."
+  },
+  {
+    "slug": "building-the-ultimate-meme-maker",
+    "title": "Building the Ultimate Meme Maker: Inside Brolled",
+    "date": "2026-02-28",
+    "excerpt": "Why we packed six viral content tools into one app and how Brolled became a go-to meme maker for creators on TikTok, Instagram, and YouTube."
+  },
+  {
     "slug": "hello-world",
     "title": "Hello World",
     "date": "2025-02-10",

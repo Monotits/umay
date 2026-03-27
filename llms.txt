@@ -34,6 +34,28 @@ Meme maker app for iOS. Six viral tools in one app including texting stories, fa
 - Category: Entertainment, Video
 - URL: https://umay.dev/brolled/
 
+## Blog & Technical Writing
+
+### Why We Built Pulse Guard: WiFi-Based Home Security Without Cameras
+How WiFi Channel State Information (CSI) analysis enables camera-free home security. Covers the privacy motivation, technical approach using radio wave disturbance patterns, and real-world applications.
+- URL: https://umay.dev/blog/why-we-built-pulse-guard.html
+
+### Turning Your Mac Into a Smart Home Hub with Pulse Home
+Why a Mac makes an ideal smart home controller. Explains HomeKit integration, webhook automation, geofence triggers, and custom rule engines for home automation.
+- URL: https://umay.dev/blog/turning-your-mac-into-a-smart-home-hub.html
+
+### How ShadowART Uses AI for Jungian Self-Reflection
+Building an AI-powered shadow work journal combining Carl Jung's archetypes with on-device Core ML. Covers sentiment analysis, archetype mapping, dream journaling, and privacy-first AI processing.
+- URL: https://umay.dev/blog/how-shadowart-uses-ai-for-self-reflection.html
+
+### Game Theory as a Mirror for Your Mind: The Story of MindType
+Using Nash Equilibrium and the Prisoner's Dilemma to reveal cognitive patterns. Explains how game theory micro-games map to real-world decision-making biases and thinking archetypes.
+- URL: https://umay.dev/blog/game-theory-as-a-mirror-for-your-mind.html
+
+### Building the Ultimate Meme Maker: Inside Brolled
+Behind the scenes of building a six-in-one viral content toolkit for TikTok, Instagram, and YouTube Shorts creators. Covers texting stories, fake chats, meme sounds, and content creation workflows.
+- URL: https://umay.dev/blog/building-the-ultimate-meme-maker.html
+
 ## Developer Profile
 
 - Name: Bugra
