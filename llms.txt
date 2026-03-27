@@ -1,6 +1,6 @@
 # umay.dev
 
-> umay.dev is the portfolio and product hub of Bugra, an indie developer specializing in mobile apps, AI-powered tools, and creative software experiments. Based in Turkey, Bugra builds and ships apps to the Apple App Store and Google Play Store using Flutter, Swift, Python, and Firebase.
+> umay.dev is a digital studio specializing in mobile apps, AI-powered tools, and creative software experiments. We design and ship products to the Apple App Store and Google Play Store using Flutter, Swift, Python, and Firebase.
 
 ## Active Products
 
@@ -56,17 +56,16 @@ Using Nash Equilibrium and the Prisoner's Dilemma to reveal cognitive patterns. 
 Behind the scenes of building a six-in-one viral content toolkit for TikTok, Instagram, and YouTube Shorts creators. Covers texting stories, fake chats, meme sounds, and content creation workflows.
 - URL: https://umay.dev/blog/building-the-ultimate-meme-maker.html
 
-## Developer Profile
+## About umay.dev
 
-- Name: Bugra
-- Role: Indie Developer & App Creator
-- Location: Turkey
+- Studio: umay.dev
+- Focus: Mobile Apps, AI-Powered Tools, Creative Software
 - Technologies: Flutter, Dart, Swift, SwiftUI, Kotlin, Python, Firebase, AI/ML, Core ML, NLP, HomeKit, REST APIs
-- GitHub: https://github.com/Monotits
-- Twitter/X: https://x.com/Monotits
+- Twitter/X: https://x.com/yumaydev
+- Instagram: https://www.instagram.com/umay.dev
 - Website: https://umay.dev
 - Blog: https://umay.dev/blog/
 
 ## Contact
 
-For business inquiries, collaborations, or press: visit https://umay.dev or reach out via Twitter/X @Monotits.
+For business inquiries, collaborations, or press: visit https://umay.dev or reach out via Twitter/X @yumaydev.
