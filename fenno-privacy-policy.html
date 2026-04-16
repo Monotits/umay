@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fenno — Privacy Policy</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <style>
+    :root {
+      --bg: #0A0A0F;
+      --surface: #131318;
+      --border: #1E1E28;
+      --text: #E8E6F0;
+      --text-muted: #9A97A8;
+      --accent: #7C6FFF;
+      --accent-secondary: #4ECDC4;
+      --white: #FFFFFF;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 60px 24px 100px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 56px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    .header .effective-date {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .header .effective-date span {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-top: 48px;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+    }
+
+    h2 .section-number {
+      color: var(--accent);
+      margin-right: 8px;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--accent-secondary);
+      margin-top: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: var(--text);
+      font-size: 0.97rem;
+    }
+
+    ul, ol {
+      margin: 12px 0 16px 24px;
+      color: var(--text);
+      font-size: 0.97rem;
+    }
+
+    li {
+      margin-bottom: 8px;
+      padding-left: 4px;
+    }
+
+    strong {
+      color: var(--white);
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--accent-secondary);
+      text-decoration: underline;
+    }
+
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+      color: var(--text-muted);
+      font-size: 0.93rem;
+    }
+
+    .highlight-box strong {
+      color: var(--accent-secondary);
+    }
+
+    .highlight-box.green {
+      border-left-color: var(--accent-secondary);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.93rem;
+    }
+
+    table th,
+    table td {
+      text-align: left;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    table th {
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      background: var(--surface);
+    }
+
+    table td {
+      color: var(--text);
+    }
+
+    table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 48px 0;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 64px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer p {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+    }
+
+    .footer .brand {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .summary-badge {
+      display: inline-block;
+      background: var(--surface);
+      border: 1px solid var(--accent);
+      border-radius: 20px;
+      padding: 6px 16px;
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .privacy-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 24px 0;
+    }
+
+    .privacy-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .privacy-card .icon {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .privacy-card h4 {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+
+    .privacy-card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 40px 18px 80px;
+      }
+
+      .header h1 {
+        font-size: 1.7rem;
+      }
+
+      h2 {
+        font-size: 1.15rem;
+      }
+
+      table th,
+      table td {
+        padding: 10px 10px;
+        font-size: 0.85rem;
+      }
+
+      .privacy-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <h1>Privacy Policy</h1>
+      <p class="effective-date">Effective Date: <span>April 16, 2026</span></p>
+    </div>
+
+    <p><strong>Fenno</strong> ("the App") is developed and operated by <strong>Umay.dev</strong> ("we," "us," or "our"). We built Fenno with a foundational commitment: your voice data never leaves your device. This Privacy Policy explains what data the App processes, how it is handled, and the rights you have over it.</p>
+
+    <div class="summary-badge">Privacy-First &middot; On-Device Only</div>
+
+    <div class="privacy-grid">
+      <div class="privacy-card">
+        <div class="icon">&#128274;</div>
+        <h4>On-Device Processing</h4>
+        <p>All audio analysis, transcription, and AI insights run locally on your iPhone. Nothing is sent to our servers.</p>
+      </div>
+      <div class="privacy-card">
+        <div class="icon">&#128683;</div>
+        <h4>No Cloud Uploads</h4>
+        <p>Your recordings, transcripts, and personal insights are never uploaded, transmitted, or stored on any external server.</p>
+      </div>
+      <div class="privacy-card">
+        <div class="icon">&#128065;</div>
+        <h4>No Third-Party Sharing</h4>
+        <p>We do not sell, share, or disclose your personal data to advertisers, data brokers, or any third parties.</p>
+      </div>
+      <div class="privacy-card">
+        <div class="icon">&#128465;</div>
+        <h4>You Control Deletion</h4>
+        <p>Delete all your data at any time from the App's Settings. Removing the App erases everything.</p>
+      </div>
+    </div>
+
+    <!-- 1 -->
+    <h2><span class="section-number">1.</span> Scope of This Policy</h2>
+    <p>This Privacy Policy applies to all users of the Fenno iOS application. It covers the data the App processes on your device, the limited information communicated over the network, and your rights as a user. This policy does not cover third-party services (such as Apple's App Store) that have their own privacy policies.</p>
+
+    <!-- 2 -->
+    <h2><span class="section-number">2.</span> Data We Do NOT Collect</h2>
+    <p>To be explicit about our privacy-first architecture, the following data is <strong>never collected, transmitted, or accessed</strong> by Umay.dev:</p>
+    <ul>
+      <li><strong>Audio recordings</strong> — Your voice recordings stay on your device at all times.</li>
+      <li><strong>Transcripts</strong> — Speech-to-text output generated by the on-device WhisperKit engine is stored only locally.</li>
+      <li><strong>Speaker identification data</strong> — Voice profiles and speaker labels remain on your device.</li>
+      <li><strong>AI-generated insights</strong> — All analysis results, coaching feedback, and pattern reports are generated and stored locally.</li>
+      <li><strong>Relationship data</strong> — Named contacts, energy maps, and interpersonal patterns are never transmitted.</li>
+      <li><strong>Journal entries</strong> — Inner Voice Journal recordings and emotional tracking data are entirely on-device.</li>
+      <li><strong>Meeting content</strong> — Decisions, action items, and meeting transcripts are processed and stored locally.</li>
+      <li><strong>Biometric data</strong> — Voice characteristics used for speaker identification are processed locally and not shared.</li>
+    </ul>
+
+    <!-- 3 -->
+    <h2><span class="section-number">3.</span> Data Processed On Your Device</h2>
+    <p>Fenno processes the following categories of data entirely on your iPhone, using on-device machine learning models. None of this data leaves your device.</p>
+
+    <h3>3.1 Audio &amp; Voice Data</h3>
+    <p>When you initiate a recording session, Fenno captures audio through your device's microphone. This audio is processed in real time by the following on-device components:</p>
+    <ul>
+      <li><strong>WhisperKit</strong> — Converts speech to text with word-level timestamps. Multiple model sizes (Base, Small, Large) are available depending on your device capabilities.</li>
+      <li><strong>Core ML Speaker Identification</strong> — Identifies and labels distinct speakers within a conversation.</li>
+      <li><strong>SoundAnalysis Framework</strong> — Measures voice energy, stress indicators, pitch, and vocal quality in real time.</li>
+      <li><strong>Apple NaturalLanguage Framework</strong> — Performs sentiment analysis, topic extraction, and emotion classification on transcribed text.</li>
+      <li><strong>Local LLM (llama.cpp)</strong> — Generates personalized insights, coaching observations, and pattern analyses using a locally hosted large language model.</li>
+    </ul>
+
+    <h3>3.2 Derived Analytics</h3>
+    <p>Based on the audio processing pipeline, Fenno generates and stores the following analytics locally:</p>
+    <ul>
+      <li>Speaking rate, filler word frequency, and energy level curves.</li>
+      <li>Listening-to-speaking ratios and conversation balance metrics.</li>
+      <li>Per-person communication patterns and relationship energy maps (Relationship Intelligence layer).</li>
+      <li>Meeting decisions, action items, and efficiency scores (Meeting Intelligence layer).</li>
+      <li>Emotional trends, thematic patterns, and reflective insights (Inner Voice Journal layer).</li>
+      <li>Persuasion metrics, objection-handling analysis, and win/loss patterns (Persuasion Intelligence layer).</li>
+      <li>Weekly and daily trend reports and snapshot summaries.</li>
+    </ul>
+
+    <h3>3.3 Local Data Storage</h3>
+    <p>All processed data is stored on your device using Core Data (SQLite) with Apple's <strong>NSFileProtectionComplete</strong> encryption. This means your data is encrypted whenever your device is locked and protected by your device passcode, Face ID, or Touch ID. The stored data entities include recordings, analyses, speaker segments, person profiles, weekly reports, and daily snapshots.</p>
+
+    <!-- 4 -->
+    <h2><span class="section-number">4.</span> Limited Network Communications</h2>
+    <p>While the core functionality of Fenno is entirely offline, the App makes a small number of network requests for the following purposes only:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Purpose</th>
+          <th>Data Transmitted</th>
+          <th>Recipient</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Subscription Verification</strong></td>
+          <td>StoreKit 2 transaction tokens (no personal audio or content data)</td>
+          <td>Apple App Store servers</td>
+        </tr>
+        <tr>
+          <td><strong>App Updates</strong></td>
+          <td>App version and device compatibility information</td>
+          <td>Apple App Store servers</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight-box green">
+      <p><strong>No audio, transcripts, insights, speaker data, or any content generated through the App is ever included in network communications.</strong></p>
+    </div>
+
+    <!-- 5 -->
+    <h2><span class="section-number">5.</span> Subscription &amp; Purchase Data</h2>
+    <p>If you subscribe to a premium layer or make a lifetime purchase, the transaction is processed entirely by Apple through StoreKit 2. We do not collect, process, or store your payment information, credit card details, or Apple ID credentials.</p>
+    <p>We may receive anonymized, aggregated subscription analytics from Apple (such as total subscriber counts or renewal rates) through App Store Connect, but these do not identify individual users.</p>
+
+    <!-- 6 -->
+    <h2><span class="section-number">6.</span> Microphone &amp; Permissions</h2>
+    <p>Fenno requires access to your device's microphone to function. You will be prompted to grant microphone permission when you first attempt to record. You can revoke this permission at any time through your iPhone's Settings &gt; Privacy &amp; Security &gt; Microphone. Without microphone access, the App's recording and analysis features will be unavailable, but you can still review previously generated insights.</p>
+    <p>Fenno does not request access to your contacts, photos, location, camera, calendar, or any other device sensors or data stores beyond the microphone.</p>
+
+    <!-- 7 -->
+    <h2><span class="section-number">7.</span> Data Retention &amp; Deletion</h2>
+
+    <h3>7.1 Retention</h3>
+    <p>Data is retained on your device for as long as you choose to keep the App installed and do not manually delete it. The free tier retains analysis history for 7 days. Premium layers offer extended or unlimited history depending on the subscription.</p>
+
+    <h3>7.2 Deletion</h3>
+    <p>You have full control over your data at all times:</p>
+    <ul>
+      <li><strong>In-App Deletion:</strong> Navigate to Settings within the App and select "Delete All Data" to permanently erase all recordings, transcripts, analyses, and insights from your device.</li>
+      <li><strong>Selective Deletion:</strong> You may delete individual recordings or analyses through the App's interface.</li>
+      <li><strong>App Removal:</strong> Uninstalling Fenno from your device removes all associated data. Since no data exists on external servers, uninstallation constitutes complete data erasure.</li>
+    </ul>
+    <p>Because we do not store your data on any server, we cannot recover deleted data. Deletion is permanent and irreversible.</p>
+
+    <!-- 8 -->
+    <h2><span class="section-number">8.</span> Children's Privacy</h2>
+    <p>Fenno is not directed at children under the age of 18 (or the age of majority in the applicable jurisdiction). We do not knowingly process data from children. If you believe a child has used the App, the data exists only on the device and can be deleted by removing the App or using the in-app deletion feature.</p>
+
+    <!-- 9 -->
+    <h2><span class="section-number">9.</span> Third-Party Services</h2>
+    <p>Fenno does not integrate with any third-party analytics, advertising, tracking, or data collection services. The App does not contain advertisements. The only third-party interaction is with Apple's App Store for subscription management, which is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</p>
+    <p>The App's animated fennec fox mascot is rendered using locally stored Lottie animation files and does not make any network requests.</p>
+
+    <!-- 10 -->
+    <h2><span class="section-number">10.</span> Data Security</h2>
+    <p>We implement the following security measures to protect your data:</p>
+    <ul>
+      <li><strong>Encryption at Rest:</strong> All stored data is protected with NSFileProtectionComplete, meaning it is encrypted whenever your device is locked.</li>
+      <li><strong>No Remote Access:</strong> Since no data is stored on our servers, there is no remote attack surface for your personal data.</li>
+      <li><strong>On-Device AI:</strong> Machine learning models run locally, eliminating the risk of data interception during transmission.</li>
+      <li><strong>No Account System:</strong> Without user accounts, there are no credentials to be compromised.</li>
+      <li><strong>Secure Processing:</strong> Audio processing occurs in memory and is not cached in unencrypted temporary files.</li>
+    </ul>
+
+    <!-- 11 -->
+    <h2><span class="section-number">11.</span> International Users &amp; Data Transfers</h2>
+    <p>Because Fenno processes all data on your device, there are no international data transfers to consider. Your data remains in the jurisdiction where your device is physically located. This architecture inherently satisfies data residency requirements across all jurisdictions.</p>
+
+    <!-- 12 -->
+    <h2><span class="section-number">12.</span> Your Rights Under GDPR (European Economic Area)</h2>
+    <p>If you are located in the European Economic Area, you have certain rights under the General Data Protection Regulation. Given Fenno's on-device architecture:</p>
+    <ul>
+      <li><strong>Right of Access:</strong> All your data is accessible directly on your device through the App's interface.</li>
+      <li><strong>Right to Rectification:</strong> You can edit or modify your data (such as speaker labels and person names) directly within the App.</li>
+      <li><strong>Right to Erasure:</strong> You can delete all data at any time using the in-app deletion feature or by uninstalling the App.</li>
+      <li><strong>Right to Data Portability:</strong> Since your data is stored locally, you possess it inherently. We do not hold any copy.</li>
+      <li><strong>Right to Restriction &amp; Objection:</strong> You can stop data processing at any time by revoking microphone permissions or ceasing to use the App.</li>
+    </ul>
+    <p>Since we do not collect or store your personal data on our servers, most traditional data subject requests do not apply. If you have questions about exercising your rights, please contact us.</p>
+
+    <!-- 13 -->
+    <h2><span class="section-number">13.</span> Your Rights Under KVKK (Turkey)</h2>
+    <p>If you are located in Turkey, you have certain rights under the Personal Data Protection Law (Kişisel Verilerin Korunması Kanunu, No. 6698). Fenno's on-device architecture ensures that:</p>
+    <ul>
+      <li>No personal data is transferred to or processed by Umay.dev or any data controller.</li>
+      <li>All processing occurs locally on your own device, under your control.</li>
+      <li>You can access, correct, and delete all your data at any time through the App.</li>
+      <li>No explicit consent for data transfer is required because no transfer occurs.</li>
+    </ul>
+    <p>If you have concerns or wish to exercise any rights under KVKK, please contact us at the address provided below.</p>
+
+    <!-- 14 -->
+    <h2><span class="section-number">14.</span> Your Rights Under CCPA (California)</h2>
+    <p>If you are a California resident, the California Consumer Privacy Act grants you specific rights regarding personal information. Because Fenno does not collect, sell, or share personal information with third parties:</p>
+    <ul>
+      <li>We do not sell your personal information.</li>
+      <li>We do not share your personal information for cross-context behavioral advertising.</li>
+      <li>There is no personal information held by us to disclose, delete, or correct.</li>
+    </ul>
+    <p>You may still contact us if you have questions about your rights under the CCPA.</p>
+
+    <!-- 15 -->
+    <h2><span class="section-number">15.</span> Recording Consent &amp; Legal Compliance</h2>
+
+    <div class="highlight-box">
+      <p><strong>Important:</strong> Many jurisdictions require one-party or all-party consent before recording a conversation. You are solely responsible for understanding and complying with the recording consent laws in your jurisdiction. Unauthorized recording may carry civil or criminal penalties.</p>
+    </div>
+
+    <p>Fenno does not determine or verify whether appropriate consent has been obtained. The App is designed as a personal self-improvement tool and is not intended for covert surveillance or unauthorized monitoring. We strongly recommend informing all participants before recording any conversation.</p>
+
+    <!-- 16 -->
+    <h2><span class="section-number">16.</span> AI Transparency</h2>
+    <p>Fenno uses artificial intelligence models that run entirely on your device. We believe in transparency about how these models work:</p>
+    <ul>
+      <li><strong>Transcription Model:</strong> Based on OpenAI's Whisper architecture, adapted for on-device use via WhisperKit. Processes audio into text locally.</li>
+      <li><strong>Speaker Identification:</strong> Derived from the pyannote-audio framework, converted to Core ML format. Distinguishes speakers using voice characteristics without identifying individuals by name (names are user-assigned).</li>
+      <li><strong>Insight Generation:</strong> Uses a locally hosted large language model (Llama 3.2 3B) to generate personalized observations. The model does not learn from your data — it runs inference only, with no training or fine-tuning on your content.</li>
+    </ul>
+    <p>No AI model in Fenno sends data externally, receives remote updates to its parameters, or trains on your personal content.</p>
+
+    <!-- 17 -->
+    <h2><span class="section-number">17.</span> Cookies &amp; Tracking Technologies</h2>
+    <p>Fenno is a native iOS application. It does not use cookies, web beacons, pixel tags, or any browser-based tracking technologies. The App does not contain any advertising SDKs, analytics frameworks, or user tracking tools.</p>
+
+    <!-- 18 -->
+    <h2><span class="section-number">18.</span> Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in the App's functionality or applicable legal requirements. When we make material changes, we will notify you through the App or via the App Store update notes. The "Effective Date" at the top of this page indicates the date of the most recent revision. Your continued use of the App following any changes constitutes acceptance of the revised policy.</p>
+
+    <!-- 19 -->
+    <h2><span class="section-number">19.</span> Contact Us</h2>
+    <p>If you have questions, concerns, or requests related to this Privacy Policy or your data, please contact us:</p>
+    <p>
+      <strong>Umay.dev</strong><br />
+      Email: <a href="mailto:privacy@umay.dev">privacy@umay.dev</a><br />
+      General inquiries: <a href="mailto:support@umay.dev">support@umay.dev</a>
+    </p>
+    <p>For GDPR-related inquiries, you may also contact your local data protection authority. For KVKK-related inquiries, you may contact the Turkish Personal Data Protection Authority (KVKK Kurumu).</p>
+
+    <div class="divider"></div>
+
+    <div class="footer">
+      <p>&copy; 2026 <span class="brand">Umay.dev</span> — All rights reserved.</p>
+      <p style="margin-top: 8px;">Fenno is a trademark of Umay.dev.</p>
+    </div>
+
+  </div>
+</body>
+</html>
