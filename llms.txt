@@ -34,6 +34,13 @@ Meme maker app for iOS. Six viral tools in one app including texting stories, fa
 - Category: Entertainment, Video
 - URL: https://umay.dev/brolled/
 
+### Fenno
+Private voice mirror app for iOS. Real-time vocal analysis that helps you hear how you really sound. Features include tone analysis, pace tracking, filler word detection, emotional pattern recognition, and voice pulse visualization. 100% on-device processing — no recordings stored, no data leaves your device. Subscription and lifetime purchase options available.
+- Platform: iOS
+- Category: Productivity, Self-Improvement
+- URL: https://umay.dev/fenno/
+- App Store: https://apps.apple.com/us/app/fenno-private-voice-mirror/id6761913486
+
 ## Blog & Technical Writing
 
 ### Why We Built Pulse Guard: WiFi-Based Home Security Without Cameras

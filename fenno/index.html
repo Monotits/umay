@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fenno — Private Voice Mirror for iOS | Hear What You Feel</title>
+  <meta name="description" content="Fenno is a private voice mirror for iOS. It listens to your tone, pace, and energy — not your words — and shows you the version of yourself you rarely get to see. 100% on-device. No cloud, no accounts." />
+  <meta name="keywords" content="voice mirror, voice journal, voice analysis, tone analysis, mood tracking, emotional awareness, voice wellness, AI voice app, private journal, on-device AI, iOS app, speech analysis, sentiment analysis" />
+  <meta name="author" content="umay.dev" />
+  <meta name="creator" content="umay.dev" />
+  <meta name="publisher" content="umay.dev" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <link rel="icon" href="../assets/favicon.png" />
+  <link rel="canonical" href="https://umay.dev/fenno/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Fenno — Private Voice Mirror" />
+  <meta property="og:description" content="Hear what you feel. Private AI that listens to tone, pace, and energy — on your device, only." />
+  <meta property="og:url" content="https://umay.dev/fenno/" />
+  <meta property="og:image" content="https://umay.dev/img/fenno.png" />
+  <meta property="og:site_name" content="umay.dev" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fenno — Private Voice Mirror" />
+  <meta name="twitter:description" content="Hear what you feel. Private AI that listens to tone, pace, and energy — on your device, only." />
+  <meta name="twitter:image" content="https://umay.dev/img/fenno.png" />
+  <meta name="twitter:site" content="@yumaydev" />
+  <meta name="twitter:creator" content="@yumaydev" />
+
+  <!-- Structured Data: MobileApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Fenno — Private Voice Mirror",
+    "operatingSystem": "iOS",
+    "applicationCategory": "HealthApplication",
+    "description": "A private voice mirror that listens to your tone, pace, and energy — not your words — and quietly shows you the version of yourself you rarely get to see. 100% on-device processing.",
+    "offers": [
+      { "@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Free" },
+      { "@type": "Offer", "price": "4.99", "priceCurrency": "USD", "name": "Pro Monthly" },
+      { "@type": "Offer", "price": "29.99", "priceCurrency": "USD", "name": "Pro Yearly" },
+      { "@type": "Offer", "price": "79.99", "priceCurrency": "USD", "name": "Lifetime" }
+    ],
+    "author": {
+      "@type": "Organization",
+      "name": "umay.dev",
+      "url": "https://umay.dev",
+      "sameAs": [
+        "https://x.com/yumaydev",
+        "https://www.instagram.com/umay.dev"
+      ]
+    },
+    "datePublished": "2026-04-24",
+    "dateModified": "2026-04-24"
+  }
+  </script>
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://umay.dev/" },
+      { "@type": "ListItem", "position": 2, "name": "Fenno", "item": "https://umay.dev/fenno/" }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does Fenno actually analyze in my voice?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fenno analyzes your voice tone, energy level, speaking pace, filler words, sentiment curve, breathing rhythm, and voice steadiness. It also compares your voice tone against your actual words to detect misalignment — when what you say doesn't match how you sound. All analysis happens entirely on your iPhone using on-device AI."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my voice data private with Fenno?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Fenno was designed from the first line of code for complete privacy. Your recordings are encrypted at rest, analyzed locally on your device, and never uploaded to any server. There are no cloud accounts, no ads, and no humans reading transcripts. Your voice is not training data — your voice is yours."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is Fenno different from a mood tracker or journal app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Traditional mood trackers ask you to manually select how you feel with emojis or sliders. Fenno doesn't ask — it listens. By analyzing the biometric signals in your voice (tone, pace, energy, tension), Fenno captures emotional data you might not even be aware of. It's a voice mirror, not a form to fill out."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/umay.css" />
+  <link rel="stylesheet" href="../css/fenno.css" />
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">umay<span class="accent">.dev</span></a>
+      <div class="nav-links">
+        <a href="/#products">products</a>
+        <a href="#features">features</a>
+        <a href="#privacy">privacy</a>
+        <a href="#pricing">pricing</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="fn-hero">
+    <div class="fn-hero-bg"></div>
+    <div class="container fn-hero-content">
+      <img class="fn-hero-icon" src="../img/fenno.png" alt="Fenno App Icon — Fennec Fox Voice Mirror" width="120" height="120" />
+      <div class="fn-hero-badge">Voice Mirror for iOS</div>
+      <h1 class="fn-hero-title"><span class="fn-accent">fenno</span></h1>
+      <p class="fn-hero-subtitle">Most of how you feel never makes it into words. Fenno listens to your <strong>tone, pace, and energy</strong> — and quietly shows you the version of yourself you rarely get to see.</p>
+      <div class="fn-hero-cta">
+        <a href="https://apps.apple.com/us/app/fenno-private-voice-mirror/id6761913486" class="fn-btn fn-btn-primary" target="_blank" rel="noopener" aria-label="Download on App Store">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          Download on App Store
+        </a>
+      </div>
+      <p class="fn-hero-tagline">On-device &middot; Encrypted &middot; Yours</p>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="fn-section fn-screenshots-section">
+    <div class="container">
+      <div class="fn-screenshots">
+        <div class="fn-screenshot"><img src="../assets/Fenno/01_hero.png" alt="Fenno — Hear what you feel. Private AI voice mirror." loading="lazy" width="300" /></div>
+        <div class="fn-screenshot"><img src="../assets/Fenno/04_pulse.png" alt="Fenno — Today's Pulse: daily voice score and energy reading" loading="lazy" width="300" /></div>
+        <div class="fn-screenshot"><img src="../assets/Fenno/03_analysis.png" alt="Fenno — Voice vs Words analysis with biometric timeline" loading="lazy" width="300" /></div>
+        <div class="fn-screenshot"><img src="../assets/Fenno/05_mirror.png" alt="Fenno — Weekly Mirror: patterns emerge over time" loading="lazy" width="300" /></div>
+        <div class="fn-screenshot"><img src="../assets/Fenno/08_lenses.png" alt="Fenno — Nine Pattern Lenses: Energy, Decision, People" loading="lazy" width="300" /></div>
+        <div class="fn-screenshot"><img src="../assets/Fenno/06_people.png" alt="Fenno — Relationship insights: who energizes you" loading="lazy" width="300" /></div>
+        <div class="fn-screenshot"><img src="../assets/Fenno/07_voice-words.png" alt="Fenno — Voice vs Words alignment analysis" loading="lazy" width="300" /></div>
+        <div class="fn-screenshot"><img src="../assets/Fenno/09_signals.png" alt="Fenno — Subtle voice signals: stress, tension, energy" loading="lazy" width="300" /></div>
+        <div class="fn-screenshot"><img src="../assets/Fenno/02_privacy.png" alt="Fenno — Privacy first: everything stays on your device" loading="lazy" width="300" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Fenno Hears -->
+  <section class="fn-section" id="features">
+    <div class="container">
+      <h2 class="fn-section-title">What Fenno hears</h2>
+      <p class="fn-section-desc">No forms. No mood emojis. You just talk, and Fenno does the noticing.</p>
+
+      <div class="fn-features-grid">
+        <div class="fn-feature">
+          <div class="fn-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h4>Voice Tone &amp; Energy</h4>
+          <p>The emotion beneath the words. Fenno reads the energy level, pitch variation, and vocal intensity in your speech.</p>
+        </div>
+        <div class="fn-feature">
+          <div class="fn-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h4>Speaking Pace &amp; Filler Words</h4>
+          <p>How present you really were. Your speaking tempo and verbal habits reveal focus, anxiety, or calm.</p>
+        </div>
+        <div class="fn-feature">
+          <div class="fn-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20v-6M6 20V10M18 20V4"/></svg>
+          </div>
+          <h4>Sentiment Curve</h4>
+          <p>The shape of your mood across a conversation. Track how your emotional tone shifts from start to finish.</p>
+        </div>
+        <div class="fn-feature">
+          <div class="fn-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h4>Voice vs Words</h4>
+          <p>When your tone and your message don't match. Fenno spots the misalignment you might miss yourself.</p>
+        </div>
+        <div class="fn-feature">
+          <div class="fn-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h4>Breathing &amp; Steadiness</h4>
+          <p>Subtle signals of stress your conscious mind doesn't notice. Voice steadiness and breathing rhythm reveal tension.</p>
+        </div>
+        <div class="fn-feature">
+          <div class="fn-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h4>Nine Pattern Lenses</h4>
+          <p>Energy, Decision, People — nine different ways to read yourself over time. Weekly Mirror reflects the week you just lived.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why People Use Fenno -->
+  <section class="fn-section fn-section-alt">
+    <div class="container">
+      <h2 class="fn-section-title">Why people use Fenno</h2>
+      <p class="fn-section-desc">For the quietly curious — people who want to understand themselves more clearly.</p>
+
+      <div class="fn-features-grid">
+        <div class="fn-feature">
+          <div class="fn-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h4>Self-Understanding</h4>
+          <p>Understand yourself better without journaling every night. Let your voice reveal what writing sometimes can't.</p>
+        </div>
+        <div class="fn-feature">
+          <div class="fn-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h4>People Energy</h4>
+          <p>Notice which people energize you and which drain you. Fenno tracks relationship patterns across conversations.</p>
+        </div>
+        <div class="fn-feature">
+          <div class="fn-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h4>Early Tension Detection</h4>
+          <p>Catch anxiety and tension in your voice before it becomes a mood. Your voice knows before you do.</p>
+        </div>
+        <div class="fn-feature">
+          <div class="fn-feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h4>Conversation Prep</h4>
+          <p>Prepare for hard conversations by reviewing easy ones. Build a calmer, more aware relationship with your own speech.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy -->
+  <section class="fn-section" id="privacy">
+    <div class="container">
+      <h2 class="fn-section-title">Built for privacy — from line one</h2>
+      <p class="fn-section-desc">Your voice is not training data. Your voice is yours.</p>
+
+      <div class="fn-privacy-grid">
+        <div class="fn-privacy-item">
+          <span class="fn-privacy-check">&#10003;</span>
+          <div>
+            <strong>100% on-device processing</strong>
+            <p>All voice analysis runs locally on your iPhone. Nothing is sent anywhere.</p>
+          </div>
+        </div>
+        <div class="fn-privacy-item">
+          <span class="fn-privacy-check">&#10003;</span>
+          <div>
+            <strong>Encrypted at rest</strong>
+            <p>Your recordings are encrypted on your device. No cloud, no accounts, no uploads.</p>
+          </div>
+        </div>
+        <div class="fn-privacy-item">
+          <span class="fn-privacy-check">&#10003;</span>
+          <div>
+            <strong>No ads, no tracking, no humans</strong>
+            <p>Zero third-party trackers. No one reads your transcripts. No data selling — ever.</p>
+          </div>
+        </div>
+        <div class="fn-privacy-item">
+          <span class="fn-privacy-check">&#10003;</span>
+          <div>
+            <strong>Delete anything, anytime</strong>
+            <p>Full control over your data. Remove any recording or analysis instantly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="fn-section fn-section-alt" id="pricing">
+    <div class="container">
+      <h2 class="fn-section-title">Simple pricing</h2>
+      <p class="fn-section-desc">Start free. Go deeper when you're ready.</p>
+
+      <div class="fn-pricing-grid">
+        <div class="fn-price-card">
+          <div class="fn-price-name">Free</div>
+          <div class="fn-price-amount">$0</div>
+          <ul class="fn-price-features">
+            <li>2 recordings per day</li>
+            <li>Weekly summaries</li>
+            <li>Voice enrollment</li>
+            <li>On-device privacy</li>
+          </ul>
+        </div>
+        <div class="fn-price-card">
+          <div class="fn-price-name">Pro Monthly</div>
+          <div class="fn-price-amount">$4.99<span>/mo</span></div>
+          <ul class="fn-price-features">
+            <li>Unlimited recordings</li>
+            <li>Full analysis depth</li>
+            <li>All 9 Pattern Lenses</li>
+            <li>Voice vs Words</li>
+            <li>Relationship insights</li>
+          </ul>
+          <div class="fn-price-trial">3-day free trial</div>
+        </div>
+        <div class="fn-price-card fn-price-featured">
+          <div class="fn-price-badge">Best Value</div>
+          <div class="fn-price-name">Pro Yearly</div>
+          <div class="fn-price-amount">$29.99<span>/yr</span></div>
+          <div class="fn-price-save">~$2.50/mo — Save ~50%</div>
+          <ul class="fn-price-features">
+            <li>Everything in Pro</li>
+            <li>Goal tracking</li>
+            <li>Proactive nudges</li>
+            <li>Full history access</li>
+          </ul>
+          <div class="fn-price-trial">7-day free trial</div>
+        </div>
+        <div class="fn-price-card">
+          <div class="fn-price-name">Lifetime</div>
+          <div class="fn-price-amount">$79.99</div>
+          <ul class="fn-price-features">
+            <li>Everything in Pro</li>
+            <li>One-time purchase</li>
+            <li>All future updates</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deep Dive -->
+  <section class="fn-section" id="how-it-works-deep">
+    <div class="container">
+      <h2 class="fn-section-title">The Science Behind Voice Mirroring</h2>
+      <div style="max-width:720px;margin:0 auto;">
+        <p style="margin-bottom:1rem;color:var(--text-secondary);line-height:1.8;">Your voice carries far more information than the words it produces. Research in affective computing and speech prosody has long established that vocal biomarkers — including pitch variation, speaking rate, pause patterns, and spectral energy — are reliable indicators of emotional states, cognitive load, and stress levels. Fenno builds on this science to create a personal voice mirror that reflects these invisible signals back to you.</p>
+        <p style="margin-bottom:1rem;color:var(--text-secondary);line-height:1.8;">Using <strong style="color:var(--text);">on-device machine learning</strong> and Apple's speech analysis frameworks, Fenno extracts biometric features from your voice in real time: energy level, speaking pace, filler word frequency, sentiment trajectory, breathing rhythm, and voice steadiness. These signals are combined into a daily <strong style="color:var(--text);">Pulse Score</strong> — a snapshot of how you're showing up today.</p>
+        <p style="margin-bottom:1rem;color:var(--text-secondary);line-height:1.8;">The <strong style="color:var(--text);">Voice vs Words</strong> feature compares your vocal tone against the actual content of your speech using natural language processing. When your words say "I'm fine" but your voice says otherwise, Fenno catches the misalignment — a pattern most people never notice in themselves.</p>
+        <p style="margin-bottom:1rem;color:var(--text-secondary);line-height:1.8;"><strong style="color:var(--text);">Nine Pattern Lenses</strong> — including Energy, Decision, and People — provide different angles for self-reflection over time. The <strong style="color:var(--text);">Weekly Mirror</strong> aggregates your recordings into a gentle reflection of the week you just lived, surfacing trends in mood, energy, tension, and relational dynamics.</p>
+        <p style="color:var(--text-secondary);line-height:1.8;">Fenno is developed by <a href="https://umay.dev" style="color:inherit;text-decoration:underline;">umay.dev</a>, with a deep commitment to making voice-based wellness tools that are private, accessible, and genuinely useful for daily self-awareness.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="fn-section fn-cta">
+    <div class="container">
+      <h2 class="fn-cta-title">Hear what you feel.</h2>
+      <p class="fn-cta-desc">Just talk. Fenno does the noticing. No account required.</p>
+      <a href="https://apps.apple.com/us/app/fenno-private-voice-mirror/id6761913486" class="fn-btn fn-btn-primary" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Download on App Store
+      </a>
+    </div>
+  </section>
+
+  <!-- Disclaimer -->
+  <section class="fn-disclaimer">
+    <div class="container">
+      <p>Fenno is a wellness tool, not a diagnostic or recording tool. Before capturing a conversation, please make sure everyone involved is aware and consents. Laws on consent vary by region.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-copy">&copy; 2026 umay.dev</span>
+        <div class="footer-links">
+          <a href="/fenno/privacy">privacy policy</a>
+          <a href="/fenno/terms">terms of use</a>
+          <a href="https://www.instagram.com/umay.dev" target="_blank" rel="noopener">instagram</a>
+          <a href="https://x.com/yumaydev" target="_blank" rel="noopener">twitter</a>
+          <a href="/">home</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/umay.js"></script>
+</body>
+</html>

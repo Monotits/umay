@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="50%" style="stop-color:#ec4899"/>
+      <stop offset="100%" style="stop-color:#f97316"/>
+    </linearGradient>
+    <linearGradient id="grad-inner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa"/>
+      <stop offset="50%" style="stop-color:#f472b6"/>
+      <stop offset="100%" style="stop-color:#fb923c"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="url(#grad)"/>
+  <!-- U letterform - modern geometric -->
+  <path d="M 160 140 L 160 320 C 160 388 200 420 256 420 C 312 420 352 388 352 320 L 352 140"
+        stroke="white" stroke-width="52" stroke-linecap="round" fill="none"/>
+  <!-- Accent dot -->
+  <circle cx="352" cy="140" r="28" fill="url(#grad-inner)"/>
+</svg>
