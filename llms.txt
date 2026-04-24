@@ -43,6 +43,10 @@ Private voice mirror app for iOS. Real-time vocal analysis that helps you hear h
 
 ## Blog & Technical Writing
 
+### Why Your Voice Reveals More Than Your Words: Building Fenno
+How we built Fenno, a private voice mirror app for iOS that uses on-device AI to analyze tone, pace, filler words, and emotional energy. Covers the technical architecture (AVAudioEngine, Core ML, Accelerate framework), the science of vocal self-perception, and why privacy-first voice analysis matters.
+- URL: https://umay.dev/blog/why-your-voice-reveals-more-than-your-words.html
+
 ### Why We Built Pulse Guard: WiFi-Based Home Security Without Cameras
 How WiFi Channel State Information (CSI) analysis enables camera-free home security. Covers the privacy motivation, technical approach using radio wave disturbance patterns, and real-world applications.
 - URL: https://umay.dev/blog/why-we-built-pulse-guard.html
