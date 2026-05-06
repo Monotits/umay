@@ -29,10 +29,11 @@ Decision mirror app for iOS. Game theory micro-games based on Nash Equilibrium a
 - URL: https://umay.dev/mindtype/
 
 ### Brolled
-Meme maker app for iOS. Six viral tools in one app including texting stories, fake chats, meme sounds, comment overlays, and time cards. Built for content creators on TikTok, Instagram, and YouTube Shorts.
+Viral video toolkit for iOS with 19 tools: Beat Sync, Auto Captions, Reddit Story, Background Removal, Tier List Maker, Stickers & GIFs, Fake Call, Would You Rather, Texting Story + Video, Texting Story, Robert B. Weide, Comment on Video, Meme Sound on Video, A Few Moments Later, AI Quiz Video, Split Screen Reaction, Lyric Video Maker, Fake Notification, and Top 5 Ranking. Built for TikTok, Instagram Reels, and YouTube Shorts creators. Supports 12 languages.
 - Platform: iOS
-- Category: Entertainment, Video
+- Category: Entertainment, Video, Viral Content
 - URL: https://umay.dev/brolled/
+- App Store: https://apps.apple.com/app/id6745027707
 
 ### Fenno
 Private voice mirror app for iOS. Real-time vocal analysis that helps you hear how you really sound. Features include tone analysis, pace tracking, filler word detection, emotional pattern recognition, and voice pulse visualization. 100% on-device processing — no recordings stored, no data leaves your device. Subscription and lifetime purchase options available.
@@ -64,7 +65,7 @@ Using Nash Equilibrium and the Prisoner's Dilemma to reveal cognitive patterns. 
 - URL: https://umay.dev/blog/game-theory-as-a-mirror-for-your-mind.html
 
 ### Building the Ultimate Meme Maker: Inside Brolled
-Behind the scenes of building a six-in-one viral content toolkit for TikTok, Instagram, and YouTube Shorts creators. Covers texting stories, fake chats, meme sounds, and content creation workflows.
+The story behind Brolled — from 6 meme tools to 19 viral video tools including Beat Sync, Auto Captions, Reddit Story, and Background Removal. Covers the creation toolkit for TikTok, Instagram, and YouTube Shorts creators.
 - URL: https://umay.dev/blog/building-the-ultimate-meme-maker.html
 
 ## About umay.dev
