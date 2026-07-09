@@ -239,43 +239,23 @@
     <p>Fenno operates on a freemium model. The free tier and premium subscription layers are outlined below.</p>
 
     <h3>4.1 Free Tier</h3>
-    <p>Available to all users at no cost, the free tier includes up to 10 minutes of recording per day, basic voice metrics (speaking rate, filler words, energy level), and a 7-day analysis history.</p>
+    <p>Available to all users at no cost, the free tier includes up to 2 recordings per day (maximum 10 minutes each), core voice metrics (speaking rate, filler words, energy, tension), and a 7-day analysis history.</p>
 
-    <h3>4.2 Premium Layers</h3>
-    <p>Fenno offers five specialized subscription layers, each targeting a distinct area of self-intelligence. Each layer unlocks advanced analyses, unlimited recording, extended history, and AI-powered personal insights relevant to that domain.</p>
+    <h3>4.2 Fenno Pro</h3>
+    <p>Fenno offers a single premium subscription, <strong>Fenno Pro</strong>, available as a monthly or annual auto-renewable subscription. A <strong>Lifetime Purchase</strong> option is also offered, providing permanent access to Pro features via a one-time payment.</p>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Layer</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Communication Intelligence</strong></td>
-          <td>Deep analysis of speaking pace, filler words, energy curves, and listening-to-speaking ratios with personalized weekly coaching reports.</td>
-        </tr>
-        <tr>
-          <td><strong>Relationship Intelligence</strong></td>
-          <td>Named-person tracking, energy mapping across relationships, and behavioral pattern comparisons across the people in your life.</td>
-        </tr>
-        <tr>
-          <td><strong>Meeting Intelligence</strong></td>
-          <td>Automatic meeting detection, decision capture, action-item extraction, and meeting efficiency scoring.</td>
-        </tr>
-        <tr>
-          <td><strong>Inner Voice Journal</strong></td>
-          <td>Voice-based journaling with emotion tracking, theme detection, and yearly voice capsules.</td>
-        </tr>
-        <tr>
-          <td><strong>Persuasion Intelligence</strong></td>
-          <td>Sales and negotiation analysis including win/loss patterns, objection-handling quality, and stress-based voice indicators.</td>
-        </tr>
-      </tbody>
-    </table>
+    <p>Fenno Pro unlocks, among other features:</p>
+    <ul>
+      <li>Unlimited recordings and full analysis history</li>
+      <li>Full voice analysis, AI insights and coaching tips</li>
+      <li>Pattern Lenses (Energy, Decision &amp; People)</li>
+      <li>Voice vs Words comparison and biometric timeline</li>
+      <li>Key Moments — the turning-point timeline of a conversation</li>
+      <li>Multi-speaker analysis</li>
+      <li>Goal tracking, proactive nudges and weekly reports</li>
+    </ul>
 
-    <p>An <strong>All Layers Bundle</strong> is available at a discounted rate, granting access to all five premium layers. A <strong>Lifetime Purchase</strong> option is also offered for select layers, providing permanent access via a one-time payment.</p>
+    <p>The exact feature set may evolve over time; the in-app paywall always reflects the current offering.</p>
 
     <!-- 5 -->
     <h2><span class="section-number">5.</span> Subscriptions, Billing &amp; Cancellation</h2>
@@ -284,7 +264,7 @@
     <p>All subscriptions are managed through Apple's App Store and processed via StoreKit 2. We do not collect or handle payment information directly. By subscribing, you agree to Apple's terms governing in-app purchases and subscriptions.</p>
 
     <h3>5.2 Free Trials</h3>
-    <p>Each premium layer may offer a 7-day free trial for eligible users. If you do not cancel before the trial ends, your subscription will automatically convert to a paid subscription at the applicable rate.</p>
+    <p>Fenno Pro subscriptions may offer a free trial for eligible users (currently 3 days for the monthly plan and 7 days for the annual plan; the in-app paywall always shows the applicable trial, if any). If you do not cancel before the trial ends, your subscription will automatically convert to a paid subscription at the applicable rate.</p>
 
     <h3>5.3 Renewal &amp; Cancellation</h3>
     <p>Subscriptions renew automatically at the end of each billing cycle (monthly or annually) unless cancelled at least 24 hours before the end of the current period. Cancellations take effect at the end of the current billing cycle; you retain access to premium features until that date. You can manage or cancel subscriptions at any time through your iPhone's Settings &gt; Apple ID &gt; Subscriptions.</p>
@@ -303,7 +283,7 @@
     </div>
 
     <h3>6.1 Technology Stack</h3>
-    <p>Fenno uses on-device machine learning models including WhisperKit for transcription, Core ML for speaker identification and voice analysis, Apple's NaturalLanguage framework for text processing, and a local large language model for generating insights. None of these processes require an internet connection for their core functions.</p>
+    <p>Fenno uses Apple's on-device frameworks and its own on-device signal processing: the Speech framework for on-device transcription, Accelerate-based audio analysis for voice metrics and speaker identification, and the NaturalLanguage framework for text processing and insight generation. None of these processes require an internet connection for their core functions.</p>
 
     <h3>6.2 Data Storage</h3>
     <p>All recordings, transcripts, analysis results, and personal insights are stored locally on your device using encrypted storage (NSFileProtectionComplete). Your data is protected by your device's passcode, Face ID, or Touch ID.</p>
@@ -314,7 +294,7 @@
     <h3>6.4 Limited Network Communications</h3>
     <p>The only network communications Fenno makes are for subscription verification with Apple's App Store servers and for checking app updates. No audio, transcripts, or analysis data is ever included in these communications.</p>
 
-    <p>For full details, please review our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+    <p>For full details, please review our <a href="fenno-privacy-policy.html">Privacy Policy</a>.</p>
 
     <!-- 7 -->
     <h2><span class="section-number">7.</span> User Responsibilities &amp; Recording Consent</h2>
