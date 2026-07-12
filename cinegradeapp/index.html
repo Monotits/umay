@@ -245,6 +245,8 @@
       padding: 0 20px 8px;
     }
     .ss-scroll::-webkit-scrollbar { display: none; }
+    /* Galeriyi ortala: içerik taşmıyorsa ortalanır, taşıyorsa kaydırma bozulmaz */
+    .ss-scroll::before, .ss-scroll::after { content: ''; margin: auto; }
     .ss-scroll img {
       flex-shrink: 0;
       width: 190px;
