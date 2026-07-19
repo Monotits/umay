@@ -1,204 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms of Use - SuppLab</title>
-<style>
-  :root{
-    --bg:#ffffff;--ink:#14181f;--muted:#5c6672;--line:#e6e9ee;
-    --accent:#0f9d6b;--accent-soft:#eafaf3;
-  }
-  @media (prefers-color-scheme: dark){
-    :root{--bg:#0e1116;--ink:#e8edf2;--muted:#93a0ad;--line:#232a33;--accent:#3ee6a8;--accent-soft:#12251d;}
-  }
-  *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%}
-  body{margin:0;background:var(--bg);color:var(--ink);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    line-height:1.65;font-size:17px}
-  .wrap{max-width:760px;margin:0 auto;padding:56px 22px 80px}
-  header h1{font-size:34px;line-height:1.15;margin:0 0 6px;letter-spacing:-.02em}
-  header .sub{color:var(--muted);font-size:17px;margin:0 0 22px}
-  .meta{background:var(--accent-soft);border:1px solid var(--line);border-radius:12px;
-    padding:16px 18px;font-size:15px;margin:0 0 30px}
-  .meta div{margin:2px 0}
-  h2{font-size:20px;margin:34px 0 8px;letter-spacing:-.01em}
-  p,li{margin:8px 0}
-  a{color:var(--accent);text-decoration:none}
-  a:hover{text-decoration:underline}
-  ul{padding-left:20px;margin:8px 0}
-  li{margin:5px 0}
-  .callout{background:var(--accent-soft);border-left:3px solid var(--accent);
-    border-radius:8px;padding:14px 16px;margin:18px 0;font-size:15.5px}
-  hr{border:none;border-top:1px solid var(--line);margin:40px 0}
-  footer{color:var(--muted);font-size:14px;text-align:center}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use - SuppLab</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; line-height: 1.6; color: #333; background-color: #f5f5f5; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background-color: white; padding: 40px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-radius: 8px; }
+        h1 { font-size: 2.5em; color: #2c3e50; margin-bottom: 10px; border-bottom: 3px solid #3498db; padding-bottom: 15px; }
+        .subtitle { font-size: 1.2em; color: #7f8c8d; margin-bottom: 30px; }
+        .meta-info { background-color: #ecf0f1; padding: 15px; border-radius: 5px; margin-bottom: 30px; font-size: 0.95em; }
+        h2 { font-size: 1.8em; color: #2c3e50; margin-top: 40px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #3498db; }
+        h3 { font-size: 1.3em; color: #34495e; margin-top: 25px; margin-bottom: 15px; }
+        p { margin-bottom: 15px; text-align: justify; }
+        ul, ol { margin-left: 30px; margin-bottom: 15px; }
+        li { margin-bottom: 8px; }
+        strong { color: #2c3e50; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .highlight-box { background-color: #e8f4f8; border-left: 4px solid #3498db; padding: 20px; margin: 20px 0; border-radius: 4px; }
+        .footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #ddd; text-align: center; color: #7f8c8d; font-size: 0.9em; }
+    </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <h1>Terms of Use</h1>
-    <p class="sub">SuppLab — End User License Agreement (EULA)</p>
-  </header>
+    <div class="container">
+        <h1>Terms of Use</h1>
+        <p class="subtitle">End-User License Agreement (EULA) &#8212; SuppLab - Supplement Tracker</p>
+        <div class="meta-info">
+            <strong>App:</strong> SuppLab - Supplement Tracker (dev.umay.supplab)<br>
+            <strong>Developer:</strong> Umay &#8212; <a href="https://umay.dev">https://umay.dev</a><br>
+            <strong>Effective Date:</strong> July 19, 2026
+        </div>
 
-  <div class="meta">
-    <div><strong>Effective Date:</strong> July 19, 2026</div>
-    <div><strong>Developer:</strong> Umay (indie developer)</div>
-    <div><strong>Bundle ID:</strong> dev.umay.supplab</div>
-    <div><strong>Website:</strong> <a href="https://umay.dev">https://umay.dev</a></div>
-  </div>
+        <div class="highlight-box">
+            Please read these Terms carefully before using SuppLab. By downloading or using the app, you agree to be bound by these terms. If you do not agree, do not use the app.
+        </div>
 
-  <p>These Terms of Use (the &ldquo;Terms&rdquo;) govern your access to and use of the SuppLab
-  mobile application and any related services (collectively, the &ldquo;App&rdquo;), provided by
-  Umay (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;the Developer&rdquo;). By downloading,
-  installing, or using the App, you agree to be bound by these Terms. If you do not agree, do not
-  use the App.</p>
+        <h2>1. Agreement to Terms</h2>
+        <p>This End-User License Agreement (&#8220;Agreement&#8221;) is a legal agreement between you (&#8220;User&#8221;) and Umay (&#8220;Developer,&#8221; &#8220;we,&#8221; &#8220;us,&#8221; or &#8220;our&#8221;) for the use of SuppLab - Supplement Tracker (&#8220;App&#8221;). This Agreement is entered into between you and the Developer, not with Apple Inc. Apple is not a party to this Agreement and bears no responsibility for the App or its content.</p>
 
-  <div class="callout">
-    <strong>Important — not medical advice.</strong> SuppLab is an educational tool for
-    self-experimentation and general information. It is not a medical device and does not provide
-    medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional
-    before starting, stopping, or changing any supplement, medication, or health routine. See
-    Section 4.
-  </div>
+        <h2>2. License Grant</h2>
+        <p>Subject to your compliance with these Terms, the Developer grants you a limited, non-exclusive, non-transferable, revocable license to download and use the App on any Apple-branded device that you own or control, as permitted by the App Store Terms of Service.</p>
+        <p>You may not:</p>
+        <ul>
+            <li>Copy, modify, or distribute the App or any portion thereof.</li>
+            <li>Reverse-engineer, decompile, or attempt to extract the source code of the App.</li>
+            <li>Rent, lease, lend, sell, or sublicense the App.</li>
+            <li>Remove or alter any proprietary notices or labels on the App.</li>
+            <li>Use the App in any manner that could damage or impair its operation.</li>
+        </ul>
 
-  <h2>1. Acceptance of Terms</h2>
-  <p>By using the App you confirm that you are at least 18 years old (or the age of majority in your
-  jurisdiction), that you can form a binding contract, and that you accept these Terms and our
-  <a href="https://umay.dev/supplab-privacy-policy.html">Privacy Policy</a>. Your use of the App is
-  also subject to Apple&rsquo;s Licensed Application End User License Agreement
-  (&ldquo;Apple&rsquo;s Standard EULA&rdquo;), which is incorporated by reference; where these Terms
-  and Apple&rsquo;s Standard EULA conflict, these Terms govern to the extent permitted.</p>
+        <h2>3. Subscriptions and In-App Purchases</h2>
+        <p>SuppLab may offer optional premium features through in-app purchases or auto-renewing subscriptions (&#8220;Paid Features&#8221;). All purchases are processed exclusively by Apple through the App Store. The Developer never directly processes or stores payment information.</p>
 
-  <h2>2. License Grant</h2>
-  <p>We grant you a limited, non-exclusive, non-transferable, revocable license to download and use
-  the App on any Apple-branded device that you own or control, for your personal, non-commercial use,
-  in accordance with these Terms and the App Store Terms of Service. You may not copy, modify,
-  distribute, sell, lease, reverse-engineer, or attempt to extract the source code of the App, except
-  where such restriction is prohibited by applicable law.</p>
+        <h3>3.1 Auto-Renewal</h3>
+        <p>If you purchase a subscription, it will automatically renew at the end of each billing period unless you cancel at least 24 hours before the renewal date. Your Apple ID account will be charged for renewal within 24 hours prior to the end of the current subscription period at the then-current price.</p>
 
-  <h2>3. Subscriptions and In-App Purchases</h2>
-  <p>The App&rsquo;s core library, label scanning, and stack tracking are free. Certain premium
-  features (including running personal experiments, decision cards, and analytics) require a paid
-  subscription (&ldquo;Premium&rdquo;). SuppLab offers an annual plan (with an optional free trial)
-  and a weekly plan.</p>
-  <ul>
-    <li>All purchases are processed by Apple through the App Store. Payment is charged to your Apple
-      ID account at confirmation of purchase.</li>
-    <li>Subscriptions automatically renew unless auto-renew is turned off at least 24 hours before the
-      end of the current period. Your account is charged for renewal within 24 hours prior to the end
-      of the period.</li>
-    <li>If a free trial is offered, any unused portion is forfeited when you purchase a subscription,
-      where applicable.</li>
-    <li>You can manage or cancel your subscription, and turn off auto-renew, in your Apple ID account
-      settings. Uninstalling the App does not cancel your subscription.</li>
-    <li>Refunds are handled by Apple in accordance with Apple&rsquo;s policies. We do not process
-      payments and cannot issue refunds directly.</li>
-  </ul>
+        <h3>3.2 Managing Subscriptions</h3>
+        <p>You can manage and cancel your subscriptions at any time by going to your App Store account settings on your device. Cancellation takes effect at the end of the current paid period; no refund is issued for unused time in the current period unless required by applicable law.</p>
 
-  <h2>4. Health &amp; Medical Disclaimer</h2>
-  <p>SuppLab is provided for informational and educational purposes only and is intended for use by
-  generally healthy adults. It is <strong>not</strong> a substitute for professional medical advice,
-  diagnosis, or treatment, and it does not create a doctor&ndash;patient relationship.</p>
-  <ul>
-    <li>The App&rsquo;s content, evidence ratings, experiment protocols, and &ldquo;decision cards&rdquo;
-      are general information and personal, non-clinical estimates. They are not medical conclusions.</li>
-    <li>Do not use the App to diagnose or treat any health problem or disease. Never disregard,
-      avoid, or delay obtaining medical advice because of anything you read or see in the App.</li>
-    <li>Always consult a qualified healthcare professional before starting, stopping, combining, or
-      changing the dose of any supplement or medication — especially if you are pregnant or
-      breastfeeding, have a medical condition, or take prescription medication.</li>
-    <li>Supplements can carry risks and interactions. Follow the &ldquo;consult your doctor&rdquo;
-      flags and cautions shown in the App, and stop use and seek care if you experience any adverse
-      effect.</li>
-    <li>If you think you may have a medical emergency, call your doctor or your local emergency number
-      immediately.</li>
-  </ul>
-  <p>You are solely responsible for any decisions you make regarding supplements, and you assume all
-  risk arising from your use of the App.</p>
+        <h3>3.3 Price Changes</h3>
+        <p>We reserve the right to change subscription prices. Price changes will take effect at the start of the next subscription period after the change. Apple will notify you in advance of any price change in accordance with their policies.</p>
 
-  <h2>5. Acceptable Use</h2>
-  <p>You agree to use the App only for lawful purposes and not to: (a) use it in any way that violates
-  applicable law or regulation; (b) interfere with or disrupt the App or its security; (c) attempt to
-  gain unauthorized access to any systems; or (d) use the App to provide medical advice to others or
-  in any clinical or professional capacity.</p>
+        <h3>3.4 Refunds</h3>
+        <p>All refund requests must be submitted directly to Apple in accordance with their refund policy. The Developer has no control over and cannot process refunds independently.</p>
 
-  <h2>6. Intellectual Property</h2>
-  <p>The App, including its content, design, text, graphics, logos, and software, is owned by the
-  Developer and protected by intellectual property laws. Except for the limited license granted above,
-  no rights are transferred to you. &ldquo;SuppLab&rdquo; and related marks are the property of the
-  Developer.</p>
+        <h2>4. Not Medical Advice</h2>
+        <div class="highlight-box">
+            <strong>Important:</strong> SuppLab is a personal tracking and self-experimentation tool. It is not a medical device and does not provide medical advice, diagnosis, or treatment. The supplement information and evidence summaries in the App are provided for informational and educational purposes only. Always consult a qualified healthcare professional before starting, stopping, or modifying any supplement or medication regimen. Do not use the App as a substitute for professional medical advice.
+        </div>
 
-  <h2>7. Privacy</h2>
-  <p>SuppLab is designed to be privacy-first. It has no backend and no user accounts, and your health
-  and personal data stay on your device. Our handling of information is described in our
-  <a href="https://umay.dev/supplab-privacy-policy.html">Privacy Policy</a>, which forms part of these
-  Terms.</p>
+        <h2>5. Acceptable Use</h2>
+        <p>You agree to use SuppLab only for lawful personal purposes and in accordance with these Terms. You agree not to:</p>
+        <ul>
+            <li>Use the App for any illegal or unauthorized purpose.</li>
+            <li>Use the App in a way that could harm yourself or others.</li>
+            <li>Attempt to circumvent any security or integrity features of the App.</li>
+            <li>Use automated tools to access or interact with the App in an unauthorized manner.</li>
+        </ul>
 
-  <h2>8. Third-Party Services</h2>
-  <p>The App integrates with Apple services, including the App Store, StoreKit (for purchases), and
-  HealthKit (for optional, read-only access to health data you choose to share). Your use of those
-  services is subject to Apple&rsquo;s terms and privacy policies. We are not responsible for
-  third-party services or their content.</p>
+        <h2>6. Intellectual Property</h2>
+        <p>The App, including its content, design, graphics, evidence summaries, and underlying code, is owned by Umay and is protected by copyright, trademark, and other intellectual property laws of the Republic of T&#252;rkiye and applicable international conventions. The supplement information database bundled within the App is proprietary to the Developer. You are granted no rights in or to the App beyond the limited license set out in Section 2.</p>
 
-  <h2>9. Disclaimer of Warranties</h2>
-  <p>The App is provided &ldquo;as is&rdquo; and &ldquo;as available,&rdquo; without warranties of any
-  kind, whether express, implied, or statutory, including implied warranties of merchantability,
-  fitness for a particular purpose, accuracy, and non-infringement. We do not warrant that the App
-  will be uninterrupted, error-free, or that any content, evidence rating, or experiment result is
-  accurate, complete, or reliable for your circumstances.</p>
+        <h2>7. Disclaimer of Warranties</h2>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE APP IS PROVIDED &#8220;AS IS&#8221; AND &#8220;AS AVAILABLE,&#8221; WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. THE DEVELOPER EXPRESSLY DISCLAIMS ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, AND NON-INFRINGEMENT.</p>
+        <p>The Developer does not warrant that:</p>
+        <ul>
+            <li>The App will be uninterrupted, error-free, or free of harmful components.</li>
+            <li>The supplement information in the App is complete, accurate, current, or applicable to your individual circumstances.</li>
+            <li>The results of any N-of-1 experiment conducted through the App will be accurate or medically significant.</li>
+            <li>The App will meet your specific requirements or expectations.</li>
+        </ul>
 
-  <h2>10. Limitation of Liability</h2>
-  <p>To the maximum extent permitted by law, the Developer shall not be liable for any indirect,
-  incidental, special, consequential, or punitive damages, or any loss of data, health outcomes,
-  profits, or goodwill, arising out of or related to your use of (or inability to use) the App, even
-  if advised of the possibility of such damages. To the extent liability cannot be excluded, our total
-  liability is limited to the amount you paid for the App in the twelve (12) months preceding the
-  claim, or, where no amount was paid, to USD 50.</p>
+        <h2>8. Limitation of Liability</h2>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE DEVELOPER BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, LOSS OF DATA, PERSONAL INJURY, OR PROPERTY DAMAGE, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF OR INABILITY TO USE THE APP, EVEN IF THE DEVELOPER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+        <p>In all other cases, the Developer&#8217;s total cumulative liability to you for all claims arising from or related to this Agreement shall not exceed the amount you paid for the App in the twelve (12) months immediately preceding the claim, or USD $1.00, whichever is greater.</p>
 
-  <h2>11. Indemnification</h2>
-  <p>You agree to indemnify and hold harmless the Developer from any claims, damages, liabilities, and
-  expenses (including reasonable legal fees) arising out of your use of the App, your violation of
-  these Terms, or your violation of any rights of a third party.</p>
+        <h2>9. Third-Party Beneficiary</h2>
+        <p>You acknowledge that Apple and its subsidiaries are third-party beneficiaries of this Agreement and that, upon your acceptance of these Terms, Apple will have the right to enforce this Agreement against you as a third-party beneficiary thereof. Apple has no obligation whatsoever with respect to the App or its content.</p>
 
-  <h2>12. Termination</h2>
-  <p>These Terms remain in effect while you use the App. We may suspend or terminate your access at any
-  time if you breach these Terms. You may terminate at any time by ceasing to use and deleting the App.
-  Sections that by their nature should survive termination (including Sections 4, 6, 9, 10, and 11)
-  will survive.</p>
+        <h2>10. App Store Terms</h2>
+        <p>Your use of the App is also subject to Apple&#8217;s App Store Terms of Service, which are incorporated into this Agreement by reference. In the event of a conflict between this Agreement and Apple&#8217;s App Store Terms of Service, Apple&#8217;s terms shall govern with respect to App Store-related matters.</p>
 
-  <h2>13. Governing Law and Dispute Resolution</h2>
-  <p>These Terms are governed by the laws of the Republic of Türkiye, without regard to conflict-of-law
-  principles. Subject to any mandatory consumer-protection rights available to you in your country of
-  residence, the courts of Türkiye shall have jurisdiction over any dispute arising from these Terms.</p>
+        <h2>11. Children</h2>
+        <p>SuppLab is not directed at children under the age of 13. By using the App, you represent that you are at least 13 years of age. If you are under 18, you represent that a parent or legal guardian has reviewed and agreed to these Terms on your behalf.</p>
 
-  <h2>14. Apple as Third-Party Beneficiary</h2>
-  <p>You acknowledge that these Terms are between you and the Developer only, not with Apple. Apple has
-  no obligation to provide maintenance or support for the App. Apple, and Apple&rsquo;s subsidiaries,
-  are third-party beneficiaries of these Terms and may enforce them against you. In the event of any
-  failure of the App to conform to any applicable warranty, you may notify Apple, and Apple may refund
-  the purchase price (if any); to the maximum extent permitted by law, Apple has no other warranty
-  obligation with respect to the App.</p>
+        <h2>12. Termination</h2>
+        <p>This Agreement is effective until terminated. Your rights under this Agreement will terminate automatically without notice if you fail to comply with any of its terms. Upon termination, you must cease all use of the App and delete all copies from your devices. Sections 6, 7, 8, and 13 survive termination.</p>
 
-  <h2>15. Changes to These Terms</h2>
-  <p>We may update these Terms from time to time. The updated version will be posted at this URL with a
-  new effective date. Your continued use of the App after changes take effect constitutes acceptance of
-  the revised Terms.</p>
+        <h2>13. Governing Law &amp; Dispute Resolution</h2>
+        <p>This Agreement is governed by and construed in accordance with the laws of the Republic of T&#252;rkiye, without regard to its conflict of law provisions. Any disputes arising out of or in connection with this Agreement shall be subject to the exclusive jurisdiction of the competent courts located in T&#252;rkiye.</p>
+        <p>If you are a consumer resident in a jurisdiction where mandatory consumer protection laws apply (including but not limited to the EU, UK, or California), you may have additional rights that cannot be waived by contract; nothing in this Agreement limits those rights.</p>
 
-  <h2>16. Severability</h2>
-  <p>If any provision of these Terms is held to be invalid or unenforceable, the remaining provisions
-  will remain in full force and effect.</p>
+        <h2>14. Severability</h2>
+        <p>If any provision of this Agreement is found to be unenforceable or invalid under applicable law, that provision will be modified to the minimum extent necessary to make it enforceable, or if modification is not possible, severed from this Agreement. The remaining provisions will continue in full force and effect.</p>
 
-  <h2>17. Entire Agreement</h2>
-  <p>These Terms, together with the Privacy Policy and Apple&rsquo;s Standard EULA, constitute the entire
-  agreement between you and the Developer regarding the App and supersede any prior agreements.</p>
+        <h2>15. Changes to These Terms</h2>
+        <p>We reserve the right to modify these Terms at any time. We will notify you of material changes by updating the Effective Date at the top of this page. Your continued use of the App after changes are posted constitutes your acceptance of the revised Terms.</p>
 
-  <h2>18. Contact</h2>
-  <p>Questions about these Terms can be sent via <a href="https://umay.dev">https://umay.dev</a>.</p>
+        <h2>16. Contact</h2>
+        <p>If you have questions about these Terms of Use, please contact us:</p>
+        <ul>
+            <li><strong>Website:</strong> <a href="https://umay.dev">https://umay.dev</a></li>
+            <li><strong>Developer:</strong> Umay</li>
+        </ul>
 
-  <hr>
-  <footer>&copy; 2026 Umay. All rights reserved. &mdash; SuppLab &mdash; dev.umay.supplab</footer>
-</div>
+        <div class="footer">
+            <p>&copy; 2026 Umay. All rights reserved.</p>
+            <p>SuppLab - Supplement Tracker &bull; dev.umay.supplab</p>
+        </div>
+    </div>
 </body>
 </html>
