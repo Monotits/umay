@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - SuppLab</title>
+<style>
+  :root{
+    --bg:#ffffff;--ink:#14181f;--muted:#5c6672;--line:#e6e9ee;
+    --accent:#0f9d6b;--accent-soft:#eafaf3;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{--bg:#0e1116;--ink:#e8edf2;--muted:#93a0ad;--line:#232a33;--accent:#3ee6a8;--accent-soft:#12251d;}
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65;font-size:17px}
+  .wrap{max-width:760px;margin:0 auto;padding:56px 22px 80px}
+  header h1{font-size:34px;line-height:1.15;margin:0 0 6px;letter-spacing:-.02em}
+  header .sub{color:var(--muted);font-size:17px;margin:0 0 22px}
+  .meta{background:var(--accent-soft);border:1px solid var(--line);border-radius:12px;
+    padding:16px 18px;font-size:15px;margin:0 0 30px}
+  .meta div{margin:2px 0}
+  h2{font-size:20px;margin:34px 0 8px;letter-spacing:-.01em}
+  p,li{margin:8px 0}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  ul{padding-left:20px;margin:8px 0}
+  li{margin:5px 0}
+  .callout{background:var(--accent-soft);border-left:3px solid var(--accent);
+    border-radius:8px;padding:14px 16px;margin:18px 0;font-size:15.5px}
+  hr{border:none;border-top:1px solid var(--line);margin:40px 0}
+  footer{color:var(--muted);font-size:14px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="sub">SuppLab</p>
+  </header>
+
+  <div class="meta">
+    <div><strong>Effective Date:</strong> July 19, 2026</div>
+    <div><strong>Developer:</strong> Umay (indie developer)</div>
+    <div><strong>Bundle ID:</strong> dev.umay.supplab</div>
+    <div><strong>Website:</strong> <a href="https://umay.dev">https://umay.dev</a></div>
+  </div>
+
+  <p>Your privacy is fundamental to how SuppLab is built. SuppLab (the &ldquo;App&rdquo;) has
+  <strong>no backend servers and no user accounts</strong>. Everything you create in the App &mdash;
+  your supplement stack, experiments, check-ins, logs, reminders, and any health data &mdash; stays
+  <strong>entirely on your device</strong>. This Privacy Policy explains what that means in practice.</p>
+
+  <div class="callout">
+    <strong>In short:</strong> We do not collect, transmit, sell, or share your personal or health data.
+    There are no analytics SDKs, no advertising, and no trackers. Your data never leaves your iPhone
+    unless you explicitly export or share it yourself.
+  </div>
+
+  <h2>1. Information We Collect</h2>
+  <p>The Developer does not collect or receive any personal information from you. The App does not
+  require an account, a name, an email address, or a login.</p>
+  <p>The following information is created and stored <strong>locally on your device only</strong>, and
+  is never sent to us:</p>
+  <ul>
+    <li><strong>App data you enter:</strong> supplements in your stack, experiments, daily check-ins,
+      intake logs, reminder settings, and optional cost figures. This is stored on-device using
+      Apple&rsquo;s on-device database (SwiftData).</li>
+    <li><strong>Apple Health (HealthKit) data:</strong> if you grant permission, the App reads
+      <em>read-only</em> health metrics &mdash; sleep analysis, heart rate variability (HRV), resting
+      heart rate, and step count &mdash; to build your personal baseline and measure supplement effects.
+      This data is processed on your device and is never uploaded, and the App does not write any data
+      back to Apple Health.</li>
+    <li><strong>Camera (label scanning):</strong> if you use the label scanner, the camera image is
+      analyzed on your device (using Apple&rsquo;s Vision framework) to recognize supplement ingredient
+      names. Images are processed transiently in memory and are <strong>not stored, saved, or
+      uploaded</strong>.</li>
+  </ul>
+
+  <h2>2. How We Use Information</h2>
+  <p>Because your data stays on your device, it is used only by the App, on your device, to provide its
+  features:</p>
+  <ul>
+    <li>To run your randomized personal (N-of-1) experiments and generate your decision cards.</li>
+    <li>To build your baseline and analytics from Apple Health data and your check-ins.</li>
+    <li>To deliver local notifications (protocol and stack reminders) scheduled on your device.</li>
+    <li>To match scanned ingredients to the in-app library.</li>
+  </ul>
+  <p><strong>HealthKit-specific commitment:</strong> Health data obtained through HealthKit is used
+  solely to provide the App&rsquo;s features to you. We do not, and will never, use HealthKit data for
+  advertising, marketing, or data-mining, and we do not sell it or disclose it to any third party.</p>
+
+  <h2>3. Third Parties</h2>
+  <p>SuppLab does not include third-party analytics, advertising networks, or tracking SDKs. The only
+  third party involved is <strong>Apple</strong>:</p>
+  <ul>
+    <li><strong>Purchases:</strong> subscriptions and in-app purchases are processed by Apple through
+      the App Store and StoreKit. We never see or receive your payment card details. Apple&rsquo;s
+      handling of your purchase information is governed by
+      <a href="https://www.apple.com/legal/privacy/">Apple&rsquo;s Privacy Policy</a>.</li>
+    <li><strong>Apple Health:</strong> health data is provided locally by Apple&rsquo;s HealthKit
+      framework, with your permission, and remains on your device.</li>
+  </ul>
+
+  <h2>4. Data Retention and Deletion</h2>
+  <p>Since we hold no copy of your data, there is nothing for us to retain or delete on a server. You
+  are always in control:</p>
+  <ul>
+    <li>You can delete all app data at any time from <em>Settings &rarr; Delete All Data</em> inside the
+      App.</li>
+    <li>Deleting (uninstalling) the App removes all of its on-device data from your device.</li>
+    <li>You can revoke the App&rsquo;s access to Apple Health at any time in the iOS Settings &rarr;
+      Privacy &amp; Security &rarr; Health.</li>
+  </ul>
+
+  <h2>5. Your Rights</h2>
+  <p>Applicable privacy laws (such as the GDPR and CCPA) give you rights over your personal data,
+  including the rights to access, correct, delete, and port it. Because the App collects no personal
+  data and stores everything locally under your control, you can exercise these rights directly: all of
+  your data is on your device, viewable in the App, and deletable by you at any time. If you have any
+  questions about your rights, contact us using the details in Section 8.</p>
+
+  <h2>6. Children&rsquo;s Privacy</h2>
+  <p>SuppLab is intended for generally healthy adults and is not directed to children. We do not
+  knowingly collect information from children under the age of 13 (or the minimum age required in your
+  jurisdiction). The App should not be used by anyone under 18 without the involvement of a parent,
+  guardian, and a healthcare professional.</p>
+
+  <h2>7. Changes to This Privacy Policy</h2>
+  <p>We may update this Privacy Policy from time to time. The current version will always be posted at
+  this URL with an updated effective date. Material changes will be reflected here; your continued use
+  of the App after an update constitutes acceptance of the revised policy.</p>
+
+  <h2>8. Contact</h2>
+  <p>If you have questions about this Privacy Policy or your data, please reach us via
+  <a href="https://umay.dev">https://umay.dev</a>.</p>
+
+  <hr>
+  <footer>&copy; 2026 Umay. All rights reserved. &mdash; SuppLab &mdash; dev.umay.supplab</footer>
+</div>
+</body>
+</html>
