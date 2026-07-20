@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SuppLab — Test Your Supplements on Yourself | iOS</title>
+  <meta name="description" content="SuppLab tells you whether your supplements actually work — on you. Randomized personal (N-of-1) experiments turn your own sleep, HRV, and energy into plain-language proof. Private and on-device." />
+  <meta name="keywords" content="supplement scanner, supplement tracker, does magnesium work, N-of-1 experiment, self experiment app, HRV, sleep tracker, biohacking, quantified self, supplement effects" />
+  <meta name="author" content="umay.dev" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <link rel="icon" href="../assets/favicon.png" />
+  <link rel="canonical" href="https://umay.dev/supplab/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SuppLab — Test Your Supplements on Yourself" />
+  <meta property="og:description" content="Find out if your supplements actually work — with randomized personal experiments, not guesswork. Private and on-device." />
+  <meta property="og:url" content="https://umay.dev/supplab/" />
+  <meta property="og:image" content="https://umay.dev/supplab/icon.png" />
+  <meta property="og:site_name" content="umay.dev" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SuppLab — Test Your Supplements on Yourself" />
+  <meta name="twitter:description" content="Find out if your supplements actually work — with randomized personal experiments, not guesswork." />
+  <meta name="twitter:image" content="https://umay.dev/supplab/icon.png" />
+  <meta name="twitter:site" content="@yumaydev" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "SuppLab",
+    "operatingSystem": "iOS",
+    "applicationCategory": "HealthApplication",
+    "description": "SuppLab helps you run randomized personal (N-of-1) experiments to see whether a supplement has a measurable effect on your own sleep, HRV, energy, focus, or mood. Educational, evidence-based, and fully on-device.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "author": {
+      "@type": "Organization",
+      "name": "umay.dev",
+      "url": "https://umay.dev",
+      "sameAs": ["https://x.com/yumaydev", "https://www.instagram.com/umay.dev"]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Is SuppLab medical advice?", "acceptedAnswer": { "@type": "Answer", "text": "No. SuppLab is an educational tool for self-experimentation. It is not a medical device and does not diagnose or treat any condition. Always consult a healthcare professional before changing a supplement or medication." } },
+      { "@type": "Question", "name": "Do I need Apple Health to use it?", "acceptedAnswer": { "@type": "Answer", "text": "No. Apple Health is optional. If you connect it, SuppLab reads sleep and HRV to measure effects automatically. If you don't, you can log a 10-second daily check-in instead." } },
+      { "@type": "Question", "name": "Is my data private?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. SuppLab has no accounts and no servers. Your data — and any Apple Health data you allow it to read — stays on your device and is never uploaded." } }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0a0c;
+      --surface: #111114;
+      --border: #222228;
+      --text: #e8e8ec;
+      --muted: #888896;
+      --accent: #3ee6a8;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+    nav { padding: 16px 20px; border-bottom: 1px solid var(--border); }
+    nav .container { display: flex; align-items: center; justify-content: space-between; }
+    .nav-brand { font-size: 14px; font-weight: 600; letter-spacing: 0.04em; color: var(--muted) !important; }
+    nav a { color: var(--muted); font-size: 14px; }
+    nav a:hover { color: var(--text); text-decoration: none; }
+    .hero { padding: 72px 20px 56px; text-align: center; }
+    .hero-icon { width: 100px; height: 100px; border-radius: 24px; margin: 0 auto 24px; overflow: hidden; border: 1px solid var(--border); box-shadow: 0 8px 30px rgba(62,230,168,0.12); }
+    .hero-icon img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .hero .app-subtitle { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+    .hero h1 { font-size: clamp(30px, 7vw, 46px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 20px; }
+    .hero .tagline { font-size: clamp(16px, 3vw, 19px); color: var(--muted); max-width: 480px; margin: 0 auto 40px; line-height: 1.55; }
+    .badge-wrap { display: inline-flex; flex-direction: column; align-items: center; gap: 10px; }
+    .appstore-badge { display: inline-flex; align-items: center; gap: 11px; background: #17181c; color: var(--text); border: 1px solid var(--border); border-radius: 12px; padding: 11px 22px; font-weight: 600; font-size: 15px; }
+    .badge-sub { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.07em; }
+    .features { padding: 60px 20px; border-top: 1px solid var(--border); }
+    .section-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+    .section-title { font-size: clamp(22px, 4.5vw, 32px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 40px; }
+    .feature-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+    @media (min-width: 520px) { .feature-grid { grid-template-columns: 1fr 1fr; } }
+    .feature-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px; }
+    .feature-icon { font-size: 26px; margin-bottom: 12px; display: block; line-height: 1; }
+    .feature-card h3 { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+    .feature-card p { font-size: 14px; color: var(--muted); line-height: 1.55; }
+    .creators { padding: 60px 20px; border-top: 1px solid var(--border); }
+    .creators-body { font-size: clamp(16px, 2.5vw, 18px); color: var(--muted); line-height: 1.7; max-width: 580px; }
+    .creators-body strong { color: var(--text); font-weight: 600; }
+    .privacy { padding: 48px 20px; border-top: 1px solid var(--border); background: var(--surface); }
+    .privacy p { font-size: 14px; color: var(--muted); line-height: 1.65; max-width: 580px; }
+    #support { padding: 60px 20px; border-top: 1px solid var(--border); }
+    .faq-list { margin-top: 28px; display: flex; flex-direction: column; gap: 14px; }
+    .faq-item { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; }
+    .faq-item h4 { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+    .faq-item p { font-size: 14px; color: var(--muted); line-height: 1.55; }
+    .contact-block { margin-top: 28px; padding: 20px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; font-size: 14px; color: var(--muted); line-height: 1.6; }
+    .contact-block strong { color: var(--text); }
+    footer { border-top: 1px solid var(--border); padding: 36px 20px; }
+    footer .container { display: flex; flex-direction: column; gap: 14px; align-items: center; text-align: center; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .footer-links a { font-size: 13px; color: var(--muted); }
+    .footer-links a:hover { color: var(--text); text-decoration: none; }
+    .copy { font-size: 12px; color: #46464f; }
+    .disclaimer { font-size: 12px; color: #5a5a63; max-width: 580px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="https://umay.dev" class="nav-brand">umay.dev</a>
+    <a href="#support">Support</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-icon"><img src="icon.png" alt="SuppLab app icon" /></div>
+    <p class="app-subtitle">Evidence-based supplement experiments</p>
+    <h1>SuppLab</h1>
+    <p class="tagline">Find out if your supplements actually work &mdash; on you. Randomized personal (N-of-1) experiments turn your own sleep, HRV, and energy into plain-language proof.</p>
+    <div class="badge-wrap">
+      <span class="appstore-badge">Coming Soon to the App Store</span>
+      <span class="badge-sub">iPhone &middot; iOS 17+</span>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <p class="section-label">Why SuppLab</p>
+    <h2 class="section-title">Test. Don&rsquo;t guess.</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">&#129514;</span>
+        <h3>Personal Experiments</h3>
+        <p>A randomized N-of-1 protocol quietly tells you which evenings to take it and which to skip &mdash; the method used in real clinical trials.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">&#128202;</span>
+        <h3>Decision Cards</h3>
+        <p>A plain-language verdict: &ldquo;Magnesium improves your deep sleep by 12%,&rdquo; or &ldquo;no measurable effect &mdash; that&rsquo;s money you could save.&rdquo;</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">&#128218;</span>
+        <h3>Evidence Library</h3>
+        <p>Curated supplements with honest evidence grades, expected-onset timelines, and clear &ldquo;consult your doctor&rdquo; cautions.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">&#10084;&#65039;</span>
+        <h3>Automatic Tracking</h3>
+        <p>Connect Apple Health and SuppLab measures sleep and HRV for you. No Health data? A 10-second daily check-in works too.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">&#128247;</span>
+        <h3>Label Scanner</h3>
+        <p>Point your camera at a supplement label. On-device text recognition matches the ingredients to the library &mdash; no typing.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">&#128274;</span>
+        <h3>Private by Design</h3>
+        <p>No account, no servers. Your data &mdash; and any Apple Health data it reads &mdash; stays on your iPhone and is never uploaded.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="creators">
+  <div class="container">
+    <p class="section-label">Made for the curious</p>
+    <h2 class="section-title">Your body.<br>Your data. Real answers.</h2>
+    <p class="creators-body">
+      You spend real money on supplements every month, but one question stays unanswered: <strong>does this actually work for me?</strong><br><br>
+      SuppLab answers it the honest way &mdash; a randomized experiment on <strong>you</strong>, measured against your own baseline, ending in a verdict you can trust and share.
+    </p>
+  </div>
+</section>
+
+<section class="privacy">
+  <div class="container">
+    <p class="section-label">Privacy</p>
+    <p>SuppLab has no backend and no accounts. Everything you enter, and any Apple Health data you allow it to read, stays on your device &mdash; nothing is uploaded, and HealthKit data is never used for advertising. Full details are in our <a href="https://umay.dev/supplab-privacy-policy.html">Privacy Policy</a>.</p>
+  </div>
+</section>
+
+<section id="support">
+  <div class="container">
+    <p class="section-label">Support</p>
+    <h2 class="section-title">We&rsquo;re here to help.</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h4>Is SuppLab medical advice?</h4>
+        <p>No. SuppLab is an educational self-experimentation tool. It is not a medical device and does not diagnose or treat any condition. Always consult a qualified healthcare professional before starting, stopping, or changing a supplement or medication.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Do I need Apple Health to use it?</h4>
+        <p>No &mdash; it&rsquo;s optional. Connect Apple Health and SuppLab measures sleep and HRV automatically. If you prefer not to, a 10-second daily check-in captures energy, focus, and mood instead.</p>
+      </div>
+      <div class="faq-item">
+        <h4>How does an experiment work?</h4>
+        <p>You pick a supplement to test. SuppLab builds a randomized take/skip schedule and, each evening, tells you what to do. When it&rsquo;s done, it compares your take-days to your skip-days and gives you a personal verdict.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Is my data private?</h4>
+        <p>Completely. There are no accounts and no servers. Your data stays on your iPhone, is never uploaded, and can be deleted anytime from Settings.</p>
+      </div>
+    </div>
+    <div class="contact-block">
+      <strong>Still need help?</strong> Email us at <a href="mailto:experlercom@gmail.com">experlercom@gmail.com</a> and we&rsquo;ll get back to you within one business day.
+    </div>
+    <p class="disclaimer">SuppLab is for educational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment. It is not a regulated medical device.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="https://umay.dev">&larr; umay.dev</a>
+      <a href="https://umay.dev/supplab-privacy-policy.html">Privacy Policy</a>
+      <a href="https://umay.dev/supplab-terms-of-use.html">Terms of Use</a>
+      <a href="mailto:experlercom@gmail.com">Contact</a>
+    </div>
+    <p class="copy">&copy; 2026 umay.dev. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
