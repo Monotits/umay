@@ -144,6 +144,11 @@ for product in products:
         if not all(img.get(k) for k in ['width', 'height', 'srcset', 'sizes']):
             errors.append(f'{product["slug"]}: image missing responsive dimensions')
 home = pages[ROOT / 'index.html']
+home_html = (ROOT / 'index.html').read_text()
+for product in products:
+    gallery = re.search(r'id="gallery-' + re.escape(product['slug']) + r'"[^>]*>(.*?)</div>', home_html, re.S)
+    if not gallery or len(re.findall(r'<img\b', gallery[1])) != len(product['screenshots']):
+        errors.append(f'{product["slug"]}: homepage gallery must include every catalogue screenshot')
 if len([ref for ref in home.refs if ref.startswith('https://apps.apple.com/')]) != len(products):
     errors.append('Homepage must link directly to the store for every active app')
 if 'https://umay.dev/sitemap.xml' not in (ROOT / 'robots.txt').read_text():

@@ -11,7 +11,42 @@
     "privacy": "/calendartprivacypolicy.html",
     "terms": "/calendarttermsconditions.html",
     "guide": "private-mood-tracking-iphone",
-    "guideTitle": "How to keep a private mood journal on iPhone"
+    "guideTitle": "How to keep a private mood journal on iPhone",
+    "color": "violet",
+    "screenshots": [
+      {
+        "src": "assets/ShadowART/1.png",
+        "alt": "ShadowART mood check-in"
+      },
+      {
+        "src": "assets/ShadowART/2.png",
+        "alt": "ShadowART AI journaling"
+      },
+      {
+        "src": "assets/ShadowART/3.png",
+        "alt": "ShadowART reflection"
+      },
+      {
+        "src": "assets/ShadowART/4.png",
+        "alt": "ShadowART archetypes"
+      },
+      {
+        "src": "assets/ShadowART/5.png",
+        "alt": "ShadowART energy shifts"
+      },
+      {
+        "src": "assets/ShadowART/6.png",
+        "alt": "ShadowART constellation"
+      },
+      {
+        "src": "assets/ShadowART/7.png",
+        "alt": "ShadowART patterns"
+      },
+      {
+        "src": "assets/ShadowART/8.png",
+        "alt": "ShadowART archive"
+      }
+    ]
   },
   {
     "slug": "mindtype",
@@ -23,7 +58,50 @@
     "summary": "Explore your decision-making patterns with short game theory scenarios on iPhone. Play trust, cooperation and risk games, then review your decision profile.",
     "heading": "Game theory and decision games for iPhone",
     "privacy": "/mindtype-privacy-policy.html",
-    "terms": "/mindtype-terms-of-use.html"
+    "terms": "/mindtype-terms-of-use.html",
+    "color": "orange",
+    "screenshots": [
+      {
+        "src": "assets/TypeMind/MindType_AppStore_01.png",
+        "alt": "MindType scenarios"
+      },
+      {
+        "src": "assets/TypeMind/MindType_AppStore_02.png",
+        "alt": "MindType games"
+      },
+      {
+        "src": "assets/TypeMind/MindType_AppStore_03.png",
+        "alt": "MindType analysis"
+      },
+      {
+        "src": "assets/TypeMind/MindType_AppStore_04.png",
+        "alt": "MindType archetypes"
+      },
+      {
+        "src": "assets/TypeMind/MindType_AppStore_05.png",
+        "alt": "MindType dimensions"
+      },
+      {
+        "src": "assets/TypeMind/MindType_AppStore_06.png",
+        "alt": "MindType evolution"
+      },
+      {
+        "src": "assets/TypeMind/MindType_AppStore_07.png",
+        "alt": "MindType insights"
+      },
+      {
+        "src": "assets/TypeMind/MindType_AppStore_08.png",
+        "alt": "MindType biases"
+      },
+      {
+        "src": "assets/TypeMind/MindType_AppStore_09.png",
+        "alt": "MindType fingerprint"
+      },
+      {
+        "src": "assets/TypeMind/MindType_AppStore_10.png",
+        "alt": "MindType cards"
+      }
+    ]
   },
   {
     "slug": "brolled",
@@ -35,7 +113,50 @@
     "summary": "Make memes and short videos on iPhone with Brolled. Add auto captions, sync photos to a beat and create ranking videos for Reels, TikTok and Shorts.",
     "heading": "Meme maker and short video tools for iPhone",
     "guide": "add-captions-iphone-videos",
-    "guideTitle": "How to add captions to short videos on iPhone"
+    "guideTitle": "How to add captions to short videos on iPhone",
+    "color": "pink",
+    "screenshots": [
+      {
+        "src": "assets/Brolled/1.png",
+        "alt": "Brolled home screen"
+      },
+      {
+        "src": "assets/Brolled/2.png",
+        "alt": "Brolled meme effects"
+      },
+      {
+        "src": "assets/Brolled/3.png",
+        "alt": "Brolled chat story"
+      },
+      {
+        "src": "assets/Brolled/4.png",
+        "alt": "Brolled Would You Rather"
+      },
+      {
+        "src": "assets/Brolled/5.png",
+        "alt": "Brolled AI Quiz"
+      },
+      {
+        "src": "assets/Brolled/6.png",
+        "alt": "Brolled tools"
+      },
+      {
+        "src": "assets/Brolled/7.png",
+        "alt": "Brolled browse"
+      },
+      {
+        "src": "assets/Brolled/8.png",
+        "alt": "Brolled sounds"
+      },
+      {
+        "src": "assets/Brolled/9.png",
+        "alt": "Brolled beat sync"
+      },
+      {
+        "src": "assets/Brolled/10.png",
+        "alt": "Brolled pro"
+      }
+    ]
   },
   {
     "slug": "supplab",
@@ -47,7 +168,26 @@
     "summary": "Track supplements and personal observations on iPhone with SuppLab. Use optional Apple Health data, daily check-ins and an on-device label scanner.",
     "heading": "Supplement tracking and personal observations for iPhone",
     "privacy": "/supplab-privacy-policy.html",
-    "terms": "/supplab-terms-of-use.html"
+    "terms": "/supplab-terms-of-use.html",
+    "color": "green",
+    "screenshots": [
+      {
+        "src": "supplab/ss-1.png",
+        "alt": "SuppLab evidence-rated supplement detail"
+      },
+      {
+        "src": "supplab/ss-2.png",
+        "alt": "SuppLab screenshot"
+      },
+      {
+        "src": "supplab/ss-3.png",
+        "alt": "SuppLab screenshot"
+      },
+      {
+        "src": "supplab/ss-4.png",
+        "alt": "SuppLab screenshot"
+      }
+    ]
   },
   {
     "slug": "fenno",
@@ -59,7 +199,38 @@
     "summary": "Reflect on your speaking pace, filler words and vocal energy with Fenno for iPhone. Voice analysis runs on your device, with encrypted local recordings.",
     "heading": "Private voice reflection and speech insights for iPhone",
     "privacy": "/fenno-privacy-policy.html",
-    "terms": "/fenno-terms-of-use.html"
+    "terms": "/fenno-terms-of-use.html",
+    "color": "amber",
+    "screenshots": [
+      {
+        "src": "assets/Fenno/01_hero.png",
+        "alt": "Fenno voice analysis"
+      },
+      {
+        "src": "assets/Fenno/03_analysis.png",
+        "alt": "Fenno detailed analysis"
+      },
+      {
+        "src": "assets/Fenno/04_pulse.png",
+        "alt": "Fenno voice pulse"
+      },
+      {
+        "src": "assets/Fenno/05_mirror.png",
+        "alt": "Fenno voice mirror"
+      },
+      {
+        "src": "assets/Fenno/07_voice-words.png",
+        "alt": "Fenno voice words"
+      },
+      {
+        "src": "assets/Fenno/08_lenses.png",
+        "alt": "Fenno lenses"
+      },
+      {
+        "src": "assets/Fenno/09_signals.png",
+        "alt": "Fenno signals"
+      }
+    ]
   },
   {
     "slug": "cinegradeapp",
@@ -73,7 +244,26 @@
     "privacy": "/cinegradeapp-privacy-policy.html",
     "terms": "/cinegradeapp-terms-of-use.html",
     "guide": "cinematic-luts-iphone",
-    "guideTitle": "How to apply cinematic LUTs to iPhone videos"
+    "guideTitle": "How to apply cinematic LUTs to iPhone videos",
+    "color": "orange",
+    "screenshots": [
+      {
+        "src": "cinegradeapp/ss-1.png",
+        "alt": "Cinegrade film look selection"
+      },
+      {
+        "src": "cinegradeapp/ss-2.png",
+        "alt": "Cinegrade color grading controls"
+      },
+      {
+        "src": "cinegradeapp/ss-3.png",
+        "alt": "Cinegrade LUT library"
+      },
+      {
+        "src": "cinegradeapp/ss-4.png",
+        "alt": "Cinegrade before and after"
+      }
+    ]
   },
   {
     "slug": "cornerman",
@@ -85,7 +275,26 @@
     "summary": "Stay on top of family plans with Cornerman for iPhone. An on-device assistant for dads that connects calendar events, contacts and location to surface reminders.",
     "heading": "A calendar and reminder assistant for dads on iPhone",
     "privacy": "/cornerman-privacy-policy.html",
-    "terms": "/cornerman-terms-of-use.html"
+    "terms": "/cornerman-terms-of-use.html",
+    "color": "amber",
+    "screenshots": [
+      {
+        "src": "cornerman/ss-1.png",
+        "alt": "Cornerman screenshot 1"
+      },
+      {
+        "src": "cornerman/ss-2.png",
+        "alt": "Cornerman screenshot 2"
+      },
+      {
+        "src": "cornerman/ss-3.png",
+        "alt": "Cornerman screenshot 3"
+      },
+      {
+        "src": "cornerman/ss-4.png",
+        "alt": "Cornerman screenshot 4"
+      }
+    ]
   },
   {
     "slug": "pulseguard",
@@ -99,7 +308,30 @@
     "privacy": "/pulse_privacy.html",
     "terms": "/pulse_terms.html",
     "guide": "wifi-signal-monitoring-mac",
-    "guideTitle": "How to set up WiFi signal monitoring on your Mac"
+    "guideTitle": "How to set up WiFi signal monitoring on your Mac",
+    "color": "cyan",
+    "screenshots": [
+      {
+        "src": "assets/Pulse/Guard/guard_01_dashboard.png",
+        "alt": "Pulse Guard real-time security dashboard"
+      },
+      {
+        "src": "assets/Pulse/Guard/guard_06_welcome.png",
+        "alt": "Pulse Guard setup wizard"
+      },
+      {
+        "src": "assets/Pulse/Guard/guard_03_devices.png",
+        "alt": "Pulse Guard device monitoring"
+      },
+      {
+        "src": "assets/Pulse/Guard/guard_04_alarms.png",
+        "alt": "Pulse Guard alarm settings"
+      },
+      {
+        "src": "assets/Pulse/Guard/guard_08_calibration.png",
+        "alt": "Pulse Guard calibration"
+      }
+    ]
   },
   {
     "slug": "pulsehome",
@@ -111,6 +343,29 @@
     "summary": "Build smart home rules on Mac with Pulse Home. Combine presence triggers, HomeKit actions and webhooks with conditions and delays for your own routines.",
     "heading": "HomeKit and webhook automation rules for Mac",
     "privacy": "/pulse_privacy.html",
-    "terms": "/pulse_terms.html"
+    "terms": "/pulse_terms.html",
+    "color": "green",
+    "screenshots": [
+      {
+        "src": "assets/Pulse/Home/home_05_welcome.png",
+        "alt": "Pulse Home welcome"
+      },
+      {
+        "src": "assets/Pulse/Home/home_01_menubar.png",
+        "alt": "Pulse Home menu bar"
+      },
+      {
+        "src": "assets/Pulse/Home/home_03_rules.png",
+        "alt": "Pulse Home rules"
+      },
+      {
+        "src": "assets/Pulse/Home/home_04_rulebuilder.png",
+        "alt": "Pulse Home rule builder"
+      },
+      {
+        "src": "assets/Pulse/Home/home_06_scanning.png",
+        "alt": "Pulse Home scanning"
+      }
+    ]
   }
 ]

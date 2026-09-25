@@ -86,7 +86,7 @@ for page in PAGES:
         attrs['srcset'] = ', '.join(f'{v["path"]} {v["width"]}w' for v in variants)
         is_icon = 'icon' in attrs.get('class', '').lower() or 'icon' in attrs.get('alt', '').lower() or path.parent.name == 'img'
         if page == ROOT / 'index.html':
-            attrs['sizes'] = '64px' if is_icon else '130px'
+            attrs['sizes'] = '64px' if is_icon else ('(max-width: 600px) 280px, 420px' if '/Pulse/' in path.as_posix() else '(max-width: 600px) 120px, 150px')
         else:
             attrs['sizes'] = '120px' if is_icon else '(max-width: 600px) 220px, 320px'
         width = int(attrs.get('width', default['width']))

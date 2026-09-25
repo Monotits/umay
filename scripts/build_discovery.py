@@ -174,22 +174,35 @@ def build_home():
     text = text.replace('<a href="#blog">blog</a>', '<a href="/guides/">guides</a><a href="/blog/">blog</a>')
     if '/css/discovery.css' not in text:
         text = text.replace('</head>', '<link rel="stylesheet" href="/css/discovery.css" />\n</head>')
-    # Replace the outer card link with an article so detail and download links are siblings.
-    def card(match):
-        attrs, body = match[1], match[2]
-        slug = re.search(r'href="([^"/]+)/"', attrs)[1]
-        p = next(p for p in PRODUCTS if p['slug'] == slug)
-        attrs = re.sub(r'\s*href="[^"]+"', '', attrs)
-        body = re.sub(r'<h3>(.*?)</h3>', lambda m: f'<h3><a href="/{slug}/">{m[1]}</a></h3>', body)
-        body = re.sub(r'(<div class="project-info">.*?<p>).*?</p>', lambda m: m[1] + E(p['summary']) + '</p>', body, count=1, flags=re.S)
-        actions = f'<div class="project-actions"><a href="/{slug}/">Explore {E(p["name"])}</a><a class="store-link" href="{E(p["store"], quote=True)}" aria-label="Download {E(p["name"], quote=True)} on the App Store">{'Mac ' if p['platform'] == 'macOS' else ''}App Store</a></div>'
-        body = body.replace('<div class="project-tags">', actions + '\n<div class="project-tags">', 1)
-        def previews(m):
-            imgs = re.findall(r'<img\b[^>]*>', m[1])[:2]
-            return '<div class="project-preview">' + ''.join(f'<a href="/{slug}/" aria-label="See {E(p["name"], quote=True)} screenshots">{img}</a>' for img in imgs) + '</div>'
-        body = re.sub(r'<div class="project-preview">(.*?)</div>', previews, body, flags=re.S)
-        return '<article' + attrs + '>' + body + '</article>'
-    text = re.sub(r'<a(\s+href="[^"/]+/"\s+class="project-card[^>]+)>(.*?)</a>', card, text, flags=re.S)
+    # Render every card from the catalogue; gallery contents survive every rebuild.
+    for asset in ['css/discovery.css', 'js/umay.js']:
+        version = hashlib.sha256((ROOT / asset).read_bytes()).hexdigest()[:12]
+        text = re.sub(r'(["\'])/?' + re.escape(asset) + r'(?:\?[^"\']*)?(["\'])',
+                      lambda m: m[1] + '/' + asset + '?v=' + version + m[2], text)
+    def card(p):
+        slug, name = p['slug'], E(p['name'])
+        screenshots = ''.join(f'<img src="/{shot["src"]}" alt="{E(shot["alt"], quote=True)}" loading="lazy" />' for shot in p['screenshots'])
+        wide = ' gallery-wide' if p['platform'] == 'macOS' else ''
+        return f'''<article class="project-card project-featured" data-color="{p['color']}" aria-labelledby="app-{slug}">
+  <div class="project-icon"><img src="/{p['icon']}" alt="{name} app icon" loading="lazy" /></div>
+  <div class="project-info">
+    <h3 id="app-{slug}"><a href="/{slug}/">{name}</a></h3>
+    <div class="project-tags"><span>{p['platform']}</span></div>
+    <p>{E(p['summary'])}</p>
+  </div>
+  <div class="project-actions">
+    <a class="store-link" href="{E(p['store'], quote=True)}" aria-label="Download {name} on the App Store">Download for {'Mac' if p['platform'] == 'macOS' else 'iOS'} <span aria-hidden="true">↗</span></a>
+    <a class="details-link" href="/{slug}/">Explore {name} <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="project-gallery{wide}">
+    <div class="gallery-toolbar"><span>{len(p['screenshots'])} screenshots <span class="gallery-hint">· Scroll to explore</span></span>
+      <div class="gallery-controls" hidden><button type="button" data-direction="-1" aria-controls="gallery-{slug}" aria-label="Previous {name} screenshots">←</button><button type="button" data-direction="1" aria-controls="gallery-{slug}" aria-label="Next {name} screenshots">→</button></div>
+    </div>
+    <div class="project-preview" id="gallery-{slug}" tabindex="0" role="region" aria-label="{name} screenshots">{screenshots}</div>
+  </div>
+</article>'''
+    cards_html = '\n'.join(card(p) for p in PRODUCTS)
+    text = re.sub(r'(<div class="projects-grid">).*?(</section>)', lambda m: m[1] + '\n' + cards_html + '\n</div>\n</div>\n' + m[2], text, count=1, flags=re.S)
     cards = ''.join(f'<a href="/guides/{g["slug"]}/" class="blog-card"><div class="blog-card-title">{E(g["title"])}</div><div class="blog-card-excerpt">{E(g["description"])}</div></a>' for g in GUIDES)
     block = '<!-- guides:start -->\n<div class="blog-grid">' + cards + '</div>\n<!-- guides:end -->'
     if '<!-- guides:start -->' in text:

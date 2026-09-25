@@ -24,4 +24,28 @@
     });
   }
 
+  document.querySelectorAll('.project-gallery').forEach(function (gallery) {
+    const track = gallery.querySelector('.project-preview');
+    const controls = gallery.querySelector('.gallery-controls');
+    const buttons = controls.querySelectorAll('button');
+    function update() {
+      const end = track.scrollWidth - track.clientWidth;
+      controls.hidden = end < 2;
+      buttons[0].disabled = track.scrollLeft < 2;
+      buttons[1].disabled = track.scrollLeft >= end - 2;
+    }
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        track.scrollBy({
+          left: Number(button.dataset.direction) * track.clientWidth * 0.8,
+          behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+        });
+      });
+    });
+    track.addEventListener('scroll', update, { passive: true });
+    track.querySelectorAll('img').forEach(function (img) { img.addEventListener('load', update); });
+    if ('ResizeObserver' in window) new ResizeObserver(update).observe(track);
+    else window.addEventListener('resize', update);
+    update();
+  });
 })();

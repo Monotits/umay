@@ -25,7 +25,7 @@ On macOS, `cwebp` is supplied by Homebrew's `webp` package. The build creates re
 When adding an app:
 
 1. Create its landing page with its real features, privacy links and App Store URL.
-2. Add a record to `content/seo/products.json` and a product card to the home page. Follow an existing card's structure, including distinct detail/store links; do not nest links.
+2. Add a record to `content/seo/products.json`, including `color` and the complete `screenshots` list (source path and alt text). The build generates the home card, gallery and separate detail/store links.
 3. Add a genuinely useful guide if applicable, then run the build and checks above.
 4. Keep prices, platform requirements and any ratings consistent with verifiable product information. Do not add unverified ratings or guarantees.
 
