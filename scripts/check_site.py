@@ -151,6 +151,21 @@ for product in products:
         errors.append(f'{product["slug"]}: homepage gallery must include every catalogue screenshot')
 if len([ref for ref in home.refs if ref.startswith('https://apps.apple.com/')]) != len(products):
     errors.append('Homepage must link directly to the store for every active app')
+for name in ['arithmio.html', 'calendart.html', 'filmzy.html', 'jeoatlas.html', 'kidity.html', 'moodconnect.html', 'nazar.html', 'blog/hello-world.html']:
+    if BASE + '/' + name in urls:
+        errors.append(f'{name}: retired page must not be in the sitemap')
+    if 'noindex' not in (ROOT / name).read_text():
+        errors.append(f'{name}: retired page must be noindex')
+llms = (ROOT / 'llms.txt').read_text()
+for product in products:
+    if BASE + '/' + product['slug'] + '/' not in llms:
+        errors.append(f'llms.txt lacks {product["slug"]}')
+for tool in json.loads((ROOT / 'content/seo/tools.json').read_text()):
+    if BASE + '/brolled/' + tool['slug'] + '/' not in urls:
+        errors.append('Tool page absent from sitemap: ' + tool['slug'])
+site = json.loads((ROOT / 'content/seo/site.json').read_text())
+if not (ROOT / (site['indexNowKey'] + '.txt')).is_file():
+    errors.append('IndexNow key file missing')
 if 'https://umay.dev/sitemap.xml' not in (ROOT / 'robots.txt').read_text():
     errors.append('robots.txt lacks sitemap declaration')
 

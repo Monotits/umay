@@ -1,0 +1,710 @@
+[
+  {
+    "slug": "reddit-story-video-maker",
+    "tool": "Reddit Story",
+    "title": "Reddit Story Video Maker for iPhone",
+    "description": "Turn a Reddit-style story into a narrated vertical video on iPhone with AI voiceover, synced subtitles and a background clip, ready for TikTok, Reels and Shorts.",
+    "h1": "Make Reddit story videos on your iPhone",
+    "intro": "A Reddit story video pairs a written post with a voiceover, large synced subtitles and a looping background clip. Brolled's Reddit Story tool builds that format on iPhone: paste or write the story, pick a voice and a background, and export a 9:16 video without opening a timeline editor.",
+    "steps": [
+      [
+        "Open Reddit Story",
+        "Launch Brolled and choose Reddit Story from the tool list."
+      ],
+      [
+        "Add the story text",
+        "Paste a post you have the right to use, or write your own story. Keep the title short; it appears as the post header."
+      ],
+      [
+        "Choose the voice and background",
+        "Pick an AI voiceover and a background clip. Gameplay-style or satisfying loops keep the eye busy while viewers listen."
+      ],
+      [
+        "Preview and export",
+        "Play the preview to check subtitle timing, then export the vertical video and post it to TikTok, Reels or Shorts."
+      ]
+    ],
+    "tips": [
+      "Hook in the first line. The opening sentence decides whether people keep watching, so lead with the conflict, not the backstory.",
+      "Split long stories into parts. A 60 to 90 second part 1 with a clear cliffhanger usually performs better than a single long video.",
+      "Only use posts you wrote or have permission to reuse, and remove usernames or personal details."
+    ],
+    "faq": [
+      [
+        "What is a Reddit story video?",
+        "A short vertical video that reads a Reddit-style post aloud with an AI or recorded voice, shows synced subtitles and plays a background clip underneath. The format is common on YouTube Shorts and TikTok."
+      ],
+      [
+        "Do I need to edit on a timeline?",
+        "No. Brolled generates the voiceover, subtitles and layout for you; you choose the text, voice and background and then export."
+      ],
+      [
+        "Is it free?",
+        "Brolled is free to download with 3 free credits and all tools unlocked. Free exports are SD with a watermark; a subscription removes the watermark and enables HD."
+      ]
+    ],
+    "image": "assets/Brolled/8.png",
+    "imageAlt": "Brolled Reddit Story preview with a post over a gameplay background",
+    "related": [
+      "fake-text-message-video-maker",
+      "ai-quiz-video-maker",
+      "would-you-rather-video-maker"
+    ]
+  },
+  {
+    "slug": "fake-text-message-video-maker",
+    "tool": "Texting Story",
+    "title": "Fake Text Message Story Video Maker for iPhone",
+    "description": "Create chat story videos on iPhone with realistic message bubbles, typing indicators and read receipts in iMessage, WhatsApp, Telegram or WeChat style, with optional AI voiceover.",
+    "h1": "Make text message story videos on iPhone",
+    "intro": "Text message story videos tell a story one chat bubble at a time. Brolled has two tools for the format: Texting Story builds a chat conversation from scratch, and Texting Story + Video layers the conversation over any video. Both include typing indicators, message bubbles and read receipts, with iMessage, WhatsApp, Telegram and WeChat styles.",
+    "steps": [
+      [
+        "Choose the tool",
+        "Pick Texting Story for a chat-only video, or Texting Story + Video to place the chat over your own clip."
+      ],
+      [
+        "Set the chat style and names",
+        "Choose the messaging style and set the contact names and photos for each side of the conversation."
+      ],
+      [
+        "Write the messages",
+        "Add messages in order. Short messages keep the pace fast; reveal the twist in the last few bubbles."
+      ],
+      [
+        "Add voice and export",
+        "Optionally add AI voiceover, preview the timing and export a vertical video."
+      ]
+    ],
+    "tips": [
+      "Write the ending first, then work backwards so every message builds toward it.",
+      "Keep most messages under ten words. Viewers read quickly but will not pause the video.",
+      "Label comedy or fiction clearly and never imitate a real person's private conversation."
+    ],
+    "faq": [
+      [
+        "Which chat styles are supported?",
+        "Brolled's texting tools include iMessage, WhatsApp, Telegram and WeChat-style chat layouts."
+      ],
+      [
+        "Can I put the chat over my own video?",
+        "Yes. Texting Story + Video layers the conversation over any clip from your library."
+      ],
+      [
+        "Can the messages be read aloud?",
+        "Yes, Texting Story + Video supports AI voiceover so the conversation can be narrated."
+      ]
+    ],
+    "related": [
+      "reddit-story-video-maker",
+      "fake-call-video-maker",
+      "would-you-rather-video-maker"
+    ]
+  },
+  {
+    "slug": "would-you-rather-video-maker",
+    "tool": "Would You Rather",
+    "title": "Would You Rather Video Maker for TikTok & Shorts",
+    "description": "Make Would You Rather poll videos on iPhone with two options, a countdown timer and a percentage reveal, exported as vertical video for TikTok, Reels and Shorts.",
+    "h1": "Make Would You Rather videos on iPhone",
+    "intro": "Would You Rather videos show two choices, give viewers a few seconds to pick, then reveal what most people chose. Brolled's Would You Rather tool creates the layout, countdown timer and percentage reveal for you, so a full question series takes minutes instead of an editing session.",
+    "steps": [
+      [
+        "Open Would You Rather",
+        "Choose the Would You Rather tool in Brolled."
+      ],
+      [
+        "Add your questions",
+        "Write two options for each round. Add images if you want each side to be instantly recognisable."
+      ],
+      [
+        "Set the reveal",
+        "Enter the percentages to reveal after the countdown."
+      ],
+      [
+        "Export and post",
+        "Preview the rounds and export the vertical video."
+      ]
+    ],
+    "tips": [
+      "Make both options genuinely tempting. The format works when viewers argue in the comments.",
+      "Five to eight rounds is a comfortable length for a short video.",
+      "Ask viewers to comment their score at the end to drive engagement."
+    ],
+    "faq": [
+      [
+        "How long should a Would You Rather video be?",
+        "Most perform well between 30 and 60 seconds, which fits five to eight rounds with a short countdown each."
+      ],
+      [
+        "Can I use images for the options?",
+        "Yes, you can pair each option with an image so it reads quickly on a small screen."
+      ],
+      [
+        "Does it work for YouTube Shorts?",
+        "Yes. Brolled exports vertical video for TikTok, Instagram Reels and YouTube Shorts."
+      ]
+    ],
+    "image": "assets/Brolled/4.png",
+    "imageAlt": "Brolled Would You Rather preview comparing pizza and sushi",
+    "related": [
+      "ai-quiz-video-maker",
+      "top-5-ranking-video-maker",
+      "tier-list-maker"
+    ]
+  },
+  {
+    "slug": "remove-video-background-iphone",
+    "tool": "Background Removal",
+    "title": "Remove Video Background on iPhone Without a Green Screen",
+    "description": "Cut yourself out of a clip on iPhone with one tap and place a new background: solid color, gradient or stock image, with no green screen needed.",
+    "h1": "Remove a video background on iPhone, no green screen",
+    "intro": "Green screen videos usually need a green backdrop and an editor that can key it out. Brolled's Background Removal tool cuts the person out of your clip with one tap, then lets you drop in a new background such as a solid color, a gradient or a stock image, so you get the green-screen effect from an ordinary video.",
+    "steps": [
+      [
+        "Open Background Removal",
+        "Choose Background Removal in Brolled and add your clip."
+      ],
+      [
+        "Cut out the subject",
+        "Let the tool separate you from the original background."
+      ],
+      [
+        "Pick a new background",
+        "Choose a solid color, a gradient or a stock background."
+      ],
+      [
+        "Preview and export",
+        "Check the edges while the clip plays, then export."
+      ]
+    ],
+    "tips": [
+      "Film against a plain, well-lit wall. Clear contrast between you and the background gives cleaner edges.",
+      "Avoid fast hand movements and loose hair against busy backgrounds; these are the hardest areas to cut out.",
+      "Use the new background to set the scene, for example a news-style gradient for commentary videos."
+    ],
+    "faq": [
+      [
+        "Do I need a green screen?",
+        "No. The tool separates the subject from an ordinary background, so you can film anywhere with decent light."
+      ],
+      [
+        "What backgrounds can I use?",
+        "Solid colors, gradients and stock backgrounds are available in the background picker."
+      ],
+      [
+        "Is it free?",
+        "All Brolled tools are unlocked in the free download, which includes 3 free credits. Free exports are SD with a watermark."
+      ]
+    ],
+    "image": "assets/Brolled/5.png",
+    "imageAlt": "Brolled background picker with a cut-out portrait and gradient options",
+    "related": [
+      "split-screen-reaction-video",
+      "reddit-story-video-maker",
+      "beat-sync-video-maker"
+    ]
+  },
+  {
+    "slug": "ai-quiz-video-maker",
+    "tool": "AI Quiz Video",
+    "title": "AI Quiz Video Maker for iPhone",
+    "description": "Create quiz videos on iPhone with auto-generated questions, A/B/C/D answers, a countdown timer and a dramatic answer reveal for TikTok, Reels and Shorts.",
+    "h1": "Make quiz videos with AI on iPhone",
+    "intro": "Quiz videos keep people watching because they want to check their answer. Brolled's AI Quiz Video tool generates questions on a topic, lays out A/B/C/D options, runs a countdown and reveals the correct answer, all in a vertical format for short video platforms.",
+    "steps": [
+      [
+        "Open AI Quiz Video",
+        "Choose AI Quiz Video in Brolled."
+      ],
+      [
+        "Pick a topic",
+        "Enter a topic and let the tool generate questions and answer options."
+      ],
+      [
+        "Review the questions",
+        "Check every question and answer before exporting. AI can make mistakes, and a wrong answer will be the top comment."
+      ],
+      [
+        "Export",
+        "Preview the countdown and reveal, then export the video."
+      ]
+    ],
+    "tips": [
+      "Order questions from easy to hard so viewers stay to the end.",
+      "Niche topics such as a single TV show, a sport or a school subject often outperform general trivia.",
+      "Put the score challenge in the first second: \"Only 5% get all 5 right\"."
+    ],
+    "faq": [
+      [
+        "Are the questions generated automatically?",
+        "Yes. The tool generates questions and A/B/C/D answers from a topic. Review them before posting."
+      ],
+      [
+        "Can I edit the questions?",
+        "Review and adjust the generated content before export so the answers are correct for your audience."
+      ],
+      [
+        "What format does it export?",
+        "A vertical video for TikTok, Instagram Reels and YouTube Shorts."
+      ]
+    ],
+    "related": [
+      "would-you-rather-video-maker",
+      "top-5-ranking-video-maker",
+      "reddit-story-video-maker"
+    ]
+  },
+  {
+    "slug": "tier-list-maker",
+    "tool": "Tier List Maker",
+    "title": "Tier List Maker for iPhone",
+    "description": "Build S, A, B, C and D tier list rankings from your own photos on iPhone and export a clean 9:16 image for TikTok, Instagram Stories and Pinterest.",
+    "h1": "Make tier lists on your iPhone",
+    "intro": "A tier list ranks items into rows from S (best) to D (worst). Brolled's Tier List Maker lets you build one from photos on your iPhone and exports a clean 9:16 image sized for TikTok, Stories and Pinterest, with no desktop site or cropping needed.",
+    "steps": [
+      [
+        "Open Tier List Maker",
+        "Choose Tier List Maker in Brolled."
+      ],
+      [
+        "Add your items",
+        "Pick photos from your library: foods, games, characters, places or anything you want to rank."
+      ],
+      [
+        "Drag items into tiers",
+        "Place each item in S, A, B, C or D."
+      ],
+      [
+        "Export the image",
+        "Export a 9:16 image and share it or use it as the base of a video."
+      ]
+    ],
+    "tips": [
+      "Controversial placements get comments. Put one surprising pick in S tier.",
+      "Use square, well-lit photos so every item is recognisable at a glance.",
+      "For a video, reveal the tiers one row at a time with your own voiceover."
+    ],
+    "faq": [
+      [
+        "What size does the tier list export?",
+        "A 9:16 vertical image, ready for TikTok, Instagram Stories and Pinterest."
+      ],
+      [
+        "Can I use my own photos?",
+        "Yes. The tier list is built from photos in your library."
+      ],
+      [
+        "Is Tier List Maker free?",
+        "All Brolled tools are unlocked in the free download, which includes 3 free credits."
+      ]
+    ],
+    "related": [
+      "top-5-ranking-video-maker",
+      "would-you-rather-video-maker",
+      "beat-sync-video-maker"
+    ]
+  },
+  {
+    "slug": "beat-sync-video-maker",
+    "tool": "Beat Sync",
+    "title": "Beat Sync Photo Video Maker for iPhone",
+    "description": "Sync photo cuts to the beat of a song on iPhone. Tap the rhythm while the track plays and Brolled lines up every transition, with no timeline editing.",
+    "h1": "Sync photos to the beat on iPhone",
+    "intro": "Beat-synced edits cut to the next photo exactly on the beat. Doing that on a timeline means zooming into the waveform and trimming every clip. Brolled's Beat Sync tool uses taps instead: pick a song, add photos and tap along to the rhythm. Each tap becomes a cut point, and the photos are lined up automatically.",
+    "steps": [
+      [
+        "Open Beat Sync",
+        "Choose Beat Sync in Brolled."
+      ],
+      [
+        "Pick a song and photos",
+        "Select a track from your library and the photos you want in the edit."
+      ],
+      [
+        "Tap the beat",
+        "Play the track and tap the screen on each beat. Every tap is recorded as a transition point."
+      ],
+      [
+        "Preview and export",
+        "Watch the result, redo the taps if a cut feels late, then export."
+      ]
+    ],
+    "tips": [
+      "Tap on the strongest beat, often the kick drum, rather than every note.",
+      "Use more photos than beats in the drop so the fastest section has enough material.",
+      "Check the music's usage rights for the platform you post on, or add a platform sound after upload."
+    ],
+    "faq": [
+      [
+        "How does Beat Sync work?",
+        "You tap the screen on each beat while the song plays. Brolled captures those taps as cut points and lines up every photo transition with the rhythm automatically."
+      ],
+      [
+        "Do I need a timeline editor?",
+        "No. There is no manual trimming; the taps define the cuts."
+      ],
+      [
+        "Can I use songs from my library?",
+        "Yes, you pick a track from your library. Make sure you have the right to use it where you post."
+      ]
+    ],
+    "image": "assets/Brolled/9.png",
+    "imageAlt": "Brolled Beat Sync screen with detected beats on a waveform",
+    "related": [
+      "lyric-video-maker",
+      "tier-list-maker",
+      "meme-sound-effects-on-video"
+    ]
+  },
+  {
+    "slug": "directed-by-robert-b-weide-meme",
+    "tool": "Robert B. Weide",
+    "title": "Directed by Robert B. Weide Meme Maker for iPhone",
+    "description": "Add the classic \"Directed by Robert B. Weide\" ending credits and music to your own clip on iPhone, then export it for TikTok, Reels or Shorts.",
+    "h1": "Make the \"Directed by Robert B. Weide\" meme on iPhone",
+    "intro": "The \"Directed by Robert B. Weide\" meme ends an awkward or unlucky moment with a freeze frame, the director credit from Curb Your Enthusiasm and its theme music. Brolled adds that ending to your own clip in a few taps, so you do not need to hunt for the template, font and audio separately.",
+    "steps": [
+      [
+        "Open Robert B. Weide",
+        "Choose the Robert B. Weide tool in Brolled."
+      ],
+      [
+        "Add your clip",
+        "Select the video with the awkward moment."
+      ],
+      [
+        "Set the ending point",
+        "Choose where the credit should cut in. Right after the awkward beat works best."
+      ],
+      [
+        "Export",
+        "Preview the timing and export the video."
+      ]
+    ],
+    "tips": [
+      "Cut in a split second after the awkward moment, before anyone reacts.",
+      "Keep the setup short. Two to eight seconds before the credit is plenty.",
+      "Pair it with A Few Moments Later for a two-part joke."
+    ],
+    "faq": [
+      [
+        "What is the Robert B. Weide meme?",
+        "An ending used for awkward moments: the clip cuts to the \"Directed by Robert B. Weide\" credit from Curb Your Enthusiasm with its theme music."
+      ],
+      [
+        "Do I need to download the template?",
+        "No. Brolled adds the credit and music to your clip."
+      ],
+      [
+        "Is Brolled affiliated with the show?",
+        "No. Names are used for descriptive purposes and all trademarks belong to their owners."
+      ]
+    ],
+    "related": [
+      "a-few-moments-later-meme",
+      "meme-sound-effects-on-video",
+      "fake-call-video-maker"
+    ]
+  },
+  {
+    "slug": "a-few-moments-later-meme",
+    "tool": "A Few Moments Later",
+    "title": "\"A Few Moments Later\" Time Card Maker for iPhone",
+    "description": "Insert cartoon-style time transition cards such as \"A Few Moments Later\" between scenes of your video on iPhone and export for TikTok, Reels and Shorts.",
+    "h1": "Add \"A Few Moments Later\" time cards to videos on iPhone",
+    "intro": "Time cards like \"A Few Moments Later\" or \"2 Hours Later\" are a quick way to skip time for comic effect. Brolled's A Few Moments Later tool inserts cartoon-style title cards between scenes of your video, with the familiar look and narration style viewers recognise instantly.",
+    "steps": [
+      [
+        "Open A Few Moments Later",
+        "Choose the tool in Brolled."
+      ],
+      [
+        "Add your clips",
+        "Select the scene before and after the time skip."
+      ],
+      [
+        "Pick the card",
+        "Choose the time card and place it between the scenes."
+      ],
+      [
+        "Export",
+        "Preview the transition and export."
+      ]
+    ],
+    "tips": [
+      "The joke is the contrast: make the after scene clearly worse, or absurdly better.",
+      "Longer skips (\"6 hours later\") work for procrastination and cooking-fail content.",
+      "Keep the card on screen for about two seconds so it can be read."
+    ],
+    "faq": [
+      [
+        "What are time cards?",
+        "Short title cards such as \"A Few Moments Later\" shown between scenes to indicate a time skip, popularised by cartoons."
+      ],
+      [
+        "Can I add them between my own clips?",
+        "Yes. You choose the scenes and where the card goes."
+      ],
+      [
+        "What does it export?",
+        "A vertical video for TikTok, Reels and Shorts."
+      ]
+    ],
+    "related": [
+      "directed-by-robert-b-weide-meme",
+      "meme-sound-effects-on-video",
+      "split-screen-reaction-video"
+    ]
+  },
+  {
+    "slug": "meme-sound-effects-on-video",
+    "tool": "Meme Sound on Video",
+    "title": "Add Meme Sound Effects to Videos on iPhone",
+    "description": "Place 100+ meme sound effects such as vine boom, sad violin and bruh at exactly the right moment in your iPhone video, then export for TikTok, Reels and Shorts.",
+    "h1": "Add meme sound effects to your videos on iPhone",
+    "intro": "A well-timed sound effect turns an ordinary clip into a meme. Brolled's Meme Sound on Video tool includes more than 100 meme sounds, including the vine boom, sad violin and bruh, and lets you drop each one at the exact moment it should land.",
+    "steps": [
+      [
+        "Open Meme Sound on Video",
+        "Choose the tool in Brolled and add your clip."
+      ],
+      [
+        "Find the moment",
+        "Scrub to the frame where the reaction should hit."
+      ],
+      [
+        "Pick a sound",
+        "Browse the sound library and place the effect at that point."
+      ],
+      [
+        "Export",
+        "Preview the timing and export."
+      ]
+    ],
+    "tips": [
+      "Less is more: one or two perfectly timed sounds beat constant effects.",
+      "Place the sound slightly before the visual reaction; it feels more natural.",
+      "Combine a sound with a freeze frame or zoom for extra punch."
+    ],
+    "faq": [
+      [
+        "How many sounds are included?",
+        "More than 100 meme sounds, including classics such as vine boom, sad violin and bruh."
+      ],
+      [
+        "Can I place several sounds in one clip?",
+        "Yes, you can add sounds at different moments of the video."
+      ],
+      [
+        "Does it work for Reels and Shorts?",
+        "Yes. Brolled exports vertical video for TikTok, Reels and YouTube Shorts."
+      ]
+    ],
+    "related": [
+      "directed-by-robert-b-weide-meme",
+      "a-few-moments-later-meme",
+      "beat-sync-video-maker"
+    ]
+  },
+  {
+    "slug": "split-screen-reaction-video",
+    "tool": "Split Screen Reaction",
+    "title": "Split Screen Reaction Video Maker for iPhone",
+    "description": "Make side-by-side split screen reaction and comparison videos on iPhone. Place two clips in one vertical frame and export for TikTok, Reels and Shorts.",
+    "h1": "Make split screen reaction videos on iPhone",
+    "intro": "Split screen videos show two clips at once: the original and your reaction, or two things side by side for comparison. Brolled's Split Screen Reaction tool arranges both clips in a single vertical frame so you can make reaction and comparison content directly on iPhone.",
+    "steps": [
+      [
+        "Open Split Screen Reaction",
+        "Choose the tool in Brolled."
+      ],
+      [
+        "Add the two clips",
+        "Select the video you are reacting to and your reaction clip."
+      ],
+      [
+        "Arrange the layout",
+        "Position the clips in the split layout."
+      ],
+      [
+        "Export",
+        "Preview and export the vertical video."
+      ]
+    ],
+    "tips": [
+      "Add something to the original: commentary, expertise or a genuine reaction. Pure re-uploads rarely perform and may break platform rules.",
+      "Only react to content you are allowed to reuse.",
+      "Record your reaction in good light with your face clearly visible."
+    ],
+    "faq": [
+      [
+        "What is a split screen reaction video?",
+        "A video that shows two clips in the same frame, usually an original video and a creator reacting to it."
+      ],
+      [
+        "Can I use it for comparisons?",
+        "Yes. The side-by-side layout works for before and after or product comparisons."
+      ],
+      [
+        "What format does it export?",
+        "A vertical video suited to TikTok, Reels and Shorts."
+      ]
+    ],
+    "related": [
+      "a-few-moments-later-meme",
+      "top-5-ranking-video-maker",
+      "remove-video-background-iphone"
+    ]
+  },
+  {
+    "slug": "lyric-video-maker",
+    "tool": "Lyric Video Maker",
+    "title": "Lyric Video Maker for iPhone",
+    "description": "Add animated lyrics over your videos on iPhone with Brolled's Lyric Video Maker and export a vertical lyric video for TikTok, Reels and Shorts.",
+    "h1": "Make lyric videos on your iPhone",
+    "intro": "Lyric videos put the words of a song on screen as it plays. Brolled's Lyric Video Maker adds animated lyrics on top of your own video, which is useful for musicians promoting a track, cover artists and fan edits.",
+    "steps": [
+      [
+        "Open Lyric Video Maker",
+        "Choose the tool in Brolled and add your background video."
+      ],
+      [
+        "Add the lyrics",
+        "Enter the lines you want to show."
+      ],
+      [
+        "Style and time the text",
+        "Choose a style and match each line to the music."
+      ],
+      [
+        "Export",
+        "Preview and export the lyric video."
+      ]
+    ],
+    "tips": [
+      "Show the hook or chorus. A 15 to 30 second section is easier to share than a full song.",
+      "Keep each line short so it can be read in time.",
+      "Use your own music or music you have rights to."
+    ],
+    "faq": [
+      [
+        "Can I use my own background video?",
+        "Yes. The lyrics are animated over a video from your library."
+      ],
+      [
+        "Is it good for promoting my own music?",
+        "Yes. A short lyric video of your chorus is a simple way to promote a release on TikTok, Reels and Shorts."
+      ],
+      [
+        "What format does it export?",
+        "A vertical video for short video platforms."
+      ]
+    ],
+    "related": [
+      "beat-sync-video-maker",
+      "meme-sound-effects-on-video",
+      "top-5-ranking-video-maker"
+    ]
+  },
+  {
+    "slug": "top-5-ranking-video-maker",
+    "tool": "Top 5 Ranking",
+    "title": "Top 5 Ranking Video Maker for iPhone",
+    "description": "Create countdown \"Top 5\" ranking videos from five clips on iPhone. Brolled builds the countdown layout so viewers keep watching until number one.",
+    "h1": "Make Top 5 countdown videos on iPhone",
+    "intro": "Top 5 videos count down from number five to number one, so viewers stay until the end to see the winner. Brolled's Top 5 Ranking tool takes five clips and builds the countdown layout for you.",
+    "steps": [
+      [
+        "Open Top 5 Ranking",
+        "Choose the tool in Brolled."
+      ],
+      [
+        "Add five clips",
+        "Select one clip for each position."
+      ],
+      [
+        "Order and label them",
+        "Put them in order from 5 to 1 and add a title for each."
+      ],
+      [
+        "Export",
+        "Preview the countdown and export."
+      ]
+    ],
+    "tips": [
+      "Show the ranking list with blanks in the first second so viewers know what they are waiting for.",
+      "Keep each clip short, three to six seconds, and give number one a little longer.",
+      "Ask viewers what should have been number one to drive comments."
+    ],
+    "faq": [
+      [
+        "How many clips do I need?",
+        "Five, one for each position in the countdown."
+      ],
+      [
+        "Can I use clips from my library?",
+        "Yes. You choose the clips from your iPhone."
+      ],
+      [
+        "What does it export?",
+        "A vertical countdown video for TikTok, Reels and Shorts."
+      ]
+    ],
+    "related": [
+      "tier-list-maker",
+      "would-you-rather-video-maker",
+      "ai-quiz-video-maker"
+    ]
+  },
+  {
+    "slug": "fake-call-video-maker",
+    "tool": "Fake Call",
+    "title": "Fake Incoming Call Video Maker for iPhone",
+    "description": "Overlay a fake incoming-call screen on your video for comedy skits and storytelling. Set the caller name, photo and ring duration in Brolled for iPhone.",
+    "h1": "Add a fake incoming call screen to your video",
+    "intro": "A ringing phone is a fast way to set up a skit or a plot twist. Brolled's Fake Call tool places an incoming-call screen over your video, with a custom caller name, photo and ring duration.",
+    "steps": [
+      [
+        "Open Fake Call",
+        "Choose the Fake Call tool in Brolled and add your clip."
+      ],
+      [
+        "Set the caller",
+        "Enter the caller name and choose a photo."
+      ],
+      [
+        "Time the call",
+        "Choose when the call appears and how long it rings."
+      ],
+      [
+        "Export",
+        "Preview and export the video."
+      ]
+    ],
+    "tips": [
+      "The caller name is the punchline. Make it do the work.",
+      "Film your reaction to the call separately and cut to it right after the ring.",
+      "Use it for clearly fictional comedy. Do not use it to mislead people or impersonate someone."
+    ],
+    "faq": [
+      [
+        "What can I customise?",
+        "The caller name, caller photo and ring duration."
+      ],
+      [
+        "Is it for pranks?",
+        "It is designed for comedy and storytelling videos. Do not use it to deceive or impersonate real people."
+      ],
+      [
+        "Is there a fake notification tool too?",
+        "Yes. Brolled also includes Fake Notification for iOS-style notification banners over your video."
+      ]
+    ],
+    "related": [
+      "fake-text-message-video-maker",
+      "directed-by-robert-b-weide-meme",
+      "a-few-moments-later-meme"
+    ]
+  }
+]

@@ -1,83 +1,112 @@
 # umay.dev
 
-> umay.dev is a digital studio specializing in mobile apps, AI-powered tools, and creative software experiments. We design and ship products to the Apple App Store and Google Play Store using Flutter, Swift, Python, and Firebase.
+> umay.dev is an independent app studio run by a solo developer. It makes native iPhone, iPad and Mac apps (Swift/SwiftUI) for short video creation, color grading, private journaling, voice reflection, decision games, supplement tracking and home automation. This file lists every active app with its official page and App Store link.
 
-## Active Products
-
-### Pulse Guard
-WiFi-based home security app for macOS. Uses your MacBook's WiFi signals to detect human presence without cameras or extra hardware. Features include real-time monitoring, customizable alerts, and zone-based detection using WiFi Channel State Information (CSI) analysis.
-- Platform: macOS
-- Category: Security & Privacy
-- URL: https://umay.dev/pulseguard/
-
-### Pulse Home
-WiFi smart home automation app for macOS. Create custom rules, Apple HomeKit integration, webhooks, and geofence triggers using your Mac as the hub.
-- Platform: macOS
-- Category: Home Automation
-- URL: https://umay.dev/pulsehome/
+## Active apps
 
 ### ShadowART
-Jungian shadow work journal and mood tracker for iOS. AI-guided self-reflection through Carl Jung's archetypes, real-time sentiment analysis, mood tracking, dream journaling, and guided audio sessions. Privacy-first with 100% on-device processing using Apple Core ML.
+Track your mood, keep a personal journal and explore reflection prompts on iPhone. ShadowART combines quick check-ins with on-device text analysis.
 - Platform: iOS
-- Category: Health & Wellness, Mental Health
-- URL: https://umay.dev/shadowart/
+- Official page: https://umay.dev/shadowart/
+- App Store: https://apps.apple.com/app/shadowart-mood-journal-diary/id1573920118
+- Privacy policy: https://umay.dev/calendartprivacypolicy.html
+- Guide: [How to Keep a Private Mood Journal on iPhone](https://umay.dev/guides/private-mood-tracking-iphone/)
 
 ### MindType
-Decision mirror app for iOS. Game theory micro-games based on Nash Equilibrium and Prisoner's Dilemma that reveal thinking patterns, cognitive archetypes, and decision-making biases.
+Explore your decision-making patterns with short game theory scenarios on iPhone. Play trust, cooperation and risk games, then review your decision profile.
 - Platform: iOS
-- Category: Psychology, Games
-- URL: https://umay.dev/mindtype/
+- Official page: https://umay.dev/mindtype/
+- App Store: https://apps.apple.com/app/mindtype-decision-mirror/id6759395676
+- Privacy policy: https://umay.dev/mindtype-privacy-policy.html
 
 ### Brolled
-Viral video toolkit for iOS with 19 tools: Beat Sync, Auto Captions, Reddit Story, Background Removal, Tier List Maker, Stickers & GIFs, Fake Call, Would You Rather, Texting Story + Video, Texting Story, Robert B. Weide, Comment on Video, Meme Sound on Video, A Few Moments Later, AI Quiz Video, Split Screen Reaction, Lyric Video Maker, Fake Notification, and Top 5 Ranking. Built for TikTok, Instagram Reels, and YouTube Shorts creators. Supports 12 languages.
+Make memes and short videos on iPhone with Brolled. Add auto captions, sync photos to a beat and create ranking videos for Reels, TikTok and Shorts.
 - Platform: iOS
-- Category: Entertainment, Video, Viral Content
-- URL: https://umay.dev/brolled/
+- Official page: https://umay.dev/brolled/
 - App Store: https://apps.apple.com/app/id6745027707
+- Guide: [How to Add Captions to Short Videos on iPhone](https://umay.dev/guides/add-captions-iphone-videos/)
+
+### SuppLab
+Track supplements and personal observations on iPhone with SuppLab. Use optional Apple Health data, daily check-ins and an on-device label scanner.
+- Platform: iOS
+- Official page: https://umay.dev/supplab/
+- App Store: https://apps.apple.com/app/supplab-supplement-tracker/id6792475264
+- Privacy policy: https://umay.dev/supplab-privacy-policy.html
 
 ### Fenno
-Private voice mirror app for iOS. Real-time vocal analysis that helps you hear how you really sound. Features include tone analysis, pace tracking, filler word detection, emotional pattern recognition, and voice pulse visualization. 100% on-device processing — no recordings stored, no data leaves your device. Subscription and lifetime purchase options available.
+Reflect on your speaking pace, filler words and vocal energy with Fenno for iPhone. Voice analysis runs on your device, with encrypted local recordings.
 - Platform: iOS
-- Category: Productivity, Self-Improvement
-- URL: https://umay.dev/fenno/
-- App Store: https://apps.apple.com/us/app/fenno-private-voice-mirror/id6761913486
+- Official page: https://umay.dev/fenno/
+- App Store: https://apps.apple.com/app/fenno-private-voice-mirror/id6761913486
+- Privacy policy: https://umay.dev/fenno-privacy-policy.html
 
-## Blog & Technical Writing
+### Cinegrade
+Apply cinematic LUTs to videos and photos on iPhone and iPad. Fine-tune exposure, contrast, saturation, temperature and grain, then export with Cinegrade.
+- Platform: iOS
+- Official page: https://umay.dev/cinegradeapp/
+- App Store: https://apps.apple.com/app/id6789650643
+- Privacy policy: https://umay.dev/cinegradeapp-privacy-policy.html
+- Guide: [How to Apply Cinematic LUTs to iPhone Videos](https://umay.dev/guides/cinematic-luts-iphone/)
 
-### Why Your Voice Reveals More Than Your Words: Building Fenno
-How we built Fenno, a private voice mirror app for iOS that uses on-device AI to analyze tone, pace, filler words, and emotional energy. Covers the technical architecture (AVAudioEngine, Core ML, Accelerate framework), the science of vocal self-perception, and why privacy-first voice analysis matters.
-- URL: https://umay.dev/blog/why-your-voice-reveals-more-than-your-words.html
+### Cornerman
+Stay on top of family plans with Cornerman for iPhone. An on-device assistant for dads that connects calendar events, contacts and location to surface reminders.
+- Platform: iOS
+- Official page: https://umay.dev/cornerman/
+- App Store: https://apps.apple.com/app/id6789925474
+- Privacy policy: https://umay.dev/cornerman-privacy-policy.html
 
-### Why We Built Pulse Guard: WiFi-Based Home Security Without Cameras
-How WiFi Channel State Information (CSI) analysis enables camera-free home security. Covers the privacy motivation, technical approach using radio wave disturbance patterns, and real-world applications.
-- URL: https://umay.dev/blog/why-we-built-pulse-guard.html
+### Pulse Guard
+Monitor WiFi signal changes and nearby Bluetooth devices on your Mac with Pulse Guard. Calibrate your room and adjust alerts without adding a camera.
+- Platform: macOS
+- Official page: https://umay.dev/pulseguard/
+- App Store: https://apps.apple.com/app/pulse-guard-home-security/id6760119180?mt=12
+- Privacy policy: https://umay.dev/pulse_privacy.html
+- Guide: [How to Set Up WiFi Signal Monitoring on Your Mac](https://umay.dev/guides/wifi-signal-monitoring-mac/)
 
-### Turning Your Mac Into a Smart Home Hub with Pulse Home
-Why a Mac makes an ideal smart home controller. Explains HomeKit integration, webhook automation, geofence triggers, and custom rule engines for home automation.
-- URL: https://umay.dev/blog/turning-your-mac-into-a-smart-home-hub.html
+### Pulse Home
+Build smart home rules on Mac with Pulse Home. Combine presence triggers, HomeKit actions and webhooks with conditions and delays for your own routines.
+- Platform: macOS
+- Official page: https://umay.dev/pulsehome/
+- App Store: https://apps.apple.com/app/pulse-home-wifi-automation/id6760119994?mt=12
+- Privacy policy: https://umay.dev/pulse_privacy.html
 
-### How ShadowART Uses AI for Jungian Self-Reflection
-Building an AI-powered shadow work journal combining Carl Jung's archetypes with on-device Core ML. Covers sentiment analysis, archetype mapping, dream journaling, and privacy-first AI processing.
-- URL: https://umay.dev/blog/how-shadowart-uses-ai-for-self-reflection.html
+## Brolled video formats
 
-### Game Theory as a Mirror for Your Mind: The Story of MindType
-Using Nash Equilibrium and the Prisoner's Dilemma to reveal cognitive patterns. Explains how game theory micro-games map to real-world decision-making biases and thinking archetypes.
-- URL: https://umay.dev/blog/game-theory-as-a-mirror-for-your-mind.html
+- [Reddit Story Video Maker for iPhone](https://umay.dev/brolled/reddit-story-video-maker/): Turn a Reddit-style story into a narrated vertical video on iPhone with AI voiceover, synced subtitles and a background clip, ready for TikTok, Reels and Shorts.
+- [Fake Text Message Story Video Maker for iPhone](https://umay.dev/brolled/fake-text-message-video-maker/): Create chat story videos on iPhone with realistic message bubbles, typing indicators and read receipts in iMessage, WhatsApp, Telegram or WeChat style, with optional AI voiceover.
+- [Would You Rather Video Maker for TikTok & Shorts](https://umay.dev/brolled/would-you-rather-video-maker/): Make Would You Rather poll videos on iPhone with two options, a countdown timer and a percentage reveal, exported as vertical video for TikTok, Reels and Shorts.
+- [Remove Video Background on iPhone Without a Green Screen](https://umay.dev/brolled/remove-video-background-iphone/): Cut yourself out of a clip on iPhone with one tap and place a new background: solid color, gradient or stock image, with no green screen needed.
+- [AI Quiz Video Maker for iPhone](https://umay.dev/brolled/ai-quiz-video-maker/): Create quiz videos on iPhone with auto-generated questions, A/B/C/D answers, a countdown timer and a dramatic answer reveal for TikTok, Reels and Shorts.
+- [Tier List Maker for iPhone](https://umay.dev/brolled/tier-list-maker/): Build S, A, B, C and D tier list rankings from your own photos on iPhone and export a clean 9:16 image for TikTok, Instagram Stories and Pinterest.
+- [Beat Sync Photo Video Maker for iPhone](https://umay.dev/brolled/beat-sync-video-maker/): Sync photo cuts to the beat of a song on iPhone. Tap the rhythm while the track plays and Brolled lines up every transition, with no timeline editing.
+- [Directed by Robert B. Weide Meme Maker for iPhone](https://umay.dev/brolled/directed-by-robert-b-weide-meme/): Add the classic "Directed by Robert B. Weide" ending credits and music to your own clip on iPhone, then export it for TikTok, Reels or Shorts.
+- ["A Few Moments Later" Time Card Maker for iPhone](https://umay.dev/brolled/a-few-moments-later-meme/): Insert cartoon-style time transition cards such as "A Few Moments Later" between scenes of your video on iPhone and export for TikTok, Reels and Shorts.
+- [Add Meme Sound Effects to Videos on iPhone](https://umay.dev/brolled/meme-sound-effects-on-video/): Place 100+ meme sound effects such as vine boom, sad violin and bruh at exactly the right moment in your iPhone video, then export for TikTok, Reels and Shorts.
+- [Split Screen Reaction Video Maker for iPhone](https://umay.dev/brolled/split-screen-reaction-video/): Make side-by-side split screen reaction and comparison videos on iPhone. Place two clips in one vertical frame and export for TikTok, Reels and Shorts.
+- [Lyric Video Maker for iPhone](https://umay.dev/brolled/lyric-video-maker/): Add animated lyrics over your videos on iPhone with Brolled's Lyric Video Maker and export a vertical lyric video for TikTok, Reels and Shorts.
+- [Top 5 Ranking Video Maker for iPhone](https://umay.dev/brolled/top-5-ranking-video-maker/): Create countdown "Top 5" ranking videos from five clips on iPhone. Brolled builds the countdown layout so viewers keep watching until number one.
+- [Fake Incoming Call Video Maker for iPhone](https://umay.dev/brolled/fake-call-video-maker/): Overlay a fake incoming-call screen on your video for comedy skits and storytelling. Set the caller name, photo and ring duration in Brolled for iPhone.
 
-### Building the Ultimate Meme Maker: Inside Brolled
-The story behind Brolled — from 6 meme tools to 19 viral video tools including Beat Sync, Auto Captions, Reddit Story, and Background Removal. Covers the creation toolkit for TikTok, Instagram, and YouTube Shorts creators.
-- URL: https://umay.dev/blog/building-the-ultimate-meme-maker.html
+## Guides
 
-## About umay.dev
+- [How to Apply Cinematic LUTs to iPhone Videos](https://umay.dev/guides/cinematic-luts-iphone/): A practical Cinegrade workflow: import an iPhone clip, choose a cinematic LUT, adjust its intensity and color controls, then review your exported video.
+- [How to Keep a Private Mood Journal on iPhone](https://umay.dev/guides/private-mood-tracking-iphone/): Start a simple mood journal with ShadowART: make a quick check-in, add context, revisit your archive and review privacy and sync settings.
+- [How to Add Captions to Short Videos on iPhone](https://umay.dev/guides/add-captions-iphone-videos/): Use Brolled's Auto Captions tool to create word-by-word subtitles, style the text and review a short video before exporting for Reels, TikTok or Shorts.
+- [How to Set Up WiFi Signal Monitoring on Your Mac](https://umay.dev/guides/wifi-signal-monitoring-mac/): Set up Pulse Guard on Mac: choose a stable location, calibrate your room, test signal changes and tune alert sensitivity for your environment.
 
-- Studio: umay.dev
-- Focus: Mobile Apps, AI-Powered Tools, Creative Software
-- Technologies: Flutter, Dart, Swift, SwiftUI, Kotlin, Python, Firebase, AI/ML, Core ML, NLP, HomeKit, REST APIs
-- Twitter/X: https://x.com/yumaydev
+## Product stories
+
+- [Why Your Voice Reveals More Than Your Words: Building Fenno](https://umay.dev/blog/why-your-voice-reveals-more-than-your-words.html): Why we built Fenno — a private voice mirror app for iOS that uses on-device AI to analyze tone, pace, filler words, and emotional energy. Encrypted local recordings, no cloud uploads.
+- [Why We Built Pulse Guard: WiFi-Based Home Security Without Cameras](https://umay.dev/blog/why-we-built-pulse-guard.html): How we turned your MacBook's WiFi signals into a privacy-first home security system — no cameras, no extra hardware, just radio waves.
+- [Turning Your Mac Into a Smart Home Hub with Pulse Home](https://umay.dev/blog/turning-your-mac-into-a-smart-home-hub.html): Why we built Pulse Home to transform your Mac into a powerful smart home controller with HomeKit, webhooks, and geofence automation.
+- [How ShadowART Uses AI for Jungian Self-Reflection](https://umay.dev/blog/how-shadowart-uses-ai-for-self-reflection.html): The story behind building an AI-powered shadow work journal that combines Carl Jung's archetypes with on-device machine learning.
+- [Game Theory as a Mirror for Your Mind: The Story of MindType](https://umay.dev/blog/game-theory-as-a-mirror-for-your-mind.html): How we used Nash Equilibrium and the Prisoner's Dilemma to build a decision mirror that reveals your cognitive patterns.
+- [Building the Ultimate Meme Maker: Inside Brolled](https://umay.dev/blog/building-the-ultimate-meme-maker.html): The story behind Brolled — from 6 meme tools to 19 viral video tools. How we built the ultimate content creation toolkit for TikTok, Instagram, and YouTube creators.
+
+## About
+
+- Website: https://umay.dev/
+- X: https://x.com/yumaydev
 - Instagram: https://www.instagram.com/umay.dev
-- Website: https://umay.dev
-- Blog: https://umay.dev/blog/
-
-## Contact
-
-For business inquiries, collaborations, or press: visit https://umay.dev or reach out via Twitter/X @yumaydev.
+- Contact: experlercom@gmail.com
+- Pricing, device requirements and availability: check each app's App Store page; they can change.

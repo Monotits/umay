@@ -15,6 +15,12 @@ ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://umay.dev'
 PRODUCTS = json.loads((ROOT / 'content/seo/products.json').read_text())
 GUIDES = json.loads((ROOT / 'content/seo/guides.json').read_text())
+TOOLS = json.loads((ROOT / 'content/seo/tools.json').read_text())
+SITE = json.loads((ROOT / 'content/seo/site.json').read_text())
+BLOG = json.loads((ROOT / 'blog/posts.json').read_text())
+# Retired products and superseded pages stay reachable but are kept out of the index.
+NOINDEX = ['arithmio.html', 'calendart.html', 'filmzy.html', 'jeoatlas.html', 'kidity.html', 'moodconnect.html', 'nazar.html',
+           'blog/hello-world.html', 'mindtype_privacy_policy.html', 'mindtype_terms_of_use.html']
 E = escape
 
 
@@ -38,7 +44,7 @@ def meta(text, key, value, attr='name'):
     return text.replace('</head>', '  ' + tag + '\n</head>')
 
 
-def page(title, description, url, body, extra=''):
+def page(title, description, url, body, extra='', og_image='/assets/og-image.png'):
     return f'''<!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
@@ -56,8 +62,9 @@ def page(title, description, url, body, extra=''):
   <meta property="og:title" content="{E(title, quote=True)}" />
   <meta property="og:description" content="{E(description, quote=True)}" />
   <meta property="og:url" content="{BASE}{url}" />
-  <meta property="og:image" content="{BASE}/assets/og-image.png" />
+  <meta property="og:image" content="{BASE}{og_image}" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@yumaydev" />
   {extra}
 </head>
 <body>
@@ -73,7 +80,27 @@ def store_link(text):
     match = re.search(r'href="(https://apps\.apple\.com/[^" ]+)"', text)
     if not match:
         raise ValueError('Missing App Store link')
-    return re.sub(r'apps\.apple\.com/[a-z]{2}/app/', 'apps.apple.com/app/', unescape(match[1]))
+    return clean_store(re.sub(r'apps\.apple\.com/[a-z]{2}/app/', 'apps.apple.com/app/', unescape(match[1])))
+
+
+def clean_store(url):
+    """Drop campaign parameters so the catalogue keeps canonical store URLs."""
+    base, _, query = url.partition('?')
+    keep = [q for q in query.split('&') if q and q.split('=')[0] not in ('pt', 'ct')]
+    return base + ('?' + '&'.join(keep) if keep else '')
+
+
+def app_id(url):
+    return re.search(r'/id(\d+)', url)[1]
+
+
+def og_image(slug):
+    return f'/assets/og/{slug}.png' if (ROOT / f'assets/og/{slug}.png').exists() else '/assets/og-image.png'
+
+
+def smart_banner(p):
+    # Safari's Smart App Banner only installs iOS apps; Mac pages would promote the wrong binary.
+    return f'<meta name="apple-itunes-app" content="app-id={app_id(p["store"])}" />' if p['platform'] == 'iOS' else ''
 
 
 def update_product(p):
@@ -86,8 +113,10 @@ def update_product(p):
     if p['slug'] == 'mindtype':
         text = text.replace('/mindtype_privacy_policy.html', p['privacy']).replace('/mindtype_terms_of_use.html', p['terms'])
     text = re.sub(r'<title>.*?</title>', lambda _: '<title>' + E(p['title']) + '</title>', text, flags=re.S)
-    for key, value, attr in [('description', p['summary'], 'name'), ('og:title', p['title'], 'property'), ('og:description', p['summary'], 'property'), ('twitter:title', p['title'], 'name'), ('twitter:description', p['summary'], 'name'), ('og:image', BASE + '/' + p['icon'], 'property'), ('twitter:image', BASE + '/' + p['icon'], 'name')]:
+    for key, value, attr in [('description', p['summary'], 'name'), ('og:title', p['title'], 'property'), ('og:description', p['summary'], 'property'), ('twitter:title', p['title'], 'name'), ('twitter:description', p['summary'], 'name'), ('og:image', BASE + og_image(p['slug']), 'property'), ('twitter:image', BASE + og_image(p['slug']), 'name')]:
         text = meta(text, key, value, attr)
+    if p['platform'] == 'iOS':
+        text = meta(text, 'apple-itunes-app', 'app-id=' + app_id(p['store']))
     # This span belongs to the single existing h1, preserving each app's wordmark.
     text = re.sub(r'<span class="product-purpose">.*?</span>', '', text, flags=re.S)
     text = text.replace('</h1>', '<span class="product-purpose">' + E(p['heading']) + '</span></h1>', 1)
@@ -106,6 +135,9 @@ def update_product(p):
     text = re.sub(r'<script type="application/ld\+json">\s*(.*?)\s*</script>', update_schema, text, flags=re.S)
     guide = next((g for g in GUIDES if g['product'] == p['slug']), None)
     guide_link = f'<p><a href="/guides/{guide["slug"]}/">{E(guide["title"])}</a> — a practical guide to getting started.</p>' if guide else '<p><a href="/guides/">Explore our iPhone and Mac app guides</a>.</p>'
+    tools = [t for t in TOOLS if p['slug'] == 'brolled']
+    if tools:
+        guide_link += '<h3>Guides for each Brolled tool</h3><ul>' + ''.join(f'<li><a href="/brolled/{t["slug"]}/">{E(t["title"])}</a></li>' for t in tools) + '</ul>'
     legal = ' · '.join(f'<a href="{p[key]}">{label}</a>' for key, label in [('privacy', 'Privacy policy'), ('terms', 'Terms of use')] if key in p)
     panel = f'''<!-- discovery:start -->
 <section class="discovery-panel" aria-label="Download and useful links">
@@ -137,9 +169,39 @@ def build_guides():
         if 'image' in g:
             data['image'] = BASE + '/' + g['image']
         crumbs = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': 1, 'name': 'Apps', 'item': BASE + '/'}, {'@type': 'ListItem', 'position': 2, 'name': 'Guides', 'item': BASE + '/guides/'}, {'@type': 'ListItem', 'position': 3, 'name': g['title'], 'item': BASE + url}]}
-        write('guides/' + g['slug'] + '/index.html', page(g['title'], g['description'], url, body, schema(data) + schema(crumbs)))
+        write('guides/' + g['slug'] + '/index.html', page(g['title'], g['description'], url, body, schema(data) + schema(crumbs) + smart_banner(p), og_image(p['slug'])))
     cards = ''.join(f'<article><h2><a href="/guides/{g["slug"]}/">{E(g["title"])}</a></h2><p>{E(g["description"])}</p></article>' for g in GUIDES)
+    cards += '<h2>Short video formats with Brolled</h2><ul>' + ''.join(f'<li><a href="/brolled/{t["slug"]}/">{E(t["title"])}</a> — {E(t["description"])}</li>' for t in TOOLS) + '</ul>'
     write('guides/index.html', page('Practical Guides for iPhone & Mac Apps', 'Learn to color grade iPhone videos, add captions, keep a mood journal and set up WiFi monitoring on Mac with practical umay.dev app guides.', '/guides/', '<h1>Make more of your apps</h1><p class="lead">Practical workflows for creating videos, keeping a journal and setting up your Mac.</p>' + cards))
+
+
+def build_tools():
+    p = next(p for p in PRODUCTS if p['slug'] == 'brolled')
+    by_slug = {t['slug']: t for t in TOOLS}
+    for t in TOOLS:
+        url = f'/brolled/{t["slug"]}/'
+        steps = ''.join(f'<li><strong>{E(a)}.</strong> {E(b)}</li>' for a, b in t['steps'])
+        tips = ''.join(f'<li>{E(x)}</li>' for x in t['tips'])
+        faq = ''.join(f'<details open><summary>{E(q)}</summary><p>{E(a)}</p></details>' for q, a in t['faq'])
+        image = f'<figure><img src="/{t["image"]}" alt="{E(t["imageAlt"], quote=True)}" loading="lazy" width="320" /><figcaption>{E(t["imageAlt"])}</figcaption></figure>' if t.get('image') else ''
+        related = ''.join(f'<li><a href="/brolled/{r}/">{E(by_slug[r]["title"])}</a></li>' for r in t['related'])
+        body = f'''<a href="/brolled/">Brolled</a> › <a href="/guides/">Guides</a>
+<h1>{E(t['h1'])}</h1><p class="byline">By <a href="/#about">umay.dev</a>, maker of Brolled</p>
+<p class="lead">{E(t['intro'])}</p>
+<a class="store-link cta" href="{E(p['store'], quote=True)}">Try {E(t['tool'])} in Brolled — free on the App Store</a>
+<h2>How to make it with Brolled</h2><ol>{steps}</ol>{image}
+<h2>Tips for the format</h2><ul>{tips}</ul>
+<h2>Frequently asked questions</h2>{faq}
+<aside class="discovery-panel"><h2>Brolled: 19 short video tools in one app</h2><p>{E(p['summary'])} Free download with 3 free credits and every tool unlocked; free exports are SD with a watermark, and Pro removes the watermark and adds HD.</p><a class="store-link" href="{E(p['store'], quote=True)}">View on App Store</a><p><a href="/brolled/">See all Brolled features and pricing</a></p></aside>
+<h2>More Brolled video formats</h2><ul>{related}</ul>'''
+        howto = {'@context': 'https://schema.org', '@type': 'HowTo', 'name': t['h1'], 'description': t['description'], 'inLanguage': 'en',
+                 'tool': [{'@type': 'HowToTool', 'name': 'Brolled for iPhone'}],
+                 'step': [{'@type': 'HowToStep', 'position': i + 1, 'name': a, 'text': b} for i, (a, b) in enumerate(t['steps'])]}
+        if t.get('image'):
+            howto['image'] = BASE + '/' + t['image']
+        faq_ld = {'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in t['faq']]}
+        crumbs = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': 1, 'name': 'Apps', 'item': BASE + '/'}, {'@type': 'ListItem', 'position': 2, 'name': 'Brolled', 'item': BASE + '/brolled/'}, {'@type': 'ListItem', 'position': 3, 'name': t['title'], 'item': BASE + url}]}
+        write('brolled/' + t['slug'] + '/index.html', page(t['title'], t['description'], url, body, schema(howto) + schema(faq_ld) + schema(crumbs) + smart_banner(p), og_image('brolled')))
 
 
 def build_blog():
@@ -157,6 +219,8 @@ def build_blog():
             text = re.sub(r'<script>\s*fetch\(.*?</script>', '', text, flags=re.S)
             text = re.sub(r'<script>\s*// Hide prerendered content.*?</script>', '', text, flags=re.S)
         text = text.replace('href="/#blog"', 'href="/blog/"')
+        # The studio, not a person named "umay.dev", is the author.
+        text = re.sub(r'"author":\s*\{\s*"@type":\s*"Person",\s*"name":\s*"umay\.dev"', '"author": { "@type": "Organization", "name": "umay.dev"', text)
         write(path, text)
 
 
@@ -215,12 +279,73 @@ def build_home():
     write('index.html', text)
 
 
+def mark_noindex():
+    for name in NOINDEX:
+        path = ROOT / name
+        if path.exists():
+            write(name, meta(path.read_text(), 'robots', 'noindex, follow'))
+
+
+def public_pages():
+    skip = {'fonts', 'scss', 'node_modules', 'font-awesome', '.git', '.claude', 'content'}
+    return [p for p in ROOT.rglob('*.html') if not skip & set(p.relative_to(ROOT).parts)]
+
+
+def campaign(path):
+    rel = path.relative_to(ROOT).as_posix().removesuffix('index.html').removesuffix('.html').strip('/')
+    rel = rel.replace('guides/', 'guide-').replace('/', '-') or 'home'
+    return ('web-' + rel)[:40]
+
+
+def finalize():
+    """Campaign tokens on store links and optional analytics, applied to every public page."""
+    pt = SITE.get('appStoreProviderToken', '').strip()
+    token = SITE.get('cloudflareAnalyticsToken', '').strip()
+    beacon = f'<!-- analytics:start --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{{"token": "{E(token)}"}}\'></script><!-- analytics:end -->' if token else ''
+    for path in public_pages():
+        text = path.read_text()
+        ct = campaign(path)
+
+        def tag(m):
+            url = clean_store(unescape(m[2]))
+            if pt:
+                url += ('&' if '?' in url else '?') + f'pt={pt}&ct={ct}'
+            return m[1] + E(url, quote=True) + m[3]
+        new = re.sub(r'(href=["\'])(https://apps\.apple\.com/[^"\']+)(["\'])', tag, text)
+        new = re.sub(r'\s*<!-- analytics:start -->.*?<!-- analytics:end -->', '', new, flags=re.S)
+        if beacon and '</body>' in new:
+            new = new.replace('</body>', beacon + '\n</body>', 1)
+        if new != text:
+            write(path.relative_to(ROOT), new)
+
+
+def build_llms():
+    lines = ['# umay.dev', '', '> umay.dev is an independent app studio run by a solo developer. It makes native iPhone, iPad and Mac apps (Swift/SwiftUI) for short video creation, color grading, private journaling, voice reflection, decision games, supplement tracking and home automation. This file lists every active app with its official page and App Store link.', '']
+    lines += ['## Active apps', '']
+    for p in PRODUCTS:
+        guide = next((g for g in GUIDES if g['product'] == p['slug']), None)
+        lines += [f'### {p["name"]}', p['summary'], f'- Platform: {p["platform"]}', f'- Official page: {BASE}/{p["slug"]}/', f'- App Store: {p["store"]}']
+        if p.get('privacy'):
+            lines.append(f'- Privacy policy: {BASE}{p["privacy"]}')
+        if guide:
+            lines.append(f'- Guide: [{guide["title"]}]({BASE}/guides/{guide["slug"]}/)')
+        lines.append('')
+    lines += ['## Brolled video formats', '']
+    lines += [f'- [{t["title"]}]({BASE}/brolled/{t["slug"]}/): {t["description"]}' for t in TOOLS]
+    lines += ['', '## Guides', '']
+    lines += [f'- [{g["title"]}]({BASE}/guides/{g["slug"]}/): {g["description"]}' for g in GUIDES]
+    lines += ['', '## Product stories', '']
+    lines += [f'- [{b["title"]}]({BASE}/blog/{b["slug"]}.html): {b["excerpt"]}' for b in sorted(BLOG, key=lambda b: b['date'], reverse=True)]
+    lines += ['', '## About', '', f'- Website: {BASE}/', '- X: https://x.com/yumaydev', '- Instagram: https://www.instagram.com/umay.dev', '- Contact: experlercom@gmail.com', '- Pricing, device requirements and availability: check each app\'s App Store page; they can change.', '']
+    write('llms.txt', '\n'.join(lines))
+
+
 def sitemap(today):
     paths = ['index.html', 'blog/index.html', *[p['slug'] + '/index.html' for p in PRODUCTS]]
     paths += [str(p.relative_to(ROOT)) for p in sorted((ROOT / 'guides').rglob('*.html'))]
-    paths += ['blog/' + p['slug'] + '.html' for p in json.loads((ROOT / 'blog/posts.json').read_text())]
-    # Preserve the independently accessible older product pages as well.
-    paths += [p.name for p in ROOT.glob('*.html') if p.stem in ['arithmio', 'calendart', 'filmzy', 'jeoatlas', 'kidity', 'moodconnect', 'nazar']]
+    paths += ['blog/' + p['slug'] + '.html' for p in BLOG]
+    paths += ['brolled/' + t['slug'] + '/index.html' for t in TOOLS]
+    paths = [p for p in paths if p not in NOINDEX]
     state_path = ROOT / 'content/seo/page-state.json'
     state = json.loads(state_path.read_text()) if state_path.exists() else {}
     ns = 'http://www.sitemaps.org/schemas/sitemap/0.9'
@@ -254,8 +379,12 @@ if __name__ == '__main__':
         for product in PRODUCTS:
             update_product(product)
         build_guides()
+        build_tools()
         build_blog()
         build_home()
+        mark_noindex()
+        finalize()
+        build_llms()
         subprocess.run([sys.executable, str(ROOT / 'scripts/optimize_images.py')], check=True)
     sitemap(args.date)
     print('Discovery pages and sitemap are up to date.')

@@ -7,6 +7,10 @@ Static product website for an independent app studio. The primary audience is gl
 - Active product pages: `<product>/index.html`.
 - Product search titles, descriptions, categories and related guides: `content/seo/products.json`.
 - Practical guides: `content/seo/guides.json`. Their HTML pages under `guides/` are generated.
+- Brolled format pages: `content/seo/tools.json`, generated under `brolled/<slug>/`.
+- Site settings: `content/seo/site.json` — `appStoreProviderToken` (App Store Connect campaign `pt`, adds `pt`/`ct` to every store link so installs from each page appear in App Analytics), `cloudflareAnalyticsToken` (free Cloudflare Web Analytics beacon), `indexNowKey`. Empty values disable a feature.
+- `llms.txt` is generated from the catalogue; do not edit it by hand.
+- Retired products (Arithmio, CalendART, Filmzy, JeoAtlas, Kidity, Mood Connect, Nazar), `blog/hello-world.html` and the old MindType legal pages are `noindex` and excluded from the sitemap (`NOINDEX` in the build script).
 - Product stories: `blog/*.html`; the blog catalogue is `blog/posts.json`. Existing `.md` files are historical source material, not fetched by the published pages. Edit the HTML story when updating it.
 - The home page includes static product links, direct store links and guide links. All essential content is available without JavaScript.
 
@@ -16,6 +20,15 @@ After editing content, run from the repository root with Python 3.12+ and the `c
 python3 scripts/build_discovery.py
 python3 scripts/check_site.py
 git diff --check
+```
+
+Social preview images (`assets/og/<slug>.png`) are rendered with `python3 scripts/og_images.py` (needs Pillow); rerun it after changing an app's icon, heading or first screenshot.
+
+After the site is deployed, notify Bing/IndexNow (ChatGPT search relies heavily on Bing's index):
+
+```sh
+python3 scripts/indexnow.py          # pages changed today
+python3 scripts/indexnow.py --all    # first submission
 ```
 
 On macOS, `cwebp` is supplied by Homebrew's `webp` package. The build creates responsive WebP files, updates product metadata and guide/blog indexes, and regenerates `sitemap.xml`. The original PNGs are preserved. Commit the generated pages, image derivatives, manifest and sitemap with the source changes using your normal publishing process.
