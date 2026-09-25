@@ -53,7 +53,7 @@
       <div class="nav-links">
         <a href="/#products">products</a>
         <a href="/#about">about</a>
-        <a href="/#blog">blog</a>
+        <a href="/blog/">blog</a>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
           <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
           <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -63,12 +63,12 @@
   </nav>
   <article class="blog-post">
     <div class="container">
-      <a href="/#blog" class="blog-back">&larr; back to blog</a>
+      <a href="/blog/" class="blog-back">&larr; back to blog</a>
       <header class="blog-post-header">
         <div class="blog-post-date">2026-03-10</div>
         <h1 class="blog-post-title">How ShadowART Uses AI for Self-Reflection</h1>
       </header>
-      <div id="prerendered-content">
+      <div class="blog-post-content">
 <p>We believe that true growth comes from understanding ourselves—not just the parts we show the world, but the parts we've learned to hide. That's where <strong>shadow work</strong> comes in.</p>
 <h2>What Is Shadow Work?</h2>
 <p>Carl Jung, the Swiss psychiatrist and founder of analytical psychology, introduced the concept of the "shadow" in the early 20th century. The shadow represents the unconscious parts of our personality that the conscious mind doesn't identify with—our repressed emotions, denied desires, instincts, and impulses that don't fit our self-image.</p>
@@ -110,7 +110,7 @@
 <p>And we believe this work should be available to everyone—not just those who can afford weekly therapy or have time to read Jungian psychology texts. We believe it should be accessible, private, intelligent, and kind.</p>
 <p>Your shadow isn't your enemy. It's part of you that deserves to be understood. We built ShadowART to help you meet it—and meet yourself—with compassion.</p>
 </div>
-      <div class="blog-post-content" id="postContent"></div>
+
     </div>
   </article>
   <footer class="footer">
@@ -125,28 +125,7 @@
     </div>
   </footer>
   <script src="../js/umay.js"></script>
-  <script>
-    fetch('how-shadowart-uses-ai-for-self-reflection.md')
-      .then(function(r) { return r.text(); })
-      .then(function(md) {
-        md = md.replace(/^# .+\n+/, '');
-        document.getElementById('postContent').innerHTML = window.renderMarkdown(md);
-      });
-  </script>
-<script>
-  // Hide prerendered content once JS renders markdown dynamically
-  function checkAndHidePrerendered() {
-    var postContent = document.getElementById('postContent');
-    if (postContent && postContent.innerHTML.trim()) {
-      var pre = document.getElementById('prerendered-content');
-      if (pre) pre.style.display = 'none';
-    }
-  }
-  // Check immediately in case content is already loaded
-  checkAndHidePrerendered();
-  // Also check after a short delay
-  setTimeout(checkAndHidePrerendered, 100);
-  setTimeout(checkAndHidePrerendered, 500);
-</script>
+
+
 </body>
 </html>

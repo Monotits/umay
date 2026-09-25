@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Why we built Fenno — a private voice mirror app for iOS that analyzes tone, pace, and emotional energy in real time. No recordings, no cloud, 100% on-device voice analysis." />
+  <meta name="description" content="Why we built Fenno — a private voice mirror app for iOS that analyzes tone, pace, and emotional energy in real time. Encrypted local recordings and on-device voice analysis." />
   <meta name="keywords" content="voice mirror app, voice analysis iOS, tone analyzer, speech analysis app, vocal pattern recognition, emotional awareness app, voice journal, private voice app, on-device AI, voice mood tracker, speech coaching, filler word detection, voice wellness, Fenno app" />
   <meta name="author" content="umay.dev" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
@@ -12,7 +12,7 @@
   <link rel="canonical" href="https://umay.dev/blog/why-your-voice-reveals-more-than-your-words.html" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Why Your Voice Reveals More Than Your Words: Building Fenno - umay.dev" />
-  <meta property="og:description" content="Why we built Fenno — a private voice mirror for iOS that analyzes tone, pace, and emotional energy using on-device AI. No recordings stored." />
+  <meta property="og:description" content="Why we built Fenno — a private voice mirror for iOS that analyzes tone, pace, and emotional energy using on-device AI. Recordings are encrypted on your device." />
   <meta property="og:image" content="https://umay.dev/img/fenno.png" />
   <meta name="twitter:image" content="https://umay.dev/img/fenno.png" />
   <meta property="og:url" content="https://umay.dev/blog/why-your-voice-reveals-more-than-your-words.html" />
@@ -77,7 +77,7 @@
         "name": "Does Fenno record or store my voice?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. Fenno processes voice data entirely on-device using Apple's speech and audio frameworks. No recordings are stored, no audio is sent to the cloud, and no account is required. Your voice data is analyzed in real time and discarded immediately after processing."
+          "text": "No. Fenno processes voice data entirely on-device using Apple's speech and audio frameworks. Recordings are stored encrypted on your device, no audio is sent to the cloud, and no account is required. You can delete recordings and analysis from the app."
         }
       },
       {
@@ -107,7 +107,7 @@
       <div class="nav-links">
         <a href="/#products">products</a>
         <a href="/#about">about</a>
-        <a href="/#blog">blog</a>
+        <a href="/blog/">blog</a>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
           <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
           <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -117,12 +117,12 @@
   </nav>
   <article class="blog-post">
     <div class="container">
-      <a href="/#blog" class="blog-back">&larr; back to blog</a>
+      <a href="/blog/" class="blog-back">&larr; back to blog</a>
       <header class="blog-post-header">
         <div class="blog-post-date">2026-04-24</div>
         <h1 class="blog-post-title">Why Your Voice Reveals More Than Your Words</h1>
       </header>
-      <div id="prerendered-content">
+      <div class="blog-post-content">
 <p>We spend hours crafting text messages, rewriting emails, and editing social media posts. But the thing that reveals the most about our emotional state — our voice — goes almost completely unexamined. We built <strong>Fenno</strong> to change that. It's a <strong>private voice mirror app for iOS</strong> that analyzes how you sound, not what you say, using entirely on-device AI processing.</p>
 
 <h2>The Gap Nobody Was Filling</h2>
@@ -142,11 +142,11 @@
 <h2>The Technical Architecture: Privacy as a Foundation</h2>
 <p>Every voice analysis app faces the same architectural decision: process in the cloud (easier, more powerful, less private) or process on-device (harder, constrained, but completely private). We chose on-device without hesitation, and then spent months making it work well within those constraints.</p>
 <p>Fenno's <strong>audio processing pipeline</strong> is built entirely on Apple's native frameworks:</p>
-<p><strong>AVAudioEngine</strong> handles real-time audio capture and routing. We tap into the microphone input node and process audio buffers in 100ms windows — fast enough for real-time feedback, large enough for meaningful spectral analysis. The audio data never leaves this pipeline. It's processed, analyzed, and discarded within the same run loop.</p>
+<p><strong>AVAudioEngine</strong> handles real-time audio capture and routing. We tap into the microphone input node and process audio buffers in 100ms windows — fast enough for real-time feedback, large enough for meaningful spectral analysis. Analysis runs locally; recordings retained by the app are encrypted on the device.</p>
 <p><strong>Accelerate framework</strong> powers the DSP (digital signal processing) layer. Fast Fourier Transforms for spectral analysis, autocorrelation for pitch detection, and windowing functions for clean signal extraction all run through Apple's hardware-optimized vDSP library. This matters because voice analysis is computationally intensive, and running it on-device means we need every optimization available.</p>
 <p><strong>Core ML</strong> runs the emotional classification model. We trained a compact neural network (under 5MB) on labeled vocal affect datasets, then converted it to Core ML format for on-device inference. The model runs on the iPhone's <strong>Neural Engine</strong> when available, falling back to the GPU or CPU as needed. Inference time is under 15 milliseconds per window, which means zero perceptible delay in the voice pulse visualization.</p>
-<p><strong>Speech framework</strong> provides optional speech-to-text for filler word detection. This runs through Apple's on-device speech recognition (available since iOS 13), which processes audio locally without sending data to Apple's servers. We use it purely for identifying filler patterns — the actual words you say are not stored, logged, or displayed.</p>
-<p>The result: <strong>no recordings stored, no audio uploaded, no accounts required, no data leaving your iPhone</strong>. Fenno is one of the few voice analysis tools where you can verify the privacy claim by simply turning on airplane mode. Everything still works.</p>
+<p><strong>Speech framework</strong> provides optional speech-to-text for filler word detection. This runs through Apple's on-device speech recognition (available since iOS 13), which processes audio locally without sending data to Apple's servers. We use it purely for identifying filler patterns — recordings and analysis are managed locally in the app.</p>
+<p>The result: <strong>encrypted local recordings, on-device analysis and no account required</strong>. Fenno is one of the few voice analysis tools where you can verify the privacy claim by simply turning on airplane mode. Everything still works.</p>
 
 <h2>Who Uses a Voice Mirror?</h2>
 <p>When we first built Fenno, we assumed our primary users would be public speakers and communication coaches. We were only partially right. The actual user base turned out to be much more diverse:</p>
@@ -178,7 +178,7 @@
 <p><strong>The best self-awareness tools are mirrors, not judges</strong>. People don't want another app telling them they're doing something wrong. They want to see themselves clearly and make their own decisions. This insight shaped Fenno's entire UX and it's now a core design principle across our studio.</p>
 <p>Your voice carries more truth than your carefully chosen words. Fenno just makes it visible. We're building this at <a href="https://umay.dev">umay.dev</a>, and we think the future of personal AI is private, on-device, and designed to reflect — not to judge.</p>
 </div>
-      <div class="blog-post-content" id="postContent"></div>
+
     </div>
   </article>
   <footer class="footer">
@@ -193,14 +193,7 @@
     </div>
   </footer>
   <script src="../js/umay.js"></script>
-  <script>
-    fetch('why-your-voice-reveals-more-than-your-words.md')
-      .then(function(r) { return r.text(); })
-      .then(function(md) {
-        md = md.replace(/^# .+\n+/, '');
-        document.getElementById('postContent').innerHTML = window.renderMarkdown(md);
-      });
-  </script>
+
   <script>
     function checkAndHidePrerendered() {
       var postContent = document.getElementById('postContent');

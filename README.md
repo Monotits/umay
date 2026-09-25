@@ -1,29 +1,44 @@
-Thnx 2 Photo by Marvin Meyer on Unsplash
+# umay.dev
 
-# [Start Bootstrap](http://startbootstrap.com/) - [Landing Page](http://startbootstrap.com/template-overviews/landing-page/)
+Static product website for an independent app studio. The primary audience is global and the marketing pages are in English. The site uses plain HTML, CSS and JavaScript; no application server or client-side framework is required.
 
-[Landing Page](http://startbootstrap.com/template-overviews/landing-page/) is a multipurpose landing page template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+## Content and publishing
 
-## Getting Started
+- Active product pages: `<product>/index.html`.
+- Product search titles, descriptions, categories and related guides: `content/seo/products.json`.
+- Practical guides: `content/seo/guides.json`. Their HTML pages under `guides/` are generated.
+- Product stories: `blog/*.html`; the blog catalogue is `blog/posts.json`. Existing `.md` files are historical source material, not fetched by the published pages. Edit the HTML story when updating it.
+- The home page includes static product links, direct store links and guide links. All essential content is available without JavaScript.
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/landing-page/)
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-landing-page.git`
-* Fork the repo
+After editing content, run from the repository root with Python 3.12+ and the `cwebp` command installed:
 
-## Bugs and Issues
+```sh
+python3 scripts/build_discovery.py
+python3 scripts/check_site.py
+git diff --check
+```
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-landing-page/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/landing-page/).
+On macOS, `cwebp` is supplied by Homebrew's `webp` package. The build creates responsive WebP files, updates product metadata and guide/blog indexes, and regenerates `sitemap.xml`. The original PNGs are preserved. Commit the generated pages, image derivatives, manifest and sitemap with the source changes using your normal publishing process.
 
-## Creator
+`content/seo/page-state.json` records each page's final content hash and modification date. An unchanged page retains its existing `lastmod`; do not change every date simply because a deployment ran. To supply the actual publication date explicitly, use `--date YYYY-MM-DD`. For a sitemap-only refresh after editing an existing static page, run `python3 scripts/build_discovery.py --sitemap-only`.
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+When adding an app:
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+1. Create its landing page with its real features, privacy links and App Store URL.
+2. Add a record to `content/seo/products.json` and a product card to the home page. Follow an existing card's structure, including distinct detail/store links; do not nest links.
+3. Add a genuinely useful guide if applicable, then run the build and checks above.
+4. Keep prices, platform requirements and any ratings consistent with verifiable product information. Do not add unverified ratings or guarantees.
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+The checker validates the sitemap's local destinations, unique titles, descriptions, canonical URLs, one H1 per page, JSON-LD syntax, local links/fragments, responsive product images and direct home-page store links. It does not claim to validate Google's rich-result eligibility or external store availability.
 
-## Copyright and License
+## Preview
 
-Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/gh-pages/LICENSE) license.
+```sh
+python3 -m http.server 8765 --bind 127.0.0.1
+```
+
+Open `http://127.0.0.1:8765/`. Check the homepage, a product and a guide at mobile and desktop widths. Existing analytics integrations have not been extended by this SEO update.
+
+## Credits
+
+The repository originally used the Start Bootstrap Landing Page template (MIT). See `LICENSE`. Original photography credit: Marvin Meyer on Unsplash.

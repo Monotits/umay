@@ -1,0 +1,118 @@
+{
+  "arithmio.html": {
+    "sha256": "f281dd7965815a945822eadfaa3d3cfd685218ca2cd0da58646c5e0834a5097d",
+    "lastmod": "2026-09-24"
+  },
+  "blog/building-the-ultimate-meme-maker.html": {
+    "sha256": "0da3524da003da5cf6ff2a80f57c234eaf0dce1cc26ef2fea6372a348c3241b5",
+    "lastmod": "2026-09-24"
+  },
+  "blog/game-theory-as-a-mirror-for-your-mind.html": {
+    "sha256": "1a9c4ec352ce881a07bd850bb77d79ede1fb3475cb5c839fc4fa1bb54b8ee9d7",
+    "lastmod": "2026-09-24"
+  },
+  "blog/how-shadowart-uses-ai-for-self-reflection.html": {
+    "sha256": "6b878a911f9d4004505c03a6524eb1c10a50352a43e6fcf8fdd3d0af676fa4bd",
+    "lastmod": "2026-09-24"
+  },
+  "blog/index.html": {
+    "sha256": "e57182a208728ab8b25b268015e2909a529ccadf86d450cab2c5682c0737b692",
+    "lastmod": "2026-09-24"
+  },
+  "blog/turning-your-mac-into-a-smart-home-hub.html": {
+    "sha256": "1350a798e051c1b2ea7694d210a2dde027306d1b44fa46aae2294102d878554d",
+    "lastmod": "2026-09-24"
+  },
+  "blog/why-we-built-pulse-guard.html": {
+    "sha256": "1d22c80296af3469c9048d95a1bf57f3c9eb0b17299325992ffeb28568eeda91",
+    "lastmod": "2026-09-24"
+  },
+  "blog/why-your-voice-reveals-more-than-your-words.html": {
+    "sha256": "cab1ff464dac0a8bee101419da44f843910e2ba799fae99dc7c6c598983d9c3c",
+    "lastmod": "2026-09-24"
+  },
+  "brolled/index.html": {
+    "sha256": "62868c3f788b28e44e93a05d7c9cdf347b1ff6975b483a23474e932697a811a9",
+    "lastmod": "2026-09-24"
+  },
+  "calendart.html": {
+    "sha256": "9aa8d6c8c00a059c23382e6fc8c71dc25a9cd5be55d1f0f861bef323cd63f502",
+    "lastmod": "2026-09-24"
+  },
+  "cinegradeapp/index.html": {
+    "sha256": "15ccf3b4baa054e77d3fb4fca29945eb2359702504bfad28c761b26f32c16485",
+    "lastmod": "2026-09-24"
+  },
+  "cornerman/index.html": {
+    "sha256": "113cc1e270a5c72426702ae5471656913b9bb29f80475a2e307aa475f15407ae",
+    "lastmod": "2026-09-24"
+  },
+  "fenno/index.html": {
+    "sha256": "e0fcc253b93cd1f2eb4969fe69ce23bf3f10b24dcb510762e882eeb93bc3f5a7",
+    "lastmod": "2026-09-24"
+  },
+  "filmzy.html": {
+    "sha256": "db488938df97380992fd9cfa6ac4debf2c3c32cb6244b97d2b12c995bd715a99",
+    "lastmod": "2026-09-24"
+  },
+  "guides/add-captions-iphone-videos/index.html": {
+    "sha256": "5f95f4767a489a3f4d87aaa214ec742fff1d229781c264f0694f07e8233d70ae",
+    "lastmod": "2026-09-24"
+  },
+  "guides/cinematic-luts-iphone/index.html": {
+    "sha256": "21d04b11ba995da168de3426c95921e39754afac1c3d59ddfaa742e8c3288331",
+    "lastmod": "2026-09-24"
+  },
+  "guides/index.html": {
+    "sha256": "97cb045fc0903c6b56f5431e389afbec6ef80e78097f266b28900970e05cc29f",
+    "lastmod": "2026-09-24"
+  },
+  "guides/private-mood-tracking-iphone/index.html": {
+    "sha256": "e67fe3dcf8c55e3a9286a534e4797829b719b1f765e87e582a927e36cf635432",
+    "lastmod": "2026-09-24"
+  },
+  "guides/wifi-signal-monitoring-mac/index.html": {
+    "sha256": "f8c5637a936a542699182fa4181fbc1b4d6ce969d7ee755c3571a016febf4ff3",
+    "lastmod": "2026-09-24"
+  },
+  "index.html": {
+    "sha256": "ef3ed795001bfc457711aa59dcb7446e6659340eee89a8d5aae511193aad6e85",
+    "lastmod": "2026-09-24"
+  },
+  "jeoatlas.html": {
+    "sha256": "07c905e4d2cdf514a67a7735dce8eaa4f9ea8526361d5ad461d1ac896bdfa27e",
+    "lastmod": "2026-09-24"
+  },
+  "kidity.html": {
+    "sha256": "027af574c56d6e8e7bd001247d80c2bb09197be3b020886d5d276857d9332f49",
+    "lastmod": "2026-09-24"
+  },
+  "mindtype/index.html": {
+    "sha256": "4870390c2b592f166bb43f9c739744462b36b4524a04b5940550ab6659b6f7b3",
+    "lastmod": "2026-09-24"
+  },
+  "moodconnect.html": {
+    "sha256": "164aa13bf3ab5d0a19702caa716a8f07c7402967a4803876e1ce9490cc82c778",
+    "lastmod": "2026-09-24"
+  },
+  "nazar.html": {
+    "sha256": "adf5ba18f40916b2b83a8b9dae9bd6d0c77e735ed925dcd92e53d4c4accc0f5a",
+    "lastmod": "2026-09-24"
+  },
+  "pulseguard/index.html": {
+    "sha256": "b2da60df9718e718f884447f728fd886eb2d6b01949260f389ba3aba69d870bb",
+    "lastmod": "2026-09-24"
+  },
+  "pulsehome/index.html": {
+    "sha256": "6e76e0d95b9e26b64d7f955faecfc24cead779449425a717ad66278bf1a869ef",
+    "lastmod": "2026-09-24"
+  },
+  "shadowart/index.html": {
+    "sha256": "d52d68383687b309fe332efa93fb7e36ecd885fcbbf9797fe4ff5803effe5890",
+    "lastmod": "2026-09-24"
+  },
+  "supplab/index.html": {
+    "sha256": "b2eb4de5924689027c10b4e00331003c6d6ac709612b821bbe01d519fbee3bf5",
+    "lastmod": "2026-09-24"
+  }
+}

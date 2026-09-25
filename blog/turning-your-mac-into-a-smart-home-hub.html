@@ -47,8 +47,8 @@
   </script>
 </head>
 <body>
-  <nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo">umay<span class="accent">.dev</span></a><div class="nav-links"><a href="/#products">products</a><a href="/#about">about</a><a href="/#blog">blog</a><button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></div></nav>
-  <article class="blog-post"><div class="container"><a href="/#blog" class="blog-back">&larr; back to blog</a><header class="blog-post-header"><div class="blog-post-date">2026-03-12</div><h1 class="blog-post-title">Turning Your Mac Into a Smart Home Hub</h1></header><div id="prerendered-content">
+  <nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo">umay<span class="accent">.dev</span></a><div class="nav-links"><a href="/#products">products</a><a href="/#about">about</a><a href="/blog/">blog</a><button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></div></nav>
+  <article class="blog-post"><div class="container"><a href="/blog/" class="blog-back">&larr; back to blog</a><header class="blog-post-header"><div class="blog-post-date">2026-03-12</div><h1 class="blog-post-title">Turning Your Mac Into a Smart Home Hub</h1></header><div class="blog-post-content">
 <p>Smart home hubs are <strong>expensive</strong>. They sit on your shelf collecting dust, offering limited integrations and locked-in ecosystems. You've invested in HomeKit devices, but you're tethered to Apple TV or HomePod to make it all work. Meanwhile, your Mac sits on your desk—always on, always connected, incredibly powerful. We built <strong>Pulse Home</strong> because we realized the obvious solution: why not use your Mac as your smart home hub?</p>
 <h2>The Problem With Traditional Hubs</h2>
 <p>Smart home automation has a middleman problem. You buy a hub device. It costs $100-300. It requires its own power, its own network setup, and its own maintenance. Then it becomes a single point of failure for your entire home automation system. If your hub goes down, your automations stop working. If the manufacturer stops supporting it, you're stuck.</p>
@@ -82,24 +82,10 @@
 <p>Your Mac is powerful hardware sitting idle most of the time. Pulse Home puts it to work, making your home smarter without the cost or complexity of buying another device.</p>
 <p>If you've ever wished your smart home automation was smarter, more capable, or less dependent on proprietary ecosystems—Pulse Home is for you. We're excited to help you build the home you've imagined.</p>
 </div>
-      <div class="blog-post-content" id="postContent"></div></div></article>
+      </div></article>
   <footer class="footer"><div class="container"><div class="footer-inner"><span class="footer-copy">&copy; 2026 umay.dev</span><div class="footer-links"><a href="https://www.instagram.com/umay.dev" target="_blank" rel="noopener">instagram</a><a href="https://x.com/yumaydev" target="_blank" rel="noopener">twitter</a></div></div></div></footer>
   <script src="../js/umay.js"></script>
-  <script>fetch('turning-your-mac-into-a-smart-home-hub.md').then(function(r){return r.text()}).then(function(md){md=md.replace(/^# .+\n+/,'');document.getElementById('postContent').innerHTML=window.renderMarkdown(md)});</script>
-<script>
-  // Hide prerendered content once JS renders markdown dynamically
-  function checkAndHidePrerendered() {
-    var postContent = document.getElementById('postContent');
-    if (postContent && postContent.innerHTML.trim()) {
-      var pre = document.getElementById('prerendered-content');
-      if (pre) pre.style.display = 'none';
-    }
-  }
-  // Check immediately in case content is already loaded
-  checkAndHidePrerendered();
-  // Also check after a short delay
-  setTimeout(checkAndHidePrerendered, 100);
-  setTimeout(checkAndHidePrerendered, 500);
-</script>
+
+
 </body>
 </html>

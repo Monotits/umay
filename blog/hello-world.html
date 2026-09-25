@@ -27,7 +27,7 @@
       <a href="/" class="nav-logo">umay<span class="accent">.dev</span></a>
       <div class="nav-links">
         <a href="/#about">about</a>
-        <a href="/#projects">projects</a>
+        <a href="/#products">projects</a>
         <a href="/#blog">blog</a>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
           <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
@@ -44,8 +44,14 @@
         <div class="blog-post-date">2025-02-10</div>
         <h1 class="blog-post-title">Hello World</h1>
       </header>
-      <div class="blog-post-content" id="postContent">
-        <!-- Loaded from markdown -->
+      <div class="blog-post-content">
+        <p>Welcome to the new umay.dev. I rebuilt this site from scratch — clean, minimal, and focused on what matters: the work itself.</p>
+        <h2>Why the redesign?</h2>
+        <p>The old site served me well, but it was time for something that better reflects where I'm at now. Less noise, more signal.</p>
+        <h2>What's next?</h2>
+        <p>I'll be sharing thoughts on development, side projects, and whatever else catches my attention. Stay tuned.</p>
+        <hr />
+        <p><em>— Umay</em></p>
       </div>
     </div>
   </article>
@@ -63,14 +69,5 @@
   </footer>
 
   <script src="../js/umay.js"></script>
-  <script>
-    fetch('hello-world.md')
-      .then(function(r) { return r.text(); })
-      .then(function(md) {
-        // Remove the first H1 line since we already show it
-        md = md.replace(/^# .+\n+/, '');
-        document.getElementById('postContent').innerHTML = window.renderMarkdown(md);
-      });
-  </script>
 </body>
 </html>

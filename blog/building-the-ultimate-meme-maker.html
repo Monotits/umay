@@ -47,8 +47,8 @@
   </script>
 </head>
 <body>
-  <nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo">umay<span class="accent">.dev</span></a><div class="nav-links"><a href="/#products">products</a><a href="/#about">about</a><a href="/#blog">blog</a><button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></div></nav>
-  <article class="blog-post"><div class="container"><a href="/#blog" class="blog-back">&larr; back to blog</a><header class="blog-post-header"><div class="blog-post-date">2026-02-28</div><h1 class="blog-post-title">Building the Ultimate Meme Maker</h1></header><div id="prerendered-content">
+  <nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo">umay<span class="accent">.dev</span></a><div class="nav-links"><a href="/#products">products</a><a href="/#about">about</a><a href="/blog/">blog</a><button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button></div></div></nav>
+  <article class="blog-post"><div class="container"><a href="/blog/" class="blog-back">&larr; back to blog</a><header class="blog-post-header"><div class="blog-post-date">2026-02-28</div><h1 class="blog-post-title">Building the Ultimate Meme Maker</h1></header><div class="blog-post-content">
 <p>Memes are the <strong>language of the internet</strong>. They're how Gen Z communicates. They're how ideas go viral. They're how creators build audiences and drive engagement. Yet the tools for making memes are fragmented—you need one app for text overlays, another for fake chat messages, a third for sound effects, a fourth for transitions. We built <strong>Brolled</strong> because we realized something: what if all of those tools lived in one place?</p>
 <h2>Why Memes Matter</h2>
 <p>Memes aren't just jokes anymore. They're a form of cultural communication. A well-crafted meme gets millions of views. A trending sound gets remixed a thousand times. Meme templates become visual language that everyone understands. The creators making these memes—TikTokers, Instagram Reels creators, YouTube Shorts producers—are the ones driving internet culture forward.</p>
@@ -94,24 +94,10 @@
 <p>We're continuing to add tools based on emerging meme formats and creator feedback. The landscape of meme culture moves fast. Our job is to stay ahead of it and give creators the tools they need to be part of internet culture.</p>
 <p>If you make memes—whether you're a casual creator or someone with hundreds of thousands of followers—Brolled is built for you. Try it. We think you'll love it.</p>
 </div>
-      <div class="blog-post-content" id="postContent"></div></div></article>
+      </div></article>
   <footer class="footer"><div class="container"><div class="footer-inner"><span class="footer-copy">&copy; 2026 umay.dev</span><div class="footer-links"><a href="https://www.instagram.com/umay.dev" target="_blank" rel="noopener">instagram</a><a href="https://x.com/yumaydev" target="_blank" rel="noopener">twitter</a></div></div></div></footer>
   <script src="../js/umay.js"></script>
-  <script>fetch('building-the-ultimate-meme-maker.md').then(function(r){return r.text()}).then(function(md){md=md.replace(/^# .+\n+/,'');document.getElementById('postContent').innerHTML=window.renderMarkdown(md)});</script>
-<script>
-  // Hide prerendered content once JS renders markdown dynamically
-  function checkAndHidePrerendered() {
-    var postContent = document.getElementById('postContent');
-    if (postContent && postContent.innerHTML.trim()) {
-      var pre = document.getElementById('prerendered-content');
-      if (pre) pre.style.display = 'none';
-    }
-  }
-  // Check immediately in case content is already loaded
-  checkAndHidePrerendered();
-  // Also check after a short delay
-  setTimeout(checkAndHidePrerendered, 100);
-  setTimeout(checkAndHidePrerendered, 500);
-</script>
+
+
 </body>
 </html>
