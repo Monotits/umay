@@ -1,6 +1,6 @@
 {
   "_comment": "Fill appStoreProviderToken (App Store Connect > Analytics > Acquisition > Campaigns > Generate link, the pt= value) and cloudflareAnalyticsToken (Cloudflare dashboard > Web Analytics > Add site). Empty values disable the feature. Then run scripts/build_discovery.py.",
-  "appStoreProviderToken": "",
-  "cloudflareAnalyticsToken": "",
+  "appStoreProviderToken": "122335453",
+  "cloudflareAnalyticsToken": "78b70c3491364f68a80c8d51408c56d0",
   "indexNowKey": "f1530174ad836b87fe14f718e3b39334"
 }

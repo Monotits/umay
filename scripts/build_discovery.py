@@ -316,7 +316,10 @@ def finalize():
         if beacon and '</body>' in new:
             new = new.replace('</body>', beacon + '\n</body>', 1)
         if new != text:
-            write(path.relative_to(ROOT), new)
+            try:
+                write(path.relative_to(ROOT), new)
+            except PermissionError:
+                print('Skipped (not writable):', path.relative_to(ROOT))
 
 
 def build_llms():

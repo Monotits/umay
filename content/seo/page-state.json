@@ -1,146 +1,146 @@
 {
   "blog/building-the-ultimate-meme-maker.html": {
-    "sha256": "cd7105ffc44e64de84c09a1cf9078fb1eba595c1c56a76b13fcfa4a531e431e8",
+    "sha256": "14a68e3765a6e896cd6328c4158dccca150da7cbe949690c4fc6395d0efbf97c",
     "lastmod": "2026-09-25"
   },
   "blog/game-theory-as-a-mirror-for-your-mind.html": {
-    "sha256": "9e24cae576e8ddbc907ce69e3276450faec307bffabdf6dc3fb79cf814770255",
+    "sha256": "77253a404e72341a1593573b551b9d4e786215c92f69361696f7a2d04fa1c6b7",
     "lastmod": "2026-09-25"
   },
   "blog/how-shadowart-uses-ai-for-self-reflection.html": {
-    "sha256": "0a9ff5f446a8ab52ee1a900225fc6a7e5afd2d53b4fef30b4408af119b4429ae",
+    "sha256": "a530f4898dd3ff16a423ead2907debece1524aefccaba71969b6106cec76482d",
     "lastmod": "2026-09-25"
   },
   "blog/index.html": {
-    "sha256": "c04eda055995fff38788cb3a3a6cdb0fe3722f999d26690fe5031057d56315b8",
+    "sha256": "2e05126b1dabe0ebee74a96a61ac3febd439ccf935e167489b8be830b040ea90",
     "lastmod": "2026-09-25"
   },
   "blog/turning-your-mac-into-a-smart-home-hub.html": {
-    "sha256": "9581d8ccb4c68279cf22b58970e6b073fd95177815446194a91fd03f989f5e26",
+    "sha256": "9926e52bec2b37dff1db25031fd9ca5589cac5e8cdaf925e74883f57a11407ee",
     "lastmod": "2026-09-25"
   },
   "blog/why-we-built-pulse-guard.html": {
-    "sha256": "5770e101c967123bf05e7e1364a8a98f99940495f0cf673de66d71f56370b3e1",
+    "sha256": "2592e8cf6c238575884db58b6dbddc7d54409ba2aae7326db12d2b0156d4aaa2",
     "lastmod": "2026-09-25"
   },
   "blog/why-your-voice-reveals-more-than-your-words.html": {
-    "sha256": "cab1ff464dac0a8bee101419da44f843910e2ba799fae99dc7c6c598983d9c3c",
-    "lastmod": "2026-09-24"
+    "sha256": "d559221236d34be7aa1c461002b943863fabc83f280e436e4b7837596ccf83b1",
+    "lastmod": "2026-09-25"
   },
   "brolled/a-few-moments-later-meme/index.html": {
-    "sha256": "8f1cfa44651a4f77125b43d6a5f95762f73260795bcb01620558f87a827ae536",
+    "sha256": "283ea3e16be58d509b7b1502b66710390749cdb085a6bbd4c2c28acaedda968f",
     "lastmod": "2026-09-25"
   },
   "brolled/ai-quiz-video-maker/index.html": {
-    "sha256": "8142de9d489c119443fa3a513f9c6f1e04427cef339e83b85556bcec87ccee47",
+    "sha256": "11c480ec39526a5e8060fd58fb303e585fc9ce7bd7c1e1484f6e13008818d63f",
     "lastmod": "2026-09-25"
   },
   "brolled/beat-sync-video-maker/index.html": {
-    "sha256": "ec50ea95f652144e668d0ef6612654afbb87bd317206962236f72876dc712d60",
+    "sha256": "ba10483bb90016e2a7067a68fccee16ab946d4804b1bcb3f135dbe31d5079b79",
     "lastmod": "2026-09-25"
   },
   "brolled/directed-by-robert-b-weide-meme/index.html": {
-    "sha256": "ed98fbdbc1da11a6d5f990f58932d7519f41f7432bef3224f8aaa98ad778dd62",
+    "sha256": "f587ad7594ecb597a8307e657ee5406026c4dd9799e9a86a3dad0b788ac798af",
     "lastmod": "2026-09-25"
   },
   "brolled/fake-call-video-maker/index.html": {
-    "sha256": "dd375014133d34ce8ddf5b648541b92ff96e183ffc428dd591ecde3940455004",
+    "sha256": "0a026887bd4daece154960c4f4c5519b83d305df1fb679cfff6b49488aac9379",
     "lastmod": "2026-09-25"
   },
   "brolled/fake-text-message-video-maker/index.html": {
-    "sha256": "607e71e940a41d340fba573aae61b0af290a4c1800c630dfeeb0078c1771b8a2",
+    "sha256": "a769582a5c8494799db17a0db19ab2cf44056a1b15ee0ec6e87c852c833beb6f",
     "lastmod": "2026-09-25"
   },
   "brolled/index.html": {
-    "sha256": "065c4989621cd4e1bc21c7aaa9a14364ba21266f200a5e5b24edc388d1538c0b",
+    "sha256": "b7d4e293c90d0bf89f94fb4e25c80e1ece70ea73fe5ca399da21a8dfb96d039b",
     "lastmod": "2026-09-25"
   },
   "brolled/lyric-video-maker/index.html": {
-    "sha256": "3afa2c8c3e295402202c900b56bf56c4d03c3054044526e1c83178f7bff43212",
+    "sha256": "5f8f7bf950d40be273470be3259e4b4bdc55180d13a7189108b41a103d850d22",
     "lastmod": "2026-09-25"
   },
   "brolled/meme-sound-effects-on-video/index.html": {
-    "sha256": "12550c696b71b1837428c36521f3e9efe9e64bedfddd6a32a374bcc6c28be17e",
+    "sha256": "b1ef4bc280bd3d575711cb62a2c900ef060cd42a5921a3eaad740d345465ef68",
     "lastmod": "2026-09-25"
   },
   "brolled/reddit-story-video-maker/index.html": {
-    "sha256": "cc2079cd722a5a76a704f7de1c61cc968a1f13b9cf217e136b82c0a52ffc6a1c",
+    "sha256": "958b556e5130d0df62f2d45e35235a82c4a226c98c93924b5cd6bb0fa13a9718",
     "lastmod": "2026-09-25"
   },
   "brolled/remove-video-background-iphone/index.html": {
-    "sha256": "c53e4731d609ac9ab98049887a476d6c9192edc94a2b2382f8684250a501d658",
+    "sha256": "1b8dfbf197872a7b8ff0920a17324e4e963aecc6517d5a2cb31140fa14183d38",
     "lastmod": "2026-09-25"
   },
   "brolled/split-screen-reaction-video/index.html": {
-    "sha256": "d69f0d2282d8d678902fb2463ea64617ae64dacc76d745deadcd152ec9f82380",
+    "sha256": "fcb2d1ad9ccf7078d874843833273f3e650fe7db5f8c266733dc4ef84d997bbb",
     "lastmod": "2026-09-25"
   },
   "brolled/tier-list-maker/index.html": {
-    "sha256": "96d2058e3674c1e6f2436ef0203654809afaff9bbf4c7143d42dd9a92ecfa240",
+    "sha256": "6c61eb8877108f63a4c32c2a491a9fb51b196dca7bdbd4a62d86a8f0dbb65fc6",
     "lastmod": "2026-09-25"
   },
   "brolled/top-5-ranking-video-maker/index.html": {
-    "sha256": "c54dbca6d5cc9ba3c0ddc1de252c92b7f55fc0475922ec383dc6fedf81e060d6",
+    "sha256": "b96f1cad99d99d21fe66401943e8a0ef34b54f60209b9943b729808eccc6e2a7",
     "lastmod": "2026-09-25"
   },
   "brolled/would-you-rather-video-maker/index.html": {
-    "sha256": "f69eda95710274676e73406c2fc341b5078e037f54fd3bf9186ed1ec4159b71b",
+    "sha256": "e3053e92ae20630ff833d5d5c959a14f6437d80bddfcfcb5021d9e9b7d37e5b0",
     "lastmod": "2026-09-25"
   },
   "cinegradeapp/index.html": {
-    "sha256": "af645da57e9ae6e4d00494f589aba306c58d64841718fb355db88e5bca43e09b",
+    "sha256": "458a8c1cf0a7e53e906ea87e42fa038e57bbabedf7ded9de80e4bc77adde9173",
     "lastmod": "2026-09-25"
   },
   "cornerman/index.html": {
-    "sha256": "3e266366b7eeae18cb22ed9963a6f3728738070900fa20472d69103596d115d9",
+    "sha256": "601ed00fc62f4cca0156ced0b3140312a9358eef7ce0b6088c77d31682b62874",
     "lastmod": "2026-09-25"
   },
   "fenno/index.html": {
-    "sha256": "a019b84736b72601d84031405faef844135f7c01a6c5830fd9ca1ad1fd792aaa",
+    "sha256": "353ec5f28cdcd420efe67076ef5bf6c2cfea588afae7efc0f5cadc84a3172503",
     "lastmod": "2026-09-25"
   },
   "guides/add-captions-iphone-videos/index.html": {
-    "sha256": "78dda0576f4aaca8a1eee1bba5d0420be45ea798e992ab5bbb20ff18fb2c6618",
+    "sha256": "1ddd9a44da5f4a96790f4155fe6576ec7ebe59fbc83e7c093f064a08d5b5a429",
     "lastmod": "2026-09-25"
   },
   "guides/cinematic-luts-iphone/index.html": {
-    "sha256": "b10744dcde6fbc8d23ffbcf686dfc43e11cdfb9ee39e8080364acf6db242930d",
+    "sha256": "395cde89f591c3cce0a4bfa3e424e70476928b88478e73a1a5e95cd44909f039",
     "lastmod": "2026-09-25"
   },
   "guides/index.html": {
-    "sha256": "fadd0e58e26b5a5d4db325b52b5779a1ba04ebb2df2c67a994c89db689321379",
+    "sha256": "16969eda3cdf87c5ba13fec2b74808ae2463696cd968c5aa86460ce18d86bc7b",
     "lastmod": "2026-09-25"
   },
   "guides/private-mood-tracking-iphone/index.html": {
-    "sha256": "c4487cbd7432f0690d07dda7c5c179701f2b42096704d828e11aa3b0c830a323",
+    "sha256": "8bcbb645e5b1f43e878779f2e52696b438fd7bb479af7d0c10fd5b415472a7f2",
     "lastmod": "2026-09-25"
   },
   "guides/wifi-signal-monitoring-mac/index.html": {
-    "sha256": "25f7d17623e0009ba3064367285062d04643dbb3c397234c9d495151620b7f60",
+    "sha256": "c48b9325caada290c476efb4e1ef7d4017542edb648245cd71777fe0e6ba2fd8",
     "lastmod": "2026-09-25"
   },
   "index.html": {
-    "sha256": "7967fdf7a8f4b71b216c4a6aef94e1f78deee3891f2a4c7f5a5541a1f7981870",
+    "sha256": "2b698502c853f7607737f9c89e20c9232c7637f744f6616a3c300ae37563dfa5",
     "lastmod": "2026-09-25"
   },
   "mindtype/index.html": {
-    "sha256": "7883472245fdf3190620655403e41909962857a8ac7b9f064ead71a49ec2fed5",
+    "sha256": "7501239472187467e6c4a8c3c662ee92bf66b7952edd1d76b52e75beaf36d1ff",
     "lastmod": "2026-09-25"
   },
   "pulseguard/index.html": {
-    "sha256": "b9d377bf7f20b0d1b9feb1f5648c8a3a70a7ad6faf1de10d0ce8302926185297",
+    "sha256": "9c36ca2da41842c3d678aec2631a7ad2f16e91035fd0ecc9d06e86805946b01c",
     "lastmod": "2026-09-25"
   },
   "pulsehome/index.html": {
-    "sha256": "c7b2736bef508969c25781b3f1c882eec5f0af8f62c9d7dc8fd40c5696c1495e",
+    "sha256": "38df047b51d31741da8a3696ca9052fa2c09327d2526ed689dbfcb6f6fd1705c",
     "lastmod": "2026-09-25"
   },
   "shadowart/index.html": {
-    "sha256": "8c7fd27fbc5a571211c9adbbbe5f85820fc2a16e20381d5f8594e5722971004f",
+    "sha256": "11ec6d8ab2d26cf276032fbc13fc0c7acccadc98ced205a0e1fcb6042fd04a3c",
     "lastmod": "2026-09-25"
   },
   "supplab/index.html": {
-    "sha256": "ff0a3b356c6831cff1c008f20360e33636903e9e348044a6f646b09d6d78d726",
+    "sha256": "a4f8d048f6b31d5525d91662441dfa0c7bd72dda3a2f15baec43546d08b26f13",
     "lastmod": "2026-09-25"
   }
 }
