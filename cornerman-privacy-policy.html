@@ -32,62 +32,66 @@
     <h1>Privacy Policy</h1>
     <p class="subtitle">Cornerman</p>
     <div class="meta-info">
-        <strong>Developer:</strong> Umay &bull; <strong>Effective Date:</strong> July 14, 2026 &bull; <strong>Bundle ID:</strong> dev.umay.cornerman
+        <strong>Developer:</strong> Umay &bull; <strong>Effective Date:</strong> September 25, 2026 &bull; <strong>Bundle ID:</strong> dev.umay.cornerman
     </div>
 
     <div class="highlight-box">
-        <strong>The short version:</strong> Cornerman knows your life but tells no one. All inference happens on your device. Nothing leaves your phone &mdash; because we have no servers to send it to.
+        <strong>The short version:</strong> We run no servers and have no accounts, so we never receive your data. Everything Cornerman works out happens on your iPhone. If you allow it, a copy is kept in <em>your own private iCloud</em>, which belongs to your Apple Account and which we cannot read. The only other things that leave your phone go to Apple, not to us: your approximate location for the weather forecast, and once during setup, to name your neighbourhood.
     </div>
 
     <h2>1. Introduction</h2>
-    <p>Cornerman is a foresight engine for fathers. It quietly infers from your calendar, contacts, and location to surface reminders and nudges before you drop something important. This Privacy Policy explains what data the app accesses, how it is used, and why it never leaves your device.</p>
-    <p>By using Cornerman, you agree to the practices described in this policy. If you do not agree, please discontinue use of the app.</p>
+    <p>Cornerman is a foresight app for fathers. It reads your calendar, contacts and approximate location on your device to catch family dates, calendar clashes and seasonal home and car jobs before they slip. This policy explains what the app accesses, why, and where it goes.</p>
+    <p>By using Cornerman, you agree to the practices described in this policy. If you do not agree, please stop using the app.</p>
 
-    <h2>2. Data We Access and How We Use It</h2>
-    <p>Cornerman operates entirely on-device. All rule evaluation, inference, and statistics are computed locally. We do not operate backend servers and we do not collect, transmit, or store any personal data on external systems.</p>
+    <h2>2. Data the App Accesses and How It Is Used</h2>
+    <p>Every rule, suggestion and calculation runs locally on your iPhone. Each permission is optional: if you decline one, the features that need it stay quiet and everything else keeps working.</p>
 
     <table>
-        <tr><th>Data Type</th><th>Why We Access It</th><th>Where It Goes</th></tr>
-        <tr><td><strong>Calendar</strong></td><td>To detect upcoming events (school runs, appointments, anniversaries) and trigger timely reminders</td><td>Stays on your device</td></tr>
-        <tr><td><strong>Contacts</strong></td><td>To recognize the people in your life and infer relationship context (e.g., children&rsquo;s birthdays, partner&rsquo;s schedule)</td><td>Stays on your device</td></tr>
-        <tr><td><strong>Location</strong></td><td>To understand your current context and surface location-relevant nudges (e.g., leaving work, arriving home)</td><td>Stays on your device</td></tr>
-        <tr><td><strong>Weather (Apple WeatherKit)</strong></td><td>To factor weather into reminders (e.g., rain gear for the school run)</td><td>Apple&rsquo;s WeatherKit API &mdash; governed by Apple&rsquo;s Privacy Policy</td></tr>
-        <tr><td><strong>School / ICS calendars (optional)</strong></td><td>If you subscribe to a school or public ICS feed, its events are read locally</td><td>Processed on-device; the ICS URL is fetched directly from the source you configure</td></tr>
+        <tr><th>Data</th><th>Why</th><th>Where it goes</th></tr>
+        <tr><td><strong>Calendar</strong></td><td>To spot clashes (for example, a trip on your anniversary), busy weeks and open weekends</td><td>Read on your device</td></tr>
+        <tr><td><strong>Reminders &amp; calendar events</strong></td><td>Written only when you tap an action such as &ldquo;Remind me Tuesday&rdquo;</td><td>Saved in your own Calendar / Reminders app</td></tr>
+        <tr><td><strong>Contacts</strong></td><td>During setup, to find birthdays and family relations (children, partner, parents) that you then confirm or reject</td><td>Read on your device; only what you confirm is saved</td></tr>
+        <tr><td><strong>Approximate location</strong></td><td>To know roughly where home is: your climate, your local weather and which seasonal jobs apply</td><td>Stored on your device (and in your private iCloud if sync is on); sent to Apple for the two services below</td></tr>
+        <tr><td><strong>What you tell the app</strong></td><td>Answers to its questions, the dates you confirm, what you log</td><td>On your device, and in your private iCloud if sync is on</td></tr>
+        <tr><td><strong>Notifications</strong></td><td>Local reminders (for example, the morning of a birthday) and a weekly briefing</td><td>Scheduled on your device; no push server of ours is involved</td></tr>
     </table>
 
-    <h3>2.1 No Analytics or Tracking</h3>
-    <p>Cornerman contains no analytics SDKs, crash reporters that transmit data, advertising identifiers, or tracking pixels. We do not know how many times you open the app, which features you use, or anything else about your behavior.</p>
+    <h3>2.1 On-device intelligence</h3>
+    <p>On devices that support Apple Intelligence, Cornerman may use Apple&rsquo;s on-device language model to phrase your weekly briefing. This runs entirely on your iPhone; nothing is sent to us or to a cloud model.</p>
 
-    <h3>2.2 No Accounts</h3>
-    <p>Cornerman does not require or support user accounts. There is no sign-up, no login, and no profile associated with your data anywhere outside your device.</p>
+    <h3>2.2 No analytics or tracking</h3>
+    <p>The app contains no analytics SDKs, advertising identifiers, tracking pixels or crash reporters that send data to us. We do not know how often you open the app or what you do in it.</p>
 
-    <h2>3. Third-Party Services</h2>
-    <p>Cornerman&rsquo;s only external data touchpoints are:</p>
+    <h3>2.3 No accounts</h3>
+    <p>There is no sign-up and no login. Nothing about you is linked to a profile anywhere outside your own device and Apple Account.</p>
+
+    <h2>3. What Leaves Your Phone (Apple Only)</h2>
     <ul>
-        <li><strong>Apple WeatherKit</strong> &mdash; used to fetch weather conditions for your current location. Your location is transmitted to Apple as part of this request and is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple&rsquo;s Privacy Policy</a>.</li>
-        <li><strong>ICS calendar feeds (optional, user-configured)</strong> &mdash; if you add a school or public calendar URL, the app fetches it directly from that source. We have no visibility into this request; it is made from your device to the calendar provider you chose.</li>
+        <li><strong>iCloud (optional, on by default).</strong> If you are signed in to iCloud, Cornerman keeps a copy of its data in your <em>private</em> iCloud database so a new iPhone can pick up where the old one left off. That database belongs to your Apple Account; we have no access to it. Turn it off in <strong>Settings &rarr; Your data</strong> inside the app.</li>
+        <li><strong>Weather (Apple WeatherKit).</strong> Your approximate location is sent to Apple to fetch the forecast. Apple states it does not associate this with your identity. See the <a href="https://www.apple.com/legal/privacy/data/en/weather/" target="_blank">Apple Weather Privacy Notice</a>.</li>
+        <li><strong>Place name (setup only).</strong> During setup, the app shows roughly where it thinks home is (a neighbourhood and city, never a street) so you can confirm it. To produce that name, your approximate location is sent once to Apple&rsquo;s geocoding service (MapKit). The name is not stored.</li>
     </ul>
-    <p>There are no advertising networks, social SDKs, or other third-party integrations in Cornerman.</p>
+    <p>There are no advertising networks, social SDKs or other third-party integrations.</p>
 
     <h2>4. In-App Purchases and Subscriptions</h2>
-    <p>If Cornerman offers premium features, all purchases and subscription billing are handled exclusively by Apple through the App Store. We do not receive or store your payment information. Apple&rsquo;s <a href="https://www.apple.com/legal/privacy/" target="_blank">Privacy Policy</a> and <a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank">Media Services Terms</a> govern those transactions.</p>
+    <p>Subscriptions are sold and billed entirely by Apple through the App Store. We never receive your payment details. Apple&rsquo;s <a href="https://www.apple.com/legal/privacy/" target="_blank">Privacy Policy</a> and <a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank">Media Services Terms</a> govern those transactions.</p>
 
     <h2>5. Data Retention and Deletion</h2>
-    <p>Because all data is stored on your device, you are in complete control:</p>
     <ul>
-        <li>Deleting the app removes all app data from your device.</li>
-        <li>You can revoke calendar, contacts, or location permissions at any time in <strong>iOS Settings &rarr; Privacy &amp; Security</strong>. Cornerman will continue to function for features that do not require those permissions.</li>
-        <li>There is no server-side data to request deletion of, because none exists.</li>
+        <li><strong>Settings &rarr; Erase everything</strong> deletes all of Cornerman&rsquo;s data on this phone, cancels its scheduled notifications and, if iCloud sync is on, removes the iCloud copy from your other devices too.</li>
+        <li>You can review, correct or remove individual facts (birthdays, anniversary and the answers you gave) inside the app at any time.</li>
+        <li>Deleting the app removes its data from the device. To remove an iCloud copy after deleting the app, use <strong>iOS Settings &rarr; [your name] &rarr; iCloud &rarr; Manage Storage</strong>.</li>
+        <li>You can revoke calendar, contacts, reminders, location or notification access at any time in <strong>iOS Settings &rarr; Privacy &amp; Security</strong>.</li>
     </ul>
 
     <h2>6. Children&rsquo;s Privacy</h2>
-    <p>Cornerman is not directed at children under the age of 13 and is not designed for use by children. We do not knowingly collect personal information from children under 13. If you believe a child has used the app in a way that involved personal information, please contact us at <a href="https://umay.dev">umay.dev</a> so we can address the situation.</p>
+    <p>Cornerman is for parents and is not directed at children under 13. It stores dates and names of your children only because you enter or confirm them, and only on your device and in your private iCloud. We do not knowingly collect personal information from children. Questions: <a href="https://umay.dev">umay.dev</a>.</p>
 
     <h2>7. Your Rights</h2>
-    <p>Depending on your jurisdiction, you may have rights regarding personal data &mdash; including access, correction, deletion, and portability. Because Cornerman holds all data locally and we have no access to it, exercising these rights is entirely within your control via iOS Settings and app deletion. If you have questions, contact us at <a href="https://umay.dev">umay.dev</a>.</p>
+    <p>Depending on where you live, you may have rights to access, correct, delete or port your personal data. Because we hold none of it, you exercise those rights directly in the app, in iOS Settings, and in your iCloud account. Questions: <a href="https://umay.dev">umay.dev</a>.</p>
 
     <h2>8. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. When we do, we will update the effective date above and, where appropriate, notify you through the app or App Store release notes. Continued use of Cornerman after changes constitutes acceptance of the updated policy.</p>
+    <p>If this policy changes, we will update the effective date above and, where appropriate, mention it in the App Store release notes. Continuing to use Cornerman after a change means you accept the updated policy.</p>
 
     <h2>9. Contact</h2>
     <p>Questions or concerns? Reach us at <a href="https://umay.dev">https://umay.dev</a>.</p>
