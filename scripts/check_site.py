@@ -151,7 +151,7 @@ for product in products:
         errors.append(f'{product["slug"]}: homepage gallery must include every catalogue screenshot')
 if len([ref for ref in home.refs if ref.startswith('https://apps.apple.com/')]) != len(products):
     errors.append('Homepage must link directly to the store for every active app')
-for name in ['arithmio.html', 'calendart.html', 'filmzy.html', 'jeoatlas.html', 'kidity.html', 'moodconnect.html', 'nazar.html', 'blog/hello-world.html']:
+for name in ['blog/hello-world.html']:
     if BASE + '/' + name in urls:
         errors.append(f'{name}: retired page must not be in the sitemap')
     if 'noindex' not in (ROOT / name).read_text():

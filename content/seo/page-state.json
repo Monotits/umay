@@ -1,27 +1,27 @@
 {
   "blog/building-the-ultimate-meme-maker.html": {
-    "sha256": "14a68e3765a6e896cd6328c4158dccca150da7cbe949690c4fc6395d0efbf97c",
-    "lastmod": "2026-09-25"
+    "sha256": "d409f9f5c699f84c2c58f468e103ab307ec1c2c6e0c078591c72b05aad83b0d5",
+    "lastmod": "2026-10-07"
   },
   "blog/game-theory-as-a-mirror-for-your-mind.html": {
-    "sha256": "77253a404e72341a1593573b551b9d4e786215c92f69361696f7a2d04fa1c6b7",
-    "lastmod": "2026-09-25"
+    "sha256": "b8546a14526997979df6ad90f92c5a08ba68fa518492516036febbc03cee3172",
+    "lastmod": "2026-10-07"
   },
   "blog/how-shadowart-uses-ai-for-self-reflection.html": {
-    "sha256": "a530f4898dd3ff16a423ead2907debece1524aefccaba71969b6106cec76482d",
-    "lastmod": "2026-09-25"
+    "sha256": "1ffe993c15afc724527f500835c606106d08de6b2110e6a0a7e2b9065a6d6bc8",
+    "lastmod": "2026-10-07"
   },
   "blog/index.html": {
     "sha256": "2e05126b1dabe0ebee74a96a61ac3febd439ccf935e167489b8be830b040ea90",
     "lastmod": "2026-09-25"
   },
   "blog/turning-your-mac-into-a-smart-home-hub.html": {
-    "sha256": "9926e52bec2b37dff1db25031fd9ca5589cac5e8cdaf925e74883f57a11407ee",
-    "lastmod": "2026-09-25"
+    "sha256": "f843a51e8d39b2cb14c29acf891e43157dcf175e436973eba1bcab947bd947a5",
+    "lastmod": "2026-10-07"
   },
   "blog/why-we-built-pulse-guard.html": {
-    "sha256": "2592e8cf6c238575884db58b6dbddc7d54409ba2aae7326db12d2b0156d4aaa2",
-    "lastmod": "2026-09-25"
+    "sha256": "208743cc8c30b6af22906f97a076e0dcf69f376e9a1e61e0298b2af9ec76e9c8",
+    "lastmod": "2026-10-07"
   },
   "blog/why-your-voice-reveals-more-than-your-words.html": {
     "sha256": "d559221236d34be7aa1c461002b943863fabc83f280e436e4b7837596ccf83b1",
@@ -88,16 +88,16 @@
     "lastmod": "2026-09-25"
   },
   "cinegradeapp/index.html": {
-    "sha256": "458a8c1cf0a7e53e906ea87e42fa038e57bbabedf7ded9de80e4bc77adde9173",
-    "lastmod": "2026-09-25"
+    "sha256": "874693567f41235d38f82394373364b494dc2cddd072f2c37395223112bd7b00",
+    "lastmod": "2026-10-07"
   },
   "cornerman/index.html": {
-    "sha256": "601ed00fc62f4cca0156ced0b3140312a9358eef7ce0b6088c77d31682b62874",
-    "lastmod": "2026-09-25"
+    "sha256": "30f5caa139f2fb6b06da3526ac38e9429bfdc436e6b51648d60a649b173caca0",
+    "lastmod": "2026-10-07"
   },
   "fenno/index.html": {
-    "sha256": "353ec5f28cdcd420efe67076ef5bf6c2cfea588afae7efc0f5cadc84a3172503",
-    "lastmod": "2026-09-25"
+    "sha256": "1f89db1a49ccf61767ae732434c64e16bbb0bf80d5ebb08d451c42e72a84a52e",
+    "lastmod": "2026-10-07"
   },
   "guides/add-captions-iphone-videos/index.html": {
     "sha256": "1ddd9a44da5f4a96790f4155fe6576ec7ebe59fbc83e7c093f064a08d5b5a429",
@@ -120,8 +120,8 @@
     "lastmod": "2026-09-25"
   },
   "index.html": {
-    "sha256": "2b698502c853f7607737f9c89e20c9232c7637f744f6616a3c300ae37563dfa5",
-    "lastmod": "2026-09-25"
+    "sha256": "64d9f4ef25452f0c6887912ffa632ab89ca9d1d7a852e29e6c4448c1cd361e38",
+    "lastmod": "2026-10-07"
   },
   "mindtype/index.html": {
     "sha256": "7501239472187467e6c4a8c3c662ee92bf66b7952edd1d76b52e75beaf36d1ff",
@@ -140,7 +140,7 @@
     "lastmod": "2026-09-25"
   },
   "supplab/index.html": {
-    "sha256": "a4f8d048f6b31d5525d91662441dfa0c7bd72dda3a2f15baec43546d08b26f13",
-    "lastmod": "2026-09-25"
+    "sha256": "51c6b962df9c3464142411df9b92c18deb53aef78924b15c6f4565b54dbe7c25",
+    "lastmod": "2026-10-07"
   }
 }

@@ -10,7 +10,7 @@ Static product website for an independent app studio. The primary audience is gl
 - Brolled format pages: `content/seo/tools.json`, generated under `brolled/<slug>/`.
 - Site settings: `content/seo/site.json` — `appStoreProviderToken` (App Store Connect campaign `pt`, adds `pt`/`ct` to every store link so installs from each page appear in App Analytics), `cloudflareAnalyticsToken` (free Cloudflare Web Analytics beacon), `indexNowKey`. Empty values disable a feature.
 - `llms.txt` is generated from the catalogue; do not edit it by hand.
-- Retired products (Arithmio, CalendART, Filmzy, JeoAtlas, Kidity, Mood Connect, Nazar), `blog/hello-world.html` and the old MindType legal pages are `noindex` and excluded from the sitemap (`NOINDEX` in the build script).
+- `blog/hello-world.html` and the old MindType legal pages are `noindex` and excluded from the sitemap (`NOINDEX` in the build script). Retired product pages were removed from the site; their privacy/terms pages remain because store listings may still link to them.
 - Product stories: `blog/*.html`; the blog catalogue is `blog/posts.json`. Existing `.md` files are historical source material, not fetched by the published pages. Edit the HTML story when updating it.
 - The home page includes static product links, direct store links and guide links. All essential content is available without JavaScript.
 

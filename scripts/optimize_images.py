@@ -16,7 +16,6 @@ import subprocess
 ROOT = Path(__file__).resolve().parents[1]
 PRODUCTS = json.loads((ROOT / 'content/seo/products.json').read_text())
 PAGES = [ROOT / 'index.html'] + [ROOT / p['slug'] / 'index.html' for p in PRODUCTS] + sorted((ROOT / 'guides').rglob('*.html'))
-PAGES += [ROOT / (name + '.html') for name in ['arithmio', 'calendart', 'filmzy', 'jeoatlas', 'kidity', 'moodconnect', 'nazar']]
 OUT = ROOT / 'assets/optimized'
 OUT.mkdir(parents=True, exist_ok=True)
 MANIFEST = OUT / 'manifest.json'

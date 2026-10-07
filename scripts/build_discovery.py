@@ -18,9 +18,8 @@ GUIDES = json.loads((ROOT / 'content/seo/guides.json').read_text())
 TOOLS = json.loads((ROOT / 'content/seo/tools.json').read_text())
 SITE = json.loads((ROOT / 'content/seo/site.json').read_text())
 BLOG = json.loads((ROOT / 'blog/posts.json').read_text())
-# Retired products and superseded pages stay reachable but are kept out of the index.
-NOINDEX = ['arithmio.html', 'calendart.html', 'filmzy.html', 'jeoatlas.html', 'kidity.html', 'moodconnect.html', 'nazar.html',
-           'blog/hello-world.html', 'mindtype_privacy_policy.html', 'mindtype_terms_of_use.html']
+# Superseded pages stay reachable but are kept out of the index.
+NOINDEX = ['blog/hello-world.html', 'mindtype_privacy_policy.html', 'mindtype_terms_of_use.html']
 E = escape
 
 
