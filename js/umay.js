@@ -15,14 +15,30 @@
     // Browsing modes that block storage still get a working theme toggle.
   }
 
+  const themeColor = document.querySelector('meta[name="theme-color"]');
+  function sync() {
+    const dark = html.getAttribute('data-theme') !== 'light';
+    if (toggle) toggle.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+    if (themeColor) themeColor.content = dark ? '#09090b' : '#fafafa';
+  }
+
   if (toggle) {
     toggle.addEventListener('click', function () {
       const current = html.getAttribute('data-theme');
       const next = current === 'dark' ? 'light' : 'dark';
       html.setAttribute('data-theme', next);
       try { localStorage.setItem('theme', next); } catch (_) {}
+      sync();
     });
   }
+  // Keep tabs in step when the theme is changed elsewhere.
+  window.addEventListener('storage', function (e) {
+    if (e.key === 'theme' && (e.newValue === 'light' || e.newValue === 'dark')) {
+      html.setAttribute('data-theme', e.newValue);
+      sync();
+    }
+  });
+  sync();
 
   document.querySelectorAll('.project-gallery').forEach(function (gallery) {
     const track = gallery.querySelector('.project-preview');

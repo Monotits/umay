@@ -312,6 +312,13 @@ def finalize():
             return m[1] + E(url, quote=True) + m[3]
         new = re.sub(r'(href=["\'])(https://apps\.apple\.com/[^"\']+)(["\'])', tag, text)
         new = re.sub(r'\s*<!-- analytics:start -->.*?<!-- analytics:end -->', '', new, flags=re.S)
+        new = re.sub(r'\s*<!-- theme:start -->.*?<!-- theme:end -->', '', new, flags=re.S)
+        if 'id="themeToggle"' in new:
+            # Applies a stored theme before first paint so light-mode visitors see no dark flash.
+            boot = ('<!-- theme:start --><meta name="theme-color" content="#09090b" />'
+                    '<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>'
+                    '<!-- theme:end -->')
+            new = re.sub(r'(<meta name="viewport"[^>]*>)', lambda m: m[1] + '\n  ' + boot, new, count=1)
         if beacon and '</body>' in new:
             new = new.replace('</body>', beacon + '\n</body>', 1)
         if new != text:
