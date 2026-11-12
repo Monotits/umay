@@ -162,18 +162,9 @@
   -webkit-overflow-scrolling: touch;
 }
 
-.pulse-screenshots::-webkit-scrollbar {
-  height: 6px;
-}
-
-.pulse-screenshots::-webkit-scrollbar-track {
-  background: var(--bg-secondary);
-  border-radius: 3px;
-}
-
-.pulse-screenshots::-webkit-scrollbar-thumb {
-  background: var(--border);
-  border-radius: 3px;
+.pulse-screenshots {
+  /* Thumb uses secondary text colour so it stays at least 3:1 against the track. */
+  scrollbar-color: var(--text-secondary) var(--bg-secondary);
 }
 
 .pulse-screenshot {

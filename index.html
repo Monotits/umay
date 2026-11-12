@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- theme:start --><meta name="theme-color" content="#09090b" /><script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script><!-- theme:end -->
+  <!-- theme:start --><meta name="color-scheme" content="dark" /><meta name="theme-color" content="#09090b" /><script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark"){document.documentElement.setAttribute("data-theme",t);document.querySelector('meta[name="color-scheme"]').content=t}}catch(e){}</script><!-- theme:end -->
   <meta name="description" content="Discover independent iPhone, iPad and Mac apps for video editing, mood journaling, personal productivity and home automation. Explore features and download." />
-  <meta name="keywords" content="umay.dev, digital product studio, mobile apps, Flutter developer, iOS apps, macOS apps, Android apps, ShadowART, Pulse Guard, Pulse Home, MindType, Brolled, Fenno, Cinegrade, film filters, cinematic LUTs, AI apps, app development studio, voice analysis" />
   <meta name="google-site-verification" content="Lb2lzH8SdKJCS7OvynwCe3P3IYIJu48AdjkPJla-pV0" />
   <meta name="author" content="umay.dev" />
   <meta name="creator" content="umay.dev" />
@@ -36,37 +35,102 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/umay.css" />
-
-  <!-- Structured Data: Organization -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "umay.dev",
-    "alternateName": "umay.dev Digital Product Studio",
-    "url": "https://umay.dev",
-    "logo": "https://umay.dev/assets/favicon.png",
-    "description": "Digital product studio specializing in mobile apps, AI-powered tools, and creative software for iOS, macOS, and Android.",
-    "sameAs": [
-      "https://x.com/yumaydev",
-      "https://www.instagram.com/umay.dev"
-    ],
-    "knowsAbout": ["Flutter", "Dart", "Swift", "Kotlin", "Python", "Firebase", "AI/ML", "iOS Development", "macOS Development", "Android Development", "Game Theory", "Jungian Psychology", "WiFi Signal Processing"],
-    "dateModified": "2026-03-27"
-  }
-  </script>
-
-  <!-- Structured Data: WebSite -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "umay.dev",
-    "url": "https://umay.dev",
-    "description": "Digital product studio building mobile apps, AI tools, and creative software.",
-    "dateModified": "2026-03-27"
-  }
-  </script>
+  <!-- schema:start -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://umay.dev/#organization",
+  "name": "umay.dev",
+  "url": "https://umay.dev/",
+  "logo": "https://umay.dev/assets/favicon.png",
+  "founder": {
+    "@id": "https://umay.dev/about/#person"
+  },
+  "sameAs": [
+    "https://apps.apple.com/us/developer/bugra-gunay/id1540057343",
+    "https://x.com/yumaydev",
+    "https://www.instagram.com/umay.dev"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://umay.dev/#website",
+  "name": "umay.dev",
+  "url": "https://umay.dev/",
+  "publisher": {
+    "@id": "https://umay.dev/#organization"
+  },
+  "inLanguage": "en"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Apps by umay.dev",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "url": "https://umay.dev/shadowart/",
+      "name": "ShadowART"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "url": "https://umay.dev/mindtype/",
+      "name": "MindType"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "url": "https://umay.dev/brolled/",
+      "name": "Brolled"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "url": "https://umay.dev/supplab/",
+      "name": "SuppLab"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "url": "https://umay.dev/fenno/",
+      "name": "Fenno"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "url": "https://umay.dev/cinegradeapp/",
+      "name": "Cinegrade"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "url": "https://umay.dev/cornerman/",
+      "name": "Cornerman"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "url": "https://umay.dev/pulseguard/",
+      "name": "Pulse Guard"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "url": "https://umay.dev/pulsehome/",
+      "name": "Pulse Home"
+    }
+  ]
+}
+</script>
+<!-- schema:end -->
 <link rel="stylesheet" href="/css/discovery.css?v=01df5e4ff516" />
 </head>
 <body>
@@ -324,33 +388,30 @@
   <section class="section" id="about" aria-labelledby="about-heading">
     <div class="container">
       <div class="section-header">
-        <span class="section-label">About Us</span>
-        <h2 class="section-title" id="about-heading">Small studio, big ambition</h2>
-        <p class="section-subtitle">A focused studio. Multiple platforms. Thousands of users. A relentless drive to build products that matter.</p>
+        <span class="section-label">About</span>
+        <h2 class="section-title" id="about-heading">An independent app studio</h2>
+        <p class="section-subtitle">Native iPhone, iPad and Mac apps, designed, built and supported by one developer.</p>
       </div>
       <div class="about-grid">
         <div class="about-content">
-          <p><strong>umay.dev</strong> is a digital product studio based in Turkey. We design, develop, and ship apps across the <strong>Apple App Store</strong>, <strong>Mac App Store</strong>, and <strong>Google Play Store</strong>, reaching thousands of users worldwide since 2020.</p>
-          <p>Our products span a wide range of domains: from <strong>Jungian psychology</strong> and shadow work (<strong>ShadowART</strong>) to <strong>game theory</strong> and cognitive science (<strong>MindType</strong>), from <strong>WiFi signal processing</strong> and signal analysis for home security (<strong>Pulse Guard</strong>) to <strong>Apple HomeKit</strong> smart home automation (<strong>Pulse Home</strong>), real-time voice analysis and emotional pattern recognition (<strong>Fenno</strong>), and a 19-tool viral video toolkit for creators (<strong>Brolled</strong>).</p>
-          <p>Every product we ship prioritizes <strong>privacy by design</strong>, clean user interfaces, and solving real problems. We use on-device <strong>AI processing</strong> with <strong>Apple Core ML</strong> and <strong>Natural Language</strong> frameworks, zero third-party data tracking, and end-to-end encryption wherever possible. Data handling varies by app and feature; each product links to its own privacy policy.</p>
-          <p>Our primary development stack revolves around <strong>Flutter</strong> and <strong>Dart</strong> for cross-platform mobile development, <strong>Swift</strong> and <strong>SwiftUI</strong> for native <strong>iOS</strong> and <strong>macOS</strong> apps, <strong>Kotlin</strong> for <strong>Android</strong>, and <strong>Python</strong> for backend services and AI/ML pipelines. We rely on <strong>Google Firebase</strong> for cloud infrastructure including authentication, real-time databases, and analytics.</p>
+          <p><strong>umay.dev</strong> is the independent app studio of <a href="/about/"><strong>Buğra Günay</strong></a>, a solo iOS and macOS developer based in Türkiye. Every app here is designed, built, published and supported by the same person, and has been since the first release in 2020.</p>
+          <p>The current apps cover short-form video creation (<a href="/brolled/"><strong>Brolled</strong></a>), cinematic color grading (<a href="/cinegradeapp/"><strong>Cinegrade</strong></a>), private mood journaling (<a href="/shadowart/"><strong>ShadowART</strong></a>), voice and speaking reflection (<a href="/fenno/"><strong>Fenno</strong></a>), game theory decision games (<a href="/mindtype/"><strong>MindType</strong></a>), personal supplement experiments (<a href="/supplab/"><strong>SuppLab</strong></a>), a calendar assistant for dads (<a href="/cornerman/"><strong>Cornerman</strong></a>) and WiFi-based home monitoring and automation for Mac (<a href="/pulseguard/"><strong>Pulse Guard</strong></a> and <a href="/pulsehome/"><strong>Pulse Home</strong></a>).</p>
+          <p>The apps are written natively in <strong>Swift</strong> and <strong>SwiftUI</strong>. Where a feature can run on the device, it does: several apps use Apple frameworks such as <strong>Core ML</strong>, <strong>Speech</strong> and <strong>Vision</strong> locally, and some have no accounts or servers at all. Data handling differs by app, so each one links to its own privacy policy.</p>
+          <p>Questions, bug reports or press: <a href="mailto:experlercom@gmail.com">experlercom@gmail.com</a>. More about the developer on the <a href="/about/">about page</a>.</p>
         </div>
         <div>
           <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;">Tech Stack</h3>
           <div class="tech-stack">
-            <span class="tag">Flutter</span>
-            <span class="tag">Dart</span>
             <span class="tag">Swift</span>
             <span class="tag">SwiftUI</span>
-            <span class="tag">Kotlin</span>
-            <span class="tag">Python</span>
-            <span class="tag">Firebase</span>
             <span class="tag">Core ML</span>
-            <span class="tag">NLP</span>
+            <span class="tag">Speech</span>
+            <span class="tag">Vision</span>
+            <span class="tag">AVFoundation</span>
+            <span class="tag">HealthKit</span>
             <span class="tag">HomeKit</span>
             <span class="tag">CloudKit</span>
-            <span class="tag">REST APIs</span>
-            <span class="tag">AI/ML</span>
+            <span class="tag">StoreKit</span>
             <span class="tag">App Store Connect</span>
           </div>
         </div>
@@ -380,12 +441,12 @@
         <div class="approach-card">
           <div class="approach-icon cyan">&#x26a1;</div>
           <h3>Ship Fast, Iterate</h3>
-          <p>We believe in launching early and iterating based on real user feedback. Every app goes through <strong>Apple TestFlight</strong> beta testing before public release. <strong>Firebase Analytics</strong> and <strong>App Store Connect</strong> insights help us identify which features users engage with, guiding development roadmaps and prioritizing what matters.</p>
+          <p>We believe in launching early and iterating based on real user feedback. Every app goes through <strong>Apple TestFlight</strong> beta testing before public release. <strong>App Store Connect</strong> analytics and user feedback help us identify which features users engage with, guiding development roadmaps and prioritizing what matters.</p>
         </div>
         <div class="approach-card">
           <div class="approach-icon orange">&#x1f916;</div>
           <h3>AI That's Useful</h3>
-          <p>On-device <strong>sentiment analysis</strong> and <strong>NLP</strong> for journaling in ShadowART, <strong>game theory algorithms</strong> based on <strong>Nash Equilibrium</strong> and <strong>Prisoner's Dilemma</strong> in MindType, GPT-powered content generation in past projects. We make AI accessible, private, and genuinely useful — not a marketing buzzword, but a core product feature.</p>
+          <p>On-device <strong>sentiment analysis</strong> and <strong>NLP</strong> for journaling in ShadowART, <strong>game theory algorithms</strong> based on <strong>Nash Equilibrium</strong> and <strong>Prisoner's Dilemma</strong> in MindType. We make AI accessible, private, and genuinely useful — not a marketing buzzword, but a core product feature.</p>
         </div>
       </div>
     </div>
@@ -399,7 +460,7 @@
         <h2 class="section-title" id="blog-heading">Practical guides for your apps</h2>
       </div>
       <!-- guides:start -->
-<div class="blog-grid"><a href="/guides/cinematic-luts-iphone/" class="blog-card"><div class="blog-card-title">How to Apply Cinematic LUTs to iPhone Videos</div><div class="blog-card-excerpt">A practical Cinegrade workflow: import an iPhone clip, choose a cinematic LUT, adjust its intensity and color controls, then review your exported video.</div></a><a href="/guides/private-mood-tracking-iphone/" class="blog-card"><div class="blog-card-title">How to Keep a Private Mood Journal on iPhone</div><div class="blog-card-excerpt">Start a simple mood journal with ShadowART: make a quick check-in, add context, revisit your archive and review privacy and sync settings.</div></a><a href="/guides/add-captions-iphone-videos/" class="blog-card"><div class="blog-card-title">How to Add Captions to Short Videos on iPhone</div><div class="blog-card-excerpt">Use Brolled&#x27;s Auto Captions tool to create word-by-word subtitles, style the text and review a short video before exporting for Reels, TikTok or Shorts.</div></a><a href="/guides/wifi-signal-monitoring-mac/" class="blog-card"><div class="blog-card-title">How to Set Up WiFi Signal Monitoring on Your Mac</div><div class="blog-card-excerpt">Set up Pulse Guard on Mac: choose a stable location, calibrate your room, test signal changes and tune alert sensitivity for your environment.</div></a></div>
+<div class="blog-grid"><a href="/guides/cinematic-luts-iphone/" class="blog-card"><div class="blog-card-title">How to Apply Cinematic LUTs to iPhone Videos</div><div class="blog-card-excerpt">A practical Cinegrade workflow: import an iPhone clip, choose a cinematic LUT, adjust its intensity and color controls, then review your exported video.</div></a><a href="/guides/private-mood-tracking-iphone/" class="blog-card"><div class="blog-card-title">How to Keep a Private Mood Journal on iPhone</div><div class="blog-card-excerpt">Start a simple mood journal with ShadowART: make a quick check-in, add context, revisit your archive and review privacy and sync settings.</div></a><a href="/guides/add-captions-iphone-videos/" class="blog-card"><div class="blog-card-title">How to Add Captions to Short Videos on iPhone</div><div class="blog-card-excerpt">Use Brolled&#x27;s Auto Captions tool to create word-by-word subtitles, style the text and review a short video before exporting for Reels, TikTok or Shorts.</div></a><a href="/guides/wifi-signal-monitoring-mac/" class="blog-card"><div class="blog-card-title">How to Set Up WiFi Signal Monitoring on Your Mac</div><div class="blog-card-excerpt">Set up Pulse Guard on Mac: choose a stable location, calibrate your room, test signal changes and tune alert sensitivity for your environment.</div></a><a href="/guides/reduce-filler-words/" class="blog-card"><div class="blog-card-title">How to Reduce Filler Words When You Speak</div><div class="blog-card-excerpt">A practical routine to say &quot;um&quot;, &quot;uh&quot; and &quot;like&quot; less: find your baseline, learn what triggers your fillers, replace them with pauses and track the change with Fenno on iPhone.</div></a><a href="/guides/test-if-supplement-works/" class="blog-card"><div class="blog-card-title">How to Test Whether a Supplement Actually Works for You</div><div class="blog-card-excerpt">Run a simple personal (N-of-1) experiment: pick one supplement and one outcome, randomize take and skip days, measure sleep, HRV or energy and compare. With SuppLab on iPhone.</div></a><a href="/guides/decision-making-style-game-theory/" class="blog-card"><div class="blog-card-title">How to Discover Your Decision-Making Style with Game Theory</div><div class="blog-card-excerpt">Learn what classic games like the Prisoner&#x27;s Dilemma, Ultimatum and Trust games reveal about cooperation, fairness and risk, and how to play them on iPhone with MindType.</div></a><a href="/guides/homekit-automation-arrive-leave-mac/" class="blog-card"><div class="blog-card-title">How to Automate HomeKit When You Arrive or Leave, Using Your Mac</div><div class="blog-card-excerpt">Use your Mac as a smart home hub: build arrive and leave rules with WiFi presence or geofence triggers, run HomeKit scenes and send webhooks to Home Assistant with Pulse Home.</div></a><a href="/guides/stop-missing-family-events/" class="blog-card"><div class="blog-card-title">How to Stop Missing Family Events: A Calendar Setup for Busy Dads</div><div class="blog-card-excerpt">A simple setup to catch school events, birthdays and clashing appointments before they slip: one shared calendar, consistent event details, and an on-device assistant that flags conflicts.</div></a></div>
 <!-- guides:end -->
 
       <p style="margin-top:32px;text-align:center;"><a href="/guides/">All app guides</a> · <a href="/blog/">Stories behind the apps</a></p>
@@ -419,7 +480,7 @@
     </div>
   </footer>
 
-  <script src="/js/umay.js?v=b9ac1faad4cc"></script>
+  <script src="/js/umay.js?v=5c055c074008"></script>
 
   <!-- Scroll reveal -->
   <script>

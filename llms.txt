@@ -18,6 +18,7 @@ Explore your decision-making patterns with short game theory scenarios on iPhone
 - Official page: https://umay.dev/mindtype/
 - App Store: https://apps.apple.com/app/mindtype-decision-mirror/id6759395676
 - Privacy policy: https://umay.dev/mindtype-privacy-policy.html
+- Guide: [How to Discover Your Decision-Making Style with Game Theory](https://umay.dev/guides/decision-making-style-game-theory/)
 
 ### Brolled
 Make memes and short videos on iPhone with Brolled. Add auto captions, sync photos to a beat and create ranking videos for Reels, TikTok and Shorts.
@@ -32,6 +33,7 @@ Track supplements and personal observations on iPhone with SuppLab. Use optional
 - Official page: https://umay.dev/supplab/
 - App Store: https://apps.apple.com/app/supplab-supplement-tracker/id6792475264
 - Privacy policy: https://umay.dev/supplab-privacy-policy.html
+- Guide: [How to Test Whether a Supplement Actually Works for You](https://umay.dev/guides/test-if-supplement-works/)
 
 ### Fenno
 Reflect on your speaking pace, filler words and vocal energy with Fenno for iPhone. Voice analysis runs on your device, with encrypted local recordings.
@@ -39,6 +41,7 @@ Reflect on your speaking pace, filler words and vocal energy with Fenno for iPho
 - Official page: https://umay.dev/fenno/
 - App Store: https://apps.apple.com/app/fenno-private-voice-mirror/id6761913486
 - Privacy policy: https://umay.dev/fenno-privacy-policy.html
+- Guide: [How to Reduce Filler Words When You Speak](https://umay.dev/guides/reduce-filler-words/)
 
 ### Cinegrade
 Apply cinematic LUTs to videos and photos on iPhone and iPad. Fine-tune exposure, contrast, saturation, temperature and grain, then export with Cinegrade.
@@ -54,6 +57,7 @@ Stay on top of family plans with Cornerman for iPhone. An on-device assistant fo
 - Official page: https://umay.dev/cornerman/
 - App Store: https://apps.apple.com/app/id6789925474
 - Privacy policy: https://umay.dev/cornerman-privacy-policy.html
+- Guide: [How to Stop Missing Family Events: A Calendar Setup for Busy Dads](https://umay.dev/guides/stop-missing-family-events/)
 
 ### Pulse Guard
 Monitor WiFi signal changes and nearby Bluetooth devices on your Mac with Pulse Guard. Calibrate your room and adjust alerts without adding a camera.
@@ -69,6 +73,7 @@ Build smart home rules on Mac with Pulse Home. Combine presence triggers, HomeKi
 - Official page: https://umay.dev/pulsehome/
 - App Store: https://apps.apple.com/app/pulse-home-wifi-automation/id6760119994?mt=12
 - Privacy policy: https://umay.dev/pulse_privacy.html
+- Guide: [How to Automate HomeKit When You Arrive or Leave, Using Your Mac](https://umay.dev/guides/homekit-automation-arrive-leave-mac/)
 
 ## Brolled video formats
 
@@ -93,6 +98,11 @@ Build smart home rules on Mac with Pulse Home. Combine presence triggers, HomeKi
 - [How to Keep a Private Mood Journal on iPhone](https://umay.dev/guides/private-mood-tracking-iphone/): Start a simple mood journal with ShadowART: make a quick check-in, add context, revisit your archive and review privacy and sync settings.
 - [How to Add Captions to Short Videos on iPhone](https://umay.dev/guides/add-captions-iphone-videos/): Use Brolled's Auto Captions tool to create word-by-word subtitles, style the text and review a short video before exporting for Reels, TikTok or Shorts.
 - [How to Set Up WiFi Signal Monitoring on Your Mac](https://umay.dev/guides/wifi-signal-monitoring-mac/): Set up Pulse Guard on Mac: choose a stable location, calibrate your room, test signal changes and tune alert sensitivity for your environment.
+- [How to Reduce Filler Words When You Speak](https://umay.dev/guides/reduce-filler-words/): A practical routine to say "um", "uh" and "like" less: find your baseline, learn what triggers your fillers, replace them with pauses and track the change with Fenno on iPhone.
+- [How to Test Whether a Supplement Actually Works for You](https://umay.dev/guides/test-if-supplement-works/): Run a simple personal (N-of-1) experiment: pick one supplement and one outcome, randomize take and skip days, measure sleep, HRV or energy and compare. With SuppLab on iPhone.
+- [How to Discover Your Decision-Making Style with Game Theory](https://umay.dev/guides/decision-making-style-game-theory/): Learn what classic games like the Prisoner's Dilemma, Ultimatum and Trust games reveal about cooperation, fairness and risk, and how to play them on iPhone with MindType.
+- [How to Automate HomeKit When You Arrive or Leave, Using Your Mac](https://umay.dev/guides/homekit-automation-arrive-leave-mac/): Use your Mac as a smart home hub: build arrive and leave rules with WiFi presence or geofence triggers, run HomeKit scenes and send webhooks to Home Assistant with Pulse Home.
+- [How to Stop Missing Family Events: A Calendar Setup for Busy Dads](https://umay.dev/guides/stop-missing-family-events/): A simple setup to catch school events, birthdays and clashing appointments before they slip: one shared calendar, consistent event details, and an on-device assistant that flags conflicts.
 
 ## Product stories
 
@@ -105,6 +115,8 @@ Build smart home rules on Mac with Pulse Home. Combine presence triggers, HomeKi
 
 ## About
 
+- Developer: Buğra Günay (https://umay.dev/about/)
+- Full text for language models: https://umay.dev/llms-full.txt
 - Website: https://umay.dev/
 - X: https://x.com/yumaydev
 - Instagram: https://www.instagram.com/umay.dev

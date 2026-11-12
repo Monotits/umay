@@ -101,7 +101,9 @@
         "src": "assets/TypeMind/MindType_AppStore_10.png",
         "alt": "MindType cards"
       }
-    ]
+    ],
+    "guide": "decision-making-style-game-theory",
+    "guideTitle": "How to Discover Your Decision-Making Style with Game Theory"
   },
   {
     "slug": "brolled",
@@ -187,7 +189,9 @@
         "src": "supplab/ss-4.png",
         "alt": "SuppLab screenshot"
       }
-    ]
+    ],
+    "guide": "test-if-supplement-works",
+    "guideTitle": "How to Test Whether a Supplement Actually Works for You"
   },
   {
     "slug": "fenno",
@@ -230,7 +234,9 @@
         "src": "assets/Fenno/09_signals.png",
         "alt": "Fenno signals"
       }
-    ]
+    ],
+    "guide": "reduce-filler-words",
+    "guideTitle": "How to Reduce Filler Words When You Speak"
   },
   {
     "slug": "cinegradeapp",
@@ -294,7 +300,9 @@
         "src": "cornerman/ss-4.png",
         "alt": "Cornerman screenshot 4"
       }
-    ]
+    ],
+    "guide": "stop-missing-family-events",
+    "guideTitle": "How to Stop Missing Family Events: A Calendar Setup for Busy Dads"
   },
   {
     "slug": "pulseguard",
@@ -366,6 +374,8 @@
         "src": "assets/Pulse/Home/home_06_scanning.png",
         "alt": "Pulse Home scanning"
       }
-    ]
+    ],
+    "guide": "homekit-automation-arrive-leave-mac",
+    "guideTitle": "How to Automate HomeKit When You Arrive or Leave, Using Your Mac"
   }
 ]

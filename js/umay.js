@@ -16,8 +16,10 @@
   }
 
   const themeColor = document.querySelector('meta[name="theme-color"]');
+  const colorScheme = document.querySelector('meta[name="color-scheme"]');
   function sync() {
     const dark = html.getAttribute('data-theme') !== 'light';
+    if (colorScheme) colorScheme.content = dark ? 'dark' : 'light';
     if (toggle) toggle.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
     if (themeColor) themeColor.content = dark ? '#09090b' : '#fafafa';
   }

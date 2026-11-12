@@ -21,6 +21,15 @@ BLOG = json.loads((ROOT / 'blog/posts.json').read_text())
 # Superseded pages stay reachable but are kept out of the index.
 NOINDEX = ['blog/hello-world.html', 'mindtype_privacy_policy.html', 'mindtype_terms_of_use.html']
 E = escape
+DEV_STORE = 'https://apps.apple.com/us/developer/bugra-gunay/id1540057343'
+PERSON = {'@type': 'Person', '@id': BASE + '/about/#person', 'name': 'Buğra Günay', 'url': BASE + '/about/',
+          'jobTitle': 'Independent iOS and macOS developer', 'homeLocation': {'@type': 'Place', 'name': 'Türkiye'},
+          'sameAs': [DEV_STORE, 'https://x.com/yumaydev', 'https://www.instagram.com/umay.dev']}
+ORG = {'@type': 'Organization', '@id': BASE + '/#organization', 'name': 'umay.dev', 'url': BASE + '/',
+       'logo': BASE + '/assets/favicon.png', 'founder': {'@id': BASE + '/about/#person'},
+       'sameAs': [DEV_STORE, 'https://x.com/yumaydev', 'https://www.instagram.com/umay.dev']}
+AUTHOR = {'@type': 'Person', 'name': 'Buğra Günay', 'url': BASE + '/about/'}
+BYLINE = '<p class="byline">By <a href="/about/">Buğra Günay</a>, maker of {}</p>'
 
 
 def write(path, text):
@@ -67,9 +76,9 @@ def page(title, description, url, body, extra='', og_image='/assets/og-image.png
   {extra}
 </head>
 <body>
-  <nav class="discovery-nav" aria-label="Main navigation"><a href="/">umay.dev</a><a href="/#products">Apps</a><a href="/guides/">Guides</a><a href="/blog/">Product stories</a></nav>
+  <nav class="discovery-nav" aria-label="Main navigation"><a href="/">umay.dev</a><a href="/#products">Apps</a><a href="/guides/">Guides</a><a href="/blog/">Product stories</a><a href="/about/">About</a></nav>
   <main class="editorial">{body}</main>
-  <footer class="discovery-nav"><a href="/">All apps by umay.dev</a><a href="mailto:experlercom@gmail.com">Contact &amp; support</a></footer>
+  <footer class="discovery-nav"><a href="/">All apps by umay.dev</a><a href="/about/">About the developer</a><a href="mailto:experlercom@gmail.com">Contact &amp; support</a></footer>
 </body>
 </html>
 '''
@@ -160,18 +169,18 @@ def build_guides():
         p = next(p for p in PRODUCTS if p['slug'] == g['product'])
         image = f'<figure><img src="/{g["image"]}" alt="{E(g["caption"], quote=True)}" loading="lazy" /><figcaption>{E(g["caption"])}</figcaption></figure>' if 'image' in g else ''
         body = f'''<a href="/guides/">All guides</a>
-<h1>{E(g['title'])}</h1><p class="byline">By <a href="/#about">umay.dev</a>, maker of {E(p['name'])}</p>
+<h1>{E(g['title'])}</h1>{BYLINE.format(E(p['name']))}
 <p class="lead">{E(g['description'])}</p>{g['body']}{image}
 <aside class="discovery-panel"><h2>Try {E(p['name'])}</h2><p>{E(p['summary'])}</p><p><a href="/{p['slug']}/">Explore {E(p['name'])}, features and pricing</a></p><a class="store-link" href="{E(p['store'], quote=True)}">View on App Store</a></aside>'''
         url = f'/guides/{g["slug"]}/'
-        data = {'@context': 'https://schema.org', '@type': 'Article', 'headline': g['title'], 'description': g['description'], 'inLanguage': 'en', 'mainEntityOfPage': BASE + url, 'author': {'@type': 'Organization', 'name': 'umay.dev', 'url': BASE + '/#about'}, 'publisher': {'@type': 'Organization', 'name': 'umay.dev', 'url': BASE + '/'}}
+        data = {'@context': 'https://schema.org', '@type': 'Article', 'headline': g['title'], 'description': g['description'], 'inLanguage': 'en', 'mainEntityOfPage': BASE + url, 'author': AUTHOR, 'publisher': {'@type': 'Organization', 'name': 'umay.dev', 'url': BASE + '/'}}
         if 'image' in g:
             data['image'] = BASE + '/' + g['image']
         crumbs = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': 1, 'name': 'Apps', 'item': BASE + '/'}, {'@type': 'ListItem', 'position': 2, 'name': 'Guides', 'item': BASE + '/guides/'}, {'@type': 'ListItem', 'position': 3, 'name': g['title'], 'item': BASE + url}]}
         write('guides/' + g['slug'] + '/index.html', page(g['title'], g['description'], url, body, schema(data) + schema(crumbs) + smart_banner(p), og_image(p['slug'])))
     cards = ''.join(f'<article><h2><a href="/guides/{g["slug"]}/">{E(g["title"])}</a></h2><p>{E(g["description"])}</p></article>' for g in GUIDES)
     cards += '<h2>Short video formats with Brolled</h2><ul>' + ''.join(f'<li><a href="/brolled/{t["slug"]}/">{E(t["title"])}</a> — {E(t["description"])}</li>' for t in TOOLS) + '</ul>'
-    write('guides/index.html', page('Practical Guides for iPhone & Mac Apps', 'Learn to color grade iPhone videos, add captions, keep a mood journal and set up WiFi monitoring on Mac with practical umay.dev app guides.', '/guides/', '<h1>Make more of your apps</h1><p class="lead">Practical workflows for creating videos, keeping a journal and setting up your Mac.</p>' + cards))
+    write('guides/index.html', page('Practical Guides for iPhone & Mac Apps', 'Practical how-tos for iPhone and Mac: color grading, captions, short video formats, filler words, supplement experiments, HomeKit automation, mood journaling and more.', '/guides/', '<h1>Make more of your apps</h1><p class="lead">Practical workflows for creating videos, keeping a journal and setting up your Mac.</p>' + cards))
 
 
 def build_tools():
@@ -185,7 +194,7 @@ def build_tools():
         image = f'<figure><img src="/{t["image"]}" alt="{E(t["imageAlt"], quote=True)}" loading="lazy" width="320" /><figcaption>{E(t["imageAlt"])}</figcaption></figure>' if t.get('image') else ''
         related = ''.join(f'<li><a href="/brolled/{r}/">{E(by_slug[r]["title"])}</a></li>' for r in t['related'])
         body = f'''<a href="/brolled/">Brolled</a> › <a href="/guides/">Guides</a>
-<h1>{E(t['h1'])}</h1><p class="byline">By <a href="/#about">umay.dev</a>, maker of Brolled</p>
+<h1>{E(t['h1'])}</h1>{BYLINE.format('Brolled')}
 <p class="lead">{E(t['intro'])}</p>
 <a class="store-link cta" href="{E(p['store'], quote=True)}">Try {E(t['tool'])} in Brolled — free on the App Store</a>
 <h2>How to make it with Brolled</h2><ol>{steps}</ol>{image}
@@ -193,7 +202,7 @@ def build_tools():
 <h2>Frequently asked questions</h2>{faq}
 <aside class="discovery-panel"><h2>Brolled: 19 short video tools in one app</h2><p>{E(p['summary'])} Free download with 3 free credits and every tool unlocked; free exports are SD with a watermark, and Pro removes the watermark and adds HD.</p><a class="store-link" href="{E(p['store'], quote=True)}">View on App Store</a><p><a href="/brolled/">See all Brolled features and pricing</a></p></aside>
 <h2>More Brolled video formats</h2><ul>{related}</ul>'''
-        howto = {'@context': 'https://schema.org', '@type': 'HowTo', 'name': t['h1'], 'description': t['description'], 'inLanguage': 'en',
+        howto = {'@context': 'https://schema.org', '@type': 'HowTo', 'name': t['h1'], 'description': t['description'], 'inLanguage': 'en', 'author': AUTHOR,
                  'tool': [{'@type': 'HowToTool', 'name': 'Brolled for iPhone'}],
                  'step': [{'@type': 'HowToStep', 'position': i + 1, 'name': a, 'text': b} for i, (a, b) in enumerate(t['steps'])]}
         if t.get('image'):
@@ -201,6 +210,23 @@ def build_tools():
         faq_ld = {'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in t['faq']]}
         crumbs = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': 1, 'name': 'Apps', 'item': BASE + '/'}, {'@type': 'ListItem', 'position': 2, 'name': 'Brolled', 'item': BASE + '/brolled/'}, {'@type': 'ListItem', 'position': 3, 'name': t['title'], 'item': BASE + url}]}
         write('brolled/' + t['slug'] + '/index.html', page(t['title'], t['description'], url, body, schema(howto) + schema(faq_ld) + schema(crumbs) + smart_banner(p), og_image('brolled')))
+
+
+def build_about():
+    apps = ''.join(f'<li><a href="/{p["slug"]}/"><strong>{E(p["name"])}</strong></a> — {E(p["heading"])}. <a href="{E(p["store"], quote=True)}">App Store</a></li>' for p in PRODUCTS)
+    guides = ''.join(f'<li><a href="/guides/{g["slug"]}/">{E(g["title"])}</a></li>' for g in GUIDES)
+    body = f'''<h1>About umay.dev</h1>
+<p class="lead">umay.dev is the independent app studio of Buğra Günay, a solo iOS and macOS developer based in Türkiye. He designs, builds, publishes and supports every app on this site himself.</p>
+<h2>Who makes these apps</h2>
+<p>Buğra has been publishing apps on the App Store since 2020. There is no team behind umay.dev: when you email support, the person who answers is the person who wrote the app.</p>
+<p>The apps are written natively in Swift and SwiftUI. When a feature can run on the device it does: Fenno analyzes speech on the iPhone, SuppLab and Cornerman have no accounts or servers, and Pulse Guard reads WiFi signals locally on the Mac. Each app links to its own privacy policy because data handling differs from app to app.</p>
+<h2>Current apps</h2><ul>{apps}</ul>
+<h2>Guides</h2><p>Practical, app-agnostic how-tos written alongside the apps:</p><ul>{guides}</ul>
+<h2>Contact</h2>
+<p>Support, bug reports, press or partnerships: <a href="mailto:experlercom@gmail.com">experlercom@gmail.com</a>. You can also find all apps on the <a href="{DEV_STORE}">App Store developer page</a>, and follow updates on <a href="https://x.com/yumaydev">X</a> and <a href="https://www.instagram.com/umay.dev">Instagram</a>.</p>'''
+    profile = {'@context': 'https://schema.org', '@type': 'ProfilePage', 'url': BASE + '/about/', 'mainEntity': PERSON}
+    org = dict({'@context': 'https://schema.org'}, **ORG)
+    write('about/index.html', page('About umay.dev and its developer', 'umay.dev is the independent iPhone, iPad and Mac app studio of Buğra Günay, a solo developer in Türkiye. Who makes the apps, how they are built and how to get in touch.', '/about/', body, schema(profile) + schema(org)))
 
 
 def build_blog():
@@ -218,8 +244,9 @@ def build_blog():
             text = re.sub(r'<script>\s*fetch\(.*?</script>', '', text, flags=re.S)
             text = re.sub(r'<script>\s*// Hide prerendered content.*?</script>', '', text, flags=re.S)
         text = text.replace('href="/#blog"', 'href="/blog/"')
-        # The studio, not a person named "umay.dev", is the author.
-        text = re.sub(r'"author":\s*\{\s*"@type":\s*"Person",\s*"name":\s*"umay\.dev"', '"author": { "@type": "Organization", "name": "umay.dev"', text)
+        # Stories are written by the developer; name him rather than the studio.
+        text = re.sub(r'"author":\s*\{\s*"@type":\s*"(?:Person|Organization)",\s*"name":\s*"umay\.dev",\s*"url":\s*"[^"]*"\s*\}',
+                      '"author": { "@type": "Person", "name": "Buğra Günay", "url": "https://umay.dev/about/" }', text)
         write(path, text)
 
 
@@ -232,6 +259,14 @@ def build_home():
     text = meta(text, 'twitter:title', 'umay.dev — Independent Apps for iPhone, iPad & Mac')
     text = meta(text, 'twitter:description', 'Explore apps for video editing, journaling, productivity and home automation, with practical guides to get started.')
     text = text.replace('We build apps<br/>people love.', 'Find your next<br/>favorite app.')
+    text = re.sub(r'\s*<meta name="keywords"[^>]*>', '', text)
+    site = {'@context': 'https://schema.org', '@type': 'WebSite', '@id': BASE + '/#website', 'name': 'umay.dev', 'url': BASE + '/', 'publisher': {'@id': BASE + '/#organization'}, 'inLanguage': 'en'}
+    apps = {'@context': 'https://schema.org', '@type': 'ItemList', 'name': 'Apps by umay.dev', 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'url': BASE + '/' + p['slug'] + '/', 'name': p['name']} for i, p in enumerate(PRODUCTS)]}
+    block = '<!-- schema:start -->\n' + schema(dict({'@context': 'https://schema.org'}, **ORG)) + '\n' + schema(site) + '\n' + schema(apps) + '\n<!-- schema:end -->'
+    if '<!-- schema:start -->' in text:
+        text = re.sub(r'<!-- schema:start -->.*?<!-- schema:end -->', lambda _: block, text, flags=re.S)
+    else:
+        text = re.sub(r'\s*<!-- Structured Data: Organization -->.*?<!-- Structured Data: WebSite -->\s*<script type="application/ld\+json">.*?</script>', lambda _: '\n  ' + block, text, count=1, flags=re.S)
     text = re.sub(r'(<p class="hero-tagline">).*?</p>', lambda m: m[1] + '\n          Edit videos, keep a personal journal, explore your decision-making habits or automate your home. Discover independent apps for <strong>iPhone, iPad and Mac</strong>, made by <strong>umay.dev</strong>.\n        </p>', text, count=1, flags=re.S)
     text = text.replace('6+</div>', '9</div>')
     text = text.replace('<a href="#blog">blog</a>', '<a href="/guides/">guides</a><a href="/blog/">blog</a>')
@@ -315,8 +350,8 @@ def finalize():
         new = re.sub(r'\s*<!-- theme:start -->.*?<!-- theme:end -->', '', new, flags=re.S)
         if 'id="themeToggle"' in new:
             # Applies a stored theme before first paint so light-mode visitors see no dark flash.
-            boot = ('<!-- theme:start --><meta name="theme-color" content="#09090b" />'
-                    '<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>'
+            boot = ('<!-- theme:start --><meta name="color-scheme" content="dark" /><meta name="theme-color" content="#09090b" />'
+                    '<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark"){document.documentElement.setAttribute("data-theme",t);document.querySelector(\'meta[name="color-scheme"]\').content=t}}catch(e){}</script>'
                     '<!-- theme:end -->')
             new = re.sub(r'(<meta name="viewport"[^>]*>)', lambda m: m[1] + '\n  ' + boot, new, count=1)
         if beacon and '</body>' in new:
@@ -346,11 +381,54 @@ def build_llms():
     lines += ['', '## Product stories', '']
     lines += [f'- [{b["title"]}]({BASE}/blog/{b["slug"]}.html): {b["excerpt"]}' for b in sorted(BLOG, key=lambda b: b['date'], reverse=True)]
     lines += ['', '## About', '', f'- Website: {BASE}/', '- X: https://x.com/yumaydev', '- Instagram: https://www.instagram.com/umay.dev', '- Contact: experlercom@gmail.com', '- Pricing, device requirements and availability: check each app\'s App Store page; they can change.', '']
+    lines.insert(lines.index('## About') + 2, f'- Developer: Buğra Günay ({BASE}/about/)')
+    lines.insert(lines.index('## About') + 3, f'- Full text for language models: {BASE}/llms-full.txt')
     write('llms.txt', '\n'.join(lines))
+    write('llms-full.txt', build_llms_full())
+
+
+def plain(html):
+    text = re.sub(r'<h2>(.*?)</h2>', lambda m: '\n### ' + m[1] + '\n', html)
+    text = re.sub(r'<li>', '- ', text)
+    text = re.sub(r'</(p|li|ul|ol)>', '\n', text)
+    return unescape(re.sub(r'<[^>]+>', '', text)).strip()
+
+
+def page_faq(slug):
+    text = (ROOT / slug / 'index.html').read_text()
+    out = []
+    for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>', text, re.S):
+        data = json.loads(raw)
+        if data.get('@type') == 'FAQPage':
+            out += [(q['name'], q['acceptedAnswer']['text']) for q in data['mainEntity']]
+    return out
+
+
+def build_llms_full():
+    """Complete plain-text copy of the catalogue, guides and FAQs so answer engines can quote accurately."""
+    out = ['# umay.dev — full text', '', f'Independent iPhone, iPad and Mac apps by Buğra Günay. Canonical site: {BASE}/. Prices and availability change; the App Store listing is authoritative.', '']
+    for p in PRODUCTS:
+        out += [f'## {p["name"]}', '', p['summary'], '', f'- Platform: {p["platform"]}', f'- Page: {BASE}/{p["slug"]}/', f'- App Store: {p["store"]}']
+        if p.get('privacy'):
+            out.append(f'- Privacy policy: {BASE}{p["privacy"]}')
+        faq = page_faq(p['slug'])
+        if faq:
+            out += ['', '### Frequently asked questions', ''] + [f'Q: {q}\nA: {a}\n' for q, a in faq]
+        out.append('')
+    out += ['# Guides', '']
+    for g in GUIDES:
+        out += [f'## {g["title"]}', f'URL: {BASE}/guides/{g["slug"]}/', '', g['description'], '', plain(g['body']), '']
+    out += ['# Brolled video formats', '']
+    for t in TOOLS:
+        out += [f'## {t["title"]}', f'URL: {BASE}/brolled/{t["slug"]}/', '', t['intro'], '', '### Steps']
+        out += [f'{i + 1}. {a}: {b}' for i, (a, b) in enumerate(t['steps'])]
+        out += ['', '### Tips'] + [f'- {x}' for x in t['tips']]
+        out += ['', '### FAQ'] + [f'Q: {q}\nA: {a}\n' for q, a in t['faq']]
+    return '\n'.join(out)
 
 
 def sitemap(today):
-    paths = ['index.html', 'blog/index.html', *[p['slug'] + '/index.html' for p in PRODUCTS]]
+    paths = ['index.html', 'about/index.html', 'blog/index.html', *[p['slug'] + '/index.html' for p in PRODUCTS]]
     paths += [str(p.relative_to(ROOT)) for p in sorted((ROOT / 'guides').rglob('*.html'))]
     paths += ['blog/' + p['slug'] + '.html' for p in BLOG]
     paths += ['brolled/' + t['slug'] + '/index.html' for t in TOOLS]
@@ -389,6 +467,7 @@ if __name__ == '__main__':
             update_product(product)
         build_guides()
         build_tools()
+        build_about()
         build_blog()
         build_home()
         mark_noindex()
