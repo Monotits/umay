@@ -339,7 +339,13 @@ def finalize():
     """Campaign tokens on store links and optional analytics, applied to every public page."""
     pt = SITE.get('appStoreProviderToken', '').strip()
     token = SITE.get('cloudflareAnalyticsToken', '').strip()
-    beacon = f'<!-- analytics:start --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{{"token": "{E(token)}"}}\'></script><!-- analytics:end -->' if token else ''
+    goat = SITE.get('goatcounterCode', '').strip()
+    beacon = (f'<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{{"token": "{E(token)}"}}\'></script>' if token else '') + \
+             (f'<script data-goatcounter="https://{goat}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>' if goat else '')
+    beacon = f'<!-- analytics:start -->{beacon}<!-- analytics:end -->' if beacon else ''
+    # App Store id -> app name, so store-button clicks are counted per app and per page in GoatCounter.
+    app_names = {app_id(p['store']): p['slug'] for p in PRODUCTS}
+    app_names.setdefault('6760417795', 'pulse-companion')
     for path in public_pages():
         text = path.read_text()
         ct = campaign(path)
@@ -350,6 +356,16 @@ def finalize():
                 url += ('&' if '?' in url else '?') + f'pt={pt}&ct={ct}'
             return m[1] + E(url, quote=True) + m[3]
         new = re.sub(r'(href=["\'])(https://apps\.apple\.com/[^"\']+)(["\'])', tag, text)
+        page_path = '/' + path.relative_to(ROOT).as_posix().removesuffix('index.html')
+
+        def click(m):
+            tag_html = re.sub(r'\s+data-goatcounter-(?:click|title)="[^"]*"', '', m[0])
+            if not goat:
+                return tag_html
+            ident = re.search(r'/id(\d+)', unescape(m[0]))
+            name = 'appstore-' + app_names.get(ident[1] if ident else '', 'other')
+            return tag_html[:-1] + f' data-goatcounter-click="{name}" data-goatcounter-title="{E(page_path, quote=True)}">'
+        new = re.sub(r'<a\b[^>]*href="https://apps\.apple\.com/[^"]*"[^>]*>', click, new)
         new = re.sub(r'\s*<!-- analytics:start -->.*?<!-- analytics:end -->', '', new, flags=re.S)
         new = re.sub(r'\s*<!-- theme:start -->.*?<!-- theme:end -->', '', new, flags=re.S)
         if 'id="themeToggle"' in new:
