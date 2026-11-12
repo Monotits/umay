@@ -168,16 +168,20 @@ def build_guides():
     for g in GUIDES:
         p = next(p for p in PRODUCTS if p['slug'] == g['product'])
         image = f'<figure><img src="/{g["image"]}" alt="{E(g["caption"], quote=True)}" loading="lazy" /><figcaption>{E(g["caption"])}</figcaption></figure>' if 'image' in g else ''
+        # Visible answers to the related questions people search for; mirrored in FAQPage schema.
+        faq = g.get('faq', [])
+        faq_html = ('<h2>Frequently asked questions</h2>' + ''.join(f'<details open><summary>{E(q)}</summary><p>{E(a)}</p></details>' for q, a in faq)) if faq else ''
         body = f'''<a href="/guides/">All guides</a>
 <h1>{E(g['title'])}</h1>{BYLINE.format(E(p['name']))}
-<p class="lead">{E(g['description'])}</p>{g['body']}{image}
+<p class="lead">{E(g['description'])}</p>{g['body']}{image}{faq_html}
 <aside class="discovery-panel"><h2>Try {E(p['name'])}</h2><p>{E(p['summary'])}</p><p><a href="/{p['slug']}/">Explore {E(p['name'])}, features and pricing</a></p><a class="store-link" href="{E(p['store'], quote=True)}">View on App Store</a></aside>'''
         url = f'/guides/{g["slug"]}/'
         data = {'@context': 'https://schema.org', '@type': 'Article', 'headline': g['title'], 'description': g['description'], 'inLanguage': 'en', 'mainEntityOfPage': BASE + url, 'author': AUTHOR, 'publisher': {'@type': 'Organization', 'name': 'umay.dev', 'url': BASE + '/'}}
         if 'image' in g:
             data['image'] = BASE + '/' + g['image']
         crumbs = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': 1, 'name': 'Apps', 'item': BASE + '/'}, {'@type': 'ListItem', 'position': 2, 'name': 'Guides', 'item': BASE + '/guides/'}, {'@type': 'ListItem', 'position': 3, 'name': g['title'], 'item': BASE + url}]}
-        write('guides/' + g['slug'] + '/index.html', page(g['title'], g['description'], url, body, schema(data) + schema(crumbs) + smart_banner(p), og_image(p['slug'])))
+        faq_ld = schema({'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in faq]}) if faq else ''
+        write('guides/' + g['slug'] + '/index.html', page(g['title'], g['description'], url, body, schema(data) + schema(crumbs) + faq_ld + smart_banner(p), og_image(p['slug'])))
     cards = ''.join(f'<article><h2><a href="/guides/{g["slug"]}/">{E(g["title"])}</a></h2><p>{E(g["description"])}</p></article>' for g in GUIDES)
     cards += '<h2>Short video formats with Brolled</h2><ul>' + ''.join(f'<li><a href="/brolled/{t["slug"]}/">{E(t["title"])}</a> — {E(t["description"])}</li>' for t in TOOLS) + '</ul>'
     write('guides/index.html', page('Practical Guides for iPhone & Mac Apps', 'Practical how-tos for iPhone and Mac: color grading, captions, short video formats, filler words, supplement experiments, HomeKit automation, mood journaling and more.', '/guides/', '<h1>Make more of your apps</h1><p class="lead">Practical workflows for creating videos, keeping a journal and setting up your Mac.</p>' + cards))
@@ -418,6 +422,8 @@ def build_llms_full():
     out += ['# Guides', '']
     for g in GUIDES:
         out += [f'## {g["title"]}', f'URL: {BASE}/guides/{g["slug"]}/', '', g['description'], '', plain(g['body']), '']
+        if g.get('faq'):
+            out += ['### FAQ'] + [f'Q: {q}\nA: {a}\n' for q, a in g['faq']]
     out += ['# Brolled video formats', '']
     for t in TOOLS:
         out += [f'## {t["title"]}', f'URL: {BASE}/brolled/{t["slug"]}/', '', t['intro'], '', '### Steps']

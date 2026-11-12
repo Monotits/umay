@@ -231,6 +231,19 @@ Yes. Cinegrade supports still photos as well as video. Import a photo, choose a 
 ### Before you download
 Cinegrade is available for iPhone and iPad. The App Store listing has the current operating-system requirements, regional availability and purchase details. This guide covers the built-in looks and controls described on the product page; it does not assume support for importing external LUT files.
 
+### FAQ
+Q: How do I apply a LUT to a video on iPhone?
+A: Use an editing app that supports LUTs. In Cinegrade, import the clip, choose a look, adjust its intensity and basic color controls, then export. Check the whole clip before posting.
+
+Q: Can I use LUTs on iPhone photos?
+A: Yes. Cinegrade applies the same looks to photos as to videos, so a set of images and clips can share one style.
+
+Q: Can you use LUTs in iMovie?
+A: iMovie does not import custom LUT files. It offers its own filters. For LUT-based looks on iPhone you need an app with LUT support.
+
+Q: Can you color grade iPhone video on the phone?
+A: Yes. For most social video, applying a look and adjusting exposure, contrast, saturation and temperature on the phone is enough. Desktop tools such as DaVinci Resolve give more control for longer projects.
+
 ## How to Keep a Private Mood Journal on iPhone
 URL: https://umay.dev/guides/private-mood-tracking-iphone/
 
@@ -260,6 +273,13 @@ On-device text analysis means the analysis is performed on your phone. Sync and 
 
 ### What should I expect from the results?
 A journal is a record for personal reflection. Automated text analysis and reflection prompts can give you another way to look at an entry, but they are not a professional psychological assessment. You remain the person who knows the context behind your words.
+
+### FAQ
+Q: Is there a private mood tracker for iPhone?
+A: Yes. Look for an app that processes entries on your device and explains its sync options. ShadowART analyzes journal text on the iPhone; check its privacy policy and settings for how backups and sync work.
+
+Q: Is a mood tracker the same as a journal?
+A: Not quite. A mood tracker records how you feel in seconds; a journal captures what happened and why. Combining a quick check-in with an optional note gives you both.
 
 ## How to Add Captions to Short Videos on iPhone
 URL: https://umay.dev/guides/add-captions-iphone-videos/
@@ -292,6 +312,16 @@ Brolled is designed for short-form video workflows. You export a video and share
 ### Which speech languages are supported?
 The app's interface language list is not the same as a guarantee of speech-recognition support. Check the tool in the current version with a short sample in your language before preparing a larger batch of videos.
 
+### FAQ
+Q: How do I add automatic captions to a video on iPhone?
+A: Use an app that transcribes speech into captions. Brolled's Auto Captions tool uses on-device speech recognition to create word-by-word subtitles that you can style before exporting.
+
+Q: Are there free auto captions on iPhone?
+A: Several apps offer free captions with limits. Brolled is free to download with 3 free credits and all tools unlocked; free exports are SD with a watermark.
+
+Q: Why add captions to short videos?
+A: Many people watch short videos with the sound off, and captions also make videos accessible to deaf and hard-of-hearing viewers. Word-by-word captions keep attention on the screen.
+
 ## How to Set Up WiFi Signal Monitoring on Your Mac
 URL: https://umay.dev/guides/wifi-signal-monitoring-mac/
 
@@ -323,6 +353,13 @@ Pulse Companion is the related iPhone app for status and notifications. Check it
 ### Understand the limits
 Use Pulse Guard as an additional source of information about your environment. It is not a guaranteed intrusion detector, an emergency alarm or a substitute for supervision. Test how your setup behaves when the Mac sleeps, loses connectivity or changes location before relying on any workflow.
 
+### FAQ
+Q: Can WiFi detect motion?
+A: Changes in WiFi signals can indicate movement in a room, because people affect how radio signals travel. Results depend on the room, the hardware and calibration, so treat it as an alert signal rather than a camera replacement.
+
+Q: Does Pulse Guard need a camera?
+A: No. Pulse Guard monitors WiFi signal changes and nearby Bluetooth devices on your Mac and uses a calibration of your room, without a camera.
+
 ## How to Reduce Filler Words When You Speak
 URL: https://umay.dev/guides/reduce-filler-words/
 
@@ -351,6 +388,22 @@ Habits change slowly. Record a short practice session a few times a week and com
 ### What to expect
 Aim for fewer fillers, not zero. A few in casual speech are natural. If you notice that anxiety, not habit, drives your speech in many situations, consider talking to a speech coach or a professional; Fenno is a practice and reflection tool, not a diagnostic one.
 
+### FAQ
+Q: How do I stop saying um when presenting?
+A: Plan your opening sentence and each transition between points, because that is where most fillers appear. When you feel an "um" coming, pause silently instead. Record a rehearsal, count the fillers, and repeat until the count drops.
+
+Q: How do I stop saying um in interviews?
+A: Prepare short answers to the questions you expect, and give yourself permission to pause for a second before answering. A brief silence sounds thoughtful; a string of fillers sounds unsure. Practise answers out loud, not only in your head.
+
+Q: How do I stop saying "like" and "you know"?
+A: Treat them like any other filler: measure how often you use them, notice where they appear, and replace them with a pause. Fenno counts each filler word in a recording so you can replay the exact moments.
+
+Q: Is it bad to say um?
+A: No. A few fillers are normal in conversation and listeners barely notice them. They become a problem when they are frequent in presentations, interviews or recordings, where they make you sound less certain than you are.
+
+Q: What are common filler words?
+A: "Um", "uh", "like", "you know", "so", "basically", "actually", "I mean" and "right?" at the end of sentences are among the most common in English.
+
 ## How to Test Whether a Supplement Actually Works for You
 URL: https://umay.dev/guides/test-if-supplement-works/
 
@@ -377,6 +430,22 @@ A few nights of good sleep prove little. Run the experiment for enough take and 
 ### 6. Read the result honestly
 When the experiment ends, compare your take days with your skip days. "No measurable effect" is a useful answer too: it may save you money. SuppLab shows the result as a plain-language verdict, and all data stays on your iPhone; there are no accounts or servers.
 
+### FAQ
+Q: How do I know if magnesium is working?
+A: Decide what you expect it to change, such as sleep quality or how rested you feel, and measure that one outcome on days you take it and days you skip it. Comparing the two is more reliable than judging by feel after starting. Ask a doctor first if you take medication or have a health condition.
+
+Q: How long does it take for a supplement to work?
+A: It depends on the supplement. Some act within hours, others take weeks to change anything. Check the expected onset before testing: a slow-acting supplement will not show an effect in an alternating take/skip experiment.
+
+Q: What is an N-of-1 trial?
+A: A study with a single participant, in which the same person alternates between a treatment and no treatment in a planned, often randomized order, and the outcomes of the two periods are compared. It answers whether something works for that individual.
+
+Q: Is there an app to track supplements?
+A: Yes. SuppLab for iPhone tracks the supplements you take and can run a randomized take/skip experiment, reading sleep and HRV from Apple Health if you allow it or using a short daily check-in. It has no accounts and keeps data on your device.
+
+Q: Can I tell if a B12 or iron supplement is working this way?
+A: Not reliably by feel. Deficiencies such as low B12 or iron are diagnosed and monitored with blood tests ordered by a doctor, so use those results rather than a home experiment.
+
 ## How to Discover Your Decision-Making Style with Game Theory
 URL: https://umay.dev/guides/decision-making-style-game-theory/
 
@@ -402,6 +471,19 @@ MindType turns these scenarios into short games on iPhone, each taking about thr
 
 ### Keep it in perspective
 These games are a mirror, not a diagnosis. MindType is an entertainment and educational app and does not replace a professional psychological assessment.
+
+### FAQ
+Q: What is the Prisoner's Dilemma?
+A: A game in which two players each choose to cooperate or defect. Each does better individually by defecting, but both do better if both cooperate. It is used to study cooperation and trust when you cannot be sure what the other person will do.
+
+Q: What is the Ultimatum game?
+A: One player proposes how to split an amount and the other accepts or rejects. If the offer is rejected, neither gets anything. People often reject offers they see as unfair even at a cost to themselves, which shows how much they value fairness.
+
+Q: Is there a quiz for decision-making style?
+A: Many quizzes ask how you think you behave. MindType instead has you play short game theory scenarios and builds a profile from the choices you actually make. It is for self-discovery and entertainment, not a clinical assessment.
+
+Q: Can I play the Prisoner's Dilemma on my phone?
+A: Yes. MindType for iPhone includes the Prisoner's Dilemma alongside games such as Trust and Ultimatum, each taking about three minutes.
 
 ## How to Automate HomeKit When You Arrive or Leave, Using Your Mac
 URL: https://umay.dev/guides/homekit-automation-arrive-leave-mac/
@@ -430,6 +512,16 @@ Walk out and back in a few times and watch the rule status in the menu bar. If a
 - WiFi presence depends on a good calibration; recalibrate if you move furniture or the Mac.
 - Pulse Companion on iPhone lets you check status and switch modes when you are away.
 
+### FAQ
+Q: Why is my HomeKit automation not working when I leave home?
+A: Location automations in the Home app need a home hub and location access for the Home app on the person's iPhone. Check both, and that the person is set up in the home. Pulse Home avoids the phone dependency by running rules on a Mac that stays at home.
+
+Q: Can I use a Mac as a HomeKit hub?
+A: Not as an official Apple home hub; that role is limited to Apple TV and HomePod. A Mac can still control HomeKit accessories and run your own automation rules with an app like Pulse Home, as long as it stays on and awake.
+
+Q: Can Home Assistant receive webhooks from a Mac?
+A: Yes. Home Assistant automations can be triggered by a webhook, and Pulse Home can send an HTTP request to that webhook URL as an action in a rule.
+
 ## How to Stop Missing Family Events: A Calendar Setup for Busy Dads
 URL: https://umay.dev/guides/stop-missing-family-events/
 
@@ -454,6 +546,120 @@ Cornerman reads your calendar, contacts and location on your iPhone and points o
 
 ### 6. Keep reminders few and useful
 Dozens of alerts teach you to ignore them. Keep alerts for events that need preparation or travel, and let the rest stay in the calendar.
+
+### FAQ
+Q: What is the best way to share a family calendar on iPhone?
+A: Create a calendar in iCloud Calendar and share it with family members from the Calendar app, or use Family Sharing, which can create a shared family calendar. Everyone sees and adds events in one place.
+
+Q: Can a family calendar work across iPhone and Android?
+A: Yes, if it is hosted in a service both platforms can open, such as Google Calendar. An iCloud calendar can be shared publicly as read-only to non-Apple users, but editing works best between Apple devices.
+
+Q: How do I get reminded about school events in time?
+A: Add events as soon as you hear about them, with a clear title and time, and set an alert early enough to prepare. Cornerman also looks ahead in your calendar on your iPhone and flags clashes and important dates.
+
+## Can a Mac Be a HomeKit Hub? What Works and What Doesn't
+URL: https://umay.dev/guides/mac-homekit-hub/
+
+A Mac cannot be an official Apple home hub, but it can control HomeKit accessories and run your own automations. Here is what that means and how to set it up with Pulse Home.
+
+Short answer: no Mac, including a Mac mini or MacBook, can be the official home hub in Apple's Home app. That role belongs to Apple TV and HomePod. The hub is what Apple uses for remote access, shared control and many automations. A Mac can still do useful hub-like work: it can control HomeKit accessories and run automation rules of its own while it stays on at home.
+
+### What an Apple home hub does
+A home hub keeps your accessories reachable when you are away, lets other people in your home control them, and runs automations that do not depend on one person's iPhone. Without a hub, many of these features are unavailable.
+
+### What a Mac can do instead
+- Control HomeKit accessories through apps that use Apple's HomeKit framework.
+- Run rules locally, triggered by presence, location zones or time, without a cloud service.
+- Send webhooks to Home Assistant, Node-RED or IFTTT for devices outside HomeKit.
+
+
+### Setting it up with Pulse Home
+Pulse Home turns a Mac that is usually on at home into an automation engine. Create rules in the visual rule builder with a trigger (WiFi presence or a geofence), optional conditions and delays, and actions such as HomeKit scenes or webhooks. Rules run on the Mac, and the menu bar shows their status. See the guide on arrive and leave automations for a step-by-step rule.
+
+### Limits to plan for
+- The Mac must be on and awake for rules to run; set Energy Saver accordingly.
+- It does not replace an Apple TV or HomePod for remote access or shared control in the Home app.
+- A MacBook that leaves the house takes its automations with it; a desktop Mac or a Mac mini is a better fit.
+
+### FAQ
+Q: Can a Mac mini be a HomeKit hub?
+A: Not as an official home hub in the Home app. A Mac mini can still run automation rules and control HomeKit accessories with an app like Pulse Home while it stays on.
+
+Q: Does HomeKit require a hub?
+A: Many features do, including remote access and most automations. An Apple TV or HomePod acts as the hub.
+
+Q: What is HomeKit on Mac?
+A: On a Mac, the Home app lets you control your accessories, and apps can use the HomeKit framework to read and control them.
+
+## How to Make iPhone Video Look Like Film
+URL: https://umay.dev/guides/film-look-iphone-video/
+
+Shoot and grade iPhone video for a film look: control exposure and frame rate, avoid over-sharpened footage, then apply a cinematic LUT, soften contrast and add subtle grain with Cinegrade.
+
+Phone video often looks "digital" because it is bright, sharp, saturated and shot at a high frame rate with everything in focus. A film look comes from changing those things, partly when you shoot and partly when you grade.
+
+### 1. Shoot at 24 frames per second
+Film is traditionally shot at 24 fps. In the Camera settings on iPhone, choose 24 fps for video. Motion blur at 24 fps is part of what makes footage feel cinematic.
+
+### 2. Protect your highlights
+Blown-out skies and windows give video away. Tap to focus, then drag the exposure slider down slightly so bright areas keep detail. You can lift shadows later; you cannot recover clipped highlights.
+
+### 3. Use light and depth
+Shoot with light coming from the side, near windows or at golden hour. Cinematic mode adds background blur on supported iPhones; use it on subjects that stand clearly apart from the background.
+
+### 4. Grade with a look, then adjust
+In Cinegrade, import the clip and try film-inspired looks. Lower the look's intensity until skin looks natural. Reduce contrast a little so blacks are not completely black, lower saturation slightly and warm or cool the temperature to suit the scene.
+
+### 5. Add grain lightly
+A small amount of grain hides the clean digital texture. Too much reads as noise. Add it last and check on a phone screen, where most people will watch.
+
+### 6. Keep the look consistent
+Use the same look across clips from one scene, and adjust exposure per clip so they match. For the LUT workflow in detail, see how to apply cinematic LUTs to iPhone videos.
+
+### FAQ
+Q: How do I make iPhone video look cinematic?
+A: Shoot at 24 fps, keep highlights from blowing out, use side light and shallow depth where possible, then apply a film look and soften contrast and saturation in an editing app.
+
+Q: What frame rate looks most like film?
+A: 24 frames per second, the traditional cinema frame rate.
+
+Q: Do I need a LUT for a film look?
+A: Not strictly, but a LUT gives you a consistent starting point that you can then adjust, which is faster than building a grade from scratch for every clip.
+
+## How to Slow Down When You Speak Too Fast
+URL: https://umay.dev/guides/slow-down-speaking-too-fast/
+
+Find your speaking pace, learn why you speed up, and practise pausing between ideas. A short routine for presentations and interviews, measured with Fenno on iPhone.
+
+Speaking quickly is common when you are nervous, excited or know the material too well. Listeners then miss details, and fast speech tends to bring more filler words. The goal is not to speak slowly everywhere, but to keep a steady pace and pause where your ideas change.
+
+### 1. Measure your pace
+Record yourself explaining something familiar for two minutes. Fenno shows your words per minute and how steady your pace was, so you have a number rather than a feeling.
+
+### 2. Notice when you speed up
+Replay the recording. Most people speed up at the start, when listing items and when they reach the part they care about most. Mark those points; they are where you need to pause.
+
+### 3. Pause at the end of ideas
+Instead of slowing every word, add a short silent pause after each idea or before an important point. Pauses give listeners time to follow and make you sound more confident.
+
+### 4. Breathe before the first sentence
+Take one full breath before you start. The first sentence sets the pace for what follows.
+
+### 5. Practise with real material
+Rehearse the presentation, interview answers or difficult conversation you actually have coming up. Record, check pace and pauses, and try again. Fenno compares each recording with your own normal over time.
+
+### When to get help
+If fast speech comes with stuttering, words running together in a way people cannot follow, or it worries you in daily life, a speech-language therapist can assess it. Fenno is a practice tool, not a diagnostic one.
+
+### FAQ
+Q: What is a good speaking pace?
+A: Many speakers fall roughly between 120 and 160 words per minute in conversation and presentations. Clarity and pauses matter more than an exact number.
+
+Q: Why do I talk so fast when I'm nervous?
+A: Nervousness raises arousal and the urge to finish quickly. Planned pauses and a slower first sentence help counter it.
+
+Q: Does speaking fast cause filler words?
+A: Often. Speaking faster leaves less time to plan the next sentence, which invites fillers such as "um" and "uh".
 
 # Brolled video formats
 
@@ -483,6 +689,12 @@ A: No. Brolled generates the voiceover, subtitles and layout for you; you choose
 Q: Is it free?
 A: Brolled is free to download with 3 free credits and all tools unlocked. Free exports are SD with a watermark; a subscription removes the watermark and enables HD.
 
+Q: Is there a free Reddit story video maker?
+A: Brolled is free to download with 3 free credits and every tool unlocked, including Reddit Story. Free exports are SD with a watermark.
+
+Q: Can I make Reddit story videos with AI voice?
+A: Yes. Brolled's Reddit Story tool adds an AI voiceover and synced subtitles to the story you paste or write.
+
 ## Fake Text Message Story Video Maker for iPhone
 URL: https://umay.dev/brolled/fake-text-message-video-maker/
 
@@ -508,6 +720,12 @@ A: Yes. Texting Story + Video layers the conversation over any clip from your li
 
 Q: Can the messages be read aloud?
 A: Yes, Texting Story + Video supports AI voiceover so the conversation can be narrated.
+
+Q: Is there a fake text message video template?
+A: Brolled works like a template: choose the chat style, set names, type the messages and export. You do not need to build the layout yourself.
+
+Q: What is a texting story?
+A: A short video that tells a story through a chat conversation, revealed one message at a time, often with a voiceover and a twist at the end.
 
 ## Would You Rather Video Maker for TikTok & Shorts
 URL: https://umay.dev/brolled/would-you-rather-video-maker/
@@ -535,6 +753,9 @@ A: Yes, you can pair each option with an image so it reads quickly on a small sc
 Q: Does it work for YouTube Shorts?
 A: Yes. Brolled exports vertical video for TikTok, Instagram Reels and YouTube Shorts.
 
+Q: Can I make Would You Rather videos for kids?
+A: Yes. Write age-appropriate questions with simple images. The countdown format works well as a classroom brain break.
+
 ## Remove Video Background on iPhone Without a Green Screen
 URL: https://umay.dev/brolled/remove-video-background-iphone/
 
@@ -560,6 +781,12 @@ A: Solid colors, gradients and stock backgrounds are available in the background
 
 Q: Is it free?
 A: All Brolled tools are unlocked in the free download, which includes 3 free credits. Free exports are SD with a watermark.
+
+Q: Can I remove the background from a video on iPhone for free?
+A: Brolled's Background Removal is unlocked in the free download, which includes 3 free credits. Free exports are SD with a watermark.
+
+Q: Is this the same as removing background noise?
+A: No. Background Removal separates the person from the visual background. Removing background noise or music from the audio is a different task.
 
 ## AI Quiz Video Maker for iPhone
 URL: https://umay.dev/brolled/ai-quiz-video-maker/
@@ -587,6 +814,12 @@ A: Review and adjust the generated content before export so the answers are corr
 Q: What format does it export?
 A: A vertical video for TikTok, Instagram Reels and YouTube Shorts.
 
+Q: Is there a free quiz video maker?
+A: Brolled includes AI Quiz Video in the free download, with 3 free credits. Free exports are SD with a watermark.
+
+Q: Can I use quiz videos on YouTube?
+A: Yes. The export is a vertical video suited to YouTube Shorts as well as TikTok and Reels.
+
 ## Tier List Maker for iPhone
 URL: https://umay.dev/brolled/tier-list-maker/
 
@@ -612,6 +845,15 @@ A: Yes. The tier list is built from photos in your library.
 
 Q: Is Tier List Maker free?
 A: All Brolled tools are unlocked in the free download, which includes 3 free credits.
+
+Q: How do I make a tier list on my phone?
+A: Use a tier list app on iPhone. In Brolled's Tier List Maker, add photos, drag each into S to D and export a 9:16 image.
+
+Q: How do I make a tier list video?
+A: Export the tier list image, then record yourself explaining each placement, or reveal the rows one by one in a video editor.
+
+Q: Can I make a tier list with text instead of pictures?
+A: Brolled's Tier List Maker is built around photos. For text-only lists, use an image of each item's name or a web tier list tool.
 
 ## Beat Sync Photo Video Maker for iPhone
 URL: https://umay.dev/brolled/beat-sync-video-maker/
@@ -639,6 +881,9 @@ A: No. There is no manual trimming; the taps define the cuts.
 Q: Can I use songs from my library?
 A: Yes, you pick a track from your library. Make sure you have the right to use it where you post.
 
+Q: Is there a beat sync video app for iPhone?
+A: Yes. Brolled's Beat Sync lets you tap the rhythm while a song plays and lines up photo transitions with your taps.
+
 ## Directed by Robert B. Weide Meme Maker for iPhone
 URL: https://umay.dev/brolled/directed-by-robert-b-weide-meme/
 
@@ -664,6 +909,12 @@ A: No. Brolled adds the credit and music to your clip.
 
 Q: Is Brolled affiliated with the show?
 A: No. Names are used for descriptive purposes and all trademarks belong to their owners.
+
+Q: What does the Directed by Robert B. Weide meme mean?
+A: It marks a moment as awkward or embarrassing, in the style of the closing credits of Curb Your Enthusiasm, which Robert B. Weide directed and produced.
+
+Q: What is the song in the Robert B. Weide meme?
+A: It is the Curb Your Enthusiasm theme, "Frolic" by Luciano Michelini.
 
 ## "A Few Moments Later" Time Card Maker for iPhone
 URL: https://umay.dev/brolled/a-few-moments-later-meme/
@@ -743,6 +994,9 @@ A: Yes. The side-by-side layout works for before and after or product comparison
 Q: What format does it export?
 A: A vertical video suited to TikTok, Reels and Shorts.
 
+Q: Can I make a split screen video on iPhone without iMovie?
+A: Yes. Brolled's Split Screen Reaction tool places two clips in one vertical frame and exports a video ready for TikTok, Reels and Shorts.
+
 ## Lyric Video Maker for iPhone
 URL: https://umay.dev/brolled/lyric-video-maker/
 
@@ -768,6 +1022,9 @@ A: Yes. A short lyric video of your chorus is a simple way to promote a release 
 
 Q: What format does it export?
 A: A vertical video for short video platforms.
+
+Q: Is there a free lyric video maker app?
+A: Brolled includes Lyric Video Maker in the free download, with 3 free credits. Free exports are SD with a watermark.
 
 ## Top 5 Ranking Video Maker for iPhone
 URL: https://umay.dev/brolled/top-5-ranking-video-maker/

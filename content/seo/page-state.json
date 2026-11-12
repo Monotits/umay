@@ -1,6 +1,6 @@
 {
   "about/index.html": {
-    "sha256": "cb1b5b27e1ca33ee5cc041becfbf139154b1d2cd3265bf0924c08d3de8f8046e",
+    "sha256": "da88666718e16cfa5dcca8396209a2a1ee54c8b8c669ea3f70db84379a642baf",
     "lastmod": "2026-11-12"
   },
   "blog/building-the-ultimate-meme-maker.html": {
@@ -36,15 +36,15 @@
     "lastmod": "2026-11-12"
   },
   "brolled/ai-quiz-video-maker/index.html": {
-    "sha256": "6a5e72c85ac03adff109c15ee682007bd201766b52c71d83e7e651325b1458c8",
+    "sha256": "d76311863340f4e2d038925e4a1d51699d8ced120c6f1d644b3e226979089296",
     "lastmod": "2026-11-12"
   },
   "brolled/beat-sync-video-maker/index.html": {
-    "sha256": "6095ac0e982cfc69babece329accd629d4470c40e8df3f91bf60821361839424",
+    "sha256": "a6790f17a298baca043886cf2914dfb0bd4b692ebcf7c3faa1df83033461cf13",
     "lastmod": "2026-11-12"
   },
   "brolled/directed-by-robert-b-weide-meme/index.html": {
-    "sha256": "e6b894b63c59bf7e6c68eb1359eed50368751586ff131a44b3e88cdff720c711",
+    "sha256": "81435a190affc599b42def996626ff3d516e9a585b336f62c9dbe5d0264305b9",
     "lastmod": "2026-11-12"
   },
   "brolled/fake-call-video-maker/index.html": {
@@ -52,7 +52,7 @@
     "lastmod": "2026-11-12"
   },
   "brolled/fake-text-message-video-maker/index.html": {
-    "sha256": "4de2865c97601121fdace74338aadb9b79f045def0a6cf5ee7a40f891e75559d",
+    "sha256": "7d16c938594febfec7ebde47a4efab4639e7daf9963208f7e9f21a5aa780fbc1",
     "lastmod": "2026-11-12"
   },
   "brolled/index.html": {
@@ -60,7 +60,7 @@
     "lastmod": "2026-11-12"
   },
   "brolled/lyric-video-maker/index.html": {
-    "sha256": "770ba7068c8b84fa6cd8ecdf31809adf05530bef5cbde795f09b25496e20b55d",
+    "sha256": "75951ff2b9be7ac1aa78687e8aea630df8d1c3f5b47fd93435d0b3edd494a95d",
     "lastmod": "2026-11-12"
   },
   "brolled/meme-sound-effects-on-video/index.html": {
@@ -68,19 +68,19 @@
     "lastmod": "2026-11-12"
   },
   "brolled/reddit-story-video-maker/index.html": {
-    "sha256": "dd23e2e70571f19e3591e72d276297523d5bcf743f9568a4499afc5ff83794e8",
+    "sha256": "594a6c57fd2f07b9d7fb57a76a2a68060f3d1252e156554363435180e251d26d",
     "lastmod": "2026-11-12"
   },
   "brolled/remove-video-background-iphone/index.html": {
-    "sha256": "69705324413c65873eec8699e252e048706cc4762b3e24a2c82e2649bc9c85ed",
+    "sha256": "5bac53bc988d4fdd75698d2c4fb1bccda093ed20ed1d2750716ec47e689aae28",
     "lastmod": "2026-11-12"
   },
   "brolled/split-screen-reaction-video/index.html": {
-    "sha256": "a1546f3e0c595530d6c69e0c16f925a9b62b140830a8d3b1f8f8b8cdbec22213",
+    "sha256": "889a2dd3f5cb2d27e78c91fe9a761220316827fef345658145f1af0ff5983740",
     "lastmod": "2026-11-12"
   },
   "brolled/tier-list-maker/index.html": {
-    "sha256": "4cbedbc762d633cc4f167d42042e1275ac9068bf5d441e0f9e4021605a03564e",
+    "sha256": "ca5e52f0b4a662dfe8624fbd8265e3a839649ea38d076ca454855429fda5ee4e",
     "lastmod": "2026-11-12"
   },
   "brolled/top-5-ranking-video-maker/index.html": {
@@ -88,7 +88,7 @@
     "lastmod": "2026-11-12"
   },
   "brolled/would-you-rather-video-maker/index.html": {
-    "sha256": "8676f5b2fe068bb6965729b0c60df634b3fb7abfc787ba8062f2457f8bd2b3cd",
+    "sha256": "4d7b13d963980969399277ac133817ab8f2fa81f93606c3d3ed7a2bbae2d2b1c",
     "lastmod": "2026-11-12"
   },
   "cinegradeapp/index.html": {
@@ -104,47 +104,59 @@
     "lastmod": "2026-11-12"
   },
   "guides/add-captions-iphone-videos/index.html": {
-    "sha256": "fbfb305cbfd22034271fa8240af1317bcee00b84937295fbc63f02280cdf592d",
+    "sha256": "3b31a3082fd118018b1a9046d24d4debbe9f9bbd3db3078bfb071170cea7284d",
     "lastmod": "2026-11-12"
   },
   "guides/cinematic-luts-iphone/index.html": {
-    "sha256": "7b8cb0518d3d7cd2396b17bc902aeb8c7d4d21c8417f5d4829914a04d230af6d",
+    "sha256": "7d03794ffdb551e156b64d2df4c8a41be7198096967b7ec3edfd7542759a76b1",
     "lastmod": "2026-11-12"
   },
   "guides/decision-making-style-game-theory/index.html": {
-    "sha256": "7a7455cc66ac3d096eb730b22daafe26f04c8ef2ec65583b0baf2039a3cbe738",
+    "sha256": "db03f0eba373ef0e71ba1594a3fac0bcf598a50c4292d02403997f3046ce1533",
+    "lastmod": "2026-11-12"
+  },
+  "guides/film-look-iphone-video/index.html": {
+    "sha256": "d2abebb76294f495d06a87b52298cc760a63879fd30a2642c8a881899b16597d",
     "lastmod": "2026-11-12"
   },
   "guides/homekit-automation-arrive-leave-mac/index.html": {
-    "sha256": "b443caea32f0988d946d7be36b8cdbbd5e10d9602ef6baa2f7f3e2e575c18af7",
+    "sha256": "be3ee71351cf54df0ab257a5106633294e306f851deed5779edc166ee17a156c",
     "lastmod": "2026-11-12"
   },
   "guides/index.html": {
-    "sha256": "68ecdeae51d9897bbb1405e5134bedd29a60d24396877383a6310adbb45ba23d",
+    "sha256": "3eab5e08f3ac19bf700d639f066c896ecf9e1ac057b68c0770856e5c4ade12b0",
+    "lastmod": "2026-11-12"
+  },
+  "guides/mac-homekit-hub/index.html": {
+    "sha256": "9330a65ac63ea109e8a29e6dafaeeafadadf5bfa8768f24a614ecc2e2e647e7c",
     "lastmod": "2026-11-12"
   },
   "guides/private-mood-tracking-iphone/index.html": {
-    "sha256": "714fc3166731e81b2384ae412952108a143eea9f2faddf53c5e46c80b9ac76ab",
+    "sha256": "ddb523b6135b08b3ba53ee2750ae53a178f5faff48abc853088a18a87cb2bdb7",
     "lastmod": "2026-11-12"
   },
   "guides/reduce-filler-words/index.html": {
-    "sha256": "0bafbf0713f513bc2b41f9ef074ca5f2d9daf119725c1503b6ca4db84c62e136",
+    "sha256": "b994eadfd13e7bb0d2615c03e19f9ac9f7230b953f2401a09286dac80d74c630",
+    "lastmod": "2026-11-12"
+  },
+  "guides/slow-down-speaking-too-fast/index.html": {
+    "sha256": "fd5d9896abeb78f81162c1a4163a939e2a2a206c90614a7fab323703d70914d5",
     "lastmod": "2026-11-12"
   },
   "guides/stop-missing-family-events/index.html": {
-    "sha256": "64c7fb0bb3f636c0bdd20c4ed62fd392711ce4bc0ddfb3f111190b12825ac912",
+    "sha256": "4623d6f05d99caf007beedc9db69931af534b5478e376324531c679805621b6a",
     "lastmod": "2026-11-12"
   },
   "guides/test-if-supplement-works/index.html": {
-    "sha256": "78bb6338774b30f4873b8e62cded607616b15841ebed4d31bfe3580bf938f7ef",
+    "sha256": "f19525cf991ec54cfcf0b388ee727ff5a9a3b3ee9156d39dd33ea96c09f566c5",
     "lastmod": "2026-11-12"
   },
   "guides/wifi-signal-monitoring-mac/index.html": {
-    "sha256": "50145599da70e953019993738104363b537d3aac3927d44d2dbf1f8bbb9d0684",
+    "sha256": "c4ee6098c80c68a0021ad67319168cf9514b05ba550a517a5b61e5628878d285",
     "lastmod": "2026-11-12"
   },
   "index.html": {
-    "sha256": "04379997956b0eccec3a6612b3bb7741688afa8a63324548a8c51adf727100d0",
+    "sha256": "628c67cb12c6872ede079e98e4f1bf70f8060b9d1cc8bd01efd50d283b4d01b4",
     "lastmod": "2026-11-12"
   },
   "mindtype/index.html": {

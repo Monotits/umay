@@ -103,6 +103,9 @@ Build smart home rules on Mac with Pulse Home. Combine presence triggers, HomeKi
 - [How to Discover Your Decision-Making Style with Game Theory](https://umay.dev/guides/decision-making-style-game-theory/): Learn what classic games like the Prisoner's Dilemma, Ultimatum and Trust games reveal about cooperation, fairness and risk, and how to play them on iPhone with MindType.
 - [How to Automate HomeKit When You Arrive or Leave, Using Your Mac](https://umay.dev/guides/homekit-automation-arrive-leave-mac/): Use your Mac as a smart home hub: build arrive and leave rules with WiFi presence or geofence triggers, run HomeKit scenes and send webhooks to Home Assistant with Pulse Home.
 - [How to Stop Missing Family Events: A Calendar Setup for Busy Dads](https://umay.dev/guides/stop-missing-family-events/): A simple setup to catch school events, birthdays and clashing appointments before they slip: one shared calendar, consistent event details, and an on-device assistant that flags conflicts.
+- [Can a Mac Be a HomeKit Hub? What Works and What Doesn't](https://umay.dev/guides/mac-homekit-hub/): A Mac cannot be an official Apple home hub, but it can control HomeKit accessories and run your own automations. Here is what that means and how to set it up with Pulse Home.
+- [How to Make iPhone Video Look Like Film](https://umay.dev/guides/film-look-iphone-video/): Shoot and grade iPhone video for a film look: control exposure and frame rate, avoid over-sharpened footage, then apply a cinematic LUT, soften contrast and add subtle grain with Cinegrade.
+- [How to Slow Down When You Speak Too Fast](https://umay.dev/guides/slow-down-speaking-too-fast/): Find your speaking pace, learn why you speed up, and practise pausing between ideas. A short routine for presentations and interviews, measured with Fenno on iPhone.
 
 ## Product stories
 
