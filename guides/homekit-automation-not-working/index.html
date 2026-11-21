@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HomeKit Automation Not Working? 9 Fixes to Try | umay.dev</title>
+  <meta name="description" content="Why HomeKit automations stop running and how to fix them: home hub status, location access, accessory responses, time and condition settings, and running rules from a Mac instead." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://umay.dev/guides/homekit-automation-not-working/" />
+  <link rel="icon" href="/assets/favicon.png" />
+  <link rel="stylesheet" href="/css/umay.css" />
+  <link rel="stylesheet" href="/css/discovery.css" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="umay.dev" />
+  <meta property="og:title" content="HomeKit Automation Not Working? 9 Fixes to Try" />
+  <meta property="og:description" content="Why HomeKit automations stop running and how to fix them: home hub status, location access, accessory responses, time and condition settings, and running rules from a Mac instead." />
+  <meta property="og:url" content="https://umay.dev/guides/homekit-automation-not-working/" />
+  <meta property="og:image" content="https://umay.dev/assets/og/pulsehome.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@yumaydev" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "HomeKit Automation Not Working? 9 Fixes to Try",
+  "description": "Why HomeKit automations stop running and how to fix them: home hub status, location access, accessory responses, time and condition settings, and running rules from a Mac instead.",
+  "inLanguage": "en",
+  "mainEntityOfPage": "https://umay.dev/guides/homekit-automation-not-working/",
+  "author": {
+    "@type": "Person",
+    "name": "Buğra Günay",
+    "url": "https://umay.dev/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "umay.dev",
+    "url": "https://umay.dev/"
+  },
+  "image": "https://umay.dev/assets/Pulse/Home/home_03_rules.png"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Apps",
+      "item": "https://umay.dev/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guides",
+      "item": "https://umay.dev/guides/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "HomeKit Automation Not Working? 9 Fixes to Try",
+      "item": "https://umay.dev/guides/homekit-automation-not-working/"
+    }
+  ]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why is my HomeKit automation not working when I leave home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check that a home hub is connected, that the Home app has Always location access with Precise Location on each person's iPhone, and who the automation is set to follow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do HomeKit automations need a home hub?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most do. An Apple TV or HomePod that stays at home acts as the hub and runs automations even when your phone is away."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my automation say No Response?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An accessory in the automation is offline. Restart it and check its network connection, then test the automation again."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <nav class="discovery-nav" aria-label="Main navigation"><a href="/">umay.dev</a><a href="/#products">Apps</a><a href="/guides/">Guides</a><a href="/blog/">Product stories</a><a href="/about/">About</a></nav>
+  <main class="editorial"><a href="/guides/">All guides</a>
+<h1>HomeKit Automation Not Working? 9 Fixes to Try</h1><p class="byline">By <a href="/about/">Buğra Günay</a>, maker of Pulse Home</p>
+<p class="lead">Why HomeKit automations stop running and how to fix them: home hub status, location access, accessory responses, time and condition settings, and running rules from a Mac instead.</p><p>When a HomeKit automation does nothing, the cause is usually one of a few things: the home hub, location permissions, an unresponsive accessory, or a condition that quietly blocks the rule. Work through these in order.</p><h2>1. Check your home hub</h2><p>Most automations run on a home hub, an Apple TV or HomePod that stays at home. In the Home app, open Home Settings → Home Hubs &amp; Bridges and make sure one hub shows as Connected. If none is connected, restart the hub and check it is signed in to the same Apple Account.</p><h2>2. Allow location for the Home app</h2><p>Arrive and leave automations need location access. On the iPhone of each person in the automation, go to Settings → Privacy &amp; Security → Location Services → Home and choose Always, and turn on Precise Location.</p><h2>3. Check who the automation follows</h2><p>A location automation can trigger for you, for anyone, or for the first or last person. If it is set to a person whose phone is not at home or has location off, it will not fire.</p><h2>4. Look for "No Response" accessories</h2><p>If an accessory shows No Response in the Home app, the automation cannot control it. Power-cycle the accessory and check its WiFi or Thread connection.</p><h2>5. Review time and condition limits</h2><p>Automations can be limited to certain times or to when someone is home. A forgotten "only after sunset" or "only when I am home" condition is a common cause of rules that never seem to run.</p><h2>6. Recreate the automation</h2><p>Corrupted automations happen. Delete it and create it again from scratch rather than editing it.</p><h2>7. Update everything</h2><p>Update iOS, the home hub and accessory firmware. Mismatched versions between hub and phones can break automations.</p><h2>8. Check for duplicate or conflicting rules</h2><p>Two automations reacting to the same event can cancel each other out, for example one turning lights on and another turning them off.</p><h2>9. Run the rule from a Mac instead</h2><p>If location-based triggers stay unreliable, a Mac that is always on at home can run the automation itself. <a href="/pulsehome/">Pulse Home</a> runs rules locally on the Mac with WiFi presence or geofence triggers and can control HomeKit or send webhooks to Home Assistant. See <a href="/guides/homekit-automation-arrive-leave-mac/">how to set up arrive and leave rules</a>.</p><figure><img src="/assets/optimized/home-03-rules-d01cb551041b-640.webp" alt="Pulse Home lists each rule with its trigger and status." loading="lazy" srcset="/assets/optimized/home-03-rules-d01cb551041b-320.webp 320w, /assets/optimized/home-03-rules-d01cb551041b-640.webp 640w, /assets/optimized/home-03-rules-d01cb551041b-960.webp 960w" sizes="(max-width: 600px) 220px, 320px" width="640" height="400" decoding="async" /><figcaption>Pulse Home lists each rule with its trigger and status.</figcaption></figure><h2>Frequently asked questions</h2><details open><summary>Why is my HomeKit automation not working when I leave home?</summary><p>Check that a home hub is connected, that the Home app has Always location access with Precise Location on each person&#x27;s iPhone, and who the automation is set to follow.</p></details><details open><summary>Do HomeKit automations need a home hub?</summary><p>Most do. An Apple TV or HomePod that stays at home acts as the hub and runs automations even when your phone is away.</p></details><details open><summary>Why does my automation say No Response?</summary><p>An accessory in the automation is offline. Restart it and check its network connection, then test the automation again.</p></details>
+<aside class="discovery-panel"><h2>Try Pulse Home</h2><p>Build smart home rules on Mac with Pulse Home. Combine presence triggers, HomeKit actions and webhooks with conditions and delays for your own routines.</p><p><a href="/pulsehome/">Explore Pulse Home, features and pricing</a></p><a class="store-link" href="https://apps.apple.com/app/pulse-home-wifi-automation/id6760119994?mt=12&amp;pt=122335453&amp;ct=web-guide-homekit-automation-not-working" data-goatcounter-click="appstore-pulsehome" data-goatcounter-title="/guides/homekit-automation-not-working/">View on App Store</a></aside></main>
+  <footer class="discovery-nav"><a href="/">All apps by umay.dev</a><a href="/about/">About the developer</a><a href="mailto:experlercom@gmail.com">Contact &amp; support</a></footer>
+<!-- analytics:start --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "78b70c3491364f68a80c8d51408c56d0"}'></script><script data-goatcounter="https://yumay.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script><!-- analytics:end -->
+</body>
+</html>

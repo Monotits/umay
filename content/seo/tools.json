@@ -825,5 +825,105 @@
       "fake-text-message-video-maker",
       "directed-by-robert-b-weide-meme"
     ]
+  },
+  {
+    "slug": "tweet-comment-on-video",
+    "tool": "Comment on Video",
+    "title": "Add a Tweet or Comment to a Video on iPhone",
+    "description": "Overlay tweet-style comments on your clips, freeze the frame and read the comment aloud with text-to-speech. Make comment-reaction videos for TikTok, Reels and Shorts with Brolled.",
+    "h1": "Put a tweet or comment on your video",
+    "intro": "Comment-reaction videos show a viewer's comment or a tweet on screen, then answer it. Brolled's Comment on Video tool overlays a tweet-style comment on your clip, can freeze the frame while it is shown, and reads it aloud with text-to-speech, so the setup is clear even with the sound low.",
+    "steps": [
+      [
+        "Open Comment on Video",
+        "Choose Comment on Video in Brolled and add your clip."
+      ],
+      [
+        "Write the comment",
+        "Type the comment or tweet text and the name to show with it."
+      ],
+      [
+        "Freeze and narrate",
+        "Freeze the frame where the comment appears and turn on text-to-speech if you want it read aloud."
+      ],
+      [
+        "Export",
+        "Preview the timing and export the vertical video."
+      ]
+    ],
+    "tips": [
+      "Answering a real question from your comments is the most natural use; it also tells viewers you read them.",
+      "Keep the on-screen comment short; trim long comments to the part you are answering.",
+      "Only show comments you are allowed to share, and remove other people's personal details."
+    ],
+    "faq": [
+      [
+        "How do I put a tweet on a video?",
+        "Use an app that overlays a tweet-style card on your clip. In Brolled's Comment on Video tool, type the text and name, position it over the video and export."
+      ],
+      [
+        "Can the comment be read aloud?",
+        "Yes. Comment on Video can read the comment with text-to-speech while the frame is frozen."
+      ],
+      [
+        "Is it free?",
+        "All Brolled tools are unlocked in the free download, which includes 3 free credits. Free exports are SD with a watermark."
+      ]
+    ],
+    "related": [
+      "split-screen-reaction-video",
+      "fake-text-message-video-maker",
+      "meme-sound-effects-on-video"
+    ]
+  },
+  {
+    "slug": "add-gifs-stickers-to-video",
+    "tool": "Stickers & GIFs",
+    "title": "Add GIFs and Stickers to Videos on iPhone",
+    "description": "Drop GIPHY stickers and reaction GIFs onto your iPhone video, then drag, scale and time them. A quick way to add personality to TikTok, Reels and Shorts with Brolled.",
+    "h1": "Add GIFs and stickers to your videos on iPhone",
+    "intro": "A reaction GIF or animated sticker at the right moment adds a punchline without editing skills. Brolled's Stickers & GIFs tool lets you search GIPHY stickers and reaction GIFs, place them anywhere on your clip, resize them and set when they appear and disappear.",
+    "steps": [
+      [
+        "Open Stickers & GIFs",
+        "Choose Stickers & GIFs in Brolled and add your clip."
+      ],
+      [
+        "Search and pick",
+        "Search GIPHY for a sticker or reaction GIF."
+      ],
+      [
+        "Place and time it",
+        "Drag it into position, scale it, and set when it shows."
+      ],
+      [
+        "Export",
+        "Preview and export the vertical video."
+      ]
+    ],
+    "tips": [
+      "One well-timed reaction beats five constant stickers.",
+      "Keep stickers away from faces and captions.",
+      "Match the sticker's timing to the beat or the line it reacts to."
+    ],
+    "faq": [
+      [
+        "How do I add a GIF to a video on iPhone?",
+        "Use an editor with GIF support. In Brolled, open Stickers & GIFs, search GIPHY, place the GIF on your clip, set its timing and export."
+      ],
+      [
+        "Can I control when the sticker appears?",
+        "Yes. You can drag, scale and time each sticker or GIF."
+      ],
+      [
+        "Is it free?",
+        "All Brolled tools are unlocked in the free download, which includes 3 free credits. Free exports are SD with a watermark."
+      ]
+    ],
+    "related": [
+      "meme-sound-effects-on-video",
+      "a-few-moments-later-meme",
+      "tweet-comment-on-video"
+    ]
   }
 ]

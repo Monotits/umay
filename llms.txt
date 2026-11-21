@@ -44,7 +44,7 @@ Reflect on your speaking pace, filler words and vocal energy with Fenno for iPho
 - Guide: [How to Reduce Filler Words When You Speak](https://umay.dev/guides/reduce-filler-words/)
 
 ### Cinegrade
-Apply cinematic LUTs to videos and photos on iPhone and iPad. Fine-tune exposure, contrast, saturation, temperature and grain, then export with Cinegrade.
+Cinegrade is an iPhone and iPad app by umay.dev for cinematic LUTs. Apply film looks to videos and photos, adjust exposure, contrast, saturation, temperature and grain, then export.
 - Platform: iOS
 - Official page: https://umay.dev/cinegradeapp/
 - App Store: https://apps.apple.com/app/id6789650643
@@ -92,6 +92,8 @@ Build smart home rules on Mac with Pulse Home. Combine presence triggers, HomeKi
 - [Top 5 Ranking Video Maker for iPhone](https://umay.dev/brolled/top-5-ranking-video-maker/): Create countdown "Top 5" ranking videos from five clips on iPhone. Brolled builds the countdown layout so viewers keep watching until number one.
 - [Fake Incoming Call Video Maker for iPhone](https://umay.dev/brolled/fake-call-video-maker/): Overlay a fake incoming-call screen on your video for comedy skits and storytelling. Set the caller name, photo and ring duration in Brolled for iPhone.
 - [Fake iPhone Notification Video Maker](https://umay.dev/brolled/fake-notification-video-maker/): Overlay iOS-style notification banners on your video for comedy and storytelling. Set the sender, message and timing in Brolled for iPhone, then export for TikTok, Reels and Shorts.
+- [Add a Tweet or Comment to a Video on iPhone](https://umay.dev/brolled/tweet-comment-on-video/): Overlay tweet-style comments on your clips, freeze the frame and read the comment aloud with text-to-speech. Make comment-reaction videos for TikTok, Reels and Shorts with Brolled.
+- [Add GIFs and Stickers to Videos on iPhone](https://umay.dev/brolled/add-gifs-stickers-to-video/): Drop GIPHY stickers and reaction GIFs onto your iPhone video, then drag, scale and time them. A quick way to add personality to TikTok, Reels and Shorts with Brolled.
 
 ## Guides
 
@@ -107,6 +109,7 @@ Build smart home rules on Mac with Pulse Home. Combine presence triggers, HomeKi
 - [Can a Mac Be a HomeKit Hub? What Works and What Doesn't](https://umay.dev/guides/mac-homekit-hub/): A Mac cannot be an official Apple home hub, but it can control HomeKit accessories and run your own automations. Here is what that means and how to set it up with Pulse Home.
 - [How to Make iPhone Video Look Like Film](https://umay.dev/guides/film-look-iphone-video/): Shoot and grade iPhone video for a film look: control exposure and frame rate, avoid over-sharpened footage, then apply a cinematic LUT, soften contrast and add subtle grain with Cinegrade.
 - [How to Slow Down When You Speak Too Fast](https://umay.dev/guides/slow-down-speaking-too-fast/): Find your speaking pace, learn why you speed up, and practise pausing between ideas. A short routine for presentations and interviews, measured with Fenno on iPhone.
+- [HomeKit Automation Not Working? 9 Fixes to Try](https://umay.dev/guides/homekit-automation-not-working/): Why HomeKit automations stop running and how to fix them: home hub status, location access, accessory responses, time and condition settings, and running rules from a Mac instead.
 
 ## Product stories
 

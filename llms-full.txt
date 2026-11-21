@@ -114,7 +114,7 @@ A: Mood trackers ask you to pick how you feel with emojis or sliders. Fenno list
 
 ## Cinegrade
 
-Apply cinematic LUTs to videos and photos on iPhone and iPad. Fine-tune exposure, contrast, saturation, temperature and grain, then export with Cinegrade.
+Cinegrade is an iPhone and iPad app by umay.dev for cinematic LUTs. Apply film looks to videos and photos, adjust exposure, contrast, saturation, temperature and grain, then export.
 
 - Platform: iOS
 - Page: https://umay.dev/cinegradeapp/
@@ -670,6 +670,50 @@ A: Nervousness raises arousal and the urge to finish quickly. Planned pauses and
 Q: Does speaking fast cause filler words?
 A: Often. Speaking faster leaves less time to plan the next sentence, which invites fillers such as "um" and "uh".
 
+## HomeKit Automation Not Working? 9 Fixes to Try
+URL: https://umay.dev/guides/homekit-automation-not-working/
+
+Why HomeKit automations stop running and how to fix them: home hub status, location access, accessory responses, time and condition settings, and running rules from a Mac instead.
+
+When a HomeKit automation does nothing, the cause is usually one of a few things: the home hub, location permissions, an unresponsive accessory, or a condition that quietly blocks the rule. Work through these in order.
+
+### 1. Check your home hub
+Most automations run on a home hub, an Apple TV or HomePod that stays at home. In the Home app, open Home Settings → Home Hubs & Bridges and make sure one hub shows as Connected. If none is connected, restart the hub and check it is signed in to the same Apple Account.
+
+### 2. Allow location for the Home app
+Arrive and leave automations need location access. On the iPhone of each person in the automation, go to Settings → Privacy & Security → Location Services → Home and choose Always, and turn on Precise Location.
+
+### 3. Check who the automation follows
+A location automation can trigger for you, for anyone, or for the first or last person. If it is set to a person whose phone is not at home or has location off, it will not fire.
+
+### 4. Look for "No Response" accessories
+If an accessory shows No Response in the Home app, the automation cannot control it. Power-cycle the accessory and check its WiFi or Thread connection.
+
+### 5. Review time and condition limits
+Automations can be limited to certain times or to when someone is home. A forgotten "only after sunset" or "only when I am home" condition is a common cause of rules that never seem to run.
+
+### 6. Recreate the automation
+Corrupted automations happen. Delete it and create it again from scratch rather than editing it.
+
+### 7. Update everything
+Update iOS, the home hub and accessory firmware. Mismatched versions between hub and phones can break automations.
+
+### 8. Check for duplicate or conflicting rules
+Two automations reacting to the same event can cancel each other out, for example one turning lights on and another turning them off.
+
+### 9. Run the rule from a Mac instead
+If location-based triggers stay unreliable, a Mac that is always on at home can run the automation itself. Pulse Home runs rules locally on the Mac with WiFi presence or geofence triggers and can control HomeKit or send webhooks to Home Assistant. See how to set up arrive and leave rules.
+
+### FAQ
+Q: Why is my HomeKit automation not working when I leave home?
+A: Check that a home hub is connected, that the Home app has Always location access with Precise Location on each person's iPhone, and who the automation is set to follow.
+
+Q: Do HomeKit automations need a home hub?
+A: Most do. An Apple TV or HomePod that stays at home acts as the hub and runs automations even when your phone is away.
+
+Q: Why does my automation say No Response?
+A: An accessory in the automation is offline. Restart it and check its network connection, then test the automation again.
+
 # Brolled video formats
 
 ## Reddit Story Video Maker for iPhone
@@ -1110,6 +1154,58 @@ A: The sender, the message text and when the notification appears in the video.
 
 Q: Does it look like an iPhone notification?
 A: The banner follows the iOS notification style so viewers recognise it instantly.
+
+Q: Is it free?
+A: All Brolled tools are unlocked in the free download, which includes 3 free credits. Free exports are SD with a watermark.
+
+## Add a Tweet or Comment to a Video on iPhone
+URL: https://umay.dev/brolled/tweet-comment-on-video/
+
+Comment-reaction videos show a viewer's comment or a tweet on screen, then answer it. Brolled's Comment on Video tool overlays a tweet-style comment on your clip, can freeze the frame while it is shown, and reads it aloud with text-to-speech, so the setup is clear even with the sound low.
+
+### Steps
+1. Open Comment on Video: Choose Comment on Video in Brolled and add your clip.
+2. Write the comment: Type the comment or tweet text and the name to show with it.
+3. Freeze and narrate: Freeze the frame where the comment appears and turn on text-to-speech if you want it read aloud.
+4. Export: Preview the timing and export the vertical video.
+
+### Tips
+- Answering a real question from your comments is the most natural use; it also tells viewers you read them.
+- Keep the on-screen comment short; trim long comments to the part you are answering.
+- Only show comments you are allowed to share, and remove other people's personal details.
+
+### FAQ
+Q: How do I put a tweet on a video?
+A: Use an app that overlays a tweet-style card on your clip. In Brolled's Comment on Video tool, type the text and name, position it over the video and export.
+
+Q: Can the comment be read aloud?
+A: Yes. Comment on Video can read the comment with text-to-speech while the frame is frozen.
+
+Q: Is it free?
+A: All Brolled tools are unlocked in the free download, which includes 3 free credits. Free exports are SD with a watermark.
+
+## Add GIFs and Stickers to Videos on iPhone
+URL: https://umay.dev/brolled/add-gifs-stickers-to-video/
+
+A reaction GIF or animated sticker at the right moment adds a punchline without editing skills. Brolled's Stickers & GIFs tool lets you search GIPHY stickers and reaction GIFs, place them anywhere on your clip, resize them and set when they appear and disappear.
+
+### Steps
+1. Open Stickers & GIFs: Choose Stickers & GIFs in Brolled and add your clip.
+2. Search and pick: Search GIPHY for a sticker or reaction GIF.
+3. Place and time it: Drag it into position, scale it, and set when it shows.
+4. Export: Preview and export the vertical video.
+
+### Tips
+- One well-timed reaction beats five constant stickers.
+- Keep stickers away from faces and captions.
+- Match the sticker's timing to the beat or the line it reacts to.
+
+### FAQ
+Q: How do I add a GIF to a video on iPhone?
+A: Use an editor with GIF support. In Brolled, open Stickers & GIFs, search GIPHY, place the GIF on your clip, set its timing and export.
+
+Q: Can I control when the sticker appears?
+A: Yes. You can drag, scale and time each sticker or GIF.
 
 Q: Is it free?
 A: All Brolled tools are unlocked in the free download, which includes 3 free credits. Free exports are SD with a watermark.

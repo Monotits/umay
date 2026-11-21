@@ -1,7 +1,7 @@
 {
   "about/index.html": {
-    "sha256": "04c22a8fe33cd490f7f37e1a89fe7c54542eb11f236c70535a447daf7d628952",
-    "lastmod": "2026-11-12"
+    "sha256": "6e962ee1c3f813e82d2d1d4cde42ca089bf76f4801c6fe1f5f7d8ae3b42a2a8a",
+    "lastmod": "2026-11-21"
   },
   "blog/building-the-ultimate-meme-maker.html": {
     "sha256": "592fa8406ddf23a4cf2431a6ef7cb1fd870d1db93879f0fd5fab2eff1243f61f",
@@ -35,6 +35,10 @@
     "sha256": "e3df288ba4d8eba03fd69ed83052590fcacaec022dad0ccee81a6e85c3a0dc54",
     "lastmod": "2026-11-12"
   },
+  "brolled/add-gifs-stickers-to-video/index.html": {
+    "sha256": "95cfce38a7f9044fa2d921425896476f7c311fffe19cc9e6f0ed36d6edc5d765",
+    "lastmod": "2026-11-21"
+  },
   "brolled/ai-quiz-video-maker/index.html": {
     "sha256": "2c87522c66dbe7e4dca054208093ddb5cf9915ce6d4e27dd95fb352f56345a5c",
     "lastmod": "2026-11-12"
@@ -60,7 +64,7 @@
     "lastmod": "2026-11-12"
   },
   "brolled/index.html": {
-    "sha256": "396d3731dd62d1f5f5a45289477dc98a90f5aa73c2e2ee31b442be98861d2695",
+    "sha256": "0d0c6f1ac392a7b62fe44fdd6f43fb6e3a915838688d130ae1e81ab69b50341a",
     "lastmod": "2026-11-21"
   },
   "brolled/lyric-video-maker/index.html": {
@@ -91,13 +95,17 @@
     "sha256": "2e1ea3c3dc9d93ff06cd54e9a08fbc77ca25693caa5953f8c8bbd1cce6dd9e16",
     "lastmod": "2026-11-12"
   },
+  "brolled/tweet-comment-on-video/index.html": {
+    "sha256": "de41f5a48bdfe3d7381b3256c4a9e73ed9895d068ee6e9af8b7e1decbf4f9d7d",
+    "lastmod": "2026-11-21"
+  },
   "brolled/would-you-rather-video-maker/index.html": {
     "sha256": "ea1affcd4b71aa3e68686700681b0e5ef95ec733953aafe9e386abf28c5079de",
     "lastmod": "2026-11-12"
   },
   "cinegradeapp/index.html": {
-    "sha256": "7605034333b51b6be7eac3cc90ac46a04584f2e3875a3756c7045215e2febfb9",
-    "lastmod": "2026-11-12"
+    "sha256": "c7075971cd1de3f4ef2d49056ec88acd71892883ae9025a1fe93b4309dd28e0a",
+    "lastmod": "2026-11-21"
   },
   "cornerman/index.html": {
     "sha256": "57871aa0ed922880e4c86750450b54381ed016db75765a9b1429b6bdef046397",
@@ -112,23 +120,27 @@
     "lastmod": "2026-11-12"
   },
   "guides/cinematic-luts-iphone/index.html": {
-    "sha256": "48ac56321addc1393cda06846b3055eb30e9ecfb735fb985b20b03344aa8e7e9",
-    "lastmod": "2026-11-12"
+    "sha256": "48a62f946b1984835890bf7cb55def3a446410482aeb13d763d325f3c3645d77",
+    "lastmod": "2026-11-21"
   },
   "guides/decision-making-style-game-theory/index.html": {
     "sha256": "e66a798f8da10731fa230a4d3c4df2f21d8b4dbb70b9457753dd3ab2e5704d27",
     "lastmod": "2026-11-12"
   },
   "guides/film-look-iphone-video/index.html": {
-    "sha256": "b42385f982b8dfec903d5bd50b4be52b3f18dec5abfee723de220e517540c613",
-    "lastmod": "2026-11-12"
+    "sha256": "0430cdc1ce93ea4c5fe5a9730e066689c5c31ed7e19e4d71e6b133a7947c047d",
+    "lastmod": "2026-11-21"
   },
   "guides/homekit-automation-arrive-leave-mac/index.html": {
     "sha256": "6fc988a7fb4f6a085054fd538066c7da74d7b30eca4a6eb80e8e04ea45478cdc",
     "lastmod": "2026-11-12"
   },
+  "guides/homekit-automation-not-working/index.html": {
+    "sha256": "c8bf8530681166867c345a9cbd218a00255fc07120542b6716fa71d3a07209a3",
+    "lastmod": "2026-11-21"
+  },
   "guides/index.html": {
-    "sha256": "918df0533aa0c0a882652a59ed88b5b701a7460ce8398e2023c139895296a13c",
+    "sha256": "73e3c8f5e276f5b528dec5cd030186d75fc8e36d7ae4533b3211b74a77d3cb51",
     "lastmod": "2026-11-21"
   },
   "guides/mac-homekit-hub/index.html": {
@@ -160,8 +172,8 @@
     "lastmod": "2026-11-12"
   },
   "index.html": {
-    "sha256": "3489f5e29168910180877a1deddc0fc9981aa59ac5838b642a69ddfad43f677e",
-    "lastmod": "2026-11-12"
+    "sha256": "19b31a0a04ad687d8812960585b665b01c7109b6e2364ff195ef7b5bce74800a",
+    "lastmod": "2026-11-21"
   },
   "mindtype/index.html": {
     "sha256": "9b67eb4d262fb5fc8f8117075af69bf99f141e682d77703dc3989375ef2dda77",
