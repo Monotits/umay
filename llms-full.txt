@@ -4,7 +4,7 @@ Independent iPhone, iPad and Mac apps by Buğra Günay. Canonical site: https://
 
 ## ShadowART
 
-Track your mood, keep a personal journal and explore reflection prompts on iPhone. ShadowART combines quick check-ins with on-device text analysis.
+A private shadow work journal and mood tracker for iPhone. Log your mood in 10 seconds, journal when ready, and explore shadow archetypes. Analysis runs on your device.
 
 - Platform: iOS
 - Page: https://umay.dev/shadowart/
@@ -114,7 +114,7 @@ A: Mood trackers ask you to pick how you feel with emojis or sliders. Fenno list
 
 ## Cinegrade
 
-Cinegrade is an iPhone and iPad app by umay.dev for cinematic LUTs. Apply film looks to videos and photos, adjust exposure, contrast, saturation, temperature and grain, then export.
+Cinegrade is an iPhone and iPad app by umay.dev with film filters and cinematic LUTs. Give videos and photos a film, vintage or teal-orange look, adjust grain and color, then export.
 
 - Platform: iOS
 - Page: https://umay.dev/cinegradeapp/
@@ -1062,6 +1062,249 @@ A: Not in itself. High trust helps relationships and teamwork. It becomes a prob
 
 Q: Is there a trust quiz?
 A: Game-based measures like the Trust game show trust through choices. MindType for iPhone includes it and reports your trust dimension.
+
+## Why Does My Voice Sound Different in Recordings?
+URL: https://umay.dev/guides/why-voice-sounds-different-recording/
+
+Why your recorded voice sounds strange to you (bone conduction), why others hear the recording version, and how to get comfortable with it and improve how you sound with Fenno on iPhone.
+
+Almost everyone dislikes their voice on a recording at first. It sounds higher, thinner or less confident than the voice in your head. There is a simple physical reason, and the recording is much closer to what other people hear.
+
+### Two paths to your ears
+When you speak, sound reaches your inner ear through the air and also through the bones of your skull. Bone conduction carries lower frequencies well, so the voice you hear while speaking sounds deeper and fuller. A microphone only captures the air-conducted sound, which is what listeners hear.
+
+### Why it feels uncomfortable
+You have heard your bone-conducted voice your whole life, so the recording feels like a stranger. The discomfort is about familiarity, not about the voice being worse. It fades with exposure.
+
+### Phones, video and calls
+Phone microphones, compression and speaker quality change the sound further. On video calls and in social videos, people hear a version shaped by the microphone and room, so a quiet room and a microphone close to your mouth make a real difference.
+
+### Get used to it, then improve it
+- Record yourself regularly for a minute about something you know well.
+- Listen back without judging the tone; notice pace, pauses and filler words instead.
+- Pick one thing to change at a time, such as slowing down or pausing between ideas.
+
+
+### Use a private voice mirror
+Fenno records you on your iPhone and shows your pace, pauses, filler words and vocal energy, compared with your own normal over time. Analysis runs on the device and recordings stay encrypted on your phone, so you can practise without anyone else hearing.
+
+### FAQ
+Q: Why does my voice sound different in recordings?
+A: Because you normally hear your voice through both air and skull bones, which adds low frequencies. A recording captures only the air-conducted sound, which is what other people hear.
+
+Q: Is my recorded voice what others hear?
+A: Much closer than the voice in your head, though the microphone and speaker also color it.
+
+Q: How can I like my voice more?
+A: Listen to recordings regularly so it becomes familiar, and work on things you can control, such as pace, pauses and clarity.
+
+## How to Sound More Confident When You Speak
+URL: https://umay.dev/guides/sound-more-confident-speaking/
+
+Practical ways to sound more confident at work, on the phone and in interviews: pace, pauses, ending sentences down, fewer fillers, and practising with recordings on iPhone with Fenno.
+
+Listeners judge confidence from how you sound before they weigh what you say. The good news: the signals are specific and trainable.
+
+### 1. Slow down a little
+Rushing sounds nervous. A steady pace with clear pauses sounds deliberate. See how to slow down when you speak too fast.
+
+### 2. Pause instead of filling
+"Um" and "like" signal hesitation; a short silence signals thought. See how to reduce filler words.
+
+### 3. End statements on a downward note
+Rising at the end of a statement makes it sound like a question. Let your pitch fall at the end of points you want to land.
+
+### 4. Breathe and project
+Take a full breath before you start and speak from it. Volume that reaches the back of the room, or a clear level on the phone, sounds sure of itself.
+
+### 5. Prepare the first and last sentence
+Openings and closings are remembered most. Rehearse them until they sound natural.
+
+### On the phone and in interviews
+Stand up during important calls; it changes breathing and energy. In interviews, take a breath before answering and keep answers structured: point, example, close.
+
+### Practise with feedback
+Record a two-minute practice and listen back. Fenno shows pace, pauses, filler words and vocal energy for each recording on your iPhone, so you can see whether the change you are working on is happening. Everything stays on the device.
+
+### FAQ
+Q: How can I sound more confident on the phone?
+A: Stand up, breathe before you speak, slow down slightly, pause instead of using fillers and let your pitch fall at the end of statements.
+
+Q: How do I sound confident in an interview?
+A: Prepare your opening and key examples, pause before answering, structure each answer and avoid ending statements like questions.
+
+Q: Is there an app to practise speaking?
+A: Yes. Fenno for iPhone records your practice and shows pace, pauses, filler words and vocal energy, privately on the device.
+
+## Free Supplement Tracker Template (and When to Use an App)
+URL: https://umay.dev/guides/supplement-tracker-template/
+
+A simple supplement tracker template you can copy: what to log each day, an example table, and how to turn a log into a real take/skip experiment with SuppLab on iPhone.
+
+A supplement log is only useful if it records the same things every day. Here is a template you can copy into Notes, a spreadsheet or paper.
+
+### What to log each day
+- Date
+- Supplement, dose and time taken (or "skipped")
+- Sleep: hours and quality from 1 to 5
+- Energy or focus during the day, 1 to 5
+- Anything unusual: alcohol, illness, travel, hard training
+
+
+### Example
+DateSupplementTakenSleep (1–5)Energy (1–5)NotesMonMagnesium 200 mgYes, 21:3043TueMagnesium 200 mgSkipped33Late coffeeWedMagnesium 200 mgYes, 21:4544
+### Make the log answer a question
+A log alone rarely proves anything, because you usually take a supplement every day. To learn whether it helps you, alternate take and skip days in a random order and compare them. Read how to test whether a supplement works for you for the method.
+
+### When an app is easier
+SuppLab for iPhone keeps the log for you, builds a randomized take/skip schedule, can read sleep and HRV from Apple Health if you allow it, and shows a plain-language verdict at the end. There are no accounts; data stays on your iPhone.
+Safety: check with a doctor or pharmacist before starting or combining supplements, especially with medication or a health condition.
+
+### FAQ
+Q: What should a supplement tracker include?
+A: Date, supplement, dose, time or skipped, plus the outcome you care about such as sleep or energy, and notes on unusual days.
+
+Q: Is there a free supplement tracker app?
+A: SuppLab for iPhone is free to download and tracks supplements and take/skip experiments on your device.
+
+Q: How do I know if a supplement is working from my log?
+A: Compare days you took it with days you skipped, ideally in a random order, rather than judging by how you feel after starting.
+
+## How to Remember Birthdays on iPhone (and Never Miss One)
+URL: https://umay.dev/guides/remember-birthdays-iphone/
+
+Add birthdays to Contacts, turn on the Birthdays calendar, set alerts days in advance, and let an assistant flag important dates early. A simple setup for iPhone.
+
+Your iPhone already has everything it needs to remind you of birthdays; it is just not switched on by default for most people.
+
+### 1. Add the birthday to the contact
+Open Contacts, choose a person, tap Edit, then Add Birthday. Do this for the people who matter most first.
+
+### 2. Turn on the Birthdays calendar
+In the Calendar app, tap Calendars and make sure Birthdays is checked. Birthdays from Contacts now appear on your calendar every year.
+
+### 3. Set an alert in advance
+Go to Settings → Apps → Calendar → Default Alert Times and set Birthdays to one day or one week before. A same-day alert is too late to buy a gift or plan anything.
+
+### 4. Share family birthdays
+For children's friends, grandparents and in-laws, add birthdays to a shared family calendar so both parents see them.
+
+### 5. Let an assistant look ahead
+Cornerman reads your calendar and contacts on your iPhone and points out important dates and clashes early enough to act, such as a birthday falling on a day you are travelling. Everything runs on-device.
+
+### FAQ
+Q: How do I get birthday reminders on iPhone?
+A: Add birthdays to contacts, enable the Birthdays calendar in the Calendar app, and set a default alert time for birthdays in Calendar settings.
+
+Q: Why are birthdays not showing in my iPhone calendar?
+A: The Birthdays calendar may be hidden. In the Calendar app tap Calendars and check Birthdays, and make sure the birthday is saved in the contact.
+
+Q: Can my iPhone remind me a week before a birthday?
+A: Yes. Set the default alert time for Birthdays to one week before in Calendar settings.
+
+## Shadow Work Prompts for Beginners: 25 Questions to Start
+URL: https://umay.dev/guides/shadow-work-prompts-beginners/
+
+What shadow work is, how to start safely, and 25 beginner shadow work journal prompts grouped by theme, plus how to keep a private shadow work journal on iPhone with ShadowART.
+
+Shadow work is a journaling practice inspired by Carl Jung's idea of the "shadow": the parts of ourselves we push away because they feel unacceptable, such as anger, envy or neediness. Writing about them honestly can make reactions easier to understand.
+
+### Before you start
+- Go slowly: one prompt per session is enough.
+- Write without editing or judging.
+- Stop if it becomes overwhelming. Shadow work is reflection, not therapy; if old trauma surfaces, a therapist is the right support.
+
+
+### Triggers
+- What annoyed me most this week, and what does it say about what I value?
+- Which trait in other people irritates me most? Where do I show it too?
+- When did I overreact recently? What was I protecting?
+- Who do I envy, and what do they have that I want?
+- What criticism hurts me most, and why that one?
+
+
+### Childhood and family
+- What was I praised for as a child? What was I scolded for?
+- Which emotions were not allowed at home?
+- What rule from my family do I still follow without questioning?
+- What did I need as a child that I did not get?
+- How am I like the parent I least want to be like?
+
+
+### Relationships
+- Where do I say yes when I mean no?
+- What do I hide from people close to me?
+- When do I feel most rejected?
+- What role do I usually play in conflicts?
+- What do I expect from others that I do not give myself?
+
+
+### Self-image
+- What do I pretend to be good at?
+- What would I be embarrassed for others to know about me?
+- Which of my habits do I defend the most?
+- When do I feel like a fraud?
+- What story about myself am I tired of telling?
+
+
+### Integration
+- What strength hides inside the trait I dislike most?
+- What would I do if I were not afraid of judgment?
+- What would I say to my younger self today?
+- What am I ready to forgive myself for?
+- What is one small action that honors what I learned?
+
+
+### Keep a private shadow work journal
+ShadowART for iPhone starts with a 10-second mood check-in and lets you journal when you are ready. Pro adds shadow archetype patterns, affirmations and guided audio sessions. Analysis runs on your device, and Face ID can lock the journal.
+
+### FAQ
+Q: What is shadow work?
+A: A reflective practice based on Carl Jung's idea of the shadow, the parts of ourselves we reject or hide. Journaling about them can make our reactions easier to understand.
+
+Q: How do I start shadow work as a beginner?
+A: Pick one prompt, write honestly without editing, and stop if it becomes overwhelming. Short, regular sessions work better than long ones.
+
+Q: Is shadow work safe?
+A: For most people it is a form of journaling. If painful memories or trauma surface, work with a therapist rather than alone.
+
+Q: Is there a shadow work journal app?
+A: Yes. ShadowART for iPhone combines mood check-ins, journaling and shadow archetype patterns, with analysis on your device.
+
+## How to Get a Vintage Film Filter on iPhone Videos
+URL: https://umay.dev/guides/vintage-film-filter-iphone-video/
+
+Give iPhone videos a vintage, faded or retro film look: shoot for it, pick a film-inspired filter, lower contrast, warm the color and add grain with Cinegrade.
+
+The vintage look people want from film filters comes from a few things: softer contrast with lifted blacks, warmer or shifted colors, muted saturation and visible grain. You can build it on your iPhone in a couple of minutes.
+
+### 1. Shoot with soft light
+Window light, overcast days and golden hour suit a vintage look. Avoid blown-out highlights; tap to focus and lower exposure slightly.
+
+### 2. Pick a film-inspired look
+In Cinegrade, import the clip and try warm film-inspired and faded retro looks. Choose the one that suits the scene, then reduce its intensity until skin looks natural.
+
+### 3. Fade the blacks
+Lower contrast so shadows turn soft grey rather than pure black. This is the single biggest part of a vintage feel.
+
+### 4. Warm and mute the color
+Nudge temperature warmer and pull saturation down a little. Old film rarely had today's punchy color.
+
+### 5. Add grain last
+A small amount of grain makes the footage feel analog. Check on a phone screen; too much reads as noise.
+
+### Want the full film look?
+Shooting at 24 fps and controlling highlights matters too. See how to make iPhone video look like film.
+
+### FAQ
+Q: How do I get a vintage filter on iPhone video?
+A: Use a filter app with film looks, then lower contrast, warm and slightly desaturate the color and add a little grain. Cinegrade does this on iPhone and iPad.
+
+Q: What is the best film filter app for iPhone?
+A: It depends on the look you want. Choose one that lets you adjust a filter's intensity, contrast and grain rather than only apply it at full strength.
+
+Q: Can I add a film look to photos too?
+A: Yes. Cinegrade applies the same looks to photos and videos.
 
 # Brolled video formats
 

@@ -5,7 +5,7 @@
 ## Active apps
 
 ### ShadowART
-Track your mood, keep a personal journal and explore reflection prompts on iPhone. ShadowART combines quick check-ins with on-device text analysis.
+A private shadow work journal and mood tracker for iPhone. Log your mood in 10 seconds, journal when ready, and explore shadow archetypes. Analysis runs on your device.
 - Platform: iOS
 - Official page: https://umay.dev/shadowart/
 - App Store: https://apps.apple.com/app/shadowart-mood-journal-diary/id1573920118
@@ -44,7 +44,7 @@ Reflect on your speaking pace, filler words and vocal energy with Fenno for iPho
 - Guide: [How to Reduce Filler Words When You Speak](https://umay.dev/guides/reduce-filler-words/)
 
 ### Cinegrade
-Cinegrade is an iPhone and iPad app by umay.dev for cinematic LUTs. Apply film looks to videos and photos, adjust exposure, contrast, saturation, temperature and grain, then export.
+Cinegrade is an iPhone and iPad app by umay.dev with film filters and cinematic LUTs. Give videos and photos a film, vintage or teal-orange look, adjust grain and color, then export.
 - Platform: iOS
 - Official page: https://umay.dev/cinegradeapp/
 - App Store: https://apps.apple.com/app/id6789650643
@@ -119,6 +119,12 @@ Build smart home rules on Mac with Pulse Home. Combine presence triggers, HomeKi
 - [Loss Aversion, Anchoring and Status Quo Bias: Spot Them in Your Decisions](https://umay.dev/guides/cognitive-biases-in-decisions/): Three common cognitive biases explained with everyday examples and simple self-tests: loss aversion, the anchoring effect and status quo bias, plus how to catch them in your own choices.
 - [A Free Personality Test Without Email: Play It Instead of Filling It In](https://umay.dev/guides/personality-test-without-email/): Most free personality tests ask for your email and rely on self-report. MindType is a behavior-based personality test for iPhone: play short decision games, get your type, no email or password.
 - [Am I Too Trusting? Signs, and a Simple Way to Test Yourself](https://umay.dev/guides/am-i-too-trusting/): Signs you may trust people too quickly, why it happens, how the Trust game measures it, and practical ways to trust wisely without becoming cynical.
+- [Why Does My Voice Sound Different in Recordings?](https://umay.dev/guides/why-voice-sounds-different-recording/): Why your recorded voice sounds strange to you (bone conduction), why others hear the recording version, and how to get comfortable with it and improve how you sound with Fenno on iPhone.
+- [How to Sound More Confident When You Speak](https://umay.dev/guides/sound-more-confident-speaking/): Practical ways to sound more confident at work, on the phone and in interviews: pace, pauses, ending sentences down, fewer fillers, and practising with recordings on iPhone with Fenno.
+- [Free Supplement Tracker Template (and When to Use an App)](https://umay.dev/guides/supplement-tracker-template/): A simple supplement tracker template you can copy: what to log each day, an example table, and how to turn a log into a real take/skip experiment with SuppLab on iPhone.
+- [How to Remember Birthdays on iPhone (and Never Miss One)](https://umay.dev/guides/remember-birthdays-iphone/): Add birthdays to Contacts, turn on the Birthdays calendar, set alerts days in advance, and let an assistant flag important dates early. A simple setup for iPhone.
+- [Shadow Work Prompts for Beginners: 25 Questions to Start](https://umay.dev/guides/shadow-work-prompts-beginners/): What shadow work is, how to start safely, and 25 beginner shadow work journal prompts grouped by theme, plus how to keep a private shadow work journal on iPhone with ShadowART.
+- [How to Get a Vintage Film Filter on iPhone Videos](https://umay.dev/guides/vintage-film-filter-iphone-video/): Give iPhone videos a vintage, faded or retro film look: shoot for it, pick a film-inspired filter, lower contrast, warm the color and add grain with Cinegrade.
 
 ## Product stories
 

@@ -1,6 +1,6 @@
 {
   "about/index.html": {
-    "sha256": "4d3e111184012c7dc91d4f67bd1daad17c4f1f2eca379bcfaf5f1902d669f939",
+    "sha256": "d36b5da523585be037c7ed86749fb9ed9d50f81a765e09d730b24096c2b1c38c",
     "lastmod": "2026-11-21"
   },
   "blog/building-the-ultimate-meme-maker.html": {
@@ -104,15 +104,15 @@
     "lastmod": "2026-11-12"
   },
   "cinegradeapp/index.html": {
-    "sha256": "51654ef449e6b09c44ca04d636217e7d47bfcd0a27fd9ca5f9704724c7d47fd3",
+    "sha256": "cb7cf0d8f0bf18bbae93724173e7e7ced46b0b7cf3a6117485d38737f0dbadd3",
     "lastmod": "2026-11-21"
   },
   "cornerman/index.html": {
-    "sha256": "7a1248768dd940aab8cb8f8a05f2325d671bee86685caf3baf8e0a1c647caa38",
+    "sha256": "567d9d115be67bca43fb803befb0df8d8d0236b9d06814c55736db30f683b22e",
     "lastmod": "2026-11-21"
   },
   "fenno/index.html": {
-    "sha256": "e9a9fbca68ae454ae36875a7bf503a89e67e9d6691f7126229377932f3d2795a",
+    "sha256": "d0b924d7c913b772070cb4fbb1b589f1159756bf0793fcb6e1392edf6b0d747a",
     "lastmod": "2026-11-21"
   },
   "guides/add-captions-iphone-videos/index.html": {
@@ -124,7 +124,7 @@
     "lastmod": "2026-11-21"
   },
   "guides/cinematic-luts-iphone/index.html": {
-    "sha256": "48a62f946b1984835890bf7cb55def3a446410482aeb13d763d325f3c3645d77",
+    "sha256": "ea2c2b23da314b5b2430ad34d896c1f3ad78f2b5ec8f5d6d30cafedf085ec0ce",
     "lastmod": "2026-11-21"
   },
   "guides/cognitive-biases-in-decisions/index.html": {
@@ -136,7 +136,7 @@
     "lastmod": "2026-11-21"
   },
   "guides/film-look-iphone-video/index.html": {
-    "sha256": "0430cdc1ce93ea4c5fe5a9730e066689c5c31ed7e19e4d71e6b133a7947c047d",
+    "sha256": "db7bd8cec980814bd862a9dbdab79f3a4bc013701fa107f69e9e0836b4215e75",
     "lastmod": "2026-11-21"
   },
   "guides/home-security-without-camera/index.html": {
@@ -152,7 +152,7 @@
     "lastmod": "2026-11-21"
   },
   "guides/index.html": {
-    "sha256": "c6fa8e7d42a69be4928948f6ed96051861b9608ead8f08535de9550148b616bf",
+    "sha256": "436f78695f9048c954335fca6413f5c9990801c48ad6e64a363b5fc584e2fe70",
     "lastmod": "2026-11-21"
   },
   "guides/mac-homekit-hub/index.html": {
@@ -168,24 +168,40 @@
     "lastmod": "2026-11-21"
   },
   "guides/private-mood-tracking-iphone/index.html": {
-    "sha256": "db198708f52266470160cfe754b6966876665ef448c9dcf5245df2a2d143f451",
-    "lastmod": "2026-11-12"
+    "sha256": "a46ad526a28b9a61d083ee3200c67734e0b034001ffe83fd7da7a69d969ba14f",
+    "lastmod": "2026-11-21"
   },
   "guides/reduce-filler-words/index.html": {
     "sha256": "fc0e435c6472117503d27b9dd9fa68be793beb7a1754f5ed7ef2acf6c3ddb9d8",
     "lastmod": "2026-11-12"
   },
+  "guides/remember-birthdays-iphone/index.html": {
+    "sha256": "ede3fe6e22f4117a9c59f21293997a846f0180e17f943a09522ed9e878e74454",
+    "lastmod": "2026-11-21"
+  },
   "guides/see-bluetooth-devices-nearby-mac/index.html": {
     "sha256": "df6d7717130269b6e43dc9b5a00047cff278263e0b8c3823335d2077e101c151",
+    "lastmod": "2026-11-21"
+  },
+  "guides/shadow-work-prompts-beginners/index.html": {
+    "sha256": "d5d5a1f307b8edad49576ab09f6a3ce2929c509f8361257c31c152f274e3fd3b",
     "lastmod": "2026-11-21"
   },
   "guides/slow-down-speaking-too-fast/index.html": {
     "sha256": "f964b57f255328af5857382d993b390d92fe6db5ad17d1393df04244a122e432",
     "lastmod": "2026-11-12"
   },
+  "guides/sound-more-confident-speaking/index.html": {
+    "sha256": "25a2cb48376f6ff7773447cee40ec0a8709e6ad32c93dc317d3b730a4546a888",
+    "lastmod": "2026-11-21"
+  },
   "guides/stop-missing-family-events/index.html": {
     "sha256": "79c815810a9651b6d193600e636eb5bf0e5983b44edb181991cc7d1e6082425a",
     "lastmod": "2026-11-12"
+  },
+  "guides/supplement-tracker-template/index.html": {
+    "sha256": "825e5320681ced2291c5d9a502999f84c283b82bb4f6abf4b04edf41d54ee55a",
+    "lastmod": "2026-11-21"
   },
   "guides/tell-if-someone-was-in-your-room/index.html": {
     "sha256": "39fcc378d60a46e624bf3be80b6fe4cb981782261a70316b28406133e0073ba9",
@@ -203,12 +219,20 @@
     "sha256": "c6bd57d083d368b1eec7ce19e2e63ddcf31beb6d6e4de3d70b500663a098b159",
     "lastmod": "2026-11-21"
   },
+  "guides/vintage-film-filter-iphone-video/index.html": {
+    "sha256": "73c876d244a713e5e1232c363d45d4b96eb450dd6a50893b430fe82da13aae1b",
+    "lastmod": "2026-11-21"
+  },
+  "guides/why-voice-sounds-different-recording/index.html": {
+    "sha256": "5eff7be99a671c9779d42a5a99ff09392436c092fbec1bd6ae1798fafdd3b626",
+    "lastmod": "2026-11-21"
+  },
   "guides/wifi-signal-monitoring-mac/index.html": {
     "sha256": "07cbaab4e97faf65f9b28effbe78a4ee5be93725a5d2b8f23ad71b5c0d61aeef",
     "lastmod": "2026-11-12"
   },
   "index.html": {
-    "sha256": "6e44b52acf55b1e943bdd301988bba0b6e1d5f5a895c9558857ac0e27285d03c",
+    "sha256": "8ae601fee1a40d90ecf86060c1ded29a3a24eee1fd8073cded0af60c406ff033",
     "lastmod": "2026-11-21"
   },
   "mindtype/index.html": {
@@ -224,11 +248,11 @@
     "lastmod": "2026-11-21"
   },
   "shadowart/index.html": {
-    "sha256": "dd0a1b9fa9cef9e5c54d2c32cffaa5af27489063b296ddd643a13cd4ec07ebfb",
+    "sha256": "7485f37716f5910b63a6f4484a79ae2039767e3ac4f49c62f9b26f689be1da66",
     "lastmod": "2026-11-21"
   },
   "supplab/index.html": {
-    "sha256": "c2463ca6bc9b38d49214e2584e771b34fb35105215f4d175dd0c987a0d74c678",
+    "sha256": "2454f1811655575825c8d3a47b227fefe25e315248b6442b676dfe6f660936a9",
     "lastmod": "2026-11-21"
   }
 }
