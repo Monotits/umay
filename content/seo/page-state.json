@@ -1,6 +1,6 @@
 {
   "about/index.html": {
-    "sha256": "6e962ee1c3f813e82d2d1d4cde42ca089bf76f4801c6fe1f5f7d8ae3b42a2a8a",
+    "sha256": "3a3cb98e197f5bd302c3dedd1bd773637af39523da5ee7b4f861dfb9c1ee2dbe",
     "lastmod": "2026-11-21"
   },
   "blog/building-the-ultimate-meme-maker.html": {
@@ -24,8 +24,8 @@
     "lastmod": "2026-11-12"
   },
   "blog/why-we-built-pulse-guard.html": {
-    "sha256": "44e7eab2bad047bd4ef9246dd7127f1dcad36bf92b2dbe8473628e1374ba3002",
-    "lastmod": "2026-11-12"
+    "sha256": "02d10da207b3ff366df9bfa8c597014b462a6cc4b8517a4ffa223f57a21853f9",
+    "lastmod": "2026-11-21"
   },
   "blog/why-your-voice-reveals-more-than-your-words.html": {
     "sha256": "35a501ef4987b54197639780c92b2b3a6c6f091542a9b4d43af738605afb8341",
@@ -131,6 +131,10 @@
     "sha256": "0430cdc1ce93ea4c5fe5a9730e066689c5c31ed7e19e4d71e6b133a7947c047d",
     "lastmod": "2026-11-21"
   },
+  "guides/home-security-without-camera/index.html": {
+    "sha256": "ee3af48a02404e14a3ee8fdb678a60dc1b014eadfffcd3875bb540b202557896",
+    "lastmod": "2026-11-21"
+  },
   "guides/homekit-automation-arrive-leave-mac/index.html": {
     "sha256": "6fc988a7fb4f6a085054fd538066c7da74d7b30eca4a6eb80e8e04ea45478cdc",
     "lastmod": "2026-11-12"
@@ -140,7 +144,7 @@
     "lastmod": "2026-11-21"
   },
   "guides/index.html": {
-    "sha256": "73e3c8f5e276f5b528dec5cd030186d75fc8e36d7ae4533b3211b74a77d3cb51",
+    "sha256": "20973933872cbef6defa853221fa12c48ef135439ff9a2bfa44e36ee4ef0f2df",
     "lastmod": "2026-11-21"
   },
   "guides/mac-homekit-hub/index.html": {
@@ -155,6 +159,10 @@
     "sha256": "fc0e435c6472117503d27b9dd9fa68be793beb7a1754f5ed7ef2acf6c3ddb9d8",
     "lastmod": "2026-11-12"
   },
+  "guides/see-bluetooth-devices-nearby-mac/index.html": {
+    "sha256": "df6d7717130269b6e43dc9b5a00047cff278263e0b8c3823335d2077e101c151",
+    "lastmod": "2026-11-21"
+  },
   "guides/slow-down-speaking-too-fast/index.html": {
     "sha256": "f964b57f255328af5857382d993b390d92fe6db5ad17d1393df04244a122e432",
     "lastmod": "2026-11-12"
@@ -162,6 +170,10 @@
   "guides/stop-missing-family-events/index.html": {
     "sha256": "79c815810a9651b6d193600e636eb5bf0e5983b44edb181991cc7d1e6082425a",
     "lastmod": "2026-11-12"
+  },
+  "guides/tell-if-someone-was-in-your-room/index.html": {
+    "sha256": "39fcc378d60a46e624bf3be80b6fe4cb981782261a70316b28406133e0073ba9",
+    "lastmod": "2026-11-21"
   },
   "guides/test-if-supplement-works/index.html": {
     "sha256": "34d06f079d0d5d8fcc64ad023f37d6999d2202c46a0094c518ebfe7f4f0ff06a",
@@ -172,7 +184,7 @@
     "lastmod": "2026-11-12"
   },
   "index.html": {
-    "sha256": "19b31a0a04ad687d8812960585b665b01c7109b6e2364ff195ef7b5bce74800a",
+    "sha256": "49422c1d1d7555c518ef7cd1bb1bf85de2bc2cad6953f3348ca3712fb60d5f17",
     "lastmod": "2026-11-21"
   },
   "mindtype/index.html": {

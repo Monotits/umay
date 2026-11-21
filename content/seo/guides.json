@@ -323,5 +323,74 @@
         "An accessory in the automation is offline. Restart it and check its network connection, then test the automation again."
       ]
     ]
+  },
+  {
+    "slug": "tell-if-someone-was-in-your-room",
+    "product": "pulseguard",
+    "title": "How to Tell If Someone Was in Your Room While You Were Away",
+    "description": "Simple low-tech checks, door and motion sensors, and camera-free monitoring with your Mac: practical ways to know whether someone entered your room or home office.",
+    "image": "assets/Pulse/Guard/guard_04_alarms.png",
+    "caption": "Pulse Guard alerts when the room's WiFi signal changes beyond your threshold.",
+    "body": "<p>Whether it is a shared flat, a home office or a teenager's curiosity, the question is the same: did anyone come in while you were out? You can answer it with no equipment at all, with a cheap sensor, or with the Mac you already leave on the desk.</p><h2>1. Low-tech checks</h2><ul><li>Photograph the room before you leave: chair position, drawer gaps, items on the desk. Compare when you return.</li><li>Place a small, easily disturbed marker, such as a thread across the inside of a door or a paper strip in a drawer.</li><li>Check your computer's login history and recently opened files; on a Mac, a locked screen with a password is the first line of defence.</li></ul><h2>2. Door and motion sensors</h2><p>A contact sensor on the door or a small motion sensor sends a notification and keeps a log with times. They work well but need hardware, batteries and usually an app or hub.</p><h2>3. A camera, if you are comfortable with one</h2><p>An indoor camera gives the clearest answer, but it records video of everyone in the room, which many people do not want in a bedroom or shared space, and footage may be stored in the cloud.</p><h2>4. Camera-free monitoring with your Mac</h2><p>A person moving in a room changes the WiFi signal your Mac receives. <a href=\"/pulseguard/\">Pulse Guard</a> calibrates the empty room, watches the WiFi signal strength from the menu bar and alerts you when the change passes your sensitivity threshold. It also lists nearby Bluetooth devices and marks unknown ones, which can hint that a visitor's phone was in range. Everything stays on the Mac, and Pulse Companion on iPhone sends the alert when you are out.</p><h2>Know the limits</h2><p>Signal changes do not identify a person, and pets, open doors or a moved router can cause changes too. Treat any single method as a hint, not proof, and combine two if it matters. For a real security concern, use a proper alarm system and contact the police.</p>",
+    "faq": [
+      [
+        "How can I tell if someone has been in my room?",
+        "Compare a photo taken before you left, use a simple marker on the door or a drawer, check your computer's login history, or use a door sensor or a camera-free monitor such as Pulse Guard on a Mac."
+      ],
+      [
+        "Can I monitor my room without a camera?",
+        "Yes. Door and motion sensors, or WiFi-based monitoring on a Mac, detect activity without recording video."
+      ],
+      [
+        "Can my phone tell me if someone enters my room?",
+        "Not by itself. A door sensor, a camera, or a Mac running Pulse Guard with Pulse Companion on iPhone can send you a notification."
+      ]
+    ]
+  },
+  {
+    "slug": "home-security-without-camera",
+    "product": "pulseguard",
+    "title": "Home Security Without a Camera: Private Options Compared",
+    "description": "Compare camera-free ways to monitor your home: door and window sensors, motion sensors, smart lock logs, alarm systems and WiFi sensing with a Mac. What each detects and what it costs in privacy.",
+    "image": "assets/Pulse/Guard/guard_01_dashboard.png",
+    "caption": "Pulse Guard's dashboard shows signal changes and nearby devices.",
+    "body": "<p>Cameras are the obvious choice for home security, but they also record you, your family and your guests. If you want to know when something happens without filming it, there are several options. They differ in what they detect, what they cost and what data they keep.</p><h2>Door and window contact sensors</h2><p>Detect when a door or window opens. Reliable and cheap, but they only cover the openings you equip, and you need a hub or app.</p><h2>Motion sensors (PIR)</h2><p>Detect body heat moving across their field of view. Good for hallways and rooms; pets can trigger them unless you choose pet-immune models.</p><h2>Smart locks and doorbells without video</h2><p>Lock logs tell you when a door was unlocked and by which code or key. Useful in homes with several people or regular visitors.</p><h2>Professional alarm systems</h2><p>Combine sensors with monitoring and a siren. The strongest option for break-ins, with ongoing costs.</p><h2>WiFi sensing with a Mac</h2><p>People change WiFi signals as they move. <a href=\"/pulseguard/\">Pulse Guard</a> uses this on a Mac you already own: it calibrates a room, watches the WiFi signal strength and nearby Bluetooth devices, and alerts you when the room changes. No camera and no extra hardware; data stays on the Mac. It is best for a home office or a single room, and it is a hint rather than a certified alarm.</p><h2>How to choose</h2><ul><li>Worried about break-ins: an alarm system with door sensors.</li><li>Want to know when someone enters one room: a motion sensor or WiFi sensing.</li><li>Shared home where privacy matters: avoid cameras in private rooms; use sensors or WiFi sensing.</li><li>Already have a Mac on the desk: try WiFi sensing before buying hardware.</li></ul>",
+    "faq": [
+      [
+        "What is the most private home security option?",
+        "Options that do not record images, such as door sensors, motion sensors or WiFi sensing, keep the most privacy. Check whether data is stored locally or in the cloud."
+      ],
+      [
+        "Can WiFi be used as a motion sensor?",
+        "Yes. Movement changes WiFi signals, and software can detect those changes. Accuracy depends on the room and setup, so it works best as an alert rather than proof."
+      ],
+      [
+        "Do I need extra hardware for WiFi sensing?",
+        "Not with Pulse Guard; it uses the Mac's built-in WiFi and Bluetooth."
+      ]
+    ]
+  },
+  {
+    "slug": "see-bluetooth-devices-nearby-mac",
+    "product": "pulseguard",
+    "title": "How to See Bluetooth Devices Nearby on a Mac",
+    "description": "Find nearby and connected Bluetooth devices on macOS using System Settings and System Information, and keep a list of known versus unknown devices around your Mac with Pulse Guard.",
+    "image": "assets/Pulse/Guard/guard_03_devices.png",
+    "caption": "Pulse Guard lists nearby Bluetooth devices and marks known and unknown ones.",
+    "body": "<p>Your Mac can see more Bluetooth devices than the ones you have paired: phones, headphones, watches and trackers nearby all advertise themselves. Here is how to see them with built-in tools, and how to keep an ongoing list.</p><h2>1. System Settings</h2><p>Open System Settings → Bluetooth. Your paired devices appear under My Devices, and devices that are discoverable right now appear under Nearby Devices.</p><h2>2. Bluetooth in the menu bar</h2><p>Click the Bluetooth icon in the menu bar or Control Center to see connected devices. Holding Option while clicking shows extra details for connected devices.</p><h2>3. System Information</h2><p>Hold Option, open the Apple menu and choose System Information, then select Bluetooth. It lists connected and previously connected devices with technical details.</p><h2>4. A running list of known and unknown devices</h2><p>The built-in views show a moment in time. <a href=\"/pulseguard/\">Pulse Guard</a> scans continuously from the menu bar, records nearby devices and marks them as known or unknown, so a new device appearing near your desk stands out. It runs entirely on the Mac.</p><h2>What this can and cannot tell you</h2><p>Many devices use changing (randomized) Bluetooth addresses and generic names, so you often cannot tell exactly what a device is or who owns it. Treat an unknown device as a hint, not an identification.</p>",
+    "faq": [
+      [
+        "How do I see nearby Bluetooth devices on my Mac?",
+        "Open System Settings → Bluetooth and look under Nearby Devices. For a continuous list, use an app such as Pulse Guard."
+      ],
+      [
+        "Can I see who is near me by Bluetooth?",
+        "You can see devices, not people. Names are often generic and addresses can change, so a device cannot reliably be linked to a person."
+      ],
+      [
+        "How do I see Bluetooth device details on a Mac?",
+        "Hold Option and click the Bluetooth icon in the menu bar, or open System Information and choose Bluetooth."
+      ]
+    ]
   }
 ]

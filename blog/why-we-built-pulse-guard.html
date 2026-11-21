@@ -84,30 +84,26 @@
 <p>This isn't theoretical—it's physics. WiFi operates on the 2.4 GHz and 5 GHz bands. These frequencies interact with the human body in predictable ways. When you move through a WiFi signal's path, you create minute disturbances. Those disturbances are measurable. They're quantifiable. They're usable.</p>
 <p>More importantly: <strong>this data never leaves your device</strong>. There's no image, no face, no identifying information. Just signal patterns. It's the most privacy-respecting way to detect presence possible.</p>
 <h2>How Pulse Guard Actually Works</h2>
-<p>Here's the technical magic that makes this work:</p>
-<p>Your MacBook's WiFi chip continuously measures something called <strong>Channel State Information (CSI)</strong>. This is the detailed state of the wireless channel—essentially a fingerprint of how the signal is being affected by everything in the room. WiFi drivers collect this data constantly; it's just usually discarded.</p>
-<p>Pulse Guard intercepts that CSI data and applies signal processing algorithms to extract movement patterns. When someone is present and moving, the CSI fluctuates in specific ways. Our algorithms learned to recognize these patterns during development. Static objects, dead air, network noise—all have signatures we can distinguish from actual human movement.</p>
-<p>The processing pipeline looks like this:</p>
+<p>Pulse Guard keeps the method simple and on-device:</p>
 <ol>
-<li><strong>CSI collection</strong>: Raw channel state data from your WiFi card, updated hundreds of times per second</li>
-<li><strong>Signal preprocessing</strong>: Filtering out noise and stabilizing the baseline measurement</li>
-<li><strong>Feature extraction</strong>: Converting raw CSI into meaningful movement indicators</li>
-<li><strong>Classification</strong>: Machine learning models determine if the patterns match human presence</li>
-<li><strong>Temporal filtering</strong>: Smoothing out false positives using time-series analysis</li>
+<li><strong>Signal strength sampling</strong>: Through CoreWLAN, the Mac reads the received signal strength (RSSI) of its WiFi connection many times per minute. A body moving between the Mac and the router changes that signal.</li>
+<li><strong>Bluetooth scanning</strong>: The app also lists nearby Bluetooth devices and marks them as known or unknown, which adds context to a signal change.</li>
+<li><strong>Calibration</strong>: During setup you calibrate the empty room, so the app learns its normal signal level and noise.</li>
+<li><strong>Threshold alerts</strong>: Live readings are compared with that baseline; when the change passes the sensitivity you set, Pulse Guard alerts you.</li>
 </ol>
-<p>All of this happens locally, on your machine. No data leaves. No cloud calls. No third parties involved.</p>
+<p>Signal changes do not identify a person, and results depend on the room, the router position and the calibration. Pulse Guard is an extra signal about your space, not a guaranteed intrusion alarm.</p>
+<p>All of this happens locally, on your Mac. No data leaves. No cloud calls. No third parties involved.</p>
 <h2>Why macOS Was the Right Choice</h2>
 <p>Building this required deep access to WiFi hardware and system frameworks. We considered Windows, Linux, even building our own hardware.</p>
-<p>macOS won because of <strong>CoreWLAN</strong>—Apple's native WiFi API. Unlike Windows (where WiFi access is intentionally restricted for security), or Linux (where driver compatibility is a nightmare), macOS lets us interact with the WiFi stack in a controlled, stable way. We get the CSI data we need without jailbreaking or exploiting system vulnerabilities.</p>
+<p>macOS won because of <strong>CoreWLAN</strong>—Apple's native WiFi API. Unlike Windows (where WiFi access is intentionally restricted for security), or Linux (where driver compatibility is a nightmare), macOS lets us interact with the WiFi stack in a controlled, stable way. We can read the signal information we need through public APIs, without disabling security features.</p>
 <p>Beyond that, the macOS ecosystem just feels right for this kind of system software. The kernel is stable. The frameworks are well-designed. We could build something that integrates cleanly into the system without requiring users to disable security features.</p>
 <p>Plus, Mac users tend to care about privacy. They're our audience.</p>
 <h2>The Privacy-First Architecture</h2>
 <p>This is where we genuinely differ from everything else on the market:</p>
 <p><strong>No cameras</strong>: Zero visual data collection. Ever.</p>
 <p><strong>No cloud</strong>: There is no cloud component. Your data doesn't sync anywhere. Your presence patterns stay on your device.</p>
-<p><strong>No training</strong>: We don't need to train models on your specific home. The detection models are universal—they work in any environment because they're looking for the fundamental physics of human movement, not environmental specifics.</p>
+<p><strong>Your calibration, your room</strong>: The baseline is learned from your own room during setup and stays on your Mac.</p>
 <p><strong>No server backend</strong>: There's nothing running on a server about you. No account, no login, no personal data stored anywhere except your Mac's local storage.</p>
-<p><strong>Open processing</strong>: You can inspect exactly what's happening. The algorithms aren't a black box. The architecture is transparent.</p>
 <p>This is genuinely different. Most "privacy-focused" products are just marketing fluff. We built something where privacy is architectural, not aspirational.</p>
 <h2>What Pulse Guard Enables</h2>
 <p>Right now, Pulse Guard detects presence in a room. That's it. But that simple capability opens surprising possibilities:</p>
@@ -120,7 +116,7 @@
 <p>We're already seeing users build interesting workflows around this.</p>
 <h2>What's Next</h2>
 <p>We have plans for Pulse Guard that go beyond basic presence detection:</p>
-<p><strong>Zone-based detection</strong>: Instead of "is anyone home?", detect which specific rooms are occupied. This requires mapping CSI responses to spatial location, a harder problem but fundamentally solvable.</p>
+<p><strong>Zone-based detection</strong>: Instead of "is anyone home?", detect which specific rooms are occupied. This needs more than one signal source, which is why multi-Mac support comes first.</p>
 <p><strong>Multi-room support</strong>: Coordinate detection across multiple Macs to get a whole-home picture of presence patterns.</p>
 <p><strong>Occupancy patterns</strong>: Learn when you're typically home, create intelligent automations based on your actual schedule.</p>
 <p><strong>Integration ecosystem</strong>: APIs for developers to build on top of local presence data.</p>

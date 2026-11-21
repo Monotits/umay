@@ -110,6 +110,9 @@ Build smart home rules on Mac with Pulse Home. Combine presence triggers, HomeKi
 - [How to Make iPhone Video Look Like Film](https://umay.dev/guides/film-look-iphone-video/): Shoot and grade iPhone video for a film look: control exposure and frame rate, avoid over-sharpened footage, then apply a cinematic LUT, soften contrast and add subtle grain with Cinegrade.
 - [How to Slow Down When You Speak Too Fast](https://umay.dev/guides/slow-down-speaking-too-fast/): Find your speaking pace, learn why you speed up, and practise pausing between ideas. A short routine for presentations and interviews, measured with Fenno on iPhone.
 - [HomeKit Automation Not Working? 9 Fixes to Try](https://umay.dev/guides/homekit-automation-not-working/): Why HomeKit automations stop running and how to fix them: home hub status, location access, accessory responses, time and condition settings, and running rules from a Mac instead.
+- [How to Tell If Someone Was in Your Room While You Were Away](https://umay.dev/guides/tell-if-someone-was-in-your-room/): Simple low-tech checks, door and motion sensors, and camera-free monitoring with your Mac: practical ways to know whether someone entered your room or home office.
+- [Home Security Without a Camera: Private Options Compared](https://umay.dev/guides/home-security-without-camera/): Compare camera-free ways to monitor your home: door and window sensors, motion sensors, smart lock logs, alarm systems and WiFi sensing with a Mac. What each detects and what it costs in privacy.
+- [How to See Bluetooth Devices Nearby on a Mac](https://umay.dev/guides/see-bluetooth-devices-nearby-mac/): Find nearby and connected Bluetooth devices on macOS using System Settings and System Information, and keep a list of known versus unknown devices around your Mac with Pulse Guard.
 
 ## Product stories
 
