@@ -141,8 +141,8 @@ def update_product(p):
         return schema(obj)
 
     text = re.sub(r'<script type="application/ld\+json">\s*(.*?)\s*</script>', update_schema, text, flags=re.S)
-    guide = next((g for g in GUIDES if g['product'] == p['slug']), None)
-    guide_link = f'<p><a href="/guides/{guide["slug"]}/">{E(guide["title"])}</a> — a practical guide to getting started.</p>' if guide else '<p><a href="/guides/">Explore our iPhone and Mac app guides</a>.</p>'
+    own = [g for g in GUIDES if g['product'] == p['slug']]
+    guide_link = ('<h3>Guides</h3><ul>' + ''.join(f'<li><a href="/guides/{g["slug"]}/">{E(g["title"])}</a></li>' for g in own) + '</ul>') if own else '<p><a href="/guides/">Explore our iPhone and Mac app guides</a>.</p>'
     tools = [t for t in TOOLS if p['slug'] == 'brolled']
     if tools:
         guide_link += '<h3>Guides for each Brolled tool</h3><ul>' + ''.join(f'<li><a href="/brolled/{t["slug"]}/">{E(t["title"])}</a></li>' for t in tools) + '</ul>'

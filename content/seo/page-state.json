@@ -64,7 +64,7 @@
     "lastmod": "2026-11-12"
   },
   "brolled/index.html": {
-    "sha256": "0d0c6f1ac392a7b62fe44fdd6f43fb6e3a915838688d130ae1e81ab69b50341a",
+    "sha256": "5b80fc5dab9b9e825ceeb2f70584088ba62c4d60e42af32c8e3ad1c88dd918ac",
     "lastmod": "2026-11-21"
   },
   "brolled/lyric-video-maker/index.html": {
@@ -104,16 +104,16 @@
     "lastmod": "2026-11-12"
   },
   "cinegradeapp/index.html": {
-    "sha256": "c7075971cd1de3f4ef2d49056ec88acd71892883ae9025a1fe93b4309dd28e0a",
+    "sha256": "51654ef449e6b09c44ca04d636217e7d47bfcd0a27fd9ca5f9704724c7d47fd3",
     "lastmod": "2026-11-21"
   },
   "cornerman/index.html": {
-    "sha256": "57871aa0ed922880e4c86750450b54381ed016db75765a9b1429b6bdef046397",
-    "lastmod": "2026-11-12"
+    "sha256": "7a1248768dd940aab8cb8f8a05f2325d671bee86685caf3baf8e0a1c647caa38",
+    "lastmod": "2026-11-21"
   },
   "fenno/index.html": {
-    "sha256": "023df9a179d9a41f3703d5514e42af4e72c9cb89ccab75ae3539a770acabda89",
-    "lastmod": "2026-11-12"
+    "sha256": "e9a9fbca68ae454ae36875a7bf503a89e67e9d6691f7126229377932f3d2795a",
+    "lastmod": "2026-11-21"
   },
   "guides/add-captions-iphone-videos/index.html": {
     "sha256": "40942848f15f565e8e42df56d912955fc4cbb29454b0f36fffd8972d34f40c8a",
@@ -188,23 +188,23 @@
     "lastmod": "2026-11-21"
   },
   "mindtype/index.html": {
-    "sha256": "9b67eb4d262fb5fc8f8117075af69bf99f141e682d77703dc3989375ef2dda77",
-    "lastmod": "2026-11-12"
+    "sha256": "280610b8b992c35e066706478e0e0ac7f6e846fffdbad38fc9eeae26d54ff804",
+    "lastmod": "2026-11-21"
   },
   "pulseguard/index.html": {
-    "sha256": "7d12619d18e9b6f16db7fc78e146c25fe23b2a9efee330e1a5877649aa1c7bd9",
-    "lastmod": "2026-11-12"
+    "sha256": "215b8be836c18c31115ba18ee3e471fdab16238a026e1e4763e8168bc2f077a8",
+    "lastmod": "2026-11-21"
   },
   "pulsehome/index.html": {
-    "sha256": "ede422214ff650cfda0ae828a63940998f9e2b75371337b05c55fc1040975a15",
-    "lastmod": "2026-11-12"
+    "sha256": "a38d9383db909f53920eb4f771e3cc0eefc22b6b9fd64894027758d8c3a518ff",
+    "lastmod": "2026-11-21"
   },
   "shadowart/index.html": {
-    "sha256": "ef863e162d4267ba8368c0f9b9b690da547cc481d84153fb2bf3bf4362a7a504",
-    "lastmod": "2026-11-12"
+    "sha256": "dd0a1b9fa9cef9e5c54d2c32cffaa5af27489063b296ddd643a13cd4ec07ebfb",
+    "lastmod": "2026-11-21"
   },
   "supplab/index.html": {
-    "sha256": "f272ed2965749202d4c13e9da8622631b83e93f7af9b207d713faf72188d9008",
-    "lastmod": "2026-11-12"
+    "sha256": "c2463ca6bc9b38d49214e2584e771b34fb35105215f4d175dd0c987a0d74c678",
+    "lastmod": "2026-11-21"
   }
 }
