@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Prisoner&#x27;s Dilemma Explained, With Examples | umay.dev</title>
+  <meta name="description" content="What the Prisoner&#x27;s Dilemma is, the payoff matrix, why defecting is the dominant strategy, how repeated games and tit-for-tat change the outcome, and real-life examples. Play it on iPhone with MindType." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://umay.dev/guides/prisoners-dilemma-explained/" />
+  <link rel="icon" href="/assets/favicon.png" />
+  <link rel="stylesheet" href="/css/umay.css" />
+  <link rel="stylesheet" href="/css/discovery.css" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="umay.dev" />
+  <meta property="og:title" content="The Prisoner&#x27;s Dilemma Explained, With Examples" />
+  <meta property="og:description" content="What the Prisoner&#x27;s Dilemma is, the payoff matrix, why defecting is the dominant strategy, how repeated games and tit-for-tat change the outcome, and real-life examples. Play it on iPhone with MindType." />
+  <meta property="og:url" content="https://umay.dev/guides/prisoners-dilemma-explained/" />
+  <meta property="og:image" content="https://umay.dev/assets/og/mindtype.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@yumaydev" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The Prisoner's Dilemma Explained, With Examples",
+  "description": "What the Prisoner's Dilemma is, the payoff matrix, why defecting is the dominant strategy, how repeated games and tit-for-tat change the outcome, and real-life examples. Play it on iPhone with MindType.",
+  "inLanguage": "en",
+  "mainEntityOfPage": "https://umay.dev/guides/prisoners-dilemma-explained/",
+  "author": {
+    "@type": "Person",
+    "name": "Buğra Günay",
+    "url": "https://umay.dev/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "umay.dev",
+    "url": "https://umay.dev/"
+  },
+  "image": "https://umay.dev/assets/TypeMind/MindType_AppStore_03.png"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Apps",
+      "item": "https://umay.dev/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guides",
+      "item": "https://umay.dev/guides/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "The Prisoner's Dilemma Explained, With Examples",
+      "item": "https://umay.dev/guides/prisoners-dilemma-explained/"
+    }
+  ]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the Prisoner's Dilemma in simple terms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A game where two players each gain by betraying the other, but both end up worse off if both betray than if both cooperate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Nash equilibrium of the Prisoner's Dilemma?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both players defect. Neither can do better by changing only their own choice, even though mutual cooperation pays more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best strategy in the repeated Prisoner's Dilemma?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no single best strategy, but tit-for-tat, cooperating first and then copying the other player's last move, did very well in Axelrod's tournaments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I play the Prisoner's Dilemma online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. MindType for iPhone includes it alongside other game theory games."
+      }
+    }
+  ]
+}
+</script><meta name="apple-itunes-app" content="app-id=6759395676" />
+</head>
+<body>
+  <nav class="discovery-nav" aria-label="Main navigation"><a href="/">umay.dev</a><a href="/#products">Apps</a><a href="/guides/">Guides</a><a href="/blog/">Product stories</a><a href="/about/">About</a></nav>
+  <main class="editorial"><a href="/guides/">All guides</a>
+<h1>The Prisoner&#x27;s Dilemma Explained, With Examples</h1><p class="byline">By <a href="/about/">Buğra Günay</a>, maker of MindType</p>
+<p class="lead">What the Prisoner&#x27;s Dilemma is, the payoff matrix, why defecting is the dominant strategy, how repeated games and tit-for-tat change the outcome, and real-life examples. Play it on iPhone with MindType.</p><p>The Prisoner's Dilemma is the most famous game in game theory. Two players each choose to <strong>cooperate</strong> or <strong>defect</strong> without knowing the other's choice. It shows why two rational people may not cooperate even when cooperating would leave both better off.</p><h2>The classic story</h2><p>Two suspects are questioned separately. If both stay silent (cooperate), each gets a short sentence. If one betrays the other (defects) while the other stays silent, the betrayer goes free and the silent one gets a long sentence. If both betray, both get a medium sentence.</p><h2>The payoff matrix</h2><p>A common version in points, where higher is better:</p><ul><li>Both cooperate: 3 each.</li><li>One defects, one cooperates: the defector gets 5, the cooperator 0.</li><li>Both defect: 1 each.</li></ul><h2>Why defecting is the dominant strategy</h2><p>Whatever the other player does, you score more by defecting: 5 instead of 3 if they cooperate, 1 instead of 0 if they defect. If both reason this way, both defect and get 1, although mutual cooperation would have given each 3. That gap between individual and group interest is the dilemma. Mutual defection is the game's Nash equilibrium.</p><h2>Repeated games change everything</h2><p>When the same players meet many times, cooperation can pay. In Robert Axelrod's computer tournaments in the early 1980s, a simple strategy called <strong>tit-for-tat</strong>, cooperate first and then copy the other player's last move, performed very well. It is nice, retaliates, forgives and is easy to read.</p><h2>Real-life examples</h2><ul><li>Two companies deciding whether to cut prices.</li><li>Countries deciding whether to cut emissions or arms.</li><li>Colleagues deciding whether to share credit or take it.</li><li>Doping in sport, where each athlete gains by cheating if others do not.</li></ul><h2>What your choices say about you</h2><p>How quickly you cooperate, how you respond after being betrayed and whether you forgive are a mirror of how you handle trust under uncertainty.</p><p>You can play this scenario, and other classic game theory games such as Trust and Ultimatum, in <a href="/mindtype/">MindType</a> for iPhone. Each game takes about three minutes and shows how your choices compare. MindType is for self-discovery and education, not a psychological assessment.</p><figure><img src="/assets/optimized/mindtype-appstore-03-a1dc0a70211d-640.webp" alt="MindType analyzes your choices after each game." loading="lazy" srcset="/assets/optimized/mindtype-appstore-03-a1dc0a70211d-320.webp 320w, /assets/optimized/mindtype-appstore-03-a1dc0a70211d-640.webp 640w, /assets/optimized/mindtype-appstore-03-a1dc0a70211d-960.webp 960w" sizes="(max-width: 600px) 220px, 320px" width="640" height="1385" decoding="async" /><figcaption>MindType analyzes your choices after each game.</figcaption></figure><h2>Frequently asked questions</h2><details open><summary>What is the Prisoner&#x27;s Dilemma in simple terms?</summary><p>A game where two players each gain by betraying the other, but both end up worse off if both betray than if both cooperate.</p></details><details open><summary>What is the Nash equilibrium of the Prisoner&#x27;s Dilemma?</summary><p>Both players defect. Neither can do better by changing only their own choice, even though mutual cooperation pays more.</p></details><details open><summary>What is the best strategy in the repeated Prisoner&#x27;s Dilemma?</summary><p>There is no single best strategy, but tit-for-tat, cooperating first and then copying the other player&#x27;s last move, did very well in Axelrod&#x27;s tournaments.</p></details><details open><summary>Can I play the Prisoner&#x27;s Dilemma online?</summary><p>Yes. MindType for iPhone includes it alongside other game theory games.</p></details>
+<aside class="discovery-panel"><h2>Try MindType</h2><p>Explore your decision-making patterns with short game theory scenarios on iPhone. Play trust, cooperation and risk games, then review your decision profile.</p><p><a href="/mindtype/">Explore MindType, features and pricing</a></p><a class="store-link" href="https://apps.apple.com/app/mindtype-decision-mirror/id6759395676?pt=122335453&amp;ct=web-guide-prisoners-dilemma-explained" data-goatcounter-click="appstore-mindtype" data-goatcounter-title="/guides/prisoners-dilemma-explained/">View on App Store</a></aside></main>
+  <footer class="discovery-nav"><a href="/">All apps by umay.dev</a><a href="/about/">About the developer</a><a href="mailto:experlercom@gmail.com">Contact &amp; support</a></footer>
+<!-- analytics:start --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "78b70c3491364f68a80c8d51408c56d0"}'></script><script data-goatcounter="https://yumay.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script><!-- analytics:end -->
+</body>
+</html>

@@ -1,6 +1,6 @@
 {
   "about/index.html": {
-    "sha256": "3a3cb98e197f5bd302c3dedd1bd773637af39523da5ee7b4f861dfb9c1ee2dbe",
+    "sha256": "13701f061e61ed3a5500ad3773d11d106744d2b0605dc2f64a27d552b2f6edca",
     "lastmod": "2026-11-21"
   },
   "blog/building-the-ultimate-meme-maker.html": {
@@ -123,6 +123,10 @@
     "sha256": "48a62f946b1984835890bf7cb55def3a446410482aeb13d763d325f3c3645d77",
     "lastmod": "2026-11-21"
   },
+  "guides/cognitive-biases-in-decisions/index.html": {
+    "sha256": "625f5af3fedbd51334aa7d137cdd0634fba4defefdb5b7e02a583401bc6c6c80",
+    "lastmod": "2026-11-21"
+  },
   "guides/decision-making-style-game-theory/index.html": {
     "sha256": "e66a798f8da10731fa230a4d3c4df2f21d8b4dbb70b9457753dd3ab2e5704d27",
     "lastmod": "2026-11-12"
@@ -144,11 +148,15 @@
     "lastmod": "2026-11-21"
   },
   "guides/index.html": {
-    "sha256": "20973933872cbef6defa853221fa12c48ef135439ff9a2bfa44e36ee4ef0f2df",
+    "sha256": "32c05e9b86ce9513f3abcfc938f3c7b83349b7005084702869cbf74beac97713",
     "lastmod": "2026-11-21"
   },
   "guides/mac-homekit-hub/index.html": {
     "sha256": "e90f52ef9e7f60830eeadb0a0c24ca4858e6a843f6d9247fd0e075b8309cf651",
+    "lastmod": "2026-11-21"
+  },
+  "guides/prisoners-dilemma-explained/index.html": {
+    "sha256": "2e46120e5cfcbe79f7574e2a34eb83c8a5d523f6894f9d69ebb90cf57ad2bf02",
     "lastmod": "2026-11-21"
   },
   "guides/private-mood-tracking-iphone/index.html": {
@@ -179,16 +187,24 @@
     "sha256": "34d06f079d0d5d8fcc64ad023f37d6999d2202c46a0094c518ebfe7f4f0ff06a",
     "lastmod": "2026-11-12"
   },
+  "guides/trust-game-explained/index.html": {
+    "sha256": "66460fd24b636e9d0684345c38d42dc48824521fa553a25ce533bf01d38743ff",
+    "lastmod": "2026-11-21"
+  },
+  "guides/ultimatum-game-explained/index.html": {
+    "sha256": "1a1a69abe49fde4dbae159fd3f94e8bcd32a16dd6404ef9ed2190febb569b262",
+    "lastmod": "2026-11-21"
+  },
   "guides/wifi-signal-monitoring-mac/index.html": {
     "sha256": "07cbaab4e97faf65f9b28effbe78a4ee5be93725a5d2b8f23ad71b5c0d61aeef",
     "lastmod": "2026-11-12"
   },
   "index.html": {
-    "sha256": "49422c1d1d7555c518ef7cd1bb1bf85de2bc2cad6953f3348ca3712fb60d5f17",
+    "sha256": "30e584ba133349ac79c96037307df7c37e4bc164b200daf6a5d2346b86594028",
     "lastmod": "2026-11-21"
   },
   "mindtype/index.html": {
-    "sha256": "280610b8b992c35e066706478e0e0ac7f6e846fffdbad38fc9eeae26d54ff804",
+    "sha256": "0906f1347f0a6cd986326e40d5f13ac3e42f289be3adcff9f8f1906dca6266ae",
     "lastmod": "2026-11-21"
   },
   "pulseguard/index.html": {

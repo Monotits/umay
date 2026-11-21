@@ -392,5 +392,109 @@
         "Hold Option and click the Bluetooth icon in the menu bar, or open System Information and choose Bluetooth."
       ]
     ]
+  },
+  {
+    "slug": "prisoners-dilemma-explained",
+    "product": "mindtype",
+    "title": "The Prisoner's Dilemma Explained, With Examples",
+    "description": "What the Prisoner's Dilemma is, the payoff matrix, why defecting is the dominant strategy, how repeated games and tit-for-tat change the outcome, and real-life examples. Play it on iPhone with MindType.",
+    "image": "assets/TypeMind/MindType_AppStore_03.png",
+    "caption": "MindType analyzes your choices after each game.",
+    "body": "<p>The Prisoner's Dilemma is the most famous game in game theory. Two players each choose to <strong>cooperate</strong> or <strong>defect</strong> without knowing the other's choice. It shows why two rational people may not cooperate even when cooperating would leave both better off.</p><h2>The classic story</h2><p>Two suspects are questioned separately. If both stay silent (cooperate), each gets a short sentence. If one betrays the other (defects) while the other stays silent, the betrayer goes free and the silent one gets a long sentence. If both betray, both get a medium sentence.</p><h2>The payoff matrix</h2><p>A common version in points, where higher is better:</p><ul><li>Both cooperate: 3 each.</li><li>One defects, one cooperates: the defector gets 5, the cooperator 0.</li><li>Both defect: 1 each.</li></ul><h2>Why defecting is the dominant strategy</h2><p>Whatever the other player does, you score more by defecting: 5 instead of 3 if they cooperate, 1 instead of 0 if they defect. If both reason this way, both defect and get 1, although mutual cooperation would have given each 3. That gap between individual and group interest is the dilemma. Mutual defection is the game's Nash equilibrium.</p><h2>Repeated games change everything</h2><p>When the same players meet many times, cooperation can pay. In Robert Axelrod's computer tournaments in the early 1980s, a simple strategy called <strong>tit-for-tat</strong>, cooperate first and then copy the other player's last move, performed very well. It is nice, retaliates, forgives and is easy to read.</p><h2>Real-life examples</h2><ul><li>Two companies deciding whether to cut prices.</li><li>Countries deciding whether to cut emissions or arms.</li><li>Colleagues deciding whether to share credit or take it.</li><li>Doping in sport, where each athlete gains by cheating if others do not.</li></ul><h2>What your choices say about you</h2><p>How quickly you cooperate, how you respond after being betrayed and whether you forgive are a mirror of how you handle trust under uncertainty.</p><p>You can play this scenario, and other classic game theory games such as Trust and Ultimatum, in <a href=\"/mindtype/\">MindType</a> for iPhone. Each game takes about three minutes and shows how your choices compare. MindType is for self-discovery and education, not a psychological assessment.</p>",
+    "faq": [
+      [
+        "What is the Prisoner's Dilemma in simple terms?",
+        "A game where two players each gain by betraying the other, but both end up worse off if both betray than if both cooperate."
+      ],
+      [
+        "What is the Nash equilibrium of the Prisoner's Dilemma?",
+        "Both players defect. Neither can do better by changing only their own choice, even though mutual cooperation pays more."
+      ],
+      [
+        "What is the best strategy in the repeated Prisoner's Dilemma?",
+        "There is no single best strategy, but tit-for-tat, cooperating first and then copying the other player's last move, did very well in Axelrod's tournaments."
+      ],
+      [
+        "Can I play the Prisoner's Dilemma online?",
+        "Yes. MindType for iPhone includes it alongside other game theory games."
+      ]
+    ]
+  },
+  {
+    "slug": "ultimatum-game-explained",
+    "product": "mindtype",
+    "title": "The Ultimatum Game Explained: Fairness vs. Self-Interest",
+    "description": "How the Ultimatum game works, what game theory predicts, what people actually do, why low offers get rejected and what your choices reveal about fairness. Play it on iPhone with MindType.",
+    "image": "assets/TypeMind/MindType_AppStore_03.png",
+    "caption": "MindType analyzes your choices after each game.",
+    "body": "<p>In the Ultimatum game, one player, the <strong>proposer</strong>, is given an amount of money and offers a split to a second player, the <strong>responder</strong>. If the responder accepts, both get the split. If the responder rejects, both get nothing.</p><h2>What theory predicts</h2><p>If both only care about money, the responder should accept any offer above zero, since something beats nothing. Knowing that, the proposer should offer the smallest possible amount.</p><h2>What people actually do</h2><p>In experiments since the early 1980s, people rarely behave that way. Proposers commonly offer between 40 and 50 percent, and responders often reject offers below roughly 20 to 30 percent, giving up money to punish what they see as unfairness. Results vary across cultures and stakes, but the pattern is robust.</p><h2>Why people reject free money</h2><ul><li>Fairness: an unequal split feels insulting.</li><li>Reciprocity: punishing a greedy proposer enforces norms.</li><li>Emotion: anger at a low offer can outweigh the small gain.</li></ul><h2>Ultimatum vs. Dictator game</h2><p>In the Dictator game the responder cannot reject. Offers drop, but many people still give something, which separates real generosity from fear of rejection.</p><h2>What your choices reveal</h2><p>As proposer, your offer shows how you balance self-interest and fairness. As responder, your threshold shows how much you are willing to pay to resist unfair treatment.</p><p>You can play this scenario, and other classic game theory games such as Trust and Ultimatum, in <a href=\"/mindtype/\">MindType</a> for iPhone. Each game takes about three minutes and shows how your choices compare. MindType is for self-discovery and education, not a psychological assessment.</p>",
+    "faq": [
+      [
+        "What is the Ultimatum game?",
+        "A two-player game where one proposes how to split money and the other accepts or rejects. Rejection leaves both with nothing."
+      ],
+      [
+        "Why do people reject offers in the Ultimatum game?",
+        "Because they see low offers as unfair and are willing to give up money to punish them."
+      ],
+      [
+        "What is a typical offer in the Ultimatum game?",
+        "Experiments commonly find offers of 40 to 50 percent, with offers below about 20 to 30 percent often rejected."
+      ],
+      [
+        "What is the difference between the Ultimatum and Dictator games?",
+        "In the Dictator game the receiver cannot reject the offer, so it measures generosity without the threat of rejection."
+      ]
+    ]
+  },
+  {
+    "slug": "trust-game-explained",
+    "product": "mindtype",
+    "title": "The Trust Game Explained: How Much Would You Send?",
+    "description": "How the Trust (investment) game works, what economists expected, what Berg, Dickhaut and McCabe found, and what sending and returning say about trust and reciprocity. Play it on iPhone with MindType.",
+    "image": "assets/TypeMind/MindType_AppStore_03.png",
+    "caption": "MindType analyzes your choices after each game.",
+    "body": "<p>The Trust game, also called the investment game, measures how much people trust strangers and how much they repay trust. It was popularised by Joyce Berg, John Dickhaut and Kevin McCabe in 1995.</p><h2>How it works</h2><ol><li>The <strong>investor</strong> receives an amount, say $10, and chooses how much to send to a <strong>trustee</strong>.</li><li>Whatever is sent is tripled.</li><li>The trustee decides how much of the tripled amount to send back.</li></ol><p>If the investor sends $10, the trustee receives $30 and could return $15, leaving both better off than if nothing had been sent.</p><h2>The prediction and the reality</h2><p>If everyone only maximises money, the trustee returns nothing, so the investor should send nothing. In experiments, most investors send something, often around half, and many trustees return enough to make trust pay, though returns vary widely.</p><h2>What it measures</h2><ul><li>Sending measures <strong>trust</strong>: your willingness to take a risk on someone you do not know.</li><li>Returning measures <strong>reciprocity</strong>: whether you repay trust when you could keep everything.</li></ul><h2>Why it matters</h2><p>Trust lowers the cost of cooperation in teams, markets and friendships. People and societies with higher trust can do more together, while misplaced trust can be exploited. Noticing your own default helps you decide when to extend trust and when to verify first.</p><p>You can play this scenario, and other classic game theory games such as Trust and Ultimatum, in <a href=\"/mindtype/\">MindType</a> for iPhone. Each game takes about three minutes and shows how your choices compare. MindType is for self-discovery and education, not a psychological assessment.</p>",
+    "faq": [
+      [
+        "What is the Trust game in economics?",
+        "A two-player game where an investor sends money to a trustee, the amount is multiplied, and the trustee decides how much to return."
+      ],
+      [
+        "Who created the Trust game?",
+        "It was introduced in a 1995 study by Joyce Berg, John Dickhaut and Kevin McCabe."
+      ],
+      [
+        "What does the Trust game measure?",
+        "How much people trust strangers (what they send) and how much they reciprocate (what they return)."
+      ]
+    ]
+  },
+  {
+    "slug": "cognitive-biases-in-decisions",
+    "product": "mindtype",
+    "title": "Loss Aversion, Anchoring and Status Quo Bias: Spot Them in Your Decisions",
+    "description": "Three common cognitive biases explained with everyday examples and simple self-tests: loss aversion, the anchoring effect and status quo bias, plus how to catch them in your own choices.",
+    "image": "assets/TypeMind/MindType_AppStore_03.png",
+    "caption": "MindType analyzes your choices after each game.",
+    "body": "<p>Cognitive biases are systematic shortcuts in thinking that push decisions in predictable directions. Three of the best documented, studied by Daniel Kahneman, Amos Tversky and others, show up in money, work and everyday choices.</p><h2>Loss aversion</h2><p>Losses feel more painful than equal gains feel good; many studies suggest roughly twice as strong. <strong>Self-test:</strong> would you take a coin flip that loses $100 on tails and wins $150 on heads? Many people refuse, although the expected value is positive.</p><p><strong>Counter it:</strong> judge the decision by its overall expected outcome, not by the possible loss alone.</p><h2>Anchoring effect</h2><p>The first number you see pulls later estimates toward it, even when it is irrelevant. A high \"original price\" makes a discount look bigger; a first salary offer frames the negotiation.</p><p><strong>Counter it:</strong> form your own estimate before you look at someone else's number, and consider deliberately the opposite anchor.</p><h2>Status quo bias</h2><p>We prefer things to stay as they are, so the default option wins more often than it should: the same insurance plan, the same subscription, the same route.</p><p><strong>Counter it:</strong> ask \"if I were choosing from scratch today, would I pick this?\"</p><h2>Catching biases in yourself</h2><p>Biases are easier to see in other people. Short decision games where your choices are recorded make your own patterns visible. <a href=\"/mindtype/\">MindType</a> for iPhone looks for 11 cognitive biases, including loss aversion, anchoring and status quo bias, across its game theory scenarios. It is for self-discovery and education, not a psychological assessment.</p>",
+    "faq": [
+      [
+        "What is loss aversion?",
+        "The tendency to feel losses more strongly than equivalent gains, which makes people avoid bets with a positive expected value."
+      ],
+      [
+        "What is an example of the anchoring effect?",
+        "Seeing a high original price makes a sale price look like a better deal, even if the original price was never realistic."
+      ],
+      [
+        "How do I avoid status quo bias?",
+        "Ask whether you would choose the current option if you were deciding from scratch today, and compare it with alternatives on equal terms."
+      ],
+      [
+        "Is there a test for cognitive biases?",
+        "Decision games that record your choices can reveal patterns. MindType for iPhone detects 11 biases across its game theory scenarios."
+      ]
+    ]
   }
 ]
