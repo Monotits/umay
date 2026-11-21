@@ -91,6 +91,7 @@ Build smart home rules on Mac with Pulse Home. Combine presence triggers, HomeKi
 - [Lyric Video Maker for iPhone](https://umay.dev/brolled/lyric-video-maker/): Add animated lyrics over your videos on iPhone with Brolled's Lyric Video Maker and export a vertical lyric video for TikTok, Reels and Shorts.
 - [Top 5 Ranking Video Maker for iPhone](https://umay.dev/brolled/top-5-ranking-video-maker/): Create countdown "Top 5" ranking videos from five clips on iPhone. Brolled builds the countdown layout so viewers keep watching until number one.
 - [Fake Incoming Call Video Maker for iPhone](https://umay.dev/brolled/fake-call-video-maker/): Overlay a fake incoming-call screen on your video for comedy skits and storytelling. Set the caller name, photo and ring duration in Brolled for iPhone.
+- [Fake iPhone Notification Video Maker](https://umay.dev/brolled/fake-notification-video-maker/): Overlay iOS-style notification banners on your video for comedy and storytelling. Set the sender, message and timing in Brolled for iPhone, then export for TikTok, Reels and Shorts.
 
 ## Guides
 

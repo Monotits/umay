@@ -48,16 +48,20 @@
     "lastmod": "2026-11-12"
   },
   "brolled/fake-call-video-maker/index.html": {
-    "sha256": "b4cf7d56f3a5d18022b238a07192c8ce85d7aa479e92febd00e5a0f42dc07e6e",
-    "lastmod": "2026-11-12"
+    "sha256": "e8f1fa0e912994ee49826d570c25dcdd13051eab1e37abf57a762eb01661a336",
+    "lastmod": "2026-11-21"
+  },
+  "brolled/fake-notification-video-maker/index.html": {
+    "sha256": "b4574ce817f4a0c71e5fb70e50c21c7ccfe31f52cf839058f5b1833a3aad76b9",
+    "lastmod": "2026-11-21"
   },
   "brolled/fake-text-message-video-maker/index.html": {
     "sha256": "3a6db6ad326d5d60ce9668c13e39a99ff67100a8dff144e7f625cca0f41ac6ec",
     "lastmod": "2026-11-12"
   },
   "brolled/index.html": {
-    "sha256": "0209bc46f42d973367fb5b9e54b096444596c5e2483ff7aba05fdecde89c944a",
-    "lastmod": "2026-11-12"
+    "sha256": "396d3731dd62d1f5f5a45289477dc98a90f5aa73c2e2ee31b442be98861d2695",
+    "lastmod": "2026-11-21"
   },
   "brolled/lyric-video-maker/index.html": {
     "sha256": "307673ac705ab3aecf102d91ae27c631389d474b939c432f73528b1c6c2ff01b",
@@ -124,12 +128,12 @@
     "lastmod": "2026-11-12"
   },
   "guides/index.html": {
-    "sha256": "10710fcb7af7ed39330845a15c0def565b8c26df252e1027b485ff70ceea8c16",
-    "lastmod": "2026-11-12"
+    "sha256": "918df0533aa0c0a882652a59ed88b5b701a7460ce8398e2023c139895296a13c",
+    "lastmod": "2026-11-21"
   },
   "guides/mac-homekit-hub/index.html": {
-    "sha256": "df72435a98619e5a40d5140485e3f437efdb634db83816008d90bc5ca64704fb",
-    "lastmod": "2026-11-12"
+    "sha256": "e90f52ef9e7f60830eeadb0a0c24ca4858e6a843f6d9247fd0e075b8309cf651",
+    "lastmod": "2026-11-21"
   },
   "guides/private-mood-tracking-iphone/index.html": {
     "sha256": "db198708f52266470160cfe754b6966876665ef448c9dcf5245df2a2d143f451",

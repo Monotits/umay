@@ -772,7 +772,58 @@
     "related": [
       "fake-text-message-video-maker",
       "directed-by-robert-b-weide-meme",
-      "a-few-moments-later-meme"
+      "fake-notification-video-maker"
+    ]
+  },
+  {
+    "slug": "fake-notification-video-maker",
+    "tool": "Fake Notification",
+    "title": "Fake iPhone Notification Video Maker",
+    "description": "Overlay iOS-style notification banners on your video for comedy and storytelling. Set the sender, message and timing in Brolled for iPhone, then export for TikTok, Reels and Shorts.",
+    "h1": "Add fake iPhone notifications to your video",
+    "intro": "A notification that drops in at the wrong moment is a fast setup for a joke or a plot twist. Brolled's Fake Notification tool places iOS-style notification banners over your video, with the sender, message and timing you choose.",
+    "steps": [
+      [
+        "Open Fake Notification",
+        "Choose the Fake Notification tool in Brolled and add your clip."
+      ],
+      [
+        "Write the notification",
+        "Set the sender name and the message text."
+      ],
+      [
+        "Time it",
+        "Choose when the banner drops in. Right before the reaction works best."
+      ],
+      [
+        "Export",
+        "Preview and export the vertical video."
+      ]
+    ],
+    "tips": [
+      "Keep the message short enough to read in under two seconds.",
+      "Cut to your reaction right after the banner appears.",
+      "Pair it with Fake Call or a texting story for a longer skit.",
+      "Use it for clearly fictional comedy. Do not use it to mislead people or impersonate someone."
+    ],
+    "faq": [
+      [
+        "What can I customise?",
+        "The sender, the message text and when the notification appears in the video."
+      ],
+      [
+        "Does it look like an iPhone notification?",
+        "The banner follows the iOS notification style so viewers recognise it instantly."
+      ],
+      [
+        "Is it free?",
+        "All Brolled tools are unlocked in the free download, which includes 3 free credits. Free exports are SD with a watermark."
+      ]
+    ],
+    "related": [
+      "fake-call-video-maker",
+      "fake-text-message-video-maker",
+      "directed-by-robert-b-weide-meme"
     ]
   }
 ]

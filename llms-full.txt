@@ -582,6 +582,15 @@ Pulse Home turns a Mac that is usually on at home into an automation engine. Cre
 - A MacBook that leaves the house takes its automations with it; a desktop Mac or a Mac mini is a better fit.
 
 ### FAQ
+Q: Can HomePod act as a home hub for HomeKit?
+A: Yes. A HomePod or HomePod mini that stays at home can be your home hub. You choose it in the Home app under Home Settings → Home Hubs & Bridges.
+
+Q: Can Apple TV be a HomeKit hub?
+A: Yes. An Apple TV that stays at home and is signed in to the same Apple Account can act as a home hub.
+
+Q: Can an iPad still be a home hub?
+A: Not with the current Home architecture. Apple TV and HomePod are the supported home hubs.
+
 Q: Can a Mac mini be a HomeKit hub?
 A: Not as an official home hub in the Home app. A Mac mini can still run automation rules and control HomeKit accessories with an app like Pulse Home while it stays on.
 
@@ -1077,3 +1086,30 @@ A: It is designed for comedy and storytelling videos. Do not use it to deceive o
 
 Q: Is there a fake notification tool too?
 A: Yes. Brolled also includes Fake Notification for iOS-style notification banners over your video.
+
+## Fake iPhone Notification Video Maker
+URL: https://umay.dev/brolled/fake-notification-video-maker/
+
+A notification that drops in at the wrong moment is a fast setup for a joke or a plot twist. Brolled's Fake Notification tool places iOS-style notification banners over your video, with the sender, message and timing you choose.
+
+### Steps
+1. Open Fake Notification: Choose the Fake Notification tool in Brolled and add your clip.
+2. Write the notification: Set the sender name and the message text.
+3. Time it: Choose when the banner drops in. Right before the reaction works best.
+4. Export: Preview and export the vertical video.
+
+### Tips
+- Keep the message short enough to read in under two seconds.
+- Cut to your reaction right after the banner appears.
+- Pair it with Fake Call or a texting story for a longer skit.
+- Use it for clearly fictional comedy. Do not use it to mislead people or impersonate someone.
+
+### FAQ
+Q: What can I customise?
+A: The sender, the message text and when the notification appears in the video.
+
+Q: Does it look like an iPhone notification?
+A: The banner follows the iOS notification style so viewers recognise it instantly.
+
+Q: Is it free?
+A: All Brolled tools are unlocked in the free download, which includes 3 free credits. Free exports are SD with a watermark.

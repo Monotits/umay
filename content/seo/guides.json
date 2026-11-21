@@ -230,6 +230,18 @@
     "body": "<p>Short answer: no Mac, including a Mac mini or MacBook, can be the official home hub in Apple's Home app. That role belongs to Apple TV and HomePod. The hub is what Apple uses for remote access, shared control and many automations. A Mac can still do useful hub-like work: it can control HomeKit accessories and run automation rules of its own while it stays on at home.</p><h2>What an Apple home hub does</h2><p>A home hub keeps your accessories reachable when you are away, lets other people in your home control them, and runs automations that do not depend on one person's iPhone. Without a hub, many of these features are unavailable.</p><h2>What a Mac can do instead</h2><ul><li>Control HomeKit accessories through apps that use Apple's HomeKit framework.</li><li>Run rules locally, triggered by presence, location zones or time, without a cloud service.</li><li>Send webhooks to Home Assistant, Node-RED or IFTTT for devices outside HomeKit.</li></ul><h2>Setting it up with Pulse Home</h2><p>Pulse Home turns a Mac that is usually on at home into an automation engine. Create rules in the visual rule builder with a trigger (WiFi presence or a geofence), optional conditions and delays, and actions such as HomeKit scenes or webhooks. Rules run on the Mac, and the menu bar shows their status. See the guide on <a href=\"/guides/homekit-automation-arrive-leave-mac/\">arrive and leave automations</a> for a step-by-step rule.</p><h2>Limits to plan for</h2><ul><li>The Mac must be on and awake for rules to run; set Energy Saver accordingly.</li><li>It does not replace an Apple TV or HomePod for remote access or shared control in the Home app.</li><li>A MacBook that leaves the house takes its automations with it; a desktop Mac or a Mac mini is a better fit.</li></ul>",
     "faq": [
       [
+        "Can HomePod act as a home hub for HomeKit?",
+        "Yes. A HomePod or HomePod mini that stays at home can be your home hub. You choose it in the Home app under Home Settings → Home Hubs & Bridges."
+      ],
+      [
+        "Can Apple TV be a HomeKit hub?",
+        "Yes. An Apple TV that stays at home and is signed in to the same Apple Account can act as a home hub."
+      ],
+      [
+        "Can an iPad still be a home hub?",
+        "Not with the current Home architecture. Apple TV and HomePod are the supported home hubs."
+      ],
+      [
         "Can a Mac mini be a HomeKit hub?",
         "Not as an official home hub in the Home app. A Mac mini can still run automation rules and control HomeKit accessories with an app like Pulse Home while it stays on."
       ],
