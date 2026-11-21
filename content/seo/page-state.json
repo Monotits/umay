@@ -1,6 +1,6 @@
 {
   "about/index.html": {
-    "sha256": "13701f061e61ed3a5500ad3773d11d106744d2b0605dc2f64a27d552b2f6edca",
+    "sha256": "4d3e111184012c7dc91d4f67bd1daad17c4f1f2eca379bcfaf5f1902d669f939",
     "lastmod": "2026-11-21"
   },
   "blog/building-the-ultimate-meme-maker.html": {
@@ -119,17 +119,21 @@
     "sha256": "40942848f15f565e8e42df56d912955fc4cbb29454b0f36fffd8972d34f40c8a",
     "lastmod": "2026-11-12"
   },
+  "guides/am-i-too-trusting/index.html": {
+    "sha256": "eab55ed8ed31dff0d09f7ff222f8adf5a69251424aa513a2bcab877fbbe6d54a",
+    "lastmod": "2026-11-21"
+  },
   "guides/cinematic-luts-iphone/index.html": {
     "sha256": "48a62f946b1984835890bf7cb55def3a446410482aeb13d763d325f3c3645d77",
     "lastmod": "2026-11-21"
   },
   "guides/cognitive-biases-in-decisions/index.html": {
-    "sha256": "625f5af3fedbd51334aa7d137cdd0634fba4defefdb5b7e02a583401bc6c6c80",
+    "sha256": "9bc33a9801c808812ac3d7f941efdcbf7256ea6a803b893faa0d6bd76accd2c2",
     "lastmod": "2026-11-21"
   },
   "guides/decision-making-style-game-theory/index.html": {
-    "sha256": "e66a798f8da10731fa230a4d3c4df2f21d8b4dbb70b9457753dd3ab2e5704d27",
-    "lastmod": "2026-11-12"
+    "sha256": "e91cdc40c2153c57f35e26b72f91271b233133e96541fc0b2f506e2e27be45fd",
+    "lastmod": "2026-11-21"
   },
   "guides/film-look-iphone-video/index.html": {
     "sha256": "0430cdc1ce93ea4c5fe5a9730e066689c5c31ed7e19e4d71e6b133a7947c047d",
@@ -148,15 +152,19 @@
     "lastmod": "2026-11-21"
   },
   "guides/index.html": {
-    "sha256": "32c05e9b86ce9513f3abcfc938f3c7b83349b7005084702869cbf74beac97713",
+    "sha256": "c6fa8e7d42a69be4928948f6ed96051861b9608ead8f08535de9550148b616bf",
     "lastmod": "2026-11-21"
   },
   "guides/mac-homekit-hub/index.html": {
     "sha256": "e90f52ef9e7f60830eeadb0a0c24ca4858e6a843f6d9247fd0e075b8309cf651",
     "lastmod": "2026-11-21"
   },
+  "guides/personality-test-without-email/index.html": {
+    "sha256": "350e087dbd14bdff2715cf31e94e99e1062fdba9d8e7d0c9410158bd9f7e4201",
+    "lastmod": "2026-11-21"
+  },
   "guides/prisoners-dilemma-explained/index.html": {
-    "sha256": "2e46120e5cfcbe79f7574e2a34eb83c8a5d523f6894f9d69ebb90cf57ad2bf02",
+    "sha256": "69418ee4ae300268673cd194341193c4aab2964efc452bd7e15694784a39f9a5",
     "lastmod": "2026-11-21"
   },
   "guides/private-mood-tracking-iphone/index.html": {
@@ -188,11 +196,11 @@
     "lastmod": "2026-11-12"
   },
   "guides/trust-game-explained/index.html": {
-    "sha256": "66460fd24b636e9d0684345c38d42dc48824521fa553a25ce533bf01d38743ff",
+    "sha256": "914ac7ed9c05cabaaacd9ae1f7cf1d41bed295727441fb49118f2e4b57f45bb2",
     "lastmod": "2026-11-21"
   },
   "guides/ultimatum-game-explained/index.html": {
-    "sha256": "1a1a69abe49fde4dbae159fd3f94e8bcd32a16dd6404ef9ed2190febb569b262",
+    "sha256": "c6bd57d083d368b1eec7ce19e2e63ddcf31beb6d6e4de3d70b500663a098b159",
     "lastmod": "2026-11-21"
   },
   "guides/wifi-signal-monitoring-mac/index.html": {
@@ -200,11 +208,11 @@
     "lastmod": "2026-11-12"
   },
   "index.html": {
-    "sha256": "30e584ba133349ac79c96037307df7c37e4bc164b200daf6a5d2346b86594028",
+    "sha256": "6e44b52acf55b1e943bdd301988bba0b6e1d5f5a895c9558857ac0e27285d03c",
     "lastmod": "2026-11-21"
   },
   "mindtype/index.html": {
-    "sha256": "0906f1347f0a6cd986326e40d5f13ac3e42f289be3adcff9f8f1906dca6266ae",
+    "sha256": "b630581ad46e9d2e75ae23f6dae60988196a56924a462cdf2897650bc322df01",
     "lastmod": "2026-11-21"
   },
   "pulseguard/index.html": {

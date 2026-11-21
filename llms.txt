@@ -13,12 +13,12 @@ Track your mood, keep a personal journal and explore reflection prompts on iPhon
 - Guide: [How to Keep a Private Mood Journal on iPhone](https://umay.dev/guides/private-mood-tracking-iphone/)
 
 ### MindType
-Explore your decision-making patterns with short game theory scenarios on iPhone. Play trust, cooperation and risk games, then review your decision profile.
+A personality test based on what you do, not what you say. Play short game theory scenarios on iPhone, then see your decision type, 10 dimensions and biases. Free, no email.
 - Platform: iOS
 - Official page: https://umay.dev/mindtype/
 - App Store: https://apps.apple.com/app/mindtype-decision-mirror/id6759395676
 - Privacy policy: https://umay.dev/mindtype-privacy-policy.html
-- Guide: [How to Discover Your Decision-Making Style with Game Theory](https://umay.dev/guides/decision-making-style-game-theory/)
+- Guide: [What Is My Decision-Making Style? A Test You Play](https://umay.dev/guides/decision-making-style-game-theory/)
 
 ### Brolled
 Make memes and short videos on iPhone with Brolled. Add auto captions, sync photos to a beat and create ranking videos for Reels, TikTok and Shorts.
@@ -103,7 +103,7 @@ Build smart home rules on Mac with Pulse Home. Combine presence triggers, HomeKi
 - [How to Set Up WiFi Signal Monitoring on Your Mac](https://umay.dev/guides/wifi-signal-monitoring-mac/): Set up Pulse Guard on Mac: choose a stable location, calibrate your room, test signal changes and tune alert sensitivity for your environment.
 - [How to Reduce Filler Words When You Speak](https://umay.dev/guides/reduce-filler-words/): A practical routine to say "um", "uh" and "like" less: find your baseline, learn what triggers your fillers, replace them with pauses and track the change with Fenno on iPhone.
 - [How to Test Whether a Supplement Actually Works for You](https://umay.dev/guides/test-if-supplement-works/): Run a simple personal (N-of-1) experiment: pick one supplement and one outcome, randomize take and skip days, measure sleep, HRV or energy and compare. With SuppLab on iPhone.
-- [How to Discover Your Decision-Making Style with Game Theory](https://umay.dev/guides/decision-making-style-game-theory/): Learn what classic games like the Prisoner's Dilemma, Ultimatum and Trust games reveal about cooperation, fairness and risk, and how to play them on iPhone with MindType.
+- [What Is My Decision-Making Style? A Test You Play](https://umay.dev/guides/decision-making-style-game-theory/): The four classic decision-making styles (directive, analytical, conceptual, behavioral), why self-report quizzes miss your real style, and a game-based test on iPhone with MindType.
 - [How to Automate HomeKit When You Arrive or Leave, Using Your Mac](https://umay.dev/guides/homekit-automation-arrive-leave-mac/): Use your Mac as a smart home hub: build arrive and leave rules with WiFi presence or geofence triggers, run HomeKit scenes and send webhooks to Home Assistant with Pulse Home.
 - [How to Stop Missing Family Events: A Calendar Setup for Busy Dads](https://umay.dev/guides/stop-missing-family-events/): A simple setup to catch school events, birthdays and clashing appointments before they slip: one shared calendar, consistent event details, and an on-device assistant that flags conflicts.
 - [Can a Mac Be a HomeKit Hub? What Works and What Doesn't](https://umay.dev/guides/mac-homekit-hub/): A Mac cannot be an official Apple home hub, but it can control HomeKit accessories and run your own automations. Here is what that means and how to set it up with Pulse Home.
@@ -117,6 +117,8 @@ Build smart home rules on Mac with Pulse Home. Combine presence triggers, HomeKi
 - [The Ultimatum Game Explained: Fairness vs. Self-Interest](https://umay.dev/guides/ultimatum-game-explained/): How the Ultimatum game works, what game theory predicts, what people actually do, why low offers get rejected and what your choices reveal about fairness. Play it on iPhone with MindType.
 - [The Trust Game Explained: How Much Would You Send?](https://umay.dev/guides/trust-game-explained/): How the Trust (investment) game works, what economists expected, what Berg, Dickhaut and McCabe found, and what sending and returning say about trust and reciprocity. Play it on iPhone with MindType.
 - [Loss Aversion, Anchoring and Status Quo Bias: Spot Them in Your Decisions](https://umay.dev/guides/cognitive-biases-in-decisions/): Three common cognitive biases explained with everyday examples and simple self-tests: loss aversion, the anchoring effect and status quo bias, plus how to catch them in your own choices.
+- [A Free Personality Test Without Email: Play It Instead of Filling It In](https://umay.dev/guides/personality-test-without-email/): Most free personality tests ask for your email and rely on self-report. MindType is a behavior-based personality test for iPhone: play short decision games, get your type, no email or password.
+- [Am I Too Trusting? Signs, and a Simple Way to Test Yourself](https://umay.dev/guides/am-i-too-trusting/): Signs you may trust people too quickly, why it happens, how the Trust game measures it, and practical ways to trust wisely without becoming cynical.
 
 ## Product stories
 

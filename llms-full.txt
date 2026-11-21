@@ -25,7 +25,7 @@ A: ShadowART uses Apple Core ML and the Natural Language framework for real-time
 
 ## MindType
 
-Explore your decision-making patterns with short game theory scenarios on iPhone. Play trust, cooperation and risk games, then review your decision profile.
+A personality test based on what you do, not what you say. Play short game theory scenarios on iPhone, then see your decision type, 10 dimensions and biases. Free, no email.
 
 - Platform: iOS
 - Page: https://umay.dev/mindtype/
@@ -446,44 +446,49 @@ A: Yes. SuppLab for iPhone tracks the supplements you take and can run a randomi
 Q: Can I tell if a B12 or iron supplement is working this way?
 A: Not reliably by feel. Deficiencies such as low B12 or iron are diagnosed and monitored with blood tests ordered by a doctor, so use those results rather than a home experiment.
 
-## How to Discover Your Decision-Making Style with Game Theory
+## What Is My Decision-Making Style? A Test You Play
 URL: https://umay.dev/guides/decision-making-style-game-theory/
 
-Learn what classic games like the Prisoner's Dilemma, Ultimatum and Trust games reveal about cooperation, fairness and risk, and how to play them on iPhone with MindType.
+The four classic decision-making styles (directive, analytical, conceptual, behavioral), why self-report quizzes miss your real style, and a game-based test on iPhone with MindType.
 
-Personality quizzes ask how you think you behave. Game theory experiments show how you actually decide when choices have consequences. Economists and psychologists have used a few simple games for decades to study cooperation, fairness, trust and risk. Playing them yourself is an entertaining way to notice your own patterns.
+Most decision-making style quizzes ask you to rate statements about yourself. The problem is that people describe how they would like to decide, not how they actually decide under pressure. A behavior-based test shows the second.
 
-### The classic games and what they show
-Prisoner's Dilemma. Two players each choose to cooperate or defect. Defecting protects you individually, but if both cooperate, both do better. Your choices show how much you cooperate when trust is uncertain, and how you respond after being betrayed.
-Ultimatum game. One player proposes how to split an amount; the other accepts or rejects. Rejection means neither gets anything. Many people reject offers they see as unfair even though it costs them, which reveals how strongly you value fairness.
-Trust game. You decide how much to send to another player, knowing the amount grows and they decide how much to return. It measures how much you trust strangers and how you reciprocate.
-Risk and patience choices. Choosing between a sure smaller reward and a risky larger one, or between something now and more later, shows your risk tolerance and patience.
+### The four classic decision-making styles
+A widely taught model by Alan Rowe sorts decision makers on two axes: tolerance for ambiguity, and focus on tasks or on people.
+- Directive: low tolerance for ambiguity, task-focused. Fast, practical, relies on rules and experience.
+- Analytical: high tolerance for ambiguity, task-focused. Gathers data, weighs options, can be slow.
+- Conceptual: high tolerance for ambiguity, people-focused. Big-picture, creative, long-term.
+- Behavioral: low tolerance for ambiguity, people-focused. Seeks agreement and harmony, listens to others.
 
-### How to play them with MindType
-MindType turns these scenarios into short games on iPhone, each taking about three minutes. After every game you see your scores and how your choices compare. Over time your results are mapped across dimensions such as cooperation, trust, risk, fairness and patience, and matched to one of six decision archetypes. You can play without creating an account.
 
-### Getting useful results
-- Answer as you would really act, not as you think you should.
-- Play several different games before reading too much into one result.
-- Return after a few weeks; your choices can change with context and mood.
-- Look for a pattern you can act on, such as giving up on cooperation too quickly after one bad outcome.
+### Why a quiz is not enough
+Self-report answers are shaped by how we want to be seen. Economists and psychologists use small games instead, such as the Prisoner's Dilemma, Ultimatum and Trust games, because choices with consequences reveal cooperation, fairness, trust and risk more honestly than ratings do.
 
+### The games and what they reveal
+- Prisoner's Dilemma: cooperation when trust is uncertain.
+- Ultimatum game: how much you value fairness.
+- Trust game: how much you trust and reciprocate.
+- Biases such as loss aversion and anchoring: where your choices drift.
+
+
+### Take a test you play
+MindType is a personality test for iPhone built on these games. Each takes about three minutes. Your choices are mapped across 10 dimensions, including cooperation, trust, risk, fairness, patience and adaptability, and matched to one of 6 decision archetypes such as Strategic Maximizer, Social Harmonizer and Cautious Analyzer. It is free to start, with no email or password.
 
 ### Keep it in perspective
-These games are a mirror, not a diagnosis. MindType is an entertainment and educational app and does not replace a professional psychological assessment.
+Decision styles change with context, stress and stakes. Treat any result as a mirror for reflection; MindType is for self-discovery and education, not a clinical assessment.
 
 ### FAQ
-Q: What is the Prisoner's Dilemma?
-A: A game in which two players each choose to cooperate or defect. Each does better individually by defecting, but both do better if both cooperate. It is used to study cooperation and trust when you cannot be sure what the other person will do.
+Q: What is my decision-making style?
+A: A common model describes four styles: directive, analytical, conceptual and behavioral. A game-based test like MindType shows your style from the choices you actually make rather than from self-ratings.
 
-Q: What is the Ultimatum game?
-A: One player proposes how to split an amount and the other accepts or rejects. If the offer is rejected, neither gets anything. People often reject offers they see as unfair even at a cost to themselves, which shows how much they value fairness.
+Q: What are the 4 decision-making styles?
+A: Directive, analytical, conceptual and behavioral, from Alan Rowe's model, based on tolerance for ambiguity and focus on tasks or people.
 
-Q: Is there a quiz for decision-making style?
-A: Many quizzes ask how you think you behave. MindType instead has you play short game theory scenarios and builds a profile from the choices you actually make. It is for self-discovery and entertainment, not a clinical assessment.
+Q: Is there a decision-making style quiz?
+A: Yes. MindType for iPhone uses short game theory games instead of a questionnaire and gives you a decision archetype and 10 dimension scores.
 
-Q: Can I play the Prisoner's Dilemma on my phone?
-A: Yes. MindType for iPhone includes the Prisoner's Dilemma alongside games such as Trust and Ultimatum, each taking about three minutes.
+Q: Is MindType a psychological assessment?
+A: No. It is an entertainment and educational app for self-discovery and does not replace a professional assessment.
 
 ## How to Automate HomeKit When You Arrive or Leave, Using Your Mac
 URL: https://umay.dev/guides/homekit-automation-arrive-leave-mac/
@@ -975,6 +980,88 @@ A: Ask whether you would choose the current option if you were deciding from scr
 
 Q: Is there a test for cognitive biases?
 A: Decision games that record your choices can reveal patterns. MindType for iPhone detects 11 biases across its game theory scenarios.
+
+## A Free Personality Test Without Email: Play It Instead of Filling It In
+URL: https://umay.dev/guides/personality-test-without-email/
+
+Most free personality tests ask for your email and rely on self-report. MindType is a behavior-based personality test for iPhone: play short decision games, get your type, no email or password.
+
+Many "free" personality tests ask for your email before showing results, and nearly all of them work the same way: you rate statements such as "I enjoy meeting new people". That tells you how you see yourself. It does not show how you behave when a choice actually costs you something.
+
+### A test based on what you do
+MindType replaces the questionnaire with short game theory scenarios used in economics and psychology research. You decide whether to cooperate or defect, how to split money, how much to trust a stranger and when to take a risk. Your decisions, not your self-description, build the profile.
+
+### What you get
+- A decision archetype, one of 6, such as Strategic Maximizer, Social Harmonizer or Cautious Analyzer.
+- Scores on 10 dimensions, including cooperation, trust, risk, fairness, patience and adaptability.
+- Analysis after every game, compared with other players.
+- With Premium: detection of 11 cognitive biases such as loss aversion and anchoring, plus AI reports.
+
+
+### No email, no password
+MindType uses anonymous sign-in, so you can play and see your archetype without giving an email, name or password. You can export or delete your data from Settings. Free play includes 3 games per day.
+
+### How it compares with Myers-Briggs-style tests
+MBTI-style tests sort you into types from your answers about yourself. MindType does not produce an MBTI type; it describes how you decide in situations with trade-offs. The two answer different questions and can complement each other.
+
+### Get a more honest result
+- Choose as you really would, not as you think you should.
+- Play several different games before reading too much into one result.
+- Come back after a few weeks; your profile can shift.
+
+MindType is for self-discovery and entertainment, not a clinical assessment.
+
+### FAQ
+Q: Is there a personality test without email?
+A: Yes. MindType for iPhone uses anonymous sign-in, so you can play and see your decision type without an email or password.
+
+Q: Is MindType free?
+A: Yes, free to start with 3 games per day and your archetype. Premium adds unlimited games, AI reports and bias detection.
+
+Q: Is MindType like Myers-Briggs (MBTI)?
+A: No. It does not give an MBTI type. It builds a decision personality from the choices you make in game theory scenarios.
+
+Q: What is a behavior-based personality test?
+A: A test that infers traits from what you do in tasks or games rather than from how you rate yourself, which reduces the pull to answer in a flattering way.
+
+## Am I Too Trusting? Signs, and a Simple Way to Test Yourself
+URL: https://umay.dev/guides/am-i-too-trusting/
+
+Signs you may trust people too quickly, why it happens, how the Trust game measures it, and practical ways to trust wisely without becoming cynical.
+
+Trust is how cooperation starts, and most of the time it pays off. Trusting too quickly, though, can leave you lending money you never see again, sharing secrets that travel, or staying in arrangements that only benefit the other side.
+
+### Signs you may be too trusting
+- You often feel surprised or let down by the same kinds of situations.
+- You give people the benefit of the doubt again after clear broken promises.
+- You share personal or financial details early with people you barely know.
+- You find it hard to ask for evidence, a contract or a second opinion because it feels rude.
+
+
+### Why it happens
+Some people simply have a high baseline of trust, often a strength. Others avoid conflict, want to be liked, or judge others by their own honesty. None of these is a flaw on its own; the issue is trust that does not update after evidence.
+
+### How researchers measure trust
+The Trust game asks how much money you would send to a stranger, knowing it will be tripled and they decide what to return. Your sending shows your trust; what you return when roles swap shows your reciprocity. Repeated rounds show whether your trust adjusts after being exploited.
+
+### Test yourself
+MindType for iPhone includes the Trust game and related games, and maps trust alongside cooperation, fairness and risk. It is for self-reflection, not a diagnosis.
+
+### Trust wisely, not less
+- Extend trust in steps: small first, more after it is honoured.
+- Keep trust and verification separate: checking is not an accusation.
+- Notice repeated patterns, not single events.
+- If trust problems come from past harm or affect your relationships, talking to a counselor can help.
+
+### FAQ
+Q: How do I know if I'm too trusting?
+A: Look for repeated disappointments in similar situations, giving more chances after broken promises, and sharing sensitive information early. Trust that does not adjust after evidence is the key sign.
+
+Q: Is being too trusting a weakness?
+A: Not in itself. High trust helps relationships and teamwork. It becomes a problem when it does not update after people break it.
+
+Q: Is there a trust quiz?
+A: Game-based measures like the Trust game show trust through choices. MindType for iPhone includes it and reports your trust dimension.
 
 # Brolled video formats
 
